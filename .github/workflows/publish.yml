@@ -45,7 +45,7 @@ jobs:
         uses: loopwerk/tag-changelog@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_types: other,doc,chore
+          exclude_types: other,docs,chore
       
       - name: Publish to Deno X
         id: create_release_and_publish_to_denox
