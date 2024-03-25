@@ -2,20 +2,22 @@
 <br/>
 <div align="middle">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/bFqB46L.png">
-        <img alt="SmartShell SDK Logo" src="https://i.imgur.com/3ASOQJQ.png">
+        <source media="(prefers-color-scheme: dark)"  width="400px" srcset="https://i.imgur.com/bFqB46L.png">
+        <img alt="SmartShell SDK Logo" width="400px" src="https://i.imgur.com/3ASOQJQ.png">
     </picture>
 </div>
 
 #
 
-<h3 align="center">
-    <strong>Smartshell SDK</strong> - Source Development Kit for ERP management platform for cyber sports arenas and computer clubs  
-</h3>
+<h4 align="center">
+    <strong>Smartshell SDK</strong> - Source Development Kit for ERP management platform<br>for cyber sports arenas and computer clubs  
+</h4>
 <br/>
 <p align="right">
-    <img src="https://i.imgur.com/XfArZkI.png" />
-    <img src="https://i.imgur.com/h8cehu5.png" />
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/CEBivQF.png">
+        <img alt="SmartShell SDK Logo" src="https://i.imgur.com/TC31MjL.png">
+    </picture>
 </p>
 
 <h2 id="install"><strong>🔗 Useful Links</strong></h2>
@@ -29,6 +31,9 @@
 <br/>
 <div align="center">
   <a href="https://t.me/xlsoftware" target="_blank" rel="noreferrer">
-    <img src="https://i.imgur.com/xxZkZfo.png" width=300>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" width="200px" srcset="https://i.imgur.com/RKKVCpQ.png">
+        <img alt="SmartShell SDK Logo" width="200px" src="https://i.imgur.com/iR5safJ.png">
+    </picture>
   </a>
 </div>
