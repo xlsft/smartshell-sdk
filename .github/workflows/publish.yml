@@ -17,13 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check tags
-        run: |
-          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-
-      - name: Get current tag
+      - name: 'Get Previous tag'
         id: get_tag
-        run: echo ::set-output name=tag::$(git describe --abbrev=0 --tags)
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
       
       - name: Read version from jsr.json
         id: read_version
@@ -40,6 +36,13 @@ jobs:
             echo "Version in jsr.json matches the latest tag"
             echo "::set-output name=create_release::false"
           fi
+
+      - name: Create changelog text
+        id: changelog
+        uses: loopwerk/tag-changelog@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_types: other,doc,chore
       
       - name: Publish to Deno X
         id: create_release_and_publish_to_denox
@@ -51,6 +54,8 @@ jobs:
           body: |
             #### Summary:
             [smartshell-sdk@${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }}](https://github.com/xl-soft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
+
+            ${{ steps.changelog.outputs.changes }}
           draft: false
           prerelease: false
         env:
