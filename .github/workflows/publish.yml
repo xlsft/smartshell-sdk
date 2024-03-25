@@ -41,6 +41,7 @@ jobs:
 
       - name: Create changelog text
         id: changelog
+        if: steps.compare_versions.outputs.create_release == 'true'
         uses: loopwerk/tag-changelog@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -54,10 +55,10 @@ jobs:
           tag_name: ${{ steps.read_version.outputs.version }}
           release_name: smartshell-sdk@${{ steps.read_version.outputs.version }}
           body: |
-            #### Summary:
-            [smartshell-sdk@${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }}](https://github.com/xl-soft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
-
             ${{ steps.changelog.outputs.changes }}
+
+            ## Summary
+            [smartshell-sdk@${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }}](https://github.com/xl-soft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
           draft: false
           prerelease: false
         env:
