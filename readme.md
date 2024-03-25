@@ -26,7 +26,7 @@
 
 <h2 id="license"><strong>📜 License</strong></h2>
 
-[MIT](https://github.com/xl-soft/smartashell-sdk/blob/main/LICENSE)
+[MIT](https://github.com/xl-soft/smartshell-sdk/blob/main/LICENSE)
 
 <br/>
 <div align="center">
