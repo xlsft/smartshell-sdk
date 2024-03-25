@@ -1,0 +1,49 @@
+name: Check Version and Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-version-and-create-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get current tag
+        id: get_tag
+        run: echo ::set-output name=tag::$(git describe --abbrev=0 --tags)
+      
+      - name: Read version from jsr.json
+        id: read_version
+        run: echo ::set-output name=version::$(jq -r '.version' jsr.json)
+        
+      - name: Compare version with latest tag
+        id: compare_versions
+        run: |
+          if [ "${{ steps.read_version.outputs.version }}" != "${{ steps.get_tag.outputs.tag }}" ]; then
+            echo "Version in jsr.json is different from latest tag"
+            echo "Creating a new release..."
+            echo "::set-output name=create_release::true"
+          else
+            echo "Version in jsr.json matches the latest tag"
+            echo "::set-output name=create_release::false"
+          fi
+      
+      - name: Create release
+        id: create_release
+        if: steps.compare_versions.outputs.create_release == 'true'
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.read_version.outputs.version }}
+          release_name: Release ${{ steps.read_version.outputs.version }}
+          body: |
+            Release notes:
+            [View changes](https://github.com/xl-soft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
