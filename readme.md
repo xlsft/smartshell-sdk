@@ -3,7 +3,7 @@
 <div align="middle">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/bFqB46L.png">
-        <img alt="SmartShell SDK Logo" src="https://i.imgur.com/DNHCrRf.png#gh-light-mode-only">
+        <img alt="SmartShell SDK Logo" src="https://i.imgur.com/3ASOQJQ.png">
     </picture>
 </div>
 
