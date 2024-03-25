@@ -1,11 +1,13 @@
 <br/>
 <br/>
 <div align="middle">
-    <img src="https://i.imgur.com/bFqB46L.png#gh-dark-mode-only" height=120>
-    <img src="https://i.imgur.com/DNHCrRf.png#gh-light-mode-only" height=120>
+
+![SmartShell SDK Logo](https://i.imgur.com/bFqB46L.png#gh-dark-mode-only)
+![SmartShell SDK Logo](https://i.imgur.com/DNHCrRf.png#gh-light-mode-only)
+
 </div>
 
-#
+
 
 <h3 align="center">
     <strong>Smartshell SDK</strong> - Source Development Kit for ERP management platform for cyber sports arenas and computer clubs  
