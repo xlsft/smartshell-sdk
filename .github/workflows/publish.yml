@@ -19,8 +19,7 @@ jobs:
 
       - name: Check tags
         run: |
-          echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
-          echo "Tag name from github.ref_name: ${{  github.ref_name }}"
+          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
       - name: Get current tag
         id: get_tag
