@@ -23,6 +23,40 @@
 <h2 id="install"><strong>🔗 Useful Links</strong></h2>
 
 * <a href="#license">License</a>
+* <a href="#install">Installation</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql-syntax">GraphQL: Syntax Highlighting for VS Code</a>
+
+<h2 id="license"><strong>💾 Installation</strong></h2>
+
+```
+// Node
+npx jsr add @xlsoftware/smartshell-sdk
+import { Shell } from "@xlsoftware/smartshell-sdk";
+
+// Deno
+deno add @xlsoftware/smartshell-sdk
+import { Shell } from "@xlsoftware/smartshell-sdk";
+// OR
+import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
+```
+
+<h2 id="license"><strong>📄 Quickstart</strong></h2>
+
+```ts
+    const shell = await new Shell({
+        credentials: { login: '79998887766', password: 'password123' }
+    })
+```
+
+<h2 id="license"><strong>📄 API coverage</strong></h2>
+
+The project started quite a long time ago is moving to a new code base and JSR registry
+
+Due to the addition of new methods and the possibility of optimization the SDK project has received a second life and will continue to develop.
+
+Status: **0.1% coverage**
+
+Now in priority robust base and modularity
 
 <h2 id="license"><strong>📜 License</strong></h2>
 
