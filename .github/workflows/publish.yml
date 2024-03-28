@@ -23,7 +23,7 @@ jobs:
         id: get_tag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
       
-      - name: Read version from jsr.json
+      - name: Read version from deno.jsonc
         id: read_version
         run: echo ::set-output name=version::$(jq -r '.version' deno.jsonc)
         

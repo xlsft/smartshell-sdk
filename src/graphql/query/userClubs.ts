@@ -36,4 +36,4 @@ query UserClubs {
 
 `)}
 
-export default module<QueryInput, QueryResponse[]>
+export default module<QueryInput, QueryResponse[]> as ShellSdkModule
