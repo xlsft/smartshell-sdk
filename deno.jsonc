@@ -1,6 +1,6 @@
 {
     "name": "@xlsoftware/smartshell-sdk",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "exports": "./mod.ts",
     "tasks": {
         "dev": "deno run -A --watch main.ts"

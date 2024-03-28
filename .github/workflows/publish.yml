@@ -25,7 +25,7 @@ jobs:
       
       - name: Read version from jsr.json
         id: read_version
-        run: echo ::set-output name=version::$(jq -r '.version' jsr.json)
+        run: echo ::set-output name=version::$(jq -r '.version' deno.jsonc)
         
       - name: Compare version with latest tag
         id: compare_versions
