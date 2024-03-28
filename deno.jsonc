@@ -1,6 +1,6 @@
 {
+    "name": "@xlsoftware/smartshell-sdk",
     "tasks": {
-        // Dev
         "dev": "deno run -A --watch main.ts"
     }
 }
