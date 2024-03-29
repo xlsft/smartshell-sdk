@@ -2,13 +2,13 @@
 import { gql } from "../../utils/syntax.ts";
 import { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
 
-interface QueryInput {
+type QueryInput = {
     login: string
     password: string
     company_id?: number
 }
 
-interface QueryResponse {
+type QueryResponse = {
     token_type: string
     expires_in: number
     access_token: string
@@ -28,4 +28,6 @@ mutation Login {
 
 `)}
 
-export default module<QueryInput, QueryResponse> as ShellSdkModule
+const temp = module<QueryInput,QueryResponse>
+
+export default temp as ShellSdkModule

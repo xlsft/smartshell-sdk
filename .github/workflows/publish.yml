@@ -68,5 +68,5 @@ jobs:
         id: publish_to_jsr
         if: steps.compare_versions.outputs.create_release == 'true'
         run: |
-          npx jsr publish
+          npx jsr publish --allow-slow-types
 

@@ -3,12 +3,12 @@
 import { gql } from "../../utils/syntax.ts";
 import { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
 
-interface QueryInput {
+type QueryInput = {
     login: string
     password: string
 }
 
-interface QueryResponse {
+type QueryResponse = {
     id: number
     name: string
     address: string
@@ -17,7 +17,7 @@ interface QueryResponse {
     permitted: boolean
     operatorFirstName?: string
     operatorLastName?: string
-}
+}[]
 
 const module: ShellSdkModule = async <TI,TR>(ctx: ShellContext, data: TI) => { return await ctx.request<TR>(gql`
 
@@ -36,4 +36,6 @@ query UserClubs {
 
 `)}
 
-export default module<QueryInput, QueryResponse[]> as ShellSdkModule
+const temp: ShellSdkModule = module<QueryInput,QueryResponse>
+
+export default temp as ShellSdkModule
