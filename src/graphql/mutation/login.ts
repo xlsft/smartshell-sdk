@@ -28,6 +28,4 @@ mutation Login {
 
 `)}
 
-const temp = module<QueryInput,QueryResponse>
-
-export default temp as ShellSdkModule
+export default module<QueryInput,QueryResponse>

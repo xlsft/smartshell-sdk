@@ -36,6 +36,4 @@ query UserClubs {
 
 `)}
 
-const temp: ShellSdkModule = module<QueryInput,QueryResponse>
-
-export default temp as ShellSdkModule
+export default module<QueryInput,QueryResponse>
