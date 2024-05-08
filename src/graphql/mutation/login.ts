@@ -1,31 +1,22 @@
-//@ts-nocheck <>
-import { gql } from "../../utils/syntax.ts";
-import { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
+//@ts-nocheck <module config>
 
-type QueryInput = {
+import type { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
+import { request } from "../../utils/request.ts";
+
+type q_input = {
     login: string
     password: string
-    company_id?: number
+    company_id: number
 }
 
-type QueryResponse = {
+type q_response = {
     token_type: string
-    expires_in: number
     access_token: string
     refresh_token: string
+    expires_in: number
 }
 
-const module: ShellSdkModule = async <TI,TR>(ctx: ShellContext, data: TI) => { return await ctx.request<TR>(gql`
+const module: ShellSdkModule = async <TI,TR>(ctx: ShellContext, input: TI): Promise<TR> => 
+await request(ctx, 'mutation', 'login', ['token_type','access_token','refresh_token','expires_in'], { input })
 
-mutation Login {
-    login(input: { login: "${data.login}", password: "${data.password}", company_id: ${data.company_id} }) {
-        token_type
-        expires_in
-        access_token
-        refresh_token
-    }
-}
-
-`)}
-
-export default module<QueryInput,QueryResponse>
+export default module<q_input,q_response>

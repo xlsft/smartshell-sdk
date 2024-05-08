@@ -20,6 +20,6 @@ export interface GraphQLResponseError {
  * `@xlsoftware/smartshell-sdk/types`
  */
 export interface GraphQLResponse<T> {
-    data: { [key: string]: T } | null
+    data: T
     errors?: GraphQLResponseError[]
 }

@@ -1,8 +1,7 @@
 // deno-lint-ignore-file no-explicit-any
 import type { ShellApiClub, ShellApiOptions } from './types/api.ts'
-import type { GraphQLResponse } from './types/graphql.ts'
 import { ShellApi } from "./api.ts";
-import { ShellSdkQuery } from "./types/sdk.ts";
+import type { ShellSdkQuery } from "./types/sdk.ts";
 import { query, mutation } from "./graphql/index.ts";
 
 /**
@@ -23,17 +22,17 @@ export class Shell {
     private async _init(): Promise<void> {
         this._api = new ShellApi(this.options)
         this._clubs = await this._api.init()
+        
         this._active_club = this._clubs[0].id
     }
 
     private async _call<TInput>(module: any, data: TInput) {
-        console.log('called')
         await this._initialized
         const response = await module(this,data)
-        console.log(response)
+        return response
     }
 
-    public async request<T>(query: ShellSdkQuery): Promise<GraphQLResponse<T>> {
+    public async request<T>(query: ShellSdkQuery): Promise<T> {
         await this._initialized
         const token = this._clubs.find((data) => data.id === this._active_club)
         return await this._api?.request(query, token?.access_token!)!
@@ -56,7 +55,7 @@ export class Shell {
     public api = {
         userClubs: async (data: Parameters<typeof query.userClubs>[1]) => { await this._call<Parameters<typeof query.userClubs>[1]>(query.userClubs, data) },
 
-        login: async (data: Parameters<typeof mutation.login>[1]) => { await this._call<Parameters<typeof mutation.login>[1]>(mutation.login, data) },
+        login: async function (data: Parameters<typeof mutation.login>[1]): Parameters<typeof mutation.login>[0] { await this._call<Parameters<typeof mutation.login>[1]>(mutation.login, data) },
     }
 
 

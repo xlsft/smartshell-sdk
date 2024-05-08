@@ -1,14 +1,14 @@
-//@ts-nocheck <>
+//@ts-nocheck <module config>
 
-import { gql } from "../../utils/syntax.ts";
-import { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
+import type { ShellContext, ShellSdkModule } from "../../types/sdk.ts"
+import { request } from "../../utils/request.ts";
 
-type QueryInput = {
+type q_input = {
     login: string
     password: string
 }
 
-type QueryResponse = {
+type q_response = {
     id: number
     name: string
     address: string
@@ -17,23 +17,9 @@ type QueryResponse = {
     permitted: boolean
     operatorFirstName?: string
     operatorLastName?: string
-}[]
-
-const module: ShellSdkModule = async <TI,TR>(ctx: ShellContext, data: TI) => { return await ctx.request<TR>(gql`
-
-query UserClubs {
-    userClubs(input: { login: "${data.login}", password: "${data.password}" }) {
-        id
-        name
-        address
-        tariffName
-        workShiftStatus
-        permitted
-        operatorFirstName
-        operatorLastName
-    }
 }
 
-`)}
+const module: ShellSdkModule = async <TI,TR>(ctx: ShellContext, input: TI): Promise<TR> => 
+await request(ctx, 'query', 'userClubs', ['id', 'name', 'address', 'tariffName', 'workShiftStatus', 'permitted', 'operatorFirstName', 'operatorLastName'], { input })
 
-export default module<QueryInput,QueryResponse>
+export default module<q_input,q_response>
