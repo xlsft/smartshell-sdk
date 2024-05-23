@@ -1,9 +1,7 @@
 import type { ShellSdkContext } from "../../types/sdk.ts"
 
 export type InputType = {
-	login: string
-	password: string
-	company_id: number
+	id: number
 }
 
 export type ResponseType = {
@@ -16,11 +14,11 @@ export type ResponseType = {
 const module = async <Input extends InputType, Response extends ResponseType>(
 	ctx: ShellSdkContext,
 	input: Input
-): Promise<Response> => { return await ctx.request("mutation", "login", [
+): Promise<Response> => { return await ctx.request("mutation", "relogin", [
 	"token_type",
 	"access_token",
 	"refresh_token",
 	"expires_in"
-], { input })}
+], input )}
 
 export default module<InputType, ResponseType>

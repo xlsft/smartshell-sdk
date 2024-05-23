@@ -29,14 +29,18 @@
 <h2 id="license"><strong>💾 Installation</strong></h2>
 
 ```
-// Node
+# Node
 npx jsr add @xlsoftware/smartshell-sdk
+
+// main.ts
 import { Shell } from "@xlsoftware/smartshell-sdk";
 
-// Deno
+# Deno
 deno add @xlsoftware/smartshell-sdk
+
+// main.ts
 import { Shell } from "@xlsoftware/smartshell-sdk";
-// OR
+# OR
 import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
 ```
 

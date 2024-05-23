@@ -1,8 +1,13 @@
 {
     "name": "@xlsoftware/smartshell-sdk",
-    "version": "0.2.6",
-    "exports": "./mod.ts",
+    "version": "0.3.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./utils": "./utils.ts",
+        "./types": "./src/graphql/types.ts"
+    },
     "tasks": {
-        "dev": "deno run -A --watch main.ts"
+        "dev": "deno run -A --watch main.ts",
+        "build": "deno run -A build.ts"
     }
 }

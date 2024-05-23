@@ -8,7 +8,8 @@
 
 export interface GraphQLResponseError {
     message: string
-    path: string[]
+    path?: string[]
+    locations: { line: number, column: number }
     extensions: { code: number }
 }
 
@@ -22,4 +23,7 @@ export interface GraphQLResponseError {
 export interface GraphQLResponse<T> {
     data: T
     errors?: GraphQLResponseError[]
+    extensions?: {
+        "x-trace-id": string
+    }
 }

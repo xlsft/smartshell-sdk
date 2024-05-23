@@ -28,9 +28,7 @@ export type ShellApiEndpoint = `https://${ShellApiVHost}.smartshell.gg/api/graph
  * 
  * `@xlsoftware/smartshell-sdk/types`
  */
-// export interface ShellApiCredentialsToken {
-//     token: string
-// }
+// export type ShellApiCredentialsToken = string
 
 /**
  * # interface `ShellApiCredentialsUser`
@@ -51,7 +49,7 @@ export interface ShellApiCredentialsUser {
  * 
  * `@xlsoftware/smartshell-sdk/types`
  */
-export type ShellApiCredentials = ShellApiCredentialsUser // | ShellApiCredentialsToken 
+export type ShellApiCredentials = ShellApiCredentialsUser //| ShellApiCredentialsToken 
 
 /**
  * # interface `ShellApiOptions`
@@ -61,7 +59,8 @@ export type ShellApiCredentials = ShellApiCredentialsUser // | ShellApiCredentia
  * `@xlsoftware/smartshell-sdk/types`
  */
 export interface ShellApiOptions {
-    credentials: ShellApiCredentials
+    credentials?: ShellApiCredentials 
+    anonymous?: boolean
     host?: ShellApiVHost
     club?: number
 }

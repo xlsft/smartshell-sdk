@@ -1,54 +1,65 @@
-import type { ShellApiClub, ShellApiOptions, ShellApiEndpoint } from './types/api.ts'
-import type { GraphQLResponse } from './types/graphql.ts'
-import type { ShellSdkQuery } from "./types/sdk.ts";
-import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
-import { query, mutation } from './graphql/index.ts'
+import type { Shell } from "../mod.ts";
+import { query as q, mutation as m } from "./graphql/index.ts";
 
+export const api = (ctx: Shell) => {
+    return {
 
-/**
-* # class `ShellApi`
-*
-* Contains core methods of GraphQL API
-* 
-* `@xlsoftware/smartshell-sdk/api`
-*/
-export class ShellApi {
+        // query
 
-    private _endpoint: ShellApiEndpoint = `https://billing.smartshell.gg/api/graphql`
-    private _clubs: ShellApiClub[] = []
+        /**
+        * # query `userClubs`
+		* 
+		* ```ts
+		* 
+		* await shell.api.userClubs({ login: "79998887766", password: "passw0rd" })
+		* ```
+		* 
+		* 🔗 https://apidoc.smartshell.gg/userClubs.html
+		* 
+        * `@xlsoftware/smartshell-sdk`
+        */
+        userClubs: async (input: Parameters<typeof q.userClubs>[1]) => await q.userClubs(ctx, input),
 
-    constructor(private options: ShellApiOptions) {
-        if (options.host) this._endpoint = `https://${options.host}.smartshell.gg/api/graphql`
-    }
+        // mutation
 
-    async init(): Promise<ShellApiClub[]> {
-        if (this._clubs.length !== 0) throw new ShellSdkError('SDK can`t be initialized more than once!')
-        const { login, password } = this.options.credentials
-        if (!login || !password) throw new ShellSdkError('No credentials provided')
-        const clubs = await query.userClubs(this, { login, password }, true)
-        console.log(clubs)
-        for (let i = 0; i < clubs.length; i++) {
-            const id = clubs[i].id;
-            if (this._clubs.some(token => token.id === id)) continue
-            const tokens = await mutation.login(this, { login, password, company_id: id }, true)
-            this._clubs.push({ id, access_token: tokens.access_token, refresh_token: tokens.refresh_token, expires: Date.now() + (tokens.expires_in * 1000)})
-        }
-        return this._clubs
-
-    }
-
-    async request<T>(query: ShellSdkQuery, token?: string): Promise<T> {
-        const options = {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-                ...token ? { 'Authorization': `Bearer ${token}` } : {},
-            },
-            body: JSON.stringify({ query })
-        }
-        const response = await fetch('https://billing.smartshell.gg/api/graphql', options);
-        const json: GraphQLResponse<T> = await response.json();
-        if (json.errors) throw new ShellApiError(JSON.stringify(json.errors))
-        return json.data
+        /**
+        * # mutation `login`
+		* 
+		* ```ts
+		* 
+		* await shell.api.login({ login: "79998887766", password: "passw0rd", company_id: 1234 })
+		* ```
+		* 
+		* 🔗 https://apidoc.smartshell.gg/auth.html
+		* 
+        * `@xlsoftware/smartshell-sdk`
+        */
+        login: async (input: Parameters<typeof m.login>[1]) => await m.login(ctx, input),
+        /**
+        * # mutation `relogin`
+		* 
+		* ```ts
+		* 
+		* await shell.api.relogin({ id: 1234 })
+		* ```
+		* 
+		* 🔗 https://apidoc.smartshell.gg/relogin.html
+		* 
+        * `@xlsoftware/smartshell-sdk`
+        */
+        relogin: async (input: Parameters<typeof m.relogin>[1]) => await m.relogin(ctx, input),
+        /**
+        * # mutation `refreshToken`
+		* 
+		* ```ts
+		* 
+		* await shell.api.refreshToken({ refresh_token: "oWR4DodRt..." })
+		* ```
+		* 
+		* 🔗 https://apidoc.smartshell.gg/refreshToken.html
+		* 
+        * `@xlsoftware/smartshell-sdk`
+        */
+        refreshToken: async (input: Parameters<typeof m.refreshToken>[1]) => await m.refreshToken(ctx, input),
     }
 }
