@@ -1,7 +1,7 @@
 import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions } from './types/api.ts'
-import type { ShellSdkContext, ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkQuery } from "./types/sdk.ts";
+import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkQuery } from "./types/sdk.ts";
 import type { GraphQLResponse, GraphQLResponseError } from "./types/graphql.ts";
-import type { LoginResponse, RefreshTokenResponse, UserClubsResponse } from "./graphql/types.ts";
+import type { LoginResponse, UserClubsResponse } from "./graphql/types.ts";
 import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
 import { api } from "./api.ts";
 
@@ -33,39 +33,6 @@ export class Shell {
         this._endpoint = `https://${options.host || 'billing'}.smartshell.gg/api/graphql`
         this._initialized = this._initialize() 
     }
-
-    // ---------------- Middleware ----------------
-    private _middleware: ShellSdkMiddleware[] = []
-    private _middleware_global = async <T>(e: GraphQLResponse<T>) => {
-        await this._initialized
-        for (let i = 0; i < this._middleware.length; i++) {
-            this._middleware[i](e, {
-                options: this.options,
-                anonymous: this.anonymous,
-                endpoint: this._endpoint,
-                clubs: this._clubs,
-                active_club: this._active_club
-            })
-        }
-    } 
-    /**
-    * # `Shell.use`
-    *
-    * Add middleware function and listen for every event
-    * 
-    * ```ts
-    * 
-    shell.use((e, ctx) => { console.log(e, ctx) })
-    * ```
-    * 
-    * `@xlsoftware/smartshell-sdk`
-    */
-    public use(...middleware: ShellSdkMiddleware[]) {
-        for (let i = 0; i < middleware.length; i++) {
-            this._middleware.push(middleware[i])
-        }
-    }
-    // ---------------- Middleware ----------------
 
     // ---------------- System values ----------------
     readonly anonymous: boolean = true
@@ -134,6 +101,57 @@ export class Shell {
         return this._clubs[club_i]
     }
     // ---------------- Initialization ----------------
+
+    // ---------------- Middleware ----------------
+    private _middleware: ShellSdkMiddleware[] = []
+
+    private _middleware_global = async <T>(e: GraphQLResponse<T>) => {
+
+        await this._initialized
+        for (let i = 0; i < this._middleware.length; i++) {
+            this._middleware[i](e, {
+                options: this.options,
+                anonymous: this.anonymous,
+                endpoint: this._endpoint,
+                clubs: this._clubs,
+                active_club: this._active_club
+            })
+        }
+    } 
+    /**
+    * # `Shell.use`
+    *
+    * Add middleware function and listen for every event
+    * 
+    * ```ts
+    * 
+    shell.use((e, ctx) => { console.log(e, ctx) })
+    * ```
+    * 
+    * `@xlsoftware/smartshell-sdk`
+    */
+    public use(...middleware: ShellSdkMiddleware[]) {
+        for (let i = 0; i < middleware.length; i++) {
+            this._middleware.push(middleware[i])
+        }
+    }
+    // ---------------- Middleware ----------------
+
+    // ---------------- Error catcher ----------------
+    /**
+    * # `Shell.catch`
+    *
+    * Set error catcher function
+    * 
+    * ```ts
+    * 
+    shell.catch = (errors) => console.log(errors)
+    * ```
+    * 
+    * `@xlsoftware/smartshell-sdk`
+    */
+    public catch: null | ((errors: GraphQLResponseError[] | string) => void) = null
+    // ---------------- Error catcher ----------------
 
     // ---------------- Request ----------------
     public async call<Response = never>(query: ShellSdkQuery, token?: string): Promise<{ [key: string]: Response }> {
@@ -207,23 +225,5 @@ export class Shell {
 
     
     // ---------------- Request ----------------
-
-
-    // ---------------- Error catcher ----------------
-        /**
-        * # `Shell.catch`
-        *
-        * Set error catcher function
-        * 
-        * ```ts
-        * 
-        shell.catch = (errors) => console.log(errors)
-        * ```
-        * 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        public catch: null | ((errors: GraphQLResponseError[] | string) => void) = null
-    // ---------------- Error catcher ----------------
-
 
 }

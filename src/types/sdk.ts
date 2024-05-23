@@ -1,5 +1,6 @@
+// deno-lint-ignore-file no-explicit-any
 import type { Shell } from "../shell.ts";
-import { ShellApiClub, ShellApiEndpoint, ShellApiOptions } from "./api.ts";
+import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions } from "./api.ts";
 import type { GraphQLResponse } from "./graphql.ts";
 export type ShellSdkContext = Shell
 export type ShellSdkContextPublic = {
