@@ -1,9 +1,11 @@
-import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions } from './types/api.ts'
-import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkQuery } from "./types/sdk.ts";
-import type { GraphQLResponse, GraphQLResponseError } from "./types/graphql.ts";
-import type { LoginResponse, UserClubsResponse } from "./graphql/types.ts";
+import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions, ShellApiResponse, ShellApiResponseError } from './types/api.ts'
+import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkPaginatorInput, ShellSdkQuery } from "./types/sdk.ts";
+import type { AccessToken, UserClub } from "./types/types.ts";
+
 import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
 import { api } from "./api.ts";
+import { parse } from "./utils/parse.ts";
+import { format } from "./utils/format.ts";
 
 
 /**
@@ -46,9 +48,9 @@ export class Shell {
     private async _initialize() { await this._init(); }
     private async _init(): Promise<void> {
         if (this._clubs.length !== 0) ShellSdkError(this, 'SDK can`t be initialized more than once!')
-        if (!this.options.credentials && this.options.anonymous) ShellSdkError(this, 'No credentials provided')
+        if (!this.options.credentials && this.options.anonymous === false) ShellSdkError(this, 'No credentials provided')
         if (!this.anonymous) {
-            const clubs = (await this.call<UserClubsResponse>(`query UserClubs {
+            const clubs = (await this.call<UserClub[]>(`query UserClubs {
                 userClubs(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}" }) {
                     id
                     name
@@ -64,7 +66,7 @@ export class Shell {
             for (let i = 0; i < clubs.length; i++) {
                 const id = clubs[i].id;
                 if (this._clubs.some(token => token.id === id)) continue
-                const tokens = (await this.call<LoginResponse>(`mutation Login {
+                const tokens = (await this.call<AccessToken>(`mutation Login {
                     login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
                         token_type
                         expires_in
@@ -89,7 +91,7 @@ export class Shell {
         //         refresh_token
         //     }
         // }`)).refreshToken
-        const updated = (await this.call<LoginResponse>(`mutation Login {
+        const updated = (await this.call<AccessToken>(`mutation Login {
             login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
                 token_type
                 expires_in
@@ -105,16 +107,28 @@ export class Shell {
     // ---------------- Middleware ----------------
     private _middleware: ShellSdkMiddleware[] = []
 
-    private _middleware_global = async <T>(e: GraphQLResponse<T>) => {
+    private _middleware_global = async <T>(name: string, method: 'mutation' | 'query', fields: ShellSdkFormattedQuery, response: T) => {
 
         await this._initialized
         for (let i = 0; i < this._middleware.length; i++) {
-            this._middleware[i](e, {
-                options: this.options,
-                anonymous: this.anonymous,
-                endpoint: this._endpoint,
-                clubs: this._clubs,
-                active_club: this._active_club
+            this._middleware[i]({
+                ctx: {
+                    options: this.options,
+                    api: {
+                        endpoint: this._endpoint,
+                        anonymous: this.anonymous,
+                    },
+                    clubs: {
+                        list: this._clubs,
+                        active: this._active_club,
+                    },
+                },
+                request: {
+                    name,
+                    method,
+                    fields,
+                },
+                response
             })
         }
     } 
@@ -125,7 +139,7 @@ export class Shell {
     * 
     * ```ts
     * 
-    shell.use((e, ctx) => { console.log(e, ctx) })
+    shell.use(({ ctx, request, response }) => { console.log(ctx, request, response) })
     * ```
     * 
     * `@xlsoftware/smartshell-sdk`
@@ -150,7 +164,7 @@ export class Shell {
     * 
     * `@xlsoftware/smartshell-sdk`
     */
-    public catch: null | ((errors: GraphQLResponseError[] | string) => void) = null
+    public catch: null | ((errors: ShellApiResponseError[] | string) => void) = null
     // ---------------- Error catcher ----------------
 
     // ---------------- Request ----------------
@@ -168,43 +182,43 @@ export class Shell {
             body: JSON.stringify({ query })
         }
         const response = await fetch(this._endpoint, options);
-        const json: GraphQLResponse<{ [key: string]: Response }> = await response.json();
-        if (this._middleware.length !== 0) this._middleware_global(json)
+        const json: ShellApiResponse<{ [key: string]: Response }> = await response.json();
+        
         if (json.errors) ShellApiError(this, json.errors)
         return json.data
     }
 
 
-    public async request<Input, Response>( type: 'query' | 'mutation', name: string, query: ShellSdkFormattedQuery, input?: Input | { input: Input }): Promise<Response> { 
+    public async request<Input, Response>( type: 'query' | 'mutation', name: string, query?: ShellSdkFormattedQuery | string, input?: Input | { input: Input }, paginator?: ShellSdkPaginatorInput): Promise<Response > { 
         if (this.anonymous === true) ShellSdkError(this, 'You can`t use SDK static method without auth, use "call" method instead')
         await this._initialized
 
         let club = this._clubs.find((data) => data.id === this._active_club)!
         if (club.expires <= Date.now()) club = await this._update(club.id)
 
-        const format = (query: ShellSdkFormattedQuery, indent: string = ''): string => query.map(item => {
-            if (typeof item === 'string') {
-                return `${indent}${item}\n`
-            } else if (typeof item === 'object' && 'key' in item && Array.isArray(item.fields)) {
-                const new_indent = indent + '    '
-                return `${indent}${item.key} {\n${format(item.fields, new_indent)}${indent}}\n`
-            }
-            return ''
-        }).join('')
-
-
-        const input_string = JSON.stringify(input).replace(/"([^"]+)":/g, '$1:')
+        const input_string = JSON.stringify({...input, ...paginator ? paginator : {}}).replace(/"([^"]+)":/g, '$1:')
         const input_string_filtered = input_string.substring(1, input_string.length-1)
         const query_string = `
             ${type} ${name} {
-                ${name}${input ? `(${input_string_filtered})` : ''} {
-                    ${format(query)}
-                }
+                ${name}${query ? `${input ? `(${input_string_filtered})` : ''}  {
+                    ${typeof query === 'string' ? query : format(query)}
+                    ${paginator ? `paginatorInfo {
+                        count
+                        currentPage
+                        firstItem
+                        hasMorePages
+                        lastItem
+                        lastPage
+                        perPage
+                        total
+                    }` : ''}`:``}
             }
-        `
+        }`
+        console.log(query_string)
+        const data = (await this.call<Response>(query_string))
+        if (this._middleware.length !== 0 && query) this._middleware_global(name, type, typeof query === 'string' ? parse(query) : query, data)
+        return data[name as keyof { [key: string]: Response }]
         
-        const data = (await this.call<Response>(query_string))[name as keyof { [key: string]: Response }]
-        return data
     }
 
     readonly api = api(this)

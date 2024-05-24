@@ -1,15 +1,9 @@
+
+import type { AccessToken, RefreshTokenInput } from "../../types/types.ts";
 import type { ShellSdkContext } from "../../types/sdk.ts"
 
-export type InputType = {
-	refresh_token: string
-}
-
-export type ResponseType = {
-	token_type: string
-	access_token: string
-	refresh_token: string
-	expires_in: number
-}
+export type InputType = RefreshTokenInput
+export type ResponseType = AccessToken
 
 const module = async <Input extends InputType, Response extends ResponseType>(
 	ctx: ShellSdkContext,

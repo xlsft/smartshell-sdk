@@ -1,20 +1,9 @@
 import type { ShellSdkContext } from "../../types/sdk.ts"
+import { UserClub, UserClubsInput } from "../../types/types.ts";
 
-export type InputType = {
-    login: string;
-    password: string
-};
+export type InputType = UserClubsInput
 
-export type ResponseType = {
-    id: number;
-    name: string;
-    address: string;
-    tariffName?: string;
-    workShiftStatus: "NONE" | "OPEN" | "MY" | "LOCKED";
-    permitted: boolean;
-    operatorFirstName?: string;
-    operatorLastName?: string
-}[]
+export type ResponseType = UserClub[]
 
 const module = async <Input extends InputType, Response extends ResponseType>(
     ctx: ShellSdkContext,
