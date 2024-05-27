@@ -20,10 +20,12 @@
     </picture>
 </p>
 
-<h2 id="install"><strong>🔗 Useful Links</strong></h2>
+<h2><strong>🔗 Useful Links</strong></h2>
 
-* <a href="#license">License</a>
 * <a href="#install">Installation</a>
+* <a href="#api">API coverage</a>
+* <a href="#todo">Todo</a>
+* <a href="#license">License</a>
 * <a href="https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql-syntax">GraphQL: Syntax Highlighting for VS Code</a>
 
 <h2 id="license"><strong>💾 Installation</strong></h2>
@@ -44,7 +46,7 @@ import { Shell } from "@xlsoftware/smartshell-sdk";
 import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
 ```
 
-<h2 id="license"><strong>📄 Quickstart</strong></h2>
+<h2 id="install"><strong>📄 Quickstart</strong></h2>
 
 ```ts
     const shell = await new Shell({
@@ -52,15 +54,17 @@ import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
     })
 ```
 
-<h2 id="license"><strong>📄 API coverage</strong></h2>
+<h2 id="license"><strong>🟢 API coverage</strong></h2>
 
-The project started quite a long time ago is moving to a new code base and JSR registry
+> [!CAUTION]
+> The project started quite a long time ago is moving to a new code base and JSR registry. Due to the addition of new methods and the possibility of optimization the SDK project has received a second life and will continue to develop. Now in priority robust base and modularity
 
-Due to the addition of new methods and the possibility of optimization the SDK project has received a second life and will continue to develop.
+<h2 id="todo"><strong>🎯 Todo</strong></h2>
 
-Status: **0.1% coverage**
-
-Now in priority robust base and modularity
+- [ ] Beautifier GraphQL string
+- [ ] clientLogin switch in constructor instead of login
+- [ ] Test doc link before put in documentation 
+- [ ] Try to create request generation
 
 <h2 id="license"><strong>📜 License</strong></h2>
 
