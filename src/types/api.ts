@@ -90,7 +90,7 @@ export interface ShellApiClub {
 export interface ShellApiResponseError {
     message: string
     path?: string[]
-    locations: { line: number, column: number }
+    locations: { line: number, column: number }[]
     extensions: { code: number }
 }
 

@@ -61,10 +61,11 @@ import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
 
 <h2 id="todo"><strong>🎯 Todo</strong></h2>
 
-- [ ] Beautifier GraphQL string
+- [ ] create single update script for `types/types.ts`, `graphql/index.ts`, `api.ts` (Test doc link before put in documentation) and methods in graphql folder
 - [ ] clientLogin switch in constructor instead of login
-- [ ] Test doc link before put in documentation 
-- [ ] Try to create request generation
+- [ ] add entity on `ShellSdkFormattedQuery` and updater
+- [ ] add actual JSDoc in `api.ts`
+- [ ] add auto test generation
 
 <h2 id="license"><strong>📜 License</strong></h2>
 

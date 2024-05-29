@@ -9,12 +9,12 @@ export type ResponseType = AccessToken
 
 const module = async <Input extends InputType, Response extends ResponseType>(
 	ctx: ShellSdkContext,
-	input: Input
+	props: Input
 ): Promise<Response> => { return await ctx.request("mutation", "relogin", [
 	"token_type",
 	"access_token",
 	"refresh_token",
 	"expires_in"
-], input )}
+], props )}
 
 export default module<InputType, ResponseType>

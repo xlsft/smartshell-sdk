@@ -1,5 +1,5 @@
 import type { ShellSdkContext } from "../../types/sdk.ts"
-import { UserClub, UserClubsInput } from "../../types/types.ts";
+import type { UserClub, UserClubsInput } from "../../types/types.ts";
 
 export type InputType = UserClubsInput
 
@@ -7,7 +7,7 @@ export type ResponseType = UserClub[]
 
 const module = async <Input extends InputType, Response extends ResponseType>(
     ctx: ShellSdkContext,
-    input: Input
+    props: Input
 ): Promise<Response> => { return await ctx.request("query", "userClubs", [
     "id",
     "name",
@@ -17,6 +17,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
     "permitted",
     "operatorFirstName",
     "operatorLastName",
-], { input })}
+], { input: props })}
 
 export default module<InputType, ResponseType>
