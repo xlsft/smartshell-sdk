@@ -49,9 +49,9 @@ import { Shell } from "https://deno.land/x/smartshell_sdk/mod.ts"
 <h2 id="install"><strong>📄 Quickstart</strong></h2>
 
 ```ts
-    const shell = await new Shell({
-        credentials: { login: '79998887766', password: 'password123' }
-    })
+const shell = await new Shell({
+    credentials: { login: '79998887766', password: 'password123' }
+})
 ```
 
 <h2 id="license"><strong>🟢 API coverage</strong></h2>
