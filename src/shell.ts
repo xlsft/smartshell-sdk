@@ -1,12 +1,8 @@
 import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions, ShellApiResponse, ShellApiResponseError } from './types/api.ts'
 import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkPaginatorInput, ShellSdkQuery } from "./types/sdk.ts";
 import type { AccessToken, UserClub } from "./types/types.ts";
-
 import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
 import { api } from "./api.ts";
-import { parse } from "./utils/parse.ts";
-import { format } from "./utils/format.ts";
-
 
 /**
 * # class `Shell`
@@ -189,34 +185,55 @@ export class Shell {
     }
 
 
-    public async request<Input, Response>( type: 'query' | 'mutation', name: string, query?: ShellSdkFormattedQuery | string, input?: Input | { input: Input }, paginator?: ShellSdkPaginatorInput): Promise<Response > { 
+    public async request<Input, Response>( type: 'query' | 'mutation', name: string, query?: ShellSdkFormattedQuery, input?: Input | { input: Input }, paginator?: ShellSdkPaginatorInput): Promise<Response> { 
         if (this.anonymous === true) ShellSdkError(this, 'You can`t use SDK static method without auth, use "call" method instead')
         await this._initialized
 
         let club = this._clubs.find((data) => data.id === this._active_club)!
         if (club.expires <= Date.now()) club = await this._update(club.id)
 
-        const input_string = JSON.stringify({...input, ...paginator ? paginator : {}}).replace(/"([^"]+)":/g, '$1:')
-        const input_string_filtered = input_string.substring(1, input_string.length-1)
-        const query_string = `
-            ${type} ${name} {
-                ${name}${query ? `${input ? `(${input_string_filtered})` : ''}  {
-                    ${typeof query === 'string' ? query : format(query)}
-                    ${paginator ? `paginatorInfo {
-                        count
-                        currentPage
-                        firstItem
-                        hasMorePages
-                        lastItem
-                        lastPage
-                        perPage
-                        total
-                    }` : ''}`:``}
+        const build = () => {
+            const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+            const format = (query: ShellSdkFormattedQuery, indent: string = ''): string => query.map(item => {
+                if (typeof item === 'string') {
+                    return `${indent}${item}\n`
+                } else if (typeof item === 'object' && 'key' in item && Array.isArray(item.fields)) {
+                    const new_indent = indent + '    '
+                    return `${indent}${item.key} {\n${format(item.fields, new_indent)}${indent}}\n`
+                }
+                return ''
+            }).join('')
+
+            const request = {
+                type,
+                name: `ShellSdkRequest${capitalize(name)}`,
+                method: {
+                    name,
+                    ...input || paginator ? { input: { ...input, ...paginator}} : {},
+                    ...query ? { query } : {}
+                }
             }
-        }`
-        console.log(query_string)
-        const data = (await this.call<Response>(query_string))
-        if (this._middleware.length !== 0 && query) this._middleware_global(name, type, typeof query === 'string' ? parse(query) : query, data)
+
+            const result = [`${request.type} ${request.name} {\n    ${name}`]
+
+            if (paginator) request.method.query?.push({ key: 'paginatorInfo', fields: [
+                `count`,
+                `currentPage`,
+                `firstItem`,
+                `hasMorePages`,
+                `lastItem`,
+                `lastPage`,
+                `perPage`,
+                `total`,
+            ]})
+            if (request.method.input) result.push(`(${JSON.stringify(request.method.input).replace(/"([^"]+)":/g, '$1:').slice(1, -1)})`)
+            if (request.method.query) result.push(` {\n${format(request.method.query, '      ')}    }`)
+            result.push(`    \n}`)
+        
+            return result.join('');
+        }
+        const data = (await this.call<Response>(build()))
+        if (this._middleware.length !== 0 && query) this._middleware_global(name, type, query, data)
         return data[name as keyof { [key: string]: Response }]
         
     }

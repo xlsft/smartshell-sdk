@@ -1,5 +1,5 @@
 import type { Shell } from "../shell.ts";
-import type { GraphQLResponseError } from "../types/graphql.ts";
+import type { ShellApiResponseError } from "../types/api.ts";
 
 class ShellApiErrorClass extends Error {
     constructor(public readonly error: unknown) {
@@ -17,7 +17,7 @@ class ShellSdkErrorClass extends Error {
     }
 }
 
-const format = (errors: GraphQLResponseError[]) => {
+const format = (errors: ShellApiResponseError[]) => {
     const error_string: string[] = []
     if (error_string.length !== 1) `API dropped ${errors.length} errors in total\n`
     for (let i = 0; i < errors.length; i++) {
@@ -28,7 +28,7 @@ const format = (errors: GraphQLResponseError[]) => {
 }
 
 
-export const ShellApiError = (ctx: Shell, errors: GraphQLResponseError[] ) => {
+export const ShellApiError = (ctx: Shell, errors: ShellApiResponseError[] ) => {
     if (!ctx.catch) throw new ShellApiErrorClass(format(errors)); else ctx.catch(errors)
 }
 

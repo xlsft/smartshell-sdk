@@ -1,6 +1,5 @@
 import type { Shell } from "../mod.ts";
 import { query as q, mutation as m } from "./graphql/index.ts";
-import type { ShellSdkPaginatorInput } from "./types/sdk.ts";
 
 export const api = (ctx: Shell) => {
     return {
@@ -14,7 +13,7 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
+        clients: async (props: Parameters<typeof q.clients>[1]) => await q.clients(ctx, props),
         /**
         * # query `now`
 		* 
@@ -30,7 +29,7 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        userClubs: async (input: Parameters<typeof q.userClubs>[1],) => await q.userClubs(ctx, input,),
+        userClubs: async (props: Parameters<typeof q.userClubs>[1],) => await q.userClubs(ctx, props),
 
         // mutation
 
@@ -41,7 +40,7 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        login: async (input: Parameters<typeof m.login>[1],) => await m.login(ctx, input,),
+        login: async (props: Parameters<typeof m.login>[1],) => await m.login(ctx, props),
         /**
         * # mutation `refreshToken`
 		* 
@@ -49,7 +48,7 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        refreshToken: async (input: Parameters<typeof m.refreshToken>[1],) => await m.refreshToken(ctx, input,),
+        refreshToken: async (props: Parameters<typeof m.refreshToken>[1],) => await m.refreshToken(ctx, props),
         /**
         * # mutation `relogin`
 		* 
@@ -57,6 +56,6 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        relogin: async (input: Parameters<typeof m.relogin>[1],) => await m.relogin(ctx, input,),
+        relogin: async (props: Parameters<typeof m.relogin>[1],) => await m.relogin(ctx, props),
     }
 }
