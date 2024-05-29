@@ -57,7 +57,7 @@ const shell = await new Shell({
 <h2 id="license"><strong>🟢 API coverage</strong></h2>
 
 > [!CAUTION]
-> The project started quite a long time ago is moving to a new code base and JSR registry. Due to the addition of new methods and the possibility of optimization the SDK project has received a second life and will continue to develop. Now in priority robust base and modularity
+> The project started quite a long time ago is moving to a new code base and JSR registry. Due to the addition of new methods and the possibility of optimization the SDK project has received a second life and will continue to develop. Now in priority robust base and self updating
 
 <h2 id="todo"><strong>🎯 Todo</strong></h2>
 
