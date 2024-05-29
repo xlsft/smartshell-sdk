@@ -22,8 +22,8 @@ export type ShellSdkContextPublic = {
     response: any
 }
 export type ShellSdkQuery = string
-type ShellSdkFormattedDeepQuery = { key: ShellSdkFormattedTopQuery, fields: ShellSdkFormattedCombinedQuery[] }
-type ShellSdkFormattedTopQuery = string
+export type ShellSdkFormattedDeepQuery = { type: 'object' | 'entity', key: ShellSdkFormattedTopQuery, fields: ShellSdkFormattedCombinedQuery[] }
+export type ShellSdkFormattedTopQuery = string
 export type ShellSdkFormattedCombinedQuery = ShellSdkFormattedDeepQuery | ShellSdkFormattedTopQuery
 export type ShellSdkFormattedQuery = Array<ShellSdkFormattedDeepQuery | ShellSdkFormattedTopQuery>
 export type ShellSdkModuleInput<T> = T

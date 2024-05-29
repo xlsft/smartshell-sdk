@@ -1,16 +1,19 @@
 
-import type { User, ClientsInput } from "../../types/types.ts";
+import type { User, ClientsInput, UserPaginated } from "../../types/types.ts";
 import type { ShellSdkContext, ShellSdkPaginatorInput } from "../../types/sdk.ts"
+import { key } from "../../utils/key.ts";
+import { on } from "../../utils/on.ts";
 
 export type InputType = { input?: ClientsInput, paginator?: ShellSdkPaginatorInput }
 
-export type ResponseType = { data: User[], total_deposits: number }
+export type ResponseType = UserPaginated
 
 const module = async <Input extends InputType, Response extends ResponseType>(
     ctx: ShellSdkContext,
     props?: Input,
 ): Promise<Response> => { return await ctx.request("query", "clients", [
-    { key: 'data', fields: [
+    'total_deposits',
+    key('data', [
         "id",
         "uuid",
         "login",
@@ -34,14 +37,14 @@ const module = async <Input extends InputType, Response extends ResponseType>(
         "total_hours",
         "city",
         "avatar_url",
-        { key: "group", fields: [
+        key("group", [
             "uuid",
             "title",
             "user_count",
             "discount",
             "created_at"
-        ]},
-        { key: "creator", fields: [
+        ]),
+        key("creator", [
             "id",
             "uuid",
             "login",
@@ -65,45 +68,55 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "total_hours",
             "city",
             "avatar_url"
-        ]},
-        { key: "roles", fields: [
+        ]),
+        key("roles", [
             "id",
             "alias",
             "title",
             "description",
             "is_service",
             "priority",
-            { key: "permissions", fields: [
+            key("permissions", [
                 "id",
                 "alias",
                 "title",
                 "description"
-            ]}
-        ]},
-        { key: "pausable_info", fields: [
+            ])
+        ]),
+        key("pausable_info", [
             "id",
             "duration",
             "elapsed",
             "status",
             "created_at",
             "expires_at"
-        ]},
-        { key: "news_consent", fields: [
+        ]),
+        key("news_consent", [
             "isGiven",
             "givenAt",
             "revokedAt"
-        ]},
-        { key: "last_comment", fields: [
+        ]),
+        key("last_comment", [
             "id",
             "type",
             "entity_id",
+            on('entity', [
+                { on: 'User', with: [
+                    "id",
+                ]},
+                { on: 'Host', with: [
+                    "id",
+                ]},
+                { on: 'ClientSession', with: [
+                    "id",
+                ]},
+            ]),
             "text",
             "created_at",
             "deleted_at",
             "data"
-        ]}
-    ]},
-    'total_deposits'
+        ])
+    ]),
 ], { input: props?.input }, props?.paginator || { page: 1 })}
 
 export default module<InputType, ResponseType>
