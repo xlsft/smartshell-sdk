@@ -544,7 +544,7 @@ export type Comment = {
     data: string
 }
 
-export type CommentEntity = User | Host | ClientSession
+export type CommentEntity = User & Host & ClientSession
 
 export type CommentInput = {
     text: string

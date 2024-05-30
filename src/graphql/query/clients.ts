@@ -1,5 +1,5 @@
 
-import type { User, ClientsInput, UserPaginated } from "../../types/types.ts";
+import type { ClientsInput, UserPaginated } from "../../types/types.ts";
 import type { ShellSdkContext, ShellSdkPaginatorInput } from "../../types/sdk.ts"
 import { key } from "../../utils/key.ts";
 import { on } from "../../utils/on.ts";
@@ -103,12 +103,22 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             on('entity', [
                 { on: 'User', with: [
                     "id",
+                    "uuid",
+                    "login",
+                    "nickname",
                 ]},
                 { on: 'Host', with: [
                     "id",
+                    "group_id",
+                    "type_id",
+                    "position",
                 ]},
                 { on: 'ClientSession', with: [
                     "id",
+                    "duration",
+                    "elapsed",
+                    "postpaid",
+                    "total_cost",
                 ]},
             ]),
             "text",

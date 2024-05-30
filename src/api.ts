@@ -13,7 +13,7 @@ export const api = (ctx: Shell) => {
 		* 
         * `@xlsoftware/smartshell-sdk`
         */
-        clients: async (props: Parameters<typeof q.clients>[1]) => await q.clients(ctx, props),
+        clients: async (props?: Parameters<typeof q.clients>[1]) => await q.clients(ctx, props),
         /**
         * # query `now`
 		* 
