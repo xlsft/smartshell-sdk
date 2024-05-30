@@ -1,14 +1,12 @@
-import { ShellSdkFormattedQuery } from "../../src/types/sdk.ts";
-
-export type OfType = {
-    name: string | null
+export type TypeRef = {
+    name: string
     kind: string
-    ofType: OfType
+    ofType: TypeRef
 } | null
 
 export interface Field {
-    name: string | null
-    type: OfType
+    name: string
+    type: TypeRef
 }
 
 export interface Enum {
@@ -24,14 +22,34 @@ export interface Type {
     inputFields: Field[]
 }
 
+
+export interface Method {
+    name: string
+    args: Field[]
+    type: TypeRef
+    isDeprecated: boolean
+    deprecationReason?: string
+}
+
 export interface IntrospectQuery {
     types: Type[]
+    queryType: Method[]
+    mutationType: Method[]
+}
+
+export interface RequestField {
+    name: string,
+    entity?: {
+        name: string
+        fields: RequestField[]
+    }[]
+    nested?: RequestField
 }
 
 export interface Request {
     type: 'query' | 'mutation',
     name: string,
-    input: {
+    props: {
         required: boolean
         framed: boolean 
         paginated: boolean
@@ -40,5 +58,5 @@ export interface Request {
         type: string
         array: boolean
     }
-    fields: ShellSdkFormattedQuery
+    fields: RequestField[]
 }

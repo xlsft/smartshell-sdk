@@ -6,6 +6,40 @@ const shell = new Shell({ anonymous: true })
 
 export const introspect = async () => { return (await shell.call<IntrospectQuery>(gql`{
     __schema {
+        queryType {
+            name
+            fields {
+                name
+                args {
+                    name
+                    type {
+                        ...TypeRef
+                    }
+                }
+                type {
+                    ...TypeRef
+                }
+                isDeprecated
+                deprecationReason
+            }
+        }
+        mutationType {
+            name
+            fields {
+                name
+                args {
+                    name
+                    type {
+                        ...TypeRef
+                    }
+                }
+                type {
+                    ...TypeRef
+                }
+                isDeprecated
+                deprecationReason
+            }
+        }
         types {
             name
             kind
@@ -63,4 +97,31 @@ export const introspect = async () => { return (await shell.call<IntrospectQuery
             }
         }
     }
-}`)).__schema.types}
+}
+
+fragment TypeRef on __Type {
+  kind
+  name
+  ofType {
+    kind
+    name
+    ofType {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+`)).__schema}

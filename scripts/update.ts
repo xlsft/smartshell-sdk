@@ -4,6 +4,6 @@ import { render } from "./utils/render.ts";
 
 const data = await introspect()
 
-// render.types(data)
+render.types(data.types)
 
-render.requests(data)
+render.requests(data.queryType, data.mutationType)

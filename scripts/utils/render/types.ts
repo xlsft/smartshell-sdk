@@ -1,8 +1,10 @@
-import type { Field, OfType, Type } from "../../types/types.ts";
+import type { Field, TypeRef, Type } from "../../types/types.ts";
+import { existsSync } from "https://deno.land/std@0.224.0/fs/mod.ts";
 
 const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'number' }, { name: 'Float', type: 'number' }, { name: 'Boolean', type: 'boolean'}]
 
 export const types = (introspect: Type[]) => {
+    if (existsSync('src/types/types.ts')) Deno.writeTextFile('src/types/types.old', Deno.readTextFileSync('src/types/types.ts'))
     const parse_field = (field: Field): string => {
         if (field.name?.split('')[0] === '_') return ''
         
@@ -13,7 +15,7 @@ export const types = (introspect: Type[]) => {
         const name = field.name;
         let result: string = ''
         
-        function parse_type(type: OfType) {
+        function parse_type(type: TypeRef) {
             if (!type) return
             if (type.kind === 'NON_NULL') { rules.nullable = false; parse_type(type.ofType) }
             else if (type.kind === 'LIST') { rules.array = true; parse_type(type.ofType) } 
@@ -50,15 +52,15 @@ export const types = (introspect: Type[]) => {
                 const element = type.enumValues[i];
                 enums.push(`"${element.name}"`)
             }
+            return `export type ${type.name} = ${enums.join(' | ')}`
         }
         if (type.kind === 'UNION') {
             for (let i = 0; i < type.possibleTypes.length; i++) {
                 const element = type.possibleTypes[i];
                 enums.push(`${element.name}`)
             }
+            return `export type ${type.name} = ${enums.join(' & ')}`
         }
-    
-        return `export type ${type.name} = ${enums.join(' | ')}`
     }
 
 
@@ -72,5 +74,5 @@ export const types = (introspect: Type[]) => {
         else if ( type.kind === 'ENUM' || type.kind === 'UNION' ) exports.push(create_enum_type(type) || '')
     }
 
-    Deno.writeTextFile('src/types/api.ts', exports.join('\n\n').replace(/\n{2,}/g, '\n\n').trim() + '\n')
+    Deno.writeTextFile('src/types/types.ts', exports.join('\n\n').replace(/\n{2,}/g, '\n\n').trim() + '\n')
 }
