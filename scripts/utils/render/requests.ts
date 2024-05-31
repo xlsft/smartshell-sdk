@@ -23,81 +23,95 @@ const method = (type: 'query' | 'string', method: Method, types: Type[] ) => {
     const response = resolve(method.type)
     const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
     const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved }) }; method.args.forEach(arg => prop(arg))
-        const structure = (name: string): string => {
-            const program = ts.createProgram(['src/types/types.ts'], {});
-            const checker = program.getTypeChecker();
-            const sourceFile = program.getSourceFile('src/types/types.ts');
-    
-            if (!sourceFile) {
-                throw new Error('Source file not found');
+        const structure = (name: string) => {
+            const file = Deno.readTextFileSync('src/types/types.ts')
+            // Херня, должно искать из всего файла и возвращать тру и фолс
+            const object_type_regex = /export\s+type\s+\w+\s*=\s*\{[^}]*\}/;
+            const union_type_regex = /export\s+type\s+\w+\s*=\s*[^{}]*(&\s*\w+\s*)+/;
+            const enum_type_regex = /export\s+type\s+\w+\s*=\s*(("[^"]*"\s*\|\s*)*("[^"]*"))/;
+
+            const node = (name: string) => {
+                if (deadend.includes(name) || ['string', 'number', 'boolean'].includes(name)) return name
+                if (deadend.includes(name) && !imports.gql.has(name)) imports.gql.add(name);
+                
+                
+                const node = file.split(`export type ${name} = {`)[1].split('}')[0].trim().split('\n').map(o => o.trim())
+
+
+
+                console.log(node)
             }
+
+            console.log(node('CompanyPermissions'))
+
+
+            // console.log(source.statements[0])
+            // const getTypeNode = (typeName: string): ts.TypeNode | null => {
+            //     for (const statement of sourceFile.statements) {
+            //         if (ts.isTypeAliasDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
+            //             return statement.type;
+            //         }
+            //         if (ts.isInterfaceDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
+            //             const symbol = checker.getSymbolAtLocation(statement.name);
+            //             if (symbol) {
+            //                 const declaration = symbol.declarations[0];
+            //                 if (ts.isInterfaceDeclaration(declaration)) {
+            //                     return declaration;
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     return null;
+            // };
     
-            const getTypeNode = (typeName: string): ts.TypeNode | null => {
-                for (const statement of sourceFile.statements) {
-                    if (ts.isTypeAliasDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
-                        return statement.type;
-                    }
-                    if (ts.isInterfaceDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
-                        const symbol = checker.getSymbolAtLocation(statement.name);
-                        if (symbol) {
-                            const declaration = symbol.declarations[0];
-                            if (ts.isInterfaceDeclaration(declaration)) {
-                                return declaration;
-                            }
-                        }
-                    }
-                }
-                return null;
-            };
+            // const getTypeString = (node: ts.TypeNode, level = 0, visited = new Set<ts.TypeNode>()): string => {
+            //     if (visited.has(node)) {
+            //         return ''; // Avoid infinite recursion for cyclic references
+            //     }
+            //     visited.add(node);
     
-            const getTypeString = (node: ts.TypeNode, level = 0, visited = new Set<ts.TypeNode>()): string => {
-                if (visited.has(node)) {
-                    return ''; // Avoid infinite recursion for cyclic references
-                }
-                visited.add(node);
+            //     if (ts.isUnionTypeNode(node)) {
+            //         const types = node.types.map(typeNode => getTypeString(typeNode, level + 1, visited)).filter(Boolean);
+            //         return `on('entity', [${types.join(', ')}])`;
+            //     } else if (ts.isTypeLiteralNode(node) || ts.isInterfaceDeclaration(node)) {
+            //         const members = ts.isTypeLiteralNode(node) ? node.members : (node as ts.InterfaceDeclaration).members;
+            //         const fields = members.map(member => {
+            //             if (ts.isPropertySignature(member)) {
+            //                 const name = (member.name as ts.Identifier).text;
+            //                 if (name === 'paginatorInfo') return ''; // Skip paginatorInfo
+            //                 const typeNode = member.type;
+            //                 if (typeNode) {
+            //                     const typeStr = getTypeString(typeNode, level + 1, visited);
+            //                     if (typeStr) {
+            //                         return deadend.includes(typeStr.replace(/\"/g, "")) ? `"${name}"` : `key("${name}", ${typeStr})`;
+            //                     }
+            //                     return `"${name}"`;
+            //                 }
+            //             }
+            //             return '';
+            //         }).filter(Boolean);
+            //         return `[${fields.join(', ')}]`;
+            //     } else if (ts.isTypeReferenceNode(node)) {
+            //         const typeName = (node.typeName as ts.Identifier).text;
+            //         if (deadend.includes(typeName) || scalars.some(s => s.name === typeName)) {
+            //             return `"${typeName}"`;
+            //         }
+            //         const referencedTypeNode = getTypeNode(typeName);
+            //         if (referencedTypeNode) {
+            //             return getTypeString(referencedTypeNode, level, visited);
+            //         }
+            //         return '';
+            //     } else if (ts.isArrayTypeNode(node)) {
+            //         return getTypeString(node.elementType, level, visited);
+            //     }
+            //     return '';
+            // };
     
-                if (ts.isUnionTypeNode(node)) {
-                    const types = node.types.map(typeNode => getTypeString(typeNode, level + 1, visited)).filter(Boolean);
-                    return `on('entity', [${types.join(', ')}])`;
-                } else if (ts.isTypeLiteralNode(node) || ts.isInterfaceDeclaration(node)) {
-                    const members = ts.isTypeLiteralNode(node) ? node.members : (node as ts.InterfaceDeclaration).members;
-                    const fields = members.map(member => {
-                        if (ts.isPropertySignature(member)) {
-                            const name = (member.name as ts.Identifier).text;
-                            if (name === 'paginatorInfo') return ''; // Skip paginatorInfo
-                            const typeNode = member.type;
-                            if (typeNode) {
-                                const typeStr = getTypeString(typeNode, level + 1, visited);
-                                if (typeStr) {
-                                    return deadend.includes(typeStr.replace(/\"/g, "")) ? `"${name}"` : `key("${name}", ${typeStr})`;
-                                }
-                                return `"${name}"`;
-                            }
-                        }
-                        return '';
-                    }).filter(Boolean);
-                    return `[${fields.join(', ')}]`;
-                } else if (ts.isTypeReferenceNode(node)) {
-                    const typeName = (node.typeName as ts.Identifier).text;
-                    if (deadend.includes(typeName) || scalars.some(s => s.name === typeName)) {
-                        return `"${typeName}"`;
-                    }
-                    const referencedTypeNode = getTypeNode(typeName);
-                    if (referencedTypeNode) {
-                        return getTypeString(referencedTypeNode, level, visited);
-                    }
-                    return '';
-                } else if (ts.isArrayTypeNode(node)) {
-                    return getTypeString(node.elementType, level, visited);
-                }
-                return '';
-            };
-    
-            const rootTypeNode = getTypeNode(name);
-            if (rootTypeNode) {
-                return getTypeString(rootTypeNode);
-            }
-            return '';
+            // const rootTypeNode = getTypeNode(name);
+            // if (rootTypeNode) {
+            //     return getTypeString(rootTypeNode);
+            // }
+            // return '';
         };
         
     return {
