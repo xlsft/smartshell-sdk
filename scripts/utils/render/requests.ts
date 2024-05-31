@@ -1,58 +1,120 @@
-import type { Method } from "../../types/types.ts";
-import { TypeRef } from "../../types/types.ts";
+import type { Field, Method, Type, TypeRef } from "../../types/types.ts";
+import ts from "npm:typescript";
 
 const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'number' }, { name: 'Float', type: 'number' }, { name: 'Boolean', type: 'boolean'}]
+const deadend = ['Upload', 'Email', 'IpAddress', 'MacAddress', 'Date', 'Time', 'DateTime']
 
-
-const types = (method: Method) => {
-    const imports = {
-        gql: [],
-        sdk: ['ShellSdkContext']
+const method = (type: 'query' | 'string', method: Method, types: Type[] ) => {
+    const resolve = (type: TypeRef) => {
+        const options = { required: false, array: false, value: '' }
+        const recursive = (type: TypeRef) => {
+            if (!type) return
+            if (type.kind === 'NON_NULL') { options.required = true; recursive(type.ofType) } 
+            else if (type.kind === 'LIST') { options.array = true; recursive(type.ofType) } 
+            else if (type.kind === 'SCALAR') { const scalar = scalars.find(s => s.name === type.name); if (scalar) options.value = scalar.type; else { imports.gql.add(type.name as string); options.value = type.name as string }} 
+            else if (type.kind === 'INPUT_OBJECT' || type.kind === 'OBJECT') { imports.gql.add(type.name as string); options.value = type.name as string } 
+            else recursive(type.ofType)
+        }; recursive(type)
+        return options
     }
-    const props = ['export type PropsType = ']
-    const response = ['export type ResponseType = ']
 
-    let input_type
-
-    const is = {
-        props: {
-            input: false,
-            required: false,
-            paginated: false
+    const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
+    const props: { key: string, value: string, required: boolean, array: boolean }[] = []
+    const response = resolve(method.type)
+    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
+    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved }) }; method.args.forEach(arg => prop(arg))
+        const structure = (name: string): string => {
+            const program = ts.createProgram(['src/types/types.ts'], {});
+            const checker = program.getTypeChecker();
+            const sourceFile = program.getSourceFile('src/types/types.ts');
+    
+            if (!sourceFile) {
+                throw new Error('Source file not found');
+            }
+    
+            const getTypeNode = (typeName: string): ts.TypeNode | null => {
+                for (const statement of sourceFile.statements) {
+                    if (ts.isTypeAliasDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
+                        return statement.type;
+                    }
+                    if (ts.isInterfaceDeclaration(statement) && (statement.name as ts.Identifier).text === typeName) {
+                        const symbol = checker.getSymbolAtLocation(statement.name);
+                        if (symbol) {
+                            const declaration = symbol.declarations[0];
+                            if (ts.isInterfaceDeclaration(declaration)) {
+                                return declaration;
+                            }
+                        }
+                    }
+                }
+                return null;
+            };
+    
+            const getTypeString = (node: ts.TypeNode, level = 0, visited = new Set<ts.TypeNode>()): string => {
+                if (visited.has(node)) {
+                    return ''; // Avoid infinite recursion for cyclic references
+                }
+                visited.add(node);
+    
+                if (ts.isUnionTypeNode(node)) {
+                    const types = node.types.map(typeNode => getTypeString(typeNode, level + 1, visited)).filter(Boolean);
+                    return `on('entity', [${types.join(', ')}])`;
+                } else if (ts.isTypeLiteralNode(node) || ts.isInterfaceDeclaration(node)) {
+                    const members = ts.isTypeLiteralNode(node) ? node.members : (node as ts.InterfaceDeclaration).members;
+                    const fields = members.map(member => {
+                        if (ts.isPropertySignature(member)) {
+                            const name = (member.name as ts.Identifier).text;
+                            if (name === 'paginatorInfo') return ''; // Skip paginatorInfo
+                            const typeNode = member.type;
+                            if (typeNode) {
+                                const typeStr = getTypeString(typeNode, level + 1, visited);
+                                if (typeStr) {
+                                    return deadend.includes(typeStr.replace(/\"/g, "")) ? `"${name}"` : `key("${name}", ${typeStr})`;
+                                }
+                                return `"${name}"`;
+                            }
+                        }
+                        return '';
+                    }).filter(Boolean);
+                    return `[${fields.join(', ')}]`;
+                } else if (ts.isTypeReferenceNode(node)) {
+                    const typeName = (node.typeName as ts.Identifier).text;
+                    if (deadend.includes(typeName) || scalars.some(s => s.name === typeName)) {
+                        return `"${typeName}"`;
+                    }
+                    const referencedTypeNode = getTypeNode(typeName);
+                    if (referencedTypeNode) {
+                        return getTypeString(referencedTypeNode, level, visited);
+                    }
+                    return '';
+                } else if (ts.isArrayTypeNode(node)) {
+                    return getTypeString(node.elementType, level, visited);
+                }
+                return '';
+            };
+    
+            const rootTypeNode = getTypeNode(name);
+            if (rootTypeNode) {
+                return getTypeString(rootTypeNode);
+            }
+            return '';
+        };
+        
+    return {
+        imports: {
+            gql: Array.from(imports.gql),
+            sdk: Array.from(imports.sdk)
         },
-        response: {
-            scalar: false,
-            type: false,
-            array: false,
-        }
-
+        type,
+        name: method.name,
+        props,
+        structure: structure(response.value),
+        response
     }
-
-    function prop(type: TypeRef) {
-        if (!type) return
-        if (type.kind === 'INPUT_OBJECT') { is.props.input = true; if (type.kind === 'SCALAR') input_type = type.name; prop(type.ofType) }
-        //? Scalar????
-        else if (type.kind === 'NON_NULL') { is.props.required = true; prop(type) }
-        if (type.name === 'page' || type.name === 'first') { is.props.paginated = true; prop(type.ofType) }
-        if ( type.name !== 'page' && type.name !== 'first' && type.name)
-        else prop(type.ofType)
-    }
-
-    method.args.forEach(arg => prop(arg.type));
-
-    function res(type: TypeRef) {
-        if (!type) return
-        if (type.kind === 'INPUT_OBJECT') { is.props.input = true; input_type = type.name; prop(type.ofType) }
-        else if (type.kind === 'NON_NULL') { is.props.required = true; prop(type) }
-        else if (type.name === 'page' || type.name === 'first' ) { is.props.paginated = true; prop(type.ofType) }
-        else prop(type.ofType)
-    }
-
 }
 
-
-export const requests = (query: Method[], mutations: Method[]) => {
-    console.log(query)
+export const modules = (query: Method[], mutations: Method[], types: Type[]) => {
+    query.forEach(item => {if (item.name === 'clients') console.log(method('query', item, types).structure)})
     // const deadend_types = ['Upload', 'Email', 'IpAddress', 'MacAddress', 'Date', 'Time', 'DateTime']
     // const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
     // const result: Request[] = []

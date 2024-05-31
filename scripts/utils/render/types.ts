@@ -5,6 +5,9 @@ const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'numbe
 
 export const types = (introspect: Type[]) => {
     if (existsSync('src/types/types.ts')) Deno.writeTextFile('src/types/types.old', Deno.readTextFileSync('src/types/types.ts'))
+
+
+        
     const parse_field = (field: Field): string => {
         if (field.name?.split('')[0] === '_') return ''
         

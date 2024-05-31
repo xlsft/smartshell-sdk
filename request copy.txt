@@ -1,0 +1,213 @@
+есть код который занимается конвертацией интроспекции graphql api в нужный нам формат
+
+# types.ts
+
+export type TypeRef = {
+    name: string
+    kind: string
+    ofType: TypeRef
+} | null
+
+export interface Field {
+    name: string
+    type: TypeRef
+}
+
+export interface Enum {
+    name: string
+}
+
+export interface Type {
+    name: string
+    kind: string
+    enumValues: Enum[]
+    possibleTypes: Enum[]
+    fields: Field[]
+    inputFields: Field[]
+}
+
+export interface Method {
+    name: string
+    args: Field[]
+    type: TypeRef
+    isDeprecated: boolean
+    deprecationReason?: string
+}
+
+# main.ts
+import type { Field, Method, Type, TypeRef } from "./types.ts";
+
+const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'number' }, { name: 'Float', type: 'number' }, { name: 'Boolean', type: 'boolean'}]
+
+const method = (type: 'query' | 'string', method: Method, types: Type[] ) => {
+    const resolve = (type: TypeRef) => {
+        const options = { required: false, array: false, value: '' }
+        const recursive = (type: TypeRef) => {
+            if (!type) return
+            if (type.kind === 'NON_NULL') { options.required = true; recursive(type.ofType) } 
+            else if (type.kind === 'LIST') { options.array = true; recursive(type.ofType) } 
+            else if (type.kind === 'SCALAR') { const scalar = scalars.find(s => s.name === type.name); if (scalar) options.value = scalar.type; else { imports.gql.add(type.name as string); options.value = type.name as string }} 
+            else if (type.kind === 'INPUT_OBJECT' || type.kind === 'OBJECT') { imports.gql.add(type.name as string); options.value = type.name as string } 
+            else recursive(type.ofType)
+        }; recursive(type)
+        return options
+    }
+
+    const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
+    const props: { key: string, value: string, required: boolean, array: boolean }[] = []
+    const response = resolve(method.type)
+    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
+    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved }) }; method.args.forEach(arg => prop(arg))
+    const structure = () => ТУТ БУДЕТ ФУНКЦИЯ
+    return {
+        type: type,
+        name: method.name,
+        imports: {
+            gql: Array.from(imports.gql),
+            sdk: Array.from(imports.sdk)
+        },
+        props,
+        response
+    }
+}
+
+старайся соблюдать мой стиль кода который я тебе скинул
+
+давай добавим функцию 
+требуется вытащить из массива types: Type[] типы и преобразовать их в подобную СТРОКУ
+
+`[
+    'total_deposits',
+    key('data', [
+        "id",
+        "uuid",
+        key("group", [
+            "uuid",
+            "title",
+        ]),
+        key("creator", [
+            "id",
+            "uuid",
+            "login",
+        ]),
+        key("roles", [
+            "id",
+            "alias",
+            "priority",
+            key("permissions", [
+                "id",
+                "alias",
+                "title",
+                "description"
+            ])
+        ]),
+        key("last_comment", [
+            "id",
+            "type",
+            "entity_id",
+            on('entity', [
+                { on: 'User', with: [
+                    "id",
+                    "uuid",
+                    "login",
+                    "nickname",
+                ]},
+                { on: 'Host', with: [
+                    "id",
+                    "group_id",
+                    "type_id",
+                    "position",
+                ]},
+                { on: 'ClientSession', with: [
+                    "id",
+                    "duration",
+                    "elapsed",
+                    "postpaid",
+                    "total_cost",
+                ]},
+            ]),
+            "text",
+            "created_at",
+            "deleted_at",
+            "data"
+        ])
+    ]),
+]`
+
+по следующим правилам
+
+первый слой (далее - Root) выделяем абсолютно весь, если наверху есть поля но при этом есть поле data (далее - FakeRoot), выделяем абсолютно все и в ней
+поле paginatorInfo пропускаем всегда и везде
+{
+"name": "UserPaginated",
+"kind": "OBJECT",
+"inputFields": [],
+"enumValues": [],
+"possibleTypes": [],
+"fields": [
+    {
+        "name": "paginatorInfo",
+        "type": {
+            "name": "PaginatorInfo",
+            "kind": "OBJECT",
+            "ofType": null
+        }
+    },
+    {
+        "name": "data",
+        "type": {
+            "name": null,
+            "kind": "LIST",
+            "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                    "name": "User",
+                    "kind": "OBJECT",
+                    "ofType": null
+                }
+            }
+        }
+    },
+    {
+        "name": "total_deposits",
+        "type": {
+            "name": "Float",
+            "kind": "SCALAR",
+            "ofType": null
+        }
+    }
+]
+},
+
+Root и FakeRoot - оба первые слои, обрабатываем их отдельно
+
+проходимся по каждому значению root и fakeroot поля если значение тупиковое а именно SCALAR выделяем его
+если значение не тупиковое, выделяем внутри все поля которые являются тупиковыми, если поле не тупиковое но в нем абсолютно все поля тупиковые то выделяем все
+дальше 3 уровня не идем
+
+вложенные обьекты делаются функцией key()
+
+помимо обьектов и тупиков есть еще union это обьединенные несколько типов в один название которого надо добавить в import.gql
+
+{
+    "name": "CommentEntity",
+    "kind": "UNION",
+    "inputFields": [],
+    "enumValues": [],
+    "possibleTypes": [
+        {
+            "name": "User"
+        },
+        {
+            "name": "Host"
+        },
+        {
+            "name": "ClientSession"
+        }
+    ],
+    "fields": []
+},
+
+в possibleTypes могут быть несколько типов, проходимся по им всем и выделяем все тупиковые значения, глубже не идем
+

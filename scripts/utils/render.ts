@@ -1,8 +1,8 @@
 import type { Method, Type } from "../types/types.ts";
-import { requests } from "./render/requests.ts";
+import { modules } from "./render/requests.ts";
 import { types } from "./render/types.ts"
 
 export const render = {
     types: (introspect: Type[]) => types(introspect),
-    requests: (query: Method[], mutations: Method[]) => requests(query, mutations)
+    modules: (query: Method[], mutations: Method[], types: Type[]) => modules(query, mutations, types)
 }

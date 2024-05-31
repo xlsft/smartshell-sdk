@@ -499,7 +499,7 @@ export type ComboItem = {
     price: number
 }
 
-export type ComboItemEntity = Service & Good
+export type ComboItemEntity = Service | Good
 
 export type ComboItemEntityType = "GOOD" | "SERVICE"
 
@@ -1643,7 +1643,7 @@ export type PaymentItem = {
     sum: number
 }
 
-export type PaymentItemEntity = Good & Service & Tariff & Combo
+export type PaymentItemEntity = Good | Service | Tariff | Combo
 
 export type PaymentItemInput = {
     type: PaymentItemType

@@ -1,0 +1,189 @@
+есть код который занимается конвертацией интроспекции graphql api в нужный нам формат
+
+# types.ts
+
+export type TypeRef = {
+    name: string
+    kind: string
+    ofType: TypeRef
+} | null
+
+export interface Field {
+    name: string
+    type: TypeRef
+}
+
+export interface Enum {
+    name: string
+}
+
+export interface Type {
+    name: string
+    kind: string
+    enumValues: Enum[]
+    possibleTypes: Enum[]
+    fields: Field[]
+    inputFields: Field[]
+}
+
+export interface Method {
+    name: string
+    args: Field[]
+    type: TypeRef
+    isDeprecated: boolean
+    deprecationReason?: string
+}
+
+# main.ts
+import type { Field, Method, Type, TypeRef } from "./types.ts";
+
+const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'number' }, { name: 'Float', type: 'number' }, { name: 'Boolean', type: 'boolean'}]
+const deadend = ['Upload', 'Email', 'IpAddress', 'MacAddress', 'Date', 'Time', 'DateTime']
+
+const method = (type: 'query' | 'string', method: Method ) => {
+    const resolve = (type: TypeRef) => {
+        const options = { required: false, array: false, value: '' }
+        const recursive = (type: TypeRef) => {
+            if (!type) return
+            if (type.kind === 'NON_NULL') { options.required = true; recursive(type.ofType) } 
+            else if (type.kind === 'LIST') { options.array = true; recursive(type.ofType) } 
+            else if (type.kind === 'SCALAR') { const scalar = scalars.find(s => s.name === type.name); if (scalar) options.value = scalar.type; else { imports.gql.add(type.name as string); options.value = type.name as string }} 
+            else if (type.kind === 'INPUT_OBJECT' || type.kind === 'OBJECT') { imports.gql.add(type.name as string); options.value = type.name as string } 
+            else recursive(type.ofType)
+        }; recursive(type)
+        return options
+    }
+
+    const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
+    const props: { key: string, value: string, required: boolean, array: boolean }[] = []
+    const response = resolve(method.type)
+    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
+    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved }) }; method.args.forEach(arg => prop(arg))
+    const structure = (name: string) => ТУТ БУДЕТ ФУНКЦИЯ
+
+    return {
+        type: type,
+        name: method.name,
+        imports: {
+            gql: Array.from(imports.gql),
+            sdk: Array.from(imports.sdk)
+        },
+        props,
+        response
+    }
+}
+
+старайся соблюдать мой стиль кода который я тебе скинул
+давай добавим функцию const structure = (name: string) => string
+в name будет передаваться название корневого типа 
+
+используй модуль typescript из npm и импортируй его следующим образом "import ts from "npm:typescript"
+вытащи строку файла с типами, пропарси типы и работай с ними
+
+есть несколько видов типов:
+тупиковые - это те которые являются обычными типами TypeScript number, string
+и те названия которых записаны в const deadend
+в них нет никакой вложенности
+
+юнионы - обьединенные типы из нескольких штук обьектов, они обозначаются как export type UnionType = Type & SomeType & SomeOtherType
+
+и обьекты, они обрабатываются по следующим правилом
+
+пример 1
+export type UserPaginated = { // FakeRoot - уровень 0, реальный корень, считаем фейком так как есть пагинатор и поле data
+    paginatorInfo?: PaginatorInfo // пропущен
+    data: User[] // выделен, вложенный, Root - уровень 1, корень который нам нужен
+    total_deposits?: number // выделен, тупиковый
+}
+пример 2
+export type EventListItemCashOrder = { // Root - уровень 1, считаем нужным нам корнем ведь у него нет ни пагинатора ни поля data
+    id?: number // выделен, тупиковый
+    created_at?: DateTime // выделен, тупиковый
+    type?: CashOrderType // выделен, вложенный
+    sum?: number // выделен, тупиковый
+    comment?: string // выделен, тупиковый
+}
+
+на 1 уровне выбираем все тупиковые типы и поле data если оно есть paginatorInfo пропускаем всегда и везде
+
+проходимся по каждому названию типа на 1 уровне. если значение тупиковое выделяем его если значение не тупиковое, 
+спускаемся на 2 уровень выделяем внутри все поля которые являются тупиковыми, если поле не тупиковое но на 3 уровне в нем абсолютно все поля тупиковые то выделяем все
+дальше 3 уровня не идем
+union тип является своего рода массивом, проходимся по каждому типу в юнион и выделяем в них только тупиковые типы
+
+теперь о том куда все это будет сохранятся
+
+нам надо вернуть строку которая следуюет правилам выше и форматирована следующим образом
+
+так будет выглядеть тип со всеми тупиковыми полями
+`[
+	"token_type",
+	"access_token",
+	"refresh_token",
+	"expires_in"
+]`
+так будет выглядить с вложенным полем
+`[
+	"token_type",
+	"access_token",
+	"refresh_token",
+	"expires_in"
+    key("token_info", [
+        "created",
+        "updated",
+    ])
+]`
+
+так будет выглядить с вложенным полями с 3 уровнями
+`[
+	"token_type",
+	"access_token",
+	"refresh_token",
+	"expires_in"
+    key("token_info", [
+        "created",
+        "updated",
+        key("creator", [
+            "id",
+            "name",
+        ])
+    ])
+]`
+
+так будет выглядить с вложенным полями с 3 уровнями и union
+
+`[
+	"token_type",
+	"access_token",
+	"refresh_token",
+	"expires_in"
+    key("token_info", [
+        "created",
+        "updated",
+        key("creator", [
+            "id",
+            "name",
+            on('entity', [
+                { on: 'User', with: [
+                    "id",
+                    "uuid",
+                    "login",
+                    "nickname",
+                ]},
+                { on: 'Host', with: [
+                    "id",
+                    "group_id",
+                    "type_id",
+                    "position",
+                ]},
+                { on: 'ClientSession', with: [
+                    "id",
+                    "duration",
+                    "elapsed",
+                    "postpaid",
+                    "total_cost",
+                ]},
+            ]),
+        ])
+    ])
+]`

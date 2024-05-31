@@ -33,8 +33,8 @@ export interface Method {
 
 export interface IntrospectQuery {
     types: Type[]
-    queryType: Method[]
-    mutationType: Method[]
+    queryType: { name: 'Query', fields: Method[] }
+    mutationType: { name: 'Mutation', fields: Method[] }
 }
 
 export interface RequestField {
