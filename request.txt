@@ -1,79 +1,20 @@
-есть код который занимается конвертацией интроспекции graphql api в нужный нам формат
+есть функция `node<T = Node | Child>(name: string) => T` которая возвращает следующие данные 
 
-# types.ts
+type Node = { key: string, value: string[], required: boolean, array: boolean, scalar: boolean, child?: Node[] | Child }[]
+type Child = { type: 'union' | 'enum' | 'ERROR', value: string[] }
 
-export type TypeRef = {
-    name: string
-    kind: string
-    ofType: TypeRef
-} | null
+задача кода, обработать дерево по следующим правилам
 
-export interface Field {
-    name: string
-    type: TypeRef
-}
+получаем родителя 
+const name = 'clients'
+const parent = node<Node>(name)
 
-export interface Enum {
-    name: string
-}
+на этом этапе мы гарантированно получаем тип Node 
 
-export interface Type {
-    name: string
-    kind: string
-    enumValues: Enum[]
-    possibleTypes: Enum[]
-    fields: Field[]
-    inputFields: Field[]
-}
+проходимся по всем значениям родителя
 
-export interface Method {
-    name: string
-    args: Field[]
-    type: TypeRef
-    isDeprecated: boolean
-    deprecationReason?: string
-}
 
-# main.ts
-import type { Field, Method, Type, TypeRef } from "./types.ts";
 
-const scalars = [{ name: 'String', type: 'string' }, { name: 'Int', type: 'number' }, { name: 'Float', type: 'number' }, { name: 'Boolean', type: 'boolean'}]
-const deadend = ['Upload', 'Email', 'IpAddress', 'MacAddress', 'Date', 'Time', 'DateTime']
-
-const method = (type: 'query' | 'string', method: Method ) => {
-    const resolve = (type: TypeRef) => {
-        const options = { required: false, array: false, value: '' }
-        const recursive = (type: TypeRef) => {
-            if (!type) return
-            if (type.kind === 'NON_NULL') { options.required = true; recursive(type.ofType) } 
-            else if (type.kind === 'LIST') { options.array = true; recursive(type.ofType) } 
-            else if (type.kind === 'SCALAR') { const scalar = scalars.find(s => s.name === type.name); if (scalar) options.value = scalar.type; else { imports.gql.add(type.name as string); options.value = type.name as string }} 
-            else if (type.kind === 'INPUT_OBJECT' || type.kind === 'OBJECT') { imports.gql.add(type.name as string); options.value = type.name as string } 
-            else recursive(type.ofType)
-        }; recursive(type)
-        return options
-    }
-
-    const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
-    const props: { key: string, value: string, required: boolean, array: boolean }[] = []
-    const response = resolve(method.type)
-    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
-    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved }) }; method.args.forEach(arg => prop(arg))
-    const structure = (name: string) => ТУТ БУДЕТ ФУНКЦИЯ
-
-    return {
-        type: type,
-        name: method.name,
-        imports: {
-            gql: Array.from(imports.gql),
-            sdk: Array.from(imports.sdk)
-        },
-        props,
-        response
-    }
-}
-
-старайся соблюдать мой стиль кода который я тебе скинул
 давай добавим функцию const structure = (name: string) => string
 в name будет передаваться название корневого типа 
 

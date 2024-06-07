@@ -26,7 +26,7 @@ const method = (type: 'query' | 'string', method: Method, _types: Type[] ) => {
         const structure = (name: string) => {
 
             type Node = { key: string, value: string[], required: boolean, array: boolean, scalar: boolean, child?: Node[] | Child }
-            type Child = { type: 'union' | 'enum', value: string[] }
+            type Child = { type: 'union' | 'enum' | 'ERROR', value: string[] }
 
             const file = Deno.readTextFileSync('src/types/types.ts')
 
@@ -52,11 +52,12 @@ const method = (type: 'query' | 'string', method: Method, _types: Type[] ) => {
                 }    
             };
 
-            const node = (name: string) => {
+            const node = <T = Child | Node[]>(name: string): T => {
                 if (defaults.includes(name) && !imports.gql.has(name)) imports.gql.add(name);
  
                 const object = (): Node[] => {
                     const array = file.split(`export type ${name} = {`)[1].split('}')[0].trim().split('\n').map(o => o.trim());
+                    
                     const result = array.map(raw_node => {
                         const [raw_key, raw_value] = raw_node.split(':').map(part => part.trim());
                         return {
@@ -71,40 +72,48 @@ const method = (type: 'query' | 'string', method: Method, _types: Type[] ) => {
                 }
 
                 const enumerated = (): Child => {
-                    return { type: 'enum', value: file.split(`export type ${name} = `)[1].split('\n')[0].split(' | ').map(v => v.split('').map(iv => iv === "\"" ? '' : iv).join('') ) }
+                    return { type: 'enum', value: file.split(`export type ${name} = `)[1].split('\n')[0].split(' | ').map(v => v.split('').map(iv => ['"', '\r', '\n'].includes(iv) ? '' : iv).join('') ) }
                 }
 
                 const union = (): Child => {
-                    return { type: 'union', value: file.split(`export type ${name} = `)[1].split('\n')[0].split(' | ').map(v => v.split('').map(iv => iv === "\"" ? '' : iv).join('') ) }
+                    return { type: 'union', value: file.split(`export type ${name} = `)[1].split('\n')[0].split(' | ').map(v => v.split('').map(iv => ['"', '\r', '\n'].includes(iv) ? '' : iv).join('') ) }
                 }
-                
+                //@ts-ignore <>
                 if (is.object(name)) return object()
+                //@ts-ignore <>
                 else if (is.enumerated(name)) return enumerated()
+                //@ts-ignore <>
                 else if (is.union(name)) return union()
+                //@ts-ignore <>
+                else return { type: 'ERROR', value: ['Undefined node type']}
             } 
 
-            const parent = node(name)!
-            const result = []
-            let level = 0
-            //@ts-ignore <i dont care>
-            for (let i = 0; i < parent.length; i++) {
-                //@ts-ignore <i REALLY dont care>
-                const item: Node = parent![i];
-                const paginated = item.key === "paginatorInfo"
-                if (paginated) continue
-                result.push(item)
+            const process = (name: string) => {
+                const process_node = (item: Node): Node => {
+                    if (item.scalar) return item;
+    
+                    item.child = node(item.value[0]);
+                    item.child.forEach(child => {
+                        if (child.scalar) return;
+                        child.child = node(child.value[0]);
+                        child.child.forEach(grandchild => {
+                            const grandchild_node = node(grandchild.value[0]);
+                            if (!grandchild_node || String(grandchild_node) === '[object Object]') return;
+                            const infertile = grandchild_node.some(o => !o.scalar);
+                            if (!infertile) grandchild.child = grandchild_node;
+                        });
+                    });
+    
+                    return item;
+                };
+    
+                const parent = node<Node[]>(name);
+                console.log(node<Node[]>(name))
+                const filtered = parent.filter(item => item.key !== "paginatorInfo");
+                return filtered.map(process_node);
             }
-            for (let i = 0; i < result.length; i++) {
-                // Root
-                const item = result[i];
-                level++
-                if (item.scalar === true) continue
-                else {
-                    
-                }
-            }
-            
 
+            console.log(JSON.stringify(process(name), null, 4));
         };
         
     return {
@@ -121,5 +130,5 @@ const method = (type: 'query' | 'string', method: Method, _types: Type[] ) => {
 }
 
 export const modules = (query: Method[], mutations: Method[], types: Type[]) => {
-    query.forEach(item => {if (item.name === 'clients') console.log(method('query', item, types).structure)})
+    query.forEach(item => {if (item.name === 'income') method('query', item, types).structure})
 }

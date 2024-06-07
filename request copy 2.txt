@@ -1,7 +1,89 @@
 есть функция `node<T = Node | Child>(name: string) => T` которая возвращает следующие данные 
 
-type Node = { key: string, value: string[], scalar: boolean, child?: Node[] | Child }[]
+type Node = { key: string, value: string[], scalar: boolean, child?: Node[] | Child }
 type Child = { type: 'union' | 'enum' | 'ERROR', value: string[] }
+
+
+и уже существующий код
+
+const parent = node<Node[]>(name)
+const filtered = []
+const result = []
+let level = 0
+for (let i = 0; i < parent.length; i++) {
+    const item: Node = parent![i];
+    const paginated = item.key === "paginatorInfo"
+    if (paginated) continue
+    filtered.push(item)
+}
+
+for (let i = 0; i < filtered.length; i++) {
+    const item = filtered[i];
+    if (item.scalar) { result.push(item); continue }
+    else {
+        item.child = node(item.value[0])
+
+        for (let j = 0; j < item.child!.length; j++) {
+            if (item.child[j].scalar) continue 
+            item.child[j].child = node(item.child[j].value[0])
+            for (let k = 0; k < item.child[j].child.length; k++) {
+                const grandchild_node = node(item.child[j].child[k].value[0])
+                if (item.child[j].child[k].value[0])
+                if (!grandchild_node || String(grandchild_node) === '[object Object]') continue
+                const infertile = grandchild_node.map(o => o.scalar === true).includes(false)
+                if (infertile) continue
+                item.child[j].child[k].child = grandchild_node
+            }
+        }
+    }
+    result.push(item)
+}
+console.log(JSON.stringify(result, null, 4))
+
+оптимизируй его
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 задача кода, обработать дерево по следующим правилам
 
