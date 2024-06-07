@@ -60,3 +60,5 @@ export interface Request {
     }
     fields: RequestField[]
 }
+
+export type Node = { type: 'object' | 'union' | 'enum' | 'scalar', key: string, value: string[], child?: Node[] }

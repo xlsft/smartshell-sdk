@@ -8,6 +8,14 @@ import type { Shell } from "../mod.ts";
         // query
 
         /**
+            * # query `now`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/now.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        now: async () => await q.now(ctx),
+        /**
             * # query `clients`
             * 
             * 🔗 https://apidoc.smartshell.gg/clients.html
@@ -23,14 +31,6 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         getBookings: async (input: Parameters<typeof q.getBookings>[1],paginator?: ShellSdkPaginatorInput) => await q.getBookings(ctx, input, paginator),
-        /**
-            * # query `now`
-            * 
-            * 🔗 https://apidoc.smartshell.gg/now.html
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        now: async () => await q.now(ctx),
         /**
             * # query `userClubs`
             * 
