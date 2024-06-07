@@ -218,10 +218,21 @@ export type ClientClub = {
     booking_enabled: boolean
     booking_settings?: BookingSettings
     currency: Currency
+    rules: string
+    achievements: UserAchievements
+    feedback_available: boolean
+}
+
+export type ClientClubCommentInput = {
+    club_id: number
+    client_session_id: number
+    text?: string
+    grade: number
 }
 
 export type ClientClubVisit = {
     visited_at: DateTime
+    client_session_id: number
 }
 
 export type ClientHost = {
@@ -499,7 +510,7 @@ export type ComboItem = {
     price: number
 }
 
-export type ComboItemEntity = Service | Good
+export type ComboItemEntity = Service & Good
 
 export type ComboItemEntityType = "GOOD" | "SERVICE"
 
@@ -1643,7 +1654,7 @@ export type PaymentItem = {
     sum: number
 }
 
-export type PaymentItemEntity = Good | Service | Tariff | Combo
+export type PaymentItemEntity = Good & Service & Tariff & Combo
 
 export type PaymentItemInput = {
     type: PaymentItemType

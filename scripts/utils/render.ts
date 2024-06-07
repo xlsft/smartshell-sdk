@@ -1,8 +1,10 @@
-import type { Method, Type } from "../types/types.ts";
-import { modules } from "./render/requests.ts";
+import type { Type } from "../types/types.ts";
+import { register } from "./render/register.ts";
+// import { modules } from "./render/requests.ts";
 import { types } from "./render/types.ts"
 
 export const render = {
     types: (introspect: Type[]) => types(introspect),
-    modules: (query: Method[], mutations: Method[], types: Type[]) => modules(query, mutations, types)
+    register: async () => await register()
+    // modules: (query: Method[], mutations: Method[] ) => modules(query, mutations, types)
 }

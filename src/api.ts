@@ -1,61 +1,70 @@
 import type { Shell } from "../mod.ts";
-import { query as q, mutation as m } from "./graphql/index.ts";
+    import { query as q, mutation as m } from "./graphql/index.ts";
+    import type { ShellSdkPaginatorInput } from "./types/sdk.ts";
 
-export const api = (ctx: Shell) => {
-    return {
+    export const api = (ctx: Shell) => {
+        return {
 
         // query
 
         /**
-        * # query `clients`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/clients.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        clients: async (props?: Parameters<typeof q.clients>[1]) => await q.clients(ctx, props),
+            * # query `clients`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/clients.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
         /**
-        * # query `now`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/now.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
+            * # query `getBookings`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/getBookings.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        getBookings: async (input: Parameters<typeof q.getBookings>[1],paginator?: ShellSdkPaginatorInput) => await q.getBookings(ctx, input, paginator),
+        /**
+            * # query `now`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/now.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
         now: async () => await q.now(ctx),
         /**
-        * # query `userClubs`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/userClubs.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        userClubs: async (props: Parameters<typeof q.userClubs>[1],) => await q.userClubs(ctx, props),
+            * # query `userClubs`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/userClubs.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        userClubs: async (input: Parameters<typeof q.userClubs>[1],) => await q.userClubs(ctx, input,),
 
         // mutation
 
         /**
-        * # mutation `login`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/auth.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        login: async (props: Parameters<typeof m.login>[1],) => await m.login(ctx, props),
+            * # mutation `login`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/auth.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        login: async (input: Parameters<typeof m.login>[1],) => await m.login(ctx, input,),
         /**
-        * # mutation `refreshToken`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/refreshToken.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        refreshToken: async (props: Parameters<typeof m.refreshToken>[1],) => await m.refreshToken(ctx, props),
+            * # mutation `refreshToken`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/refreshToken.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        refreshToken: async (input: Parameters<typeof m.refreshToken>[1],) => await m.refreshToken(ctx, input,),
         /**
-        * # mutation `relogin`
-		* 
-		* 🔗 https://apidoc.smartshell.gg/relogin.html
-		* 
-        * `@xlsoftware/smartshell-sdk`
-        */
-        relogin: async (props: Parameters<typeof m.relogin>[1],) => await m.relogin(ctx, props),
+            * # mutation `relogin`
+            * 
+            * 🔗 https://apidoc.smartshell.gg/relogin.html
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        relogin: async (input: Parameters<typeof m.relogin>[1],) => await m.relogin(ctx, input,),
     }
-}
+    }
