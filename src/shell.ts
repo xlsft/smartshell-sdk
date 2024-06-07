@@ -3,6 +3,7 @@ import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkPaginatorInput
 import type { AccessToken, UserClub } from "./types/types.ts";
 import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
 import { api } from "./api.ts";
+import { key } from "./utils/key.ts";
 
 /**
 * # class `Shell`
@@ -194,15 +195,20 @@ export class Shell {
 
         const build = () => {
             const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
-            const format = (query: ShellSdkFormattedQuery, indent: string = ''): string => query.map(item => {
-                if (typeof item === 'string') {
-                    return `${indent}${item}\n`
-                } else if (typeof item === 'object' && 'key' in item && Array.isArray(item.fields)) {
-                    const new_indent = indent + '    '
-                    return `${indent}${item.key} {\n${format(item.fields, new_indent)}${indent}}\n`
-                }
-                return ''
-            }).join('')
+            const format = (query: ShellSdkFormattedQuery, indent: string = ''): string => {
+                return query.map(item => {
+                    if (typeof item === 'string') {
+                        return `${indent}${item}\n`
+                    } else if (typeof item === 'object' && 'key' in item && Array.isArray(item.fields)) {
+                        const new_indent = indent + '    '
+                        if (item.type === 'entity') {
+                            return `${indent}... on ${item.key} {\n${format(item.fields, new_indent)}${indent}}\n`
+                        }
+                        return `${indent}${item.key} {\n${format(item.fields, new_indent)}${indent}}\n`
+                    }
+                    return ''
+                }).join('')
+            }
 
             const request = {
                 type,
@@ -216,7 +222,7 @@ export class Shell {
 
             const result = [`${request.type} ${request.name} {\n    ${name}`]
 
-            if (paginator) request.method.query?.push({ key: 'paginatorInfo', fields: [
+            if (paginator) request.method.query?.push(key('paginatorInfo', [
                 `count`,
                 `currentPage`,
                 `firstItem`,
@@ -225,7 +231,7 @@ export class Shell {
                 `lastPage`,
                 `perPage`,
                 `total`,
-            ]})
+            ]))
             if (request.method.input) result.push(`(${JSON.stringify(request.method.input).replace(/"([^"]+)":/g, '$1:').slice(1, -1)})`)
             if (request.method.query) result.push(` {\n${format(request.method.query, '      ')}    }`)
             result.push(`    \n}`)

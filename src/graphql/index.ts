@@ -1,10 +1,12 @@
 import clients from './query/clients.ts'
+import getBookings from './query/getBookings.ts'
 import now from './query/now.ts'
 import userClubs from './query/userClubs.ts'
 
 
 export const query = {
     clients,
+    getBookings,
     now,
     userClubs,
 }

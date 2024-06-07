@@ -10,6 +10,7 @@
         "dev": "deno run -A --watch main.ts",
         "lint": "deno lint --fix",
         "build": "deno run -A scripts/build.ts",
-        "update": "deno run -A scripts/update.ts"
+        "update": "deno run -A scripts/update.ts",
+        "update:dev": "deno run -A --watch scripts/update.ts"
     }
 }
