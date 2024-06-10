@@ -61,4 +61,6 @@ export interface Request {
     fields: RequestField[]
 }
 
-export type Node = { type: 'object' | 'union' | 'enum' | 'scalar', key: string, value: string[], child?: Node[] }
+export type Node = { type: 'object' | 'union' | 'enum' | 'scalar' | 'entity', key: string, value: string[], child?: Node[] }
+
+export type ResolvedType = { required: boolean, array: boolean, value: string[], type: Node['type'] }

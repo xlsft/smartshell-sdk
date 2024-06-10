@@ -4,124 +4,38 @@ import type { IntrospectQuery } from "../types/types.ts";
 
 const shell = new Shell({ anonymous: true })
 
-export const introspect = async () => { return (await shell.call<IntrospectQuery>(gql`{
-    __schema {
-        queryType {
-            name
-            fields {
-                name
-                args {
-                    name
-                    type {
-                        ...TypeRef
-                    }
-                }
-                type {
-                    ...TypeRef
-                }
-                isDeprecated
-                deprecationReason
-            }
-        }
-        mutationType {
-            name
-            fields {
-                name
-                args {
-                    name
-                    type {
-                        ...TypeRef
-                    }
-                }
-                type {
-                    ...TypeRef
-                }
-                isDeprecated
-                deprecationReason
-            }
-        }
-        types {
-            name
-            kind
-            inputFields {
-                name
-                type {
-                    name
-                    kind
-                    ofType {
-                        name
-                        kind
-                        ofType {
-                            name
-                            kind
-                            ofType {
-                                name
-                                kind
-                                ofType {
-                                    name
-                                    kind
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            enumValues {
-                name
-            }
-            possibleTypes {
-                name
-            }
-            fields {
-                name
-                type {
-                    name
-                    kind
-                    ofType {
-                        name
-                        kind
-                        ofType {
-                            name
-                            kind
-                            ofType {
-                                name
-                                kind
-                                ofType {
-                                    name
-                                    kind
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+export const introspect = async () => { return (await shell.call<IntrospectQuery>(gql`
 
-fragment TypeRef on __Type {
-  kind
-  name
-  ofType {
-    kind
+fragment Type on __Type { name kind fields {
     name
-    ofType {
-      kind
-      name
-      ofType {
-        kind
-        name
-        ofType {
-          kind
-          name
-          ofType {
-            kind
-            name
-          }
+    args { ...Input }
+    type { ...Ref }
+    isDeprecated
+    deprecationReason
+}}
+
+fragment Input on __InputValue { name type {  ...Ref } }
+
+fragment Ref on __Type {
+    kind name ofType { 
+    kind name ofType {
+    kind name ofType {
+    kind name ofType { 
+    kind name
+}}}}}
+
+{
+    __schema {
+        queryType { ...Type }
+        mutationType { ...Type }
+        types { 
+            ...Type
+            inputFields { ...Input }
+            enumValues { name }
+            possibleTypes { ...Ref }
         }
-      }
     }
-  }
+    versions { frontend backend }
 }
 
 `)).__schema}
