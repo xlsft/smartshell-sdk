@@ -1,4 +1,7 @@
 {
-    "conventionalCommits.scopes": [ "gh_actions" ],
+    "conventionalCommits.scopes": [
+        "gh_actions",
+        "types"
+    ],
     "deno.enable": true
 }

@@ -221,6 +221,15 @@ export type ClientClub = {
     rules: string
     achievements: UserAchievements
     feedback_available: boolean
+    club_phone: string
+    vk_url: string
+    telegram_url: string
+    whats_up_url: string
+    region: string
+    comment: string
+    country: string
+    lat: number
+    lng: number
 }
 
 export type ClientClubCommentInput = {
@@ -415,6 +424,15 @@ export type Club = {
     verification_status_updated_at?: DateTime
     debt: number
     used_trial: boolean
+    club_phone: string
+    vk_url: string
+    telegram_url: string
+    whats_up_url: string
+    region: string
+    comment: string
+    country: string
+    lat: number
+    lng: number
 }
 
 export type ClubComment = {
@@ -476,6 +494,15 @@ export type ClubInput = {
     timezone?: number
     country_code: string
     verify?: boolean
+    club_phone?: string
+    vk_url?: string
+    telegram_url?: string
+    whats_up_url?: string
+    region?: string
+    comment?: string
+    country?: string
+    lat?: number
+    lng?: number
 }
 
 export type ClubVerificationStatus = "UNVERIFIED" | "REVIEW" | "VERIFIED" | "DECLINED"
@@ -1122,7 +1149,7 @@ export type HostCommand = {
     param?: string
 }
 
-export type HostCommandAction = "SHUTDOWN" | "REBOOT" | "ALLOW_ADMIN_MODE" | "DISABLE_SHELL" | "SHOW_MESSAGE" | "LOGOFF" | "RUN" | "SEND_LOGS" | "SHELL_UNINSTALL" | "SHELL_UPDATE"
+export type HostCommandAction = "SHUTDOWN" | "REBOOT" | "ALLOW_ADMIN_MODE" | "DISABLE_SHELL" | "SHOW_MESSAGE" | "LOGOFF" | "RUN" | "SEND_LOGS" | "SHELL_UNINSTALL" | "SHELL_UPDATE" | "LOGIN_QR"
 
 export type HostCounters = {
     cpu_temp: number
@@ -1307,6 +1334,14 @@ export type ImportUserHoursColumnsInput = {
     time?: number
 }
 
+export type LeaderboardUser = {
+    userId: number
+    totalTime: number
+    nickname: string
+    name?: string
+    avatarUrl?: string
+}
+
 export type License = {
     id: number
     expires_at: DateTime
@@ -1434,6 +1469,10 @@ export type LoginInput = {
     company_id?: number
 }
 
+export type LoginQRInput = {
+    qr: string
+}
+
 export type MagicInput = {
     id: number
     id2: number
@@ -1466,6 +1505,7 @@ export type Me = {
     achievements: UserAchievements
     avatar_url: string
     news_consent: NewsConsent
+    is_private: boolean
 }
 
 export type MethodType = "SMS" | "CASCADE" | "FLASH_CALL" | "EMAIL"
@@ -2273,6 +2313,10 @@ export type UpdateClientMeInput = {
     dob: Date
     city?: string
     avatar_url?: string
+    telegram_link?: string
+    discord_link?: string
+    steam_link?: string
+    is_private?: boolean
 }
 
 export type UpdateCompanyPermissionsInput = {
@@ -2373,6 +2417,10 @@ export type User = {
     city?: string
     avatar_url: string
     news_consent: NewsConsent
+    telegram_link?: string
+    discord_link?: string
+    steam_link?: string
+    is_private: boolean
 }
 
 export type UserAchievement = {
