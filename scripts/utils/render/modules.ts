@@ -36,7 +36,6 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
             else if (type.kind === 'OBJECT') {  options.type.set('object'); imports.gql.add(type.name as string); options.value.push(type.name as string) } 
             else recursive(type.ofType)
         }; recursive(type)
-       console.log(type)
         return { required: options.required, array: options.array, value: options.value.get(), type: options.type.get()}
     }
 
@@ -64,7 +63,8 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
     }
 
     
-    const structure = () => {
+    const structure = (nesting: number) => {
+
         const root: Node[] = nodes(method.type)
         const append = (route: string, child: Node) => {
             counter.update(v => v + 1)
@@ -97,67 +97,99 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
             }
         }
 
-        const process = (route: string, parent: Node, level: number = 0) => {
-            counter.update(v => v + 1)
-            if (['enum', 'scalar'].includes(parent.type) || level >= 3) return;
-            const type = find(parent.value[0])!;
-            if (parent.type === 'object') {
-                for (let j = 0; j < type.fields.length; j++) {
-                    counter.update(v => v + 1)
-                    const child = node(type.fields[j].name, resolve(type.fields[j].type));
-                    if (['object'].includes(child.type) && level > 0) continue
-                    append(route, child);
-                    if (['enum', 'scalar', 'entity'].includes(child.type) || parent.key === child.key) continue;
-                    process(`${route}.${child.key}`, child, level + 1);
-                }
-            } else if (parent.type === 'union') {
-                const types = find(parent.value[0])?.possibleTypes.map(v => v.name)!
-                for (let i = 0; i < types.length; i++) {
-                    const entity = find(types[i])!
-                    const fields: Node[] = []
-                    const name = new Store('')
-                    for (let j = 0; j < entity.fields.length; j++) {
-                        name.set(entity.fields[j].name).lock()
-                        const field = node(entity.fields[j].name, resolve(entity.fields[j].type))
-                        // if (['union', 'object'].includes(field.type)) continue
-                        fields.push(field)  
-                    }
-                    console.log()
-                    append(`${route}`, { type: 'entity', key: '... on', value: [entity.name], child: fields })
-                }
+
+        const grow = (parent: Node, level: number, route: string) => {
+            if (['enum', 'scalar'].includes(parent.type) || level >= nesting) return;
+
+
+
+            const f_root = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
+            
+            console.log('------------------------------------------------------')
+            if (level === -1) /** paginator (top-level objects, scalars) */ {
+                console.log('paginator')
+                append(parent.key, )
+                grow(parent, level+1, `${}`)
+            } else if (level === 0) /** root (all objects, unions, scalars) */ {
+                console.log('root')
+                grow(parent, level+1)
+            } else if (level === 1) /** parent (all objects, unions, scalars) */  {
+                console.log('parent')
+                grow(parent, level+1)
+            } else if (level === 2) /** child (top-level objects, unions, scalars) */  {
+                console.log('child')
+                grow(parent, level+1)
+            } else if (level === 3) /** top (scalars) */  {
+                console.log('top')
+            } else return
+
+            
+
+        }; grow(root[0], paginated ? -1 : 0, root[0].key)
+
+        // const process = (route: string, parent: Node, level: number = 0) => {
+        //     counter.update(v => v + 1)
+        //     if (['enum', 'scalar'].includes(parent.type) || level >= nesting) return;
+        //     const type = find(parent.value[0])!;
+        //     if (parent.type === 'object') {
+        //         for (let j = 0; j < type.fields.length; j++) {
+        //             counter.update(v => v + 1)
+        //             const child = node(type.fields[j].name, resolve(type.fields[j].type));
+        //             if (['object'].includes(child.type) && level > 0) continue
+        //             append(route, child);
+        //             if (['enum', 'scalar', 'entity'].includes(child.type) || parent.key === child.key) continue;
+        //             process(`${route}.${child.key}`, child, level + 1);
+        //         }
+        //     } else if (parent.type === 'union') {
+        //         const types = find(parent.value[0])?.possibleTypes.map(v => v.name)!
+        //         for (let i = 0; i < types.length; i++) {
+        //             const entity = find(types[i])!
+        //             const fields: Node[] = []
+        //             const name = new Store('')
+        //             for (let j = 0; j < entity.fields.length; j++) {
+        //                 name.set(entity.fields[j].name).lock()
+        //                 const field = node(entity.fields[j].name, resolve(entity.fields[j].type))
+        //                 // if (['union', 'object'].includes(field.type)) continue
+        //                 fields.push(field)  
+        //             }
+        //             append(`${route}`, { type: 'entity', key: '... on', value: [entity.name], child: fields })
+        //         }
                 
-            }
-        }; root.forEach((parent) => process(parent.key, parent));
-        function filter(nodes: Node[]): Node[] {
-            const seen = new Set<string>();
+        //     }
+        // }; root.forEach((parent) => process(parent.key, parent));
+
+
+
+        // function filter(nodes: Node[]): Node[] {
+        //     const seen = new Set<string>();
           
-            function traverse(node: Node): Node | null {
-              const nodeId = node.key + JSON.stringify(node.value);
-              if (seen.has(nodeId)) {
-                return null;
-              }
-              seen.add(nodeId);
+        //     function traverse(node: Node): Node | null {
+        //       const nodeId = node.key + JSON.stringify(node.value);
+        //       if (seen.has(nodeId)) {
+        //         return null;
+        //       }
+        //       seen.add(nodeId);
           
-              if (node.child) {
-                const filteredChildren = node.child.map(traverse).filter(child => child !== null) as Node[];
-                if (filteredChildren.length > 0) {
-                  return { ...node, child: filteredChildren };
-                } else if (node.type !== 'object') {
-                  return { ...node, child: undefined };
-                }
-              }
+        //       if (node.child) {
+        //         const filteredChildren = node.child.map(traverse).filter(child => child !== null) as Node[];
+        //         if (filteredChildren.length > 0) {
+        //           return { ...node, child: filteredChildren };
+        //         } else if (node.type !== 'object') {
+        //           return { ...node, child: undefined };
+        //         }
+        //       }
           
-              if (node.type === 'object' && (!node.child || node.child.length === 0)) {
-                return null;
-              }
+        //       if (node.type === 'object' && (!node.child || node.child.length === 0)) {
+        //         return null;
+        //       }
           
-              return { ...node, child: undefined };
-            }
+        //       return { ...node, child: undefined };
+        //     }
           
-            const filteredNodes = nodes.map(traverse).filter(node => node !== null) as Node[];
-            return filteredNodes;
-          }
-        Deno.writeTextFileSync('json.json', JSON.stringify(filter(root), null, 4))
+        //     const filteredNodes = nodes.map(traverse).filter(node => node !== null) as Node[];
+        //     return filteredNodes;
+        //   }
+        Deno.writeTextFileSync('json.json', JSON.stringify(root, null, 4))
         // append('host_group', { type: 'scalar', key: 'scalarKey', value: ['string']})
         // append('host_group.accent', { type: 'scalar', key: 'scalarKey', value: ['string']})
         // // append('host_group.color', { type: 'scalar', key: 'scalarKey', value: ['string']})
@@ -204,14 +236,14 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         },
         type,
         name: method.name,
-        schema: structure(),
+        schema: structure(4),
         props,
         response
     }
 }
 
 export const modules = (query: Method[], mutations: Method[], types: Type[]) => {
-    query.forEach(item => {if (item.name === 'user') method('query', item, types)})
+    query.forEach(item => {if (item.name === 'clients') method('query', item, types)})
     // mutations.forEach(item => {if (item.name === 'createShortcut') method('mutation', item, types)})
     console.log(counter.get())
 }
