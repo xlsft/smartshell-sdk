@@ -113,8 +113,6 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
 
             const childs = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
 
-            // Добавь валидацию на то что child не рекурсивная
-
             if (level === -1 || level === 0 || level === 1) /** paginator (all objects, scalars) */ /** root (all objects, scalars) */ /** parent (all objects, scalars) */ {
                 childs.forEach(child => { 
                     if (child.type === 'union') return; append(route, child); grow(child, level + 1, `${route}.${child.key}`)
@@ -122,20 +120,14 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
             } else if (level === 2) /** child (top-level objects, scalars) */  {
                 childs.forEach(child => {
                     if (child.type === 'union') return;
-                    if (child.type === 'scalar' || child.type === 'enum') { 
-                        append(route, child); 
-                        return 
-                    }
+                    if (child.type === 'scalar' || child.type === 'enum') { append(route, child); return }
                     if (child.type === 'object') {
                         const t = target(child)!.filter(o => o !== child).filter(o => {
                             if (['union', 'scalar', 'enum'].includes(o.type)) return true
                             const t = target(o)!.find(oo => oo.type === 'object')
-                            return t === undefined;
+                            if (t === undefined) return true; else return false
                         })
-                        // Добавь проверку на то что у вложенного объекта нет детей с типом object и сделай его append без дальнейшего роста
-                        if (t.length === 0) {
-                            append(route, child)
-                        }
+
                     }
                 })
             } else return
