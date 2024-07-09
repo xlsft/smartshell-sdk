@@ -62,6 +62,13 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         return result.get()
     }
 
+    const target = (n: Node): Node[] | undefined => {
+        if (n.type === 'scalar') return undefined
+        const type = find(n.value[0])
+        if (!type) throw new Error(`There is no type with name "${n.value[0]}" @ target()`)
+        if (type.kind === 'ENUM' || type.kind === 'SCALAR') return [n]
+        return type.fields.map(v => node(v.name, resolve(v.type)))
+    } 
     
     const structure = (nesting: number) => {
 
@@ -98,136 +105,46 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         }
 
 
+
         const grow = (parent: Node, level: number, route: string) => {
-            if (['enum', 'scalar'].includes(parent.type) || level >= nesting) return;
+            if (['enum', 'scalar', 'union'].includes(parent.type) || level >= nesting) return;
 
-
-
-            const f_root = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
             
-            console.log('------------------------------------------------------')
-            if (level === -1) /** paginator (top-level objects, scalars) */ {
-                console.log('paginator')
-                append(parent.key, )
-                grow(parent, level+1, `${}`)
-            } else if (level === 0) /** root (all objects, unions, scalars) */ {
-                console.log('root')
-                grow(parent, level+1)
-            } else if (level === 1) /** parent (all objects, unions, scalars) */  {
-                console.log('parent')
-                grow(parent, level+1)
-            } else if (level === 2) /** child (top-level objects, unions, scalars) */  {
-                console.log('child')
-                grow(parent, level+1)
-            } else if (level === 3) /** top (scalars) */  {
-                console.log('top')
+
+            const childs = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
+
+            // Добавь валидацию на то что child не рекурсивная
+
+            if (level === -1 || level === 0 || level === 1) /** paginator (all objects, scalars) */ /** root (all objects, scalars) */ /** parent (all objects, scalars) */ {
+                childs.forEach(child => { 
+                    if (child.type === 'union') return; append(route, child); grow(child, level + 1, `${route}.${child.key}`)
+                })
+            } else if (level === 2) /** child (top-level objects, scalars) */  {
+                childs.forEach(child => {
+                    if (child.type === 'union') return;
+                    if (child.type === 'scalar' || child.type === 'enum') { 
+                        append(route, child); 
+                        return 
+                    }
+                    if (child.type === 'object') {
+                        const t = target(child)!.filter(o => o !== child).filter(o => {
+                            if (['union', 'scalar', 'enum'].includes(o.type)) return true
+                            const t = target(o)!.find(oo => oo.type === 'object')
+                            return t === undefined;
+                        })
+                        // Добавь проверку на то что у вложенного объекта нет детей с типом object и сделай его append без дальнейшего роста
+                        if (t.length === 0) {
+                            append(route, child)
+                        }
+                    }
+                })
             } else return
 
             
 
-        }; grow(root[0], paginated ? -1 : 0, root[0].key)
+        }; root.forEach(parent => grow(parent, paginated ? -1 : 0, parent.key))
 
-        // const process = (route: string, parent: Node, level: number = 0) => {
-        //     counter.update(v => v + 1)
-        //     if (['enum', 'scalar'].includes(parent.type) || level >= nesting) return;
-        //     const type = find(parent.value[0])!;
-        //     if (parent.type === 'object') {
-        //         for (let j = 0; j < type.fields.length; j++) {
-        //             counter.update(v => v + 1)
-        //             const child = node(type.fields[j].name, resolve(type.fields[j].type));
-        //             if (['object'].includes(child.type) && level > 0) continue
-        //             append(route, child);
-        //             if (['enum', 'scalar', 'entity'].includes(child.type) || parent.key === child.key) continue;
-        //             process(`${route}.${child.key}`, child, level + 1);
-        //         }
-        //     } else if (parent.type === 'union') {
-        //         const types = find(parent.value[0])?.possibleTypes.map(v => v.name)!
-        //         for (let i = 0; i < types.length; i++) {
-        //             const entity = find(types[i])!
-        //             const fields: Node[] = []
-        //             const name = new Store('')
-        //             for (let j = 0; j < entity.fields.length; j++) {
-        //                 name.set(entity.fields[j].name).lock()
-        //                 const field = node(entity.fields[j].name, resolve(entity.fields[j].type))
-        //                 // if (['union', 'object'].includes(field.type)) continue
-        //                 fields.push(field)  
-        //             }
-        //             append(`${route}`, { type: 'entity', key: '... on', value: [entity.name], child: fields })
-        //         }
-                
-        //     }
-        // }; root.forEach((parent) => process(parent.key, parent));
-
-
-
-        // function filter(nodes: Node[]): Node[] {
-        //     const seen = new Set<string>();
-          
-        //     function traverse(node: Node): Node | null {
-        //       const nodeId = node.key + JSON.stringify(node.value);
-        //       if (seen.has(nodeId)) {
-        //         return null;
-        //       }
-        //       seen.add(nodeId);
-          
-        //       if (node.child) {
-        //         const filteredChildren = node.child.map(traverse).filter(child => child !== null) as Node[];
-        //         if (filteredChildren.length > 0) {
-        //           return { ...node, child: filteredChildren };
-        //         } else if (node.type !== 'object') {
-        //           return { ...node, child: undefined };
-        //         }
-        //       }
-          
-        //       if (node.type === 'object' && (!node.child || node.child.length === 0)) {
-        //         return null;
-        //       }
-          
-        //       return { ...node, child: undefined };
-        //     }
-          
-        //     const filteredNodes = nodes.map(traverse).filter(node => node !== null) as Node[];
-        //     return filteredNodes;
-        //   }
         Deno.writeTextFileSync('json.json', JSON.stringify(root, null, 4))
-        // append('host_group', { type: 'scalar', key: 'scalarKey', value: ['string']})
-        // append('host_group.accent', { type: 'scalar', key: 'scalarKey', value: ['string']})
-        // // append('host_group.color', { type: 'scalar', key: 'scalarKey', value: ['string']})
-        // console.log(root[2])
-        // console.log(root)
-        // for (let i = 0; i < root.length; i++) {
-        //     const parent = root[i];
-        //     if (skipped.includes(parent.type)) continue
-        //     if (parent.value.length > 1) console.log('UNIOOOOON')
-        //     const type = find(parent.value[0])!
-        //     for (let j = 0; j < type.fields.length; j++) {
-        //         const child = node(type.fields[j].name, resolve(type.fields[j].type))
-        //         if (skipped.includes(child.type)) continue
-        //         append(parent.key, [child])            
-        //         const child_type = find(child.value[0])!
-        //         if (child_type.possibleTypes.length > 0) console.log('CHILD UNIOOOOON')
-        //         console.log(`--------------${parent.key}.${child.key}... ${type.name}-------------------`)
-        //         for (let k = 0; k < child_type.fields.length; k++) {
-        //             const grandchild = node(child_type.fields[k].name, resolve(child_type.fields[k].type))
-        //             // console.log(child_type)
-        //             // console.log(grandchild)
-        //             // append(`${parent.key}.${child.key}`, [grandchild])
-        //         }
-        //         console.log('-----------------------------------------------------')
-        //     }
-            
-            
-            // append(parent.key, node(
-            //         resolve(
-            //             find(
-            //                 parent.value[0]
-            //             )
-            //         )
-            //     )
-            // )
-        // }
-        // append('club', [{ type: 'en um', key: 'someEnumKey', value: ['aaa']}])
-        // Напиши здесь логику которая пройдется по всему дереву, к каждому полю сделает append и остановится на 3 уровне глубины
     }
     return {
         imports: {
@@ -236,7 +153,7 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         },
         type,
         name: method.name,
-        schema: structure(4),
+        schema: structure(3),
         props,
         response
     }
