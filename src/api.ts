@@ -1,5 +1,5 @@
 import type { Shell } from "../mod.ts";
-import { query as q, mutation as m } from "./graphql/index.ts";
+import { query as q, mutation as m } from "./api/index.ts";
 import type { ShellSdkPaginatorInput } from "./types/sdk.ts";
 
 export const api = (ctx: Shell) => {

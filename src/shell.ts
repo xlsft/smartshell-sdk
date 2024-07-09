@@ -80,14 +80,6 @@ export class Shell {
     private async _update(id: number): Promise<ShellApiClub> {
         const club_i = this._clubs.findIndex((data) => data.id === id)!
         if (club_i === -1) ShellSdkError(this, `Can't update club, it does't exist on current instance!`)
-        // const updated = (await this.call<RefreshTokenResponse>(`mutation RefreshToken {
-        //     refreshToken(input: { refresh_token: "${club.refresh_token}" }) {
-        //         token_type
-        //         expires_in
-        //         access_token
-        //         refresh_token
-        //     }
-        // }`)).refreshToken
         const updated = (await this.call<AccessToken>(`mutation Login {
             login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
                 token_type

@@ -4,14 +4,10 @@ import type { ShellSdkContext, ShellSdkPaginatorInput } from "../../types/sdk.ts
 import { key } from "../../utils/key.ts";
 import { on } from "../../utils/on.ts";
 
-// export type InputTypeWPaginatorAndWrappedInput = { input?: ClientsInput, paginator?: ShellSdkPaginatorInput }
-// export type InputTypeWWrappedInput = { input?: ClientsInput, paginator?: ShellSdkPaginatorInput }
-
 export type InputType = { input?: ClientsInput, paginator?: ShellSdkPaginatorInput }
-
 export type ResponseType = UserPaginated
 
-const module = async <Input extends InputType, Response extends ResponseType>(
+const module = async <Input extends InputType["input"], Response extends ResponseType>(
     ctx: ShellSdkContext,
     props?: Input,
 ): Promise<Response> => { return await ctx.request("query", "clients", [

@@ -1,32 +1,13 @@
 import { Store } from "../../../src/utils/store.ts";
-import type { Field, Method, Node, ResolvedType, Type, TypeRef } from "../../types/types.ts";
+import type { Field, Method, Node, ResolvedMethod, ResolvedModule, ResolvedType, Type, TypeRef } from "../../types/types.ts";
+import { scalars } from "../static/scalars.ts";
 
-const counter = new Store(0)
-
-const scalars = [
-    { name: 'String', type: 'string', imported: false }, 
-    { name: 'Int', type: 'number', imported: false }, 
-    { name: 'Float', type: 'number', imported: false }, 
-    { name: 'Boolean', type: 'boolean', imported: false },
-    { name: 'Upload', type: 'string', imported: true },
-    { name: 'Email', type: 'string', imported: true },
-    { name: 'IpAddress', type: 'string', imported: true },
-    { name: 'MacAddress', type: 'string', imported: true },
-    { name: 'Date', type: 'string', imported: true },
-    { name: 'Time', type: 'string', imported: true },
-    { name: 'DateTime', type: 'string', imported: true },
-]
-
-const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
-    counter.update(v => v + 1)
-    const find = (type: string): Type | undefined => { counter.update(v => v + 1); return types.find(t => t.name === type) } 
-
+const method = (type: 'query' | 'mutation', method: Method, types: Type[]): ResolvedMethod => {
+    console.log(method)
+    const find = (type: string): Type | undefined => { return types.find(t => t.name === type) } 
     const resolve = (type: TypeRef): ResolvedType => {
-        
-        counter.update(v => v + 1)
         const options = { required: false, array: false, value: new Store<string[]>([]), type: new Store<Node['type']>('object') }
         const recursive = (type: TypeRef) => {
-            counter.update(v => v + 1)
             if (!type || type.kind === 'INPUT_OBJECT') return
             if (type.kind === 'NON_NULL') { options.required = true; recursive(type.ofType) } 
             else if (type.kind === 'LIST') { options.array = true; recursive(type.ofType) }
@@ -38,7 +19,6 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         }; recursive(type)
         return { required: options.required, array: options.array, value: options.value.get(), type: options.type.get()}
     }
-
     const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
     const props: { key: string, value: string, required: boolean, array: boolean }[] = []
     const response = resolve(method.type)
@@ -46,13 +26,11 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
     const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved, value: resolved.value[0] }) }; method.args.forEach(arg => prop(arg))
     const node = (key: string, type: ResolvedType): Node => { return { type: type.type, key, value: type.value }}
     const nodes = (ref: TypeRef) => {
-        counter.update(v => v + 1)
         if (scalars.find(o => o.imported === true && o.name === name) !== undefined && !imports.gql.has(name)) imports.gql.add(name);
         let level = 0
         const root = find(resolve(ref).value[0])
         const result = new Store<Node[]>([])
         for (let i = 0; i < root!.fields.length; i++) {
-            counter.update(v => v + 1)
             const key = root!.fields[i].name
             const parent = resolve(root!.fields[i].type);
             if (parent.value.includes('PaginatorInfo')) { level++ ;continue } 
@@ -61,98 +39,101 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]) => {
         }
         return result.get()
     }
-
-    const target = (n: Node): Node[] | undefined => {
-        if (n.type === 'scalar') return undefined
-        const type = find(n.value[0])
-        if (!type) throw new Error(`There is no type with name "${n.value[0]}" @ target()`)
-        if (type.kind === 'ENUM' || type.kind === 'SCALAR') return [n]
-        return type.fields.map(v => node(v.name, resolve(v.type)))
-    } 
-    
-    const structure = (nesting: number) => {
-
+    const structure = (nesting: number): Node[] => {
         const root: Node[] = nodes(method.type)
         const append = (route: string, child: Node) => {
-            counter.update(v => v + 1)
             const keys: string[] = route.split('.')
             let obj = root
             for (let i = 0; i < keys.length; i++) {
                 const key = keys[i]
                 const parent = obj.find(o => o.key === key)
-                if (!parent) {
-                    if (i === keys.length - 1) {
-                        const newNode: Node = { type: 'object', key, value: [], child: [child] }
-                        obj.push(newNode)
-                        return
-                    } else {
-                        const newNode: Node = { type: 'object', key, value: [], child: [] }
-                        obj.push(newNode)
-                        obj = newNode.child!
-                    }
+                if (!parent) { 
+                    if (i === keys.length - 1) { const node: Node = { type: 'object', key, value: [], child: [child] }; obj.push(node); return }
+                    else { const node: Node = { type: 'object', key, value: [], child: [] }; obj.push(node); obj = node.child!}
                 } else {
-                    if (!parent.child) {
-                        parent.type = 'object'
-                        parent.child = []
-                    }
+                    if (!parent.child) { parent.type = 'object'; parent.child = []}
                     obj = parent.child
-                    if (i === keys.length - 1) {
-                        parent.child.push(child)
-                        return
-                    }
+                    if (i === keys.length - 1) { parent.child.push(child); return }
                 }
             }
         }
-
-
-
         const grow = (parent: Node, level: number, route: string) => {
             if (['enum', 'scalar', 'union'].includes(parent.type) || level >= nesting) return;
-
-            
-
-            const childs = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
-
-            if (level === -1 || level === 0 || level === 1) /** paginator (all objects, scalars) */ /** root (all objects, scalars) */ /** parent (all objects, scalars) */ {
-                childs.forEach(child => { 
-                    if (child.type === 'union') return; append(route, child); grow(child, level + 1, `${route}.${child.key}`)
-                })
-            } else if (level === 2) /** child (top-level objects, scalars) */  {
-                childs.forEach(child => {
-                    if (child.type === 'union') return;
-                    if (child.type === 'scalar' || child.type === 'enum') { append(route, child); return }
-                    if (child.type === 'object') {
-                        const t = target(child)!.filter(o => o !== child).filter(o => {
-                            if (['union', 'scalar', 'enum'].includes(o.type)) return true
-                            const t = target(o)!.find(oo => oo.type === 'object')
-                            if (t === undefined) return true; else return false
-                        })
-
+            const children = find(parent.value[0])!.fields.map(v => node(v.name, resolve(v.type)))
+            const key = route.split('.')[route.split('.').length - 1]
+            children.forEach(child => {
+                if (child.key === key || child.type === 'union') return
+                if ([-1,0,1].includes(level)) {
+                    if ([-1,0].includes(level)) append(route, child); grow(child, level + 1, `${route}.${child.key}`);
+                    if ([1].includes(level)) {
+                        if (child.type === 'object') return
+                        append(route, child)
                     }
-                })
-            } else return
-
-            
-
+                } else if (level > 2) {
+                    if (['scalar', 'enum'].includes(child.type)) append(route, child)
+                }
+            })
         }; root.forEach(parent => grow(parent, paginated ? -1 : 0, parent.key))
-
-        Deno.writeTextFileSync('json.json', JSON.stringify(root, null, 4))
+        return root
     }
+
     return {
         imports: {
             gql: Array.from(imports.gql),
             sdk: Array.from(imports.sdk)
         },
         type,
+        paginated,
         name: method.name,
         schema: structure(3),
         props,
-        response
+        response,
+        deprecated: method.isDeprecated === true ? method.deprecationReason : undefined
     }
 }
 
-export const modules = (query: Method[], mutations: Method[], types: Type[]) => {
-    query.forEach(item => {if (item.name === 'clients') method('query', item, types)})
+const module = async (method: ResolvedMethod): Promise<ResolvedModule> => {
+    /**
+     * This should generate:
+     * - src/api/TYPE/NAME.ts (module itself, should return full ts file string)
+     * - src/api/index.ts (api modules index object like { import: "import NAME from './TYPE/NAME.ts'", export: "NAME" })
+     * - src/api.ts (api modules reference in Shell class, should return string with JSDoc, jsDoc should contain official API doc link [that should be checked for connectivity] and sdk doc on vitedocs when it goes online )
+     * - (possibly) docs (it should auto-create basic template for module documentation)
+     */
+    const module = (): string => {
+        console.log(method)
+return `${method.imports.sdk.length > 0 ? `import type { ${method.imports.sdk.join(', ')} } from "../../types/sdk.ts"` : ''}
+${method.imports.gql.length > 0 ? `import type { ${method.imports.gql.join(', ')} } from "../../types/types.ts"` : ''}
+
+export type InputType = UserClubsInput
+export type ResponseType = UserClub[]
+
+const module = async <Input extends InputType${method.paginated === true ? '["input"]' : ''}, Response extends ResponseType>(
+    ctx: ShellSdkContext,
+    props: Input, ${method.paginated === true ? '\npaginator: ShellSdkPaginatorInput' : ''}
+): Promise<Response> => { return await ctx.request("${method.type}", "${method.name}", [
+    // scheme
+], ${method.paginated === true ?
+    `{ input: props }, paginator || { page: 1 }`
+    :
+    ``
+})}
+
+export default module<InputType, ResponseType>
+
+        `
+    }
+    return {
+        module: module(),
+        index: { import: '', export: '' },
+        reference: ''
+    }
+}
+
+export const modules = async (query: Method[], mutations: Method[], types: Type[]) => {
+    await query.forEach(async (item) => {
+        if (item.name === 'clients') 
+        console.log((await module(method('query', item, types))).module)
+    })
     // mutations.forEach(item => {if (item.name === 'createShortcut') method('mutation', item, types)})
-    console.log(counter.get())
 }

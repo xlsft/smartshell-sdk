@@ -64,3 +64,20 @@ export interface Request {
 export type Node = { type: 'object' | 'union' | 'enum' | 'scalar' | 'entity', key: string, value: string[], child?: Node[] }
 
 export type ResolvedType = { required: boolean, array: boolean, value: string[], type: Node['type'] }
+
+export type ResolvedMethod = {
+    imports: { gql: string[], sdk: string[] }
+    type: "query" | "mutation"
+    name: string
+    schema: Node[]
+    props: { key: string, value: string, required: boolean, array: boolean }[]
+    paginated: boolean
+    response: ResolvedType
+    deprecated?: string
+}
+
+export type ResolvedModule = {
+    module: string,
+    index: { import: string, export: string },
+    reference: string
+}
