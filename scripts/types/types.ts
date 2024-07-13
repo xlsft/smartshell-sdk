@@ -77,7 +77,7 @@ export type ResolvedMethod = {
 }
 
 export type ResolvedModule = {
-    module: string,
+    main: string,
     index: { import: string, export: string },
     reference: string
 }
