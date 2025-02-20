@@ -1,10 +1,12 @@
 import { module } from "./render/module.ts";
+import { docs } from "./render/docs.ts";
 import { Store } from "../../src/utils/store.ts";
 import type { Field, Method, Node, ResolvedMethod, ResolvedModule, ResolvedType, Type, TypeRef } from "../types/types.ts";
 import { scalars } from "./static/scalars.ts";
 import { log } from "./logger.ts";
 let counter = 0
 const method = (type: 'query' | 'mutation', method: Method, types: Type[]): ResolvedMethod => {
+    const depth = 1
     const find = (type: string): Type | undefined => { return types.find(t => t.name === type) } 
     const resolve = (type: TypeRef): ResolvedType => {
         const options = { required: false, array: false, value: new Store<string[]>([]), type: new Store<Node['type']>('object') }
@@ -36,7 +38,7 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
             const key = root!.fields[i].name
             const parent = resolve(root!.fields[i].type);
             if (parent.value.includes('PaginatorInfo')) { level++ ;continue } 
-            if (parent.type === 'object' && level > 2) continue
+            if (parent.type === 'object' && level > depth) continue
             result.push(node(key, parent))
         }
         return result.get()
@@ -71,7 +73,7 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
                         if (child.type === 'object') return
                         append(route, child)
                     }
-                } else if (level > 2) {
+                } else if (level > depth) {
                     if (['scalar', 'enum'].includes(child.type)) append(route, child)
                 }
             })
@@ -80,7 +82,7 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
     }
     counter++
     log.log(`${type} module "${method.name}" generated`)
-    return {
+    const result = {
         imports: {
             gql: Array.from(imports.gql),
             sdk: Array.from(imports.sdk)
@@ -93,25 +95,24 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
         response,
         deprecated: method.isDeprecated === true ? method.deprecationReason : undefined
     }
+    
+    return result
 }
 
-const set = async (method: ResolvedMethod): Promise<ResolvedModule> => {
-    /**
-     * This should generate:
-     * - src/api/TYPE/NAME.ts (module itself, should return full ts file string)
-     * - src/api/index.ts (api modules index object like { import: "import NAME from './TYPE/NAME.ts'", export: "NAME" })
-     * - src/api.ts (api modules reference in Shell class, should return string with JSDoc, jsDoc should contain official API doc link [that should be checked for connectivity] and sdk doc on vitedocs when it goes online )
-     * - (possibly) docs (it should auto-create basic template for module documentation)
-     */
-    return {
-        main: await module(method),
-        index: { import: '', export: '' },
-        reference: ''
+const set = async (method: ResolvedMethod): Promise<void> => {
+
+    const result: ResolvedModule = {
+        file: await module(method),
+        docs: await docs(method)
     }
+
+    await Deno.writeTextFile(`src/api/${method.type}/${method.name}.ts`, result.file)
+    await Deno.writeTextFile(`docs/content/reference/api/${method.type}/${method.name}.html`, result.docs)
 }
 
 export const modules = async (query: Method[], mutations: Method[], types: Type[]) => {
-    
+    log.log('STEP [3/4]: Modules generation...')
+    await new Promise((r) => setTimeout(r, 1000))
     for (let i = 0; i < query.length; i++) { await set(method('query', query[i], types)) }
     for (let i = 0; i < mutations.length; i++) { await set(method('mutation', mutations[i], types)) }
 

@@ -4,7 +4,7 @@ import { modules } from "./modules.ts";
 import { types } from "./render/types.ts"
 
 export const render = {
-    types: (introspect: Type[]) => types(introspect),
+    types: async (introspect: Type[]) => await types(introspect),
     register: async () => await register(),
-    modules: (query: Method[], mutations: Method[], types: Type[] ) => modules(query, mutations, types)
+    modules: async (query: Method[], mutations: Method[], types: Type[] ) => await modules(query, mutations, types)
 }

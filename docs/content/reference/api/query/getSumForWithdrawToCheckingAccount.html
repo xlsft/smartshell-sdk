@@ -1,0 +1,74 @@
+<h1>api.getSumForWithdrawToCheckingAccount</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { beneficiary_id: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = BeneficiaryBalance</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "BeneficiaryBalance"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "getSumForWithdrawToCheckingAccount",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "balance",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "commission",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sum",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "net_sum",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "locked",
+            "value": [
+                "boolean"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "beneficiary_id",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "BeneficiaryBalance"
+        ],
+        "type": "object"
+    }
+}</code></pre>

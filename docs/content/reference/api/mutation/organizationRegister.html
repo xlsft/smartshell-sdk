@@ -1,0 +1,124 @@
+<h1>api.organizationRegister</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: OrganizationRegisterInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Organization</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Organization",
+            "OrganizationRegisterInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "organizationRegister",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "phone",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "email",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "address",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "hosts_count",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "verified_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "activated_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "banned_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "updated_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "deleted_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "OrganizationRegisterInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Organization"
+        ],
+        "type": "object"
+    }
+}</code></pre>

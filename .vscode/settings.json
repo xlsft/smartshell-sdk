@@ -3,5 +3,14 @@
         "gh_actions",
         "types"
     ],
-    "deno.enable": true
+    "deno.enable": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "hide-files.files": []
 }

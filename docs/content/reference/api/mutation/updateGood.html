@@ -1,0 +1,538 @@
+<h1>api.updateGood</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, input: GoodInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Good</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Good",
+            "GoodInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateGood",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "subtitle",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "category",
+            "value": [
+                "Category"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "company_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "goods",
+                    "value": [
+                        "Good"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "subtitle",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "category",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "company_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "title",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "show_in_shell",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "amount",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "wholesale_cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "tax_percent",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "unit_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "unit_value",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "tax_system",
+                            "value": [
+                                "TaxSystem"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "state",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "received",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "income",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "sold",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "disposal",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "vat",
+                            "value": [
+                                "Vat"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "ean",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "eans",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "comment",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "image",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "use_global_discounts",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "use_fair_sign",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "is_excise",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "show_in_shell",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "in_combo",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "low_stock_notification",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "threshold",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "show_in_shell",
+                    "value": [
+                        "boolean"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "amount",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "wholesale_cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "tax_percent",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "unit_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "unit_value",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "tax_system",
+            "value": [
+                "TaxSystem"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "state",
+            "value": [
+                "WarehouseState"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "received",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "income",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "sold",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "disposal",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "vat",
+            "value": [
+                "Vat"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "ean",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "eans",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "comment",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "image",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "use_global_discounts",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "use_fair_sign",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "is_excise",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "show_in_shell",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "in_combo",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "low_stock_notification",
+            "value": [
+                "LowStockNotification"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "enabled",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "threshold",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GoodInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Good"
+        ],
+        "type": "object"
+    }
+}</code></pre>

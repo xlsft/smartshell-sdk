@@ -1,0 +1,1415 @@
+<h1>api.createClub</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ClubInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Club</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Club",
+            "ClubInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createClub",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "pc_count",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "console_count",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "distribution_type",
+            "value": [
+                "DistributionType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "contact_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "contact_type",
+            "value": [
+                "OrganizationUserType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "address",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "city",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "street",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "house_number",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "telegram",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "key",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "info",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "contact_phone",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "license",
+            "value": [
+                "License"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "expires_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "payment",
+                    "value": [
+                        "LicensePaymentData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "payment_method",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "bill_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "license_tariff",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "description",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cost",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "modules",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "description",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cost",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "category_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "alias",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "status",
+                            "value": [
+                                "LicensePaymentStatus"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "months",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "contractor",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "inn",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "kpp",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "address",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "email",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "licenses",
+            "value": [
+                "License"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "expires_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "payment",
+                    "value": [
+                        "LicensePaymentData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "payment_method",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "bill_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "license_tariff",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "description",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cost",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "modules",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "description",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cost",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "category_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "alias",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "status",
+                            "value": [
+                                "LicensePaymentStatus"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "months",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "contractor",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "inn",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "kpp",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "address",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "email",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "license_payments",
+            "value": [
+                "LicensePaymentData"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "host_count",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "payment_method",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "bill_url",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "license_tariff",
+                    "value": [
+                        "LicenseTariff"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "module_categories",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "tariff_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "modules",
+                    "value": [
+                        "LicenseTariffModule"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "category_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "enum",
+                    "key": "status",
+                    "value": [
+                        "LicensePaymentStatus"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "months",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cost",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "contractor",
+                    "value": [
+                        "Contractor"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "inn",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "kpp",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "address",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "timezone",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "country_code",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "host_count",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "locked",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "auto_payment_enabled",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "organization_payment_card",
+            "value": [
+                "OrganizationPaymentCard"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "card_mask",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "card_payment_system",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "card_expires_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "verification_status",
+            "value": [
+                "ClubVerificationStatus"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "verification_status_updated_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "debt",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "used_trial",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "club_phone",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "vk_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "telegram_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "whats_up_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "region",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "comment",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "country",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "lat",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "lng",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "work_schedule",
+            "value": [
+                "ClubWorkSchedule"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "day",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "Start",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "End",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "work_schedule_247",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "hardware",
+            "value": [
+                "ClubHardware"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "hall_title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "enum",
+                    "key": "hall_type",
+                    "value": [
+                        "HallType"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "device_count",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "console_model",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "processor_brand",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "processor_model",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "gpu_brand",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "gpu_model",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "ram_size",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "ram_type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "hdd_type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "keyboard",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "mouse",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "speakers",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "chair",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "monitor_brand",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "monitor_size",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "monitor_hz",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "logo_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "header_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "pricelist_urls",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "interior_urls",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "services",
+            "value": [
+                "ClubServices"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "has_vr",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "vr_count",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "vr_model",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_autosim",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "autosim_count",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_printer",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_lounge",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_gifts",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "personal_devices_allowed",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_streaming_boot",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "personal_food_allowed",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_tabletop_games",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "can_rent_projector",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_coworking",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_snacks",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_energy_drinks",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_food_to_go",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_kitchen",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_beverages",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_low_alcohol_beverages",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "has_food_discounts",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_cash",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_card",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_qr",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_sbp",
+                    "value": [
+                        "boolean"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "deposit_transfer_enabled",
+            "value": [
+                "boolean"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ClubInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Club"
+        ],
+        "type": "object"
+    }
+}</code></pre>

@@ -1,10 +1,11 @@
 import { Shell } from "../../mod.ts";
 import { gql } from "../../src/utils/syntax.ts";
 import type { IntrospectQuery } from "../types/types.ts";
+import { log } from "./logger.ts";
 
 const shell = new Shell({ anonymous: true })
 
-export const introspect = async () => { return (await shell.call<IntrospectQuery>(gql`
+export const introspect = async () => { log.log('STEP [1/4]: Pulling introspection...'); const result = (await shell.call<IntrospectQuery>(gql`
 
 fragment Type on __Type { name kind fields {
     name
@@ -38,4 +39,4 @@ fragment Ref on __Type {
     versions { frontend backend }
 }
 
-`)).__schema}
+`)).__schema; log.log('Successfully pulled introspection!'); return result}

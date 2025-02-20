@@ -1,0 +1,38 @@
+<h1>api.updateShortcutGroupSort</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: UpdateShortcutGroupSortInput[] }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "UpdateShortcutGroupSortInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateShortcutGroupSort",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": true,
+            "value": "UpdateShortcutGroupSortInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

@@ -1,0 +1,38 @@
+<h1>api.processStats</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ProcessStatsInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ProcessStatsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "processStats",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ProcessStatsInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

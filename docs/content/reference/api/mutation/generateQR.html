@@ -1,0 +1,38 @@
+<h1>api.generateQR</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: GenerateQRInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "GenerateQRInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "generateQR",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GenerateQRInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

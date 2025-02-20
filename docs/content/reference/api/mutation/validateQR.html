@@ -1,0 +1,38 @@
+<h1>api.validateQR</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ValidateQRInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ValidateQRInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "validateQR",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ValidateQRInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

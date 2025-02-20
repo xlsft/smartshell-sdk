@@ -77,7 +77,8 @@ export type ResolvedMethod = {
 }
 
 export type ResolvedModule = {
-    main: string,
-    index: { import: string, export: string },
-    reference: string
+    file: string,
+    docs: string
 }
+
+export type ParsedField = { string: string, primitive?: boolean, rules?: { array: boolean, nullable: boolean }, name?: string, type?: string, empty?: boolean }

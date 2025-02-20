@@ -1,0 +1,1328 @@
+<h1>api.eventList</h1>
+<p><code>Paginated</code></p>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input?: EventsInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = EventListPaginated</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "EventListPaginated",
+            "EventsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "eventList",
+    "schema": [
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "EventListItem"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "timestamp",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "settings",
+                    "value": [
+                        "EventListItemAliasValues"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value2",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "setting",
+                    "value": [
+                        "EventListItemAliasValues"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value2",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "booking",
+                    "value": [
+                        "EventListItemBooking"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "Cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "from",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "to",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "cash_order",
+                    "value": [
+                        "EventListItemCashOrder"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "type",
+                            "value": [
+                                "CashOrderType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "comment",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "client_session",
+                    "value": [
+                        "EventListItemClientSession"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "elapsed",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "finished_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "time_left",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "expires_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "is_per_minute",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "total_cost",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "promocode",
+                    "value": [
+                        "EventListItemIdTitleValueF"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "discount",
+                    "value": [
+                        "EventListItemIdTitleValueF"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "good",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "service",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "tariff",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "host",
+                    "value": [
+                        "EventListItemIdTitleValueI"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "host2",
+                    "value": [
+                        "EventListItemIdTitleValueI"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "hosts",
+                    "value": [
+                        "EventListItemIdTitleValueI"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "host_group",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "host_group2",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "host_command",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "client",
+                    "value": [
+                        "EventListItemUser"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "nickname",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "first_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "last_name",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "manager",
+                    "value": [
+                        "EventListItemUser"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "nickname",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "first_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "last_name",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "operator",
+                    "value": [
+                        "EventListItemUser"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "nickname",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "first_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "last_name",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "worker",
+                    "value": [
+                        "EventListItemUser"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "nickname",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "first_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "last_name",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "role",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "role2",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "user_group",
+                    "value": [
+                        "EventListItemIdTitleValueI"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "user_group2",
+                    "value": [
+                        "EventListItemIdTitleValueI"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "payment",
+                    "value": [
+                        "EventListItemIdTitleValueF"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "payment_items",
+                    "value": [
+                        "EventListItemPaymentItem"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_type",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "amount",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "warehouse_item",
+                    "value": [
+                        "EventListItemWarehouseItem"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_type",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value2",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "work_shift",
+                    "value": [
+                        "EventListItemIdTime"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "timestamp",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "worker_task",
+                    "value": [
+                        "EventListItemTask"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "creator_uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "assigned_to_uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "deadline_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "goods",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "new_goods_amount",
+                    "value": [
+                        "EventListItemIdValueF"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "new_devices",
+                    "value": [
+                        "EventListItemAliasValues"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value2",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cash_on_start",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cashback",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "paused_type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "additional_seconds",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "send_code_method",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "penalty",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "value1",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "value2",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "comment",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "duration",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "deposit",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "combo",
+                    "value": [
+                        "EventListItemCombo"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_group_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_group_title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "tariff_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "tariff_title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "combo_items",
+                    "value": [
+                        "EventListItemComboItem"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "entity_type",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "amount",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "price",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false
+        },
+        {
+            "key": "input",
+            "required": false,
+            "array": false,
+            "value": "EventsInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "EventListPaginated"
+        ],
+        "type": "object"
+    }
+}</code></pre>

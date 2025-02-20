@@ -1,0 +1,111 @@
+<h1>api.licenseModuleCategory</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = LicenseTariffCategory</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "LicenseTariffCategory"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "licenseModuleCategory",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "modules",
+            "value": [
+                "LicenseTariffModule"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cost",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "category_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "alias",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "tariff_id",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "LicenseTariffCategory"
+        ],
+        "type": "object"
+    }
+}</code></pre>

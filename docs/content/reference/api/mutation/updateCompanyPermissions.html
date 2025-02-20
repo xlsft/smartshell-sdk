@@ -1,0 +1,121 @@
+<h1>api.updateCompanyPermissions</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: UpdateCompanyPermissionsInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = CompanyPermissionsData</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "CompanyPermissionsData",
+            "UpdateCompanyPermissionsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateCompanyPermissions",
+    "schema": [
+        {
+            "type": "object",
+            "key": "companyPermissions",
+            "value": [
+                "CompanyPermissions"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "role_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "permissions",
+                    "value": [
+                        "PermissionData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "locked",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateCompanyPermissionsInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "CompanyPermissionsData"
+        ],
+        "type": "object"
+    }
+}</code></pre>

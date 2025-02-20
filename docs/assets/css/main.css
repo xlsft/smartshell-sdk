@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    @apply transition-all box-border font-[Rubik] text-gray-200
+}
+
+
+a {
+    @apply underline-offset-[2px] text-gray-200 cursor-pointer hover:opacity-50 
+}
+
+
+h1 {
+    @apply text-4xl font-bold
+}

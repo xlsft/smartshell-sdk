@@ -1,0 +1,110 @@
+<h1>api.createService</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ServiceInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Service</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Service",
+            "ServiceInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createService",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "wholesale_cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "tax_percent",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "use_global_discounts",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "tax_system",
+            "value": [
+                "TaxSystem"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "vat",
+            "value": [
+                "Vat"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "ean",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ServiceInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Service"
+        ],
+        "type": "object"
+    }
+}</code></pre>

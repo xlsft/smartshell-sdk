@@ -1,0 +1,126 @@
+<h1>api.clientTariffGrid</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ClientTariffGridInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ClientTariffGridItem[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ClientTariffGridItem",
+            "ClientTariffGridInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "clientTariffGrid",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "duration",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "has_fixed_finish_time",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "currency",
+            "value": [
+                "Currency"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "alias",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "letter",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "highlighted",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "finished_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ClientTariffGridInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ClientTariffGridItem"
+        ],
+        "type": "object"
+    }
+}</code></pre>

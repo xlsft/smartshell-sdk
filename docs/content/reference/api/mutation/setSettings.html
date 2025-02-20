@@ -1,0 +1,68 @@
+<h1>api.setSettings</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: UpdateMultipleSettingsInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Setting[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Setting",
+            "UpdateMultipleSettingsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "setSettings",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "alias",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "value",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "updated_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateMultipleSettingsInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "Setting"
+        ],
+        "type": "object"
+    }
+}</code></pre>

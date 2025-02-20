@@ -1,0 +1,156 @@
+<h1>api.updateLicenseTariff</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, input: LicenseTariffInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = LicenseTariff</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "LicenseTariff",
+            "LicenseTariffInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateLicenseTariff",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "description",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "module_categories",
+            "value": [
+                "LicenseTariffCategory"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "modules",
+                    "value": [
+                        "LicenseTariffModule"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "category_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "tariff_id",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "LicenseTariffInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "LicenseTariff"
+        ],
+        "type": "object"
+    }
+}</code></pre>

@@ -1,0 +1,68 @@
+<h1>api.createShortcutGroup</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ShortcutGroupInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ShortcutGroup</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ShortcutGroup",
+            "ShortcutGroupInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createShortcutGroup",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sort",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "groupType",
+            "value": [
+                "AppGroupType"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ShortcutGroupInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "ShortcutGroup"
+        ],
+        "type": "object"
+    }
+}</code></pre>

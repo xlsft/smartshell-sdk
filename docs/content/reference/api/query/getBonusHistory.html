@@ -1,0 +1,118 @@
+<h1>api.getBonusHistory</h1>
+<p><code>Paginated</code></p>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, uuid: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = BonusHistory</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "BonusHistory"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "getBonusHistory",
+    "schema": [
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "BonusHistoryItem"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "delta",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "old_value",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "new_value",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "type_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "add",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "worker_first_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "worker_last_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false
+        },
+        {
+            "key": "uuid",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "BonusHistory"
+        ],
+        "type": "object"
+    }
+}</code></pre>

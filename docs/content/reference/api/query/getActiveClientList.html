@@ -1,0 +1,82 @@
+<h1>api.getActiveClientList</h1>
+<p><code>Paginated</code></p>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input: GetActiveClientListInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ActiveClient[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ActiveClient",
+            "GetActiveClientListInput"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "getActiveClientList",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "client_uuid",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "nickname",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "payments",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "total_seconds",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "last_client_activity",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GetActiveClientListInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ActiveClient"
+        ],
+        "type": "object"
+    }
+}</code></pre>

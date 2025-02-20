@@ -1,0 +1,68 @@
+<h1>api.updateHostCommandStatus</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: UpdateHostCommandStatusInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = HostCommand</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "HostCommand",
+            "UpdateHostCommandStatusInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateHostCommandStatus",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "action",
+            "value": [
+                "HostCommandAction"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "status",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "param",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateHostCommandStatusInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "HostCommand"
+        ],
+        "type": "object"
+    }
+}</code></pre>

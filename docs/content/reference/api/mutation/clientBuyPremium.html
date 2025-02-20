@@ -1,0 +1,50 @@
+<h1>api.clientBuyPremium</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = PremiumPayment</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "PremiumPayment"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "clientBuyPremium",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sum",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "status",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "PremiumPayment"
+        ],
+        "type": "object"
+    }
+}</code></pre>

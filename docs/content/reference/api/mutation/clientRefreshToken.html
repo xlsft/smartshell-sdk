@@ -1,0 +1,84 @@
+<h1>api.clientRefreshToken</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: RefreshTokenInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = AccessToken</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "AccessToken",
+            "RefreshTokenInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "clientRefreshToken",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "token_type",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "expires_in",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "access_token",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "refresh_token",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "metadata",
+            "value": [
+                "AccessTokenMetadata"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "first_time_login",
+                    "value": [
+                        "boolean"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "RefreshTokenInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "AccessToken"
+        ],
+        "type": "object"
+    }
+}</code></pre>

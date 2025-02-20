@@ -1,0 +1,36 @@
+<h1>api.nicknameExists</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { nickname: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "nicknameExists",
+    "schema": [],
+    "props": [
+        {
+            "key": "nickname",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

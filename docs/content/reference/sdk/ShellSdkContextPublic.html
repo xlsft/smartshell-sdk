@@ -1,0 +1,33 @@
+<h1 id="type_shellsdkcontextpublic">type ShellSdkContextPublic</h1>
+<br />
+<h2 id="type_description">Description</h2>
+<p>Public context information exposed by the SDK</p>
+
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="ctx">ctx</h3>
+<code>
+    ctx: {
+        options: <a href="/reference/sdk/ShellSdkOptions">ShellSdkOptions</a>,
+        api: {
+            endpoint: <a href="/reference/api/ShellApiEndpoint">ShellApiEndpoint</a>,
+            anonymous: boolean,
+        }
+        clubs: {
+            list: <a href="/reference/api/ShellApiClub">ShellApiClub</a>[],
+            active: number
+        }
+    }
+</code>
+
+<h3 id="request">request</h3>
+<code>
+    request: {
+        name: string,
+        method: 'mutation' | 'query',
+        fields: <a href="/reference/sdk/ShellSdkFormattedQuery">ShellSdkFormattedQuery</a>
+    }
+</code>
+
+<h3 id="response">response</h3>
+<code>response: any</code>

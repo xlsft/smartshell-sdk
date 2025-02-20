@@ -1,0 +1,61 @@
+<h1>api.pickGameAccount</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: pickGameAccountInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = FreeGameAccount</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "FreeGameAccount",
+            "pickGameAccountInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "pickGameAccount",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "login",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "password",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "pickGameAccountInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "FreeGameAccount"
+        ],
+        "type": "object"
+    }
+}</code></pre>

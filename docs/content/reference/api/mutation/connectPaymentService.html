@@ -1,0 +1,46 @@
+<h1>api.connectPaymentService</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ConnectPaymentServiceInput, service: IntegrationService }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ConnectPaymentServiceInput",
+            "IntegrationService"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "connectPaymentService",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ConnectPaymentServiceInput",
+            "type": "object"
+        },
+        {
+            "key": "service",
+            "required": true,
+            "array": false,
+            "value": "IntegrationService",
+            "type": "enum"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

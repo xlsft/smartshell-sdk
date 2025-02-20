@@ -1,0 +1,50 @@
+<h1>api.versions</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = Versions</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "Versions"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "versions",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "easter_egg",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "frontend",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "backend",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "Versions"
+        ],
+        "type": "object"
+    }
+}</code></pre>

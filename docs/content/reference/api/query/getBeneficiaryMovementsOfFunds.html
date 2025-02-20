@@ -1,0 +1,393 @@
+<h1>api.getBeneficiaryMovementsOfFunds</h1>
+<p><code>Paginated</code></p>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input: GetBeneficiaryMovementsOfFunds }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = MovementOfFundsPaginated</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "MovementOfFundsPaginated",
+            "GetBeneficiaryMovementsOfFunds"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "getBeneficiaryMovementsOfFunds",
+    "schema": [
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "MovementOfFunds"
+            ],
+            "child": [
+                {
+                    "type": "enum",
+                    "key": "operation",
+                    "value": [
+                        "OperationType"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "transaction",
+                    "value": [
+                        "LitePaymentTransaction"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "company",
+                            "value": [
+                                "LiteCompany"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "address",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "amount",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "service",
+                            "value": [
+                                "ServiceEnum"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "status",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "deal",
+                    "value": [
+                        "BeneficiaryDeal"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "beneficiary",
+                            "value": [
+                                "Beneficiary"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "organization_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "type",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "enum",
+                                    "key": "opf",
+                                    "value": [
+                                        "OpfType"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "full_name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "email",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "inn",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "status",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "balance",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "enum",
+                                    "key": "tax",
+                                    "value": [
+                                        "Tax"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "service_name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "key": "companies",
+                                    "value": [],
+                                    "child": [
+                                        {
+                                            "type": "scalar",
+                                            "key": "id",
+                                            "value": [
+                                                "number"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "name",
+                                            "value": [
+                                                "string"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "address",
+                                            "value": [
+                                                "string"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "key": "locked_by",
+                                    "value": [],
+                                    "child": [
+                                        {
+                                            "type": "scalar",
+                                            "key": "id",
+                                            "value": [
+                                                "string"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "sum",
+                                            "value": [
+                                                "number"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "commission",
+                                            "value": [
+                                                "number"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "status",
+                                            "value": [
+                                                "string"
+                                            ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "created_at",
+                                            "value": [
+                                                "string"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "error",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "created_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "commission",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "status",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "sum",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "deposit",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "withdrawal",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GetBeneficiaryMovementsOfFunds",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "MovementOfFundsPaginated"
+        ],
+        "type": "object"
+    }
+}</code></pre>

@@ -1,0 +1,49 @@
+<h1 id="class_shell">class Shell</h1>
+<br />
+<h2 id="class_description">Description</h2>
+<p>Main class for interacting with the SmartShell API. Handles authentication, club management, middleware, and API requests.</p>
+
+<h2 id="class_constructor">Constructor</h2>
+<pre><code>constructor(options: ShellSdkOptions)</code></pre>
+<p>Creates a new Shell instance with the provided configuration options.</p>
+
+<h2 id="class_properties">Properties</h2>
+<ul>
+    <li><code>anonymous: boolean</code> - Indicates if the Shell instance is in anonymous mode</li>
+    <li><code>catch: (errors: ShellApiResponseError[] | string) => void</code> - Error handler function</li>
+    <li><code>api: ShellApi</code> - API interface for making requests</li>
+</ul>
+
+<h2 id="class_methods">Methods</h2>
+<h3>Public Methods</h3>
+<ul>
+    <li><code>api: void</code> - collection of all raw queries and mutations</li>
+    <li><code>use(...middleware: ShellSdkMiddleware[]): void</code> - Add middleware functions to process API requests and responses</li>
+    <li><code>call&lt;Response&gt;(query: ShellSdkQuery, token?: string): Promise&lt;{ [key: string]: Response }&gt;</code> - Make a direct GraphQL API call</li>
+    <li><code>request&lt;Input, Response&gt;(type: 'query' | 'mutation', name: string, query?: ShellSdkFormattedQuery, input?: Input | { input: Input }, paginator?: ShellSdkPaginatorInput): Promise&lt;Response&gt;</code> - Make a formatted API request</li>
+    <li><code>on(id: number): Shell</code> - Switch active club context</li>
+    <li><code>each(callback: (ctx: Shell, id: number) => unknown): Promise&lt;void&gt;</code> - Execute callback for each available club</li>
+</ul>
+
+<h2 id="class_example">Example Usage</h2>
+<pre><code>const shell = await new Shell({
+    credentials: {
+        login: "79998887766",
+        password: "passw0rd"
+    },
+    anonymous: false,
+    host: "billing",
+    club: 1234
+})
+
+// Add middleware
+shell.use(({ ctx, request, response }) => {
+    console.log(ctx, request, response)
+})
+
+// Set error handler
+shell.catch = (errors) => console.log(errors)
+
+// Make API request
+const response = await shell.request('query', 'someQuery', queryFields, inputData)
+</code></pre>

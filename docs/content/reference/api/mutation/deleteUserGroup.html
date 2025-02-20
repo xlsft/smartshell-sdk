@@ -1,0 +1,74 @@
+<h1>api.deleteUserGroup</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { uuid: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = UserGroup</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "UserGroup"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "deleteUserGroup",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "uuid",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "user_count",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "discount",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "uuid",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "UserGroup"
+        ],
+        "type": "object"
+    }
+}</code></pre>

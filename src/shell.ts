@@ -1,33 +1,37 @@
-import type { ShellApiClub, ShellApiEndpoint, ShellApiOptions, ShellApiResponse, ShellApiResponseError } from './types/api.ts'
-import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkPaginatorInput, ShellSdkQuery } from "./types/sdk.ts";
-import type { AccessToken, UserClub } from "./types/types.ts";
+import type { ShellApiClub, ShellApiEndpoint, ShellApiResponse, ShellApiResponseError } from './types/api.ts'
+import type { ShellSdkFormattedQuery, ShellSdkMiddleware, ShellSdkOptions, ShellSdkPaginatorInput, ShellSdkQuery } from "./types/sdk.ts";
+import type { AccessToken, UserClub, ClientClub } from "./types/types.ts";
 import { ShellApiError, ShellSdkError } from "./utils/errors.ts";
 import { api } from "./api.ts";
 import { key } from "./utils/key.ts";
 
 /**
 * # class `Shell`
-*
 * Create instance of Shell Api with credentials
 * 
 * ```ts
-* 
-const shell = await new Shell({
-    credentials: {
-        login: "79998887766",
-        password: "passw0rd"
-    },
-    anonymous: false,
-    host: "billing"
-    club: 1234
-})
+* const shell = await new Shell({
+*     credentials: {
+*         login: "79998887766",
+*         password: "passw0rd"
+*     },
+*     anonymous: false,
+*     host: "billing"
+*     club: 1234
+* })
 * ```
 * 
 * `@xlsoftware/smartshell-sdk`
 */
 export class Shell {
 
-    constructor(private options: ShellApiOptions) {
+    /**
+     * Creates an instance of Shell API
+     * @param options - Configuration options for the Shell API
+     */
+    
+    constructor(private options: ShellSdkOptions) {
+        if (this.options.use) this.use(this.options.use)
         if (this.options.credentials) this.anonymous = false
         this._endpoint = `https://${options.host || 'billing'}.smartshell.gg/api/graphql`
         this._initialized = this._initialize() 
@@ -44,36 +48,51 @@ export class Shell {
     private _initialized
     private async _initialize() { await this._init(); }
     private async _init(): Promise<void> {
+        
         if (this._clubs.length !== 0) ShellSdkError(this, 'SDK can`t be initialized more than once!')
         if (!this.options.credentials && this.options.anonymous === false) ShellSdkError(this, 'No credentials provided')
         if (!this.anonymous) {
-            const clubs = (await this.call<UserClub[]>(`query UserClubs {
-                userClubs(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}" }) {
-                    id
-                    name
-                    address
-                    tariffName
-                    workShiftStatus
-                    permitted
-                    operatorFirstName
-                    operatorLastName
+            if (this.options.host !== 'mobile-auth') {
+                const clubs = (await this.call<UserClub[]>(`query UserClubs {
+                    userClubs(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}" }) {
+                        id
+                    }
+                }`)).userClubs
+                
+                for (let i = 0; i < clubs.length; i++) {
+                    const id = clubs[i].id;
+                    if (this._clubs.some(token => token.id === id)) continue
+                    const tokens = (await this.call<AccessToken>(`mutation Login {
+                        login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
+                            token_type
+                            expires_in
+                            access_token
+                            refresh_token
+                        }
+                    }`)).login
+                    this._clubs.push({ id, access_token: tokens.access_token, refresh_token: tokens.refresh_token, expires: Date.now() + (tokens.expires_in * 1000) - (60*60*1000)})
                 }
-            }`)).userClubs
-            
-            for (let i = 0; i < clubs.length; i++) {
-                const id = clubs[i].id;
-                if (this._clubs.some(token => token.id === id)) continue
-                const tokens = (await this.call<AccessToken>(`mutation Login {
-                    login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
+                this._active_club = this._clubs[0].id
+            } else {
+                const tokens = (await this.call<AccessToken>(`mutation ClientLogin {
+                    clientLogin(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}" }) {
                         token_type
                         expires_in
                         access_token
                         refresh_token
                     }
-                }`)).login
-                this._clubs.push({ id, access_token: tokens.access_token, refresh_token: tokens.refresh_token, expires: Date.now() + (tokens.expires_in * 1000) - (60*60*1000)})
+                }`)).clientLogin
+                const clubs = (await this.call<ClientClub[]>(`query myClubs {
+                    myClubs {
+                        id
+                    }
+                }`, tokens.access_token)).myClubs
+                for (let i = 0; i < clubs.length; i++) {
+                    const id = clubs[i].id;
+                    this._clubs.push({ id, access_token: tokens.access_token, refresh_token: tokens.refresh_token, expires: Date.now() + (tokens.expires_in * 1000) - (60*60*1000)})
+                }
+                this._active_club = this._clubs[0].id
             }
-            this._active_club = this._clubs[0].id
         }
     }
 
@@ -127,8 +146,7 @@ export class Shell {
     * Add middleware function and listen for every event
     * 
     * ```ts
-    * 
-    shell.use(({ ctx, request, response }) => { console.log(ctx, request, response) })
+    * shell.use(({ ctx, request, response }) => { console.log(ctx, request, response) })
     * ```
     * 
     * `@xlsoftware/smartshell-sdk`
@@ -147,8 +165,7 @@ export class Shell {
     * Set error catcher function
     * 
     * ```ts
-    * 
-    shell.catch = (errors) => console.log(errors)
+    * shell.catch = (errors) => console.log(errors)
     * ```
     * 
     * `@xlsoftware/smartshell-sdk`
@@ -230,7 +247,9 @@ export class Shell {
         
             return result.join('');
         }
-        const data = (await this.call<Response>(build()))
+        const builded = build()
+        console.log(builded)
+        const data = (await this.call<Response>(builded))
         if (this._middleware.length !== 0 && query) this._middleware_global(name, type, query, data)
         return data[name as keyof { [key: string]: Response }]
         

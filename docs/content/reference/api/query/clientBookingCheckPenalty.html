@@ -1,0 +1,90 @@
+<h1>api.clientBookingCheckPenalty</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, companyId?: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ClientBookingPenaltyData</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ClientBookingPenaltyData"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "clientBookingCheckPenalty",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "currency",
+            "value": [
+                "Currency"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "alias",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "letter",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "companyId",
+            "required": false,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "ClientBookingPenaltyData"
+        ],
+        "type": "object"
+    }
+}</code></pre>

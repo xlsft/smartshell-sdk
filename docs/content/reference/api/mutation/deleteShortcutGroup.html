@@ -1,0 +1,67 @@
+<h1>api.deleteShortcutGroup</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ShortcutGroup</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ShortcutGroup"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "deleteShortcutGroup",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sort",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "groupType",
+            "value": [
+                "AppGroupType"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "ShortcutGroup"
+        ],
+        "type": "object"
+    }
+}</code></pre>

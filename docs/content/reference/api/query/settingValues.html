@@ -1,0 +1,57 @@
+<h1>api.settingValues</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = SettingPair[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "SettingPair"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "settingValues",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "alias",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "value",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "updated_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "disabled",
+            "value": [
+                "boolean"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "SettingPair"
+        ],
+        "type": "object"
+    }
+}</code></pre>

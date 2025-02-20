@@ -1,11 +1,12 @@
+// deno-lint-ignore-file no-unused-vars ban-unused-ignore no-explicit-any
 import type { ShellSdkContext } from "../../types/sdk.ts"
-import type { DateTime } from "../../types/types.ts";
 
+import { key } from "../../utils/key.ts"
 
-export type ResponseType = DateTime
+export type ResponseType = string
 
-const module = async <Response extends ResponseType>(
-    ctx: ShellSdkContext
-): Promise<Response> => { return await ctx.request("query", "now") }
+const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Promise<Response> => {
+    return await ctx.request("query", "now", [])
+}
 
 export default module<ResponseType>

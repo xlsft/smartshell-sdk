@@ -1,0 +1,123 @@
+<h1>api.leaderboard</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { companyId: number, from: string, to: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = LeaderboardUser[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "LeaderboardUser"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "leaderboard",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "userId",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "totalTime",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "nickname",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "avatarUrl",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "telegram_link",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "discord_link",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "steam_link",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "vk_link",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "companyId",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "from",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        },
+        {
+            "key": "to",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "LeaderboardUser"
+        ],
+        "type": "object"
+    }
+}</code></pre>

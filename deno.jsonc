@@ -1,16 +1,23 @@
 {
     "name": "@xlsoftware/smartshell-sdk",
-    "version": "0.3.1",
+    "version": "1.0.1",
     "exports": {
         ".": "./mod.ts",
         "./utils": "./utils.ts",
-        "./types": "./src/types/graphql.ts"
+        "./types": "./src/types/types.ts",
+        "./types/sdk": "./src/types/sdk.ts",
+        "./types/api": "./src/types/api.ts"
     },
     "tasks": {
         "dev": "deno run -A --watch main.ts",
-        "lint": "deno lint --fix",
         "build": "deno run -A scripts/build.ts",
         "update": "deno run -A scripts/update.ts",
-        "update:dev": "deno run -A --watch scripts/update.ts"
+        "docs:build": "cd docs && pnpm build",
+        "docs:dev": "cd docs && pnpm dev"
+    },
+    "lint": {
+        "rules": {
+            "tags": ["recommended"]
+        }
     }
 }

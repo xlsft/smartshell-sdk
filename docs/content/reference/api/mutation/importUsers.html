@@ -1,0 +1,73 @@
+<h1>api.importUsers</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { club_id: number, org_id: number, code: string, file: string, sum_deposit: boolean, columns?: ImportUserColumnsInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ImportUserColumnsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "importUsers",
+    "schema": [],
+    "props": [
+        {
+            "key": "club_id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "org_id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar"
+        },
+        {
+            "key": "code",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        },
+        {
+            "key": "file",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar"
+        },
+        {
+            "key": "sum_deposit",
+            "required": true,
+            "array": false,
+            "value": "boolean",
+            "type": "scalar"
+        },
+        {
+            "key": "columns",
+            "required": false,
+            "array": false,
+            "value": "ImportUserColumnsInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

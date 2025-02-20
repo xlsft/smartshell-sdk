@@ -1,0 +1,38 @@
+<h1>api.hostAccessToken</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: HostAccessTokenInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "HostAccessTokenInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "hostAccessToken",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "HostAccessTokenInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

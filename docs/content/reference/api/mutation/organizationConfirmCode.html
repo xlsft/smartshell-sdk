@@ -1,0 +1,107 @@
+<h1>api.organizationConfirmCode</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: OrganizationConfirmationCodeInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ConfirmationResult</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "ConfirmationResult",
+            "OrganizationConfirmationCodeInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "organizationConfirmCode",
+    "schema": [
+        {
+            "type": "object",
+            "key": "token",
+            "value": [
+                "AccessToken"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "token_type",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "expires_in",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "access_token",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "refresh_token",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "metadata",
+                    "value": [
+                        "AccessTokenMetadata"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "first_time_login",
+                            "value": [
+                                "boolean"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "success",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "hash",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "OrganizationConfirmationCodeInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "ConfirmationResult"
+        ],
+        "type": "object"
+    }
+}</code></pre>

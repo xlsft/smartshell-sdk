@@ -1,0 +1,38 @@
+<h1>api.organizationVerifyConfirmationCode</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: OrganizationVerifyConfirmationCodeInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "OrganizationVerifyConfirmationCodeInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "organizationVerifyConfirmationCode",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "OrganizationVerifyConfirmationCodeInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

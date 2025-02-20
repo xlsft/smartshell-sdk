@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"@ained/composables": "npm:@jsr/ained__composables@^1.1.32"
+	}
+}

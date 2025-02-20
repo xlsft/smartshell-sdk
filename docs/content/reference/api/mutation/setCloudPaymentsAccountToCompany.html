@@ -1,0 +1,54 @@
+<h1>api.setCloudPaymentsAccountToCompany</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: SetCloudPaymentsAccountToCompanyInput }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = CloudPaymentsAccount</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json" data-expandable>{
+    "imports": {
+        "gql": [
+            "CloudPaymentsAccount",
+            "SetCloudPaymentsAccountToCompanyInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "setCloudPaymentsAccountToCompany",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "publicId",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "secretKey",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "SetCloudPaymentsAccountToCompanyInput",
+            "type": "object"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "CloudPaymentsAccount"
+        ],
+        "type": "object"
+    }
+}</code></pre>
