@@ -1,9 +1,9 @@
 <h1>api.banClient</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { uuid: string, input: FlagInput }</code></pre>
+<pre><code lang="ts">type InputType = { uuid: string, input: "||--['/docs/reference/types/FlagInput','FlagInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = User</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/User','User'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -2562,14 +2562,16 @@
             "required": true,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "FlagInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/FlagInput"
         }
     ],
     "response": {

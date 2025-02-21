@@ -1,9 +1,9 @@
 <h1>api.updateGood</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: GoodInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/GoodInput','GoodInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = Good</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Good','Good'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -517,14 +517,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "GoodInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/GoodInput"
         }
     ],
     "response": {

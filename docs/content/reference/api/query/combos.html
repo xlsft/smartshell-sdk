@@ -1,9 +1,9 @@
 <h1>api.combos</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input?: SearchComboInput }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input?: "||--['/docs/reference/types/SearchComboInput','SearchComboInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = ComboPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ComboPaginated','ComboPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -947,14 +947,16 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "input",
             "required": false,
             "array": false,
             "value": "SearchComboInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/SearchComboInput"
         }
     ],
     "response": {

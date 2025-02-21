@@ -1,9 +1,9 @@
 <h1>api.getBookings</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, hostIds: number[], status?: string, from?: string, to?: string }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", hostIds: number[], status?: string, from?: string, to?: string }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = BookingPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/BookingPaginated','BookingPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -1490,35 +1490,40 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "hostIds",
             "required": true,
             "array": true,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "status",
             "required": false,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         },
         {
             "key": "from",
             "required": false,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         },
         {
             "key": "to",
             "required": false,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         }
     ],
     "response": {

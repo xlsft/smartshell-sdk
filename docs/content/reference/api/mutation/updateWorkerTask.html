@@ -1,9 +1,9 @@
 <h1>api.updateWorkerTask</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: WorkerTaskInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/WorkerTaskInput','WorkerTaskInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = WorkerTask</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/WorkerTask','WorkerTask'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -3776,14 +3776,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "WorkerTaskInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/WorkerTaskInput"
         }
     ],
     "response": {

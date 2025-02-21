@@ -1,9 +1,9 @@
 <h1>api.createPaymentTransaction</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: PaymentTransactionInput, type?: PaymentTransactionType }</code></pre>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/PaymentTransactionInput','PaymentTransactionInput'--||", type?: "||--['/docs/reference/types/PaymentTransactionType','PaymentTransactionType'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = PaymentTransaction</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/PaymentTransaction','PaymentTransaction'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -1506,14 +1506,16 @@
             "required": true,
             "array": false,
             "value": "PaymentTransactionInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/PaymentTransactionInput"
         },
         {
             "key": "type",
             "required": false,
             "array": false,
             "value": "PaymentTransactionType",
-            "type": "enum"
+            "type": "enum",
+            "docs": "/docs/reference/types/PaymentTransactionType"
         }
     ],
     "response": {

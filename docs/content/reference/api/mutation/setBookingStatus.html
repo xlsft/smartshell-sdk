@@ -1,9 +1,9 @@
 <h1>api.setBookingStatus</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, status: BookingStatus }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, status: "||--['/docs/reference/types/BookingStatus','BookingStatus'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = Booking</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Booking','Booking'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -1482,14 +1482,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "status",
             "required": true,
             "array": false,
             "value": "BookingStatus",
-            "type": "enum"
+            "type": "enum",
+            "docs": "/docs/reference/types/BookingStatus"
         }
     ],
     "response": {

@@ -23,10 +23,10 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
         return { required: options.required, array: options.array, value: options.value.get(), type: options.type.get()}
     }
     const imports = { gql: new Set<string>(), sdk: new Set<string>(['ShellSdkContext']) }
-    const props: { key: string, value: string, required: boolean, array: boolean }[] = []
+    const props: { key: string, value: string, required: boolean, array: boolean, docs: string }[] = []
     const response = resolve(method.type)
-    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false }) }
-    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved, value: resolved.value[0] }) }; method.args.forEach(arg => prop(arg))
+    const paginated = method.args.some(arg => arg.name === 'page' || arg.name === 'first'); if (paginated) { imports.sdk.add('ShellSdkPaginatorInput'); props.push({ key: 'paginator', value: 'ShellSdkPaginatorInput', required: false, array: false, docs: '/docs/reference/sdk/ShellSdkPaginatorInput' }) }
+    const prop = (arg: Field) => { if (arg.name === 'page' || arg.name === 'first') return; const resolved = resolve(arg.type); props.push({ key: arg.name, ...resolved, value: resolved.value[0], docs: `/docs/reference/types/${resolved.value[0]}`  }) }; method.args.forEach(arg => prop(arg))
     const node = (key: string, type: ResolvedType): Node => { return { type: type.type, key, value: type.value }}
     const nodes = (ref: TypeRef) => {
         if (resolve(ref).type === 'scalar') return []

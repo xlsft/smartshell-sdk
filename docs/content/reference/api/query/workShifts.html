@@ -1,9 +1,9 @@
 <h1>api.workShifts</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input?: WorkShiftInput }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input?: "||--['/docs/reference/types/WorkShiftInput','WorkShiftInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = WorkShiftPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/WorkShiftPaginated','WorkShiftPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -4870,14 +4870,16 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "input",
             "required": false,
             "array": false,
             "value": "WorkShiftInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/WorkShiftInput"
         }
     ],
     "response": {

@@ -1,9 +1,9 @@
 <h1>api.processPostPayment</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: ProcessPostPaymentInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/ProcessPostPaymentInput','ProcessPostPaymentInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = Payment</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Payment','Payment'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -8030,14 +8030,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "ProcessPostPaymentInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/ProcessPostPaymentInput"
         }
     ],
     "response": {

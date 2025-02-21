@@ -1,9 +1,9 @@
 <h1>api.getBeneficiaryMovementsOfFunds</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input: GetBeneficiaryMovementsOfFunds }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input: "||--['/docs/reference/types/GetBeneficiaryMovementsOfFunds','GetBeneficiaryMovementsOfFunds'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = MovementOfFundsPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/MovementOfFundsPaginated','MovementOfFundsPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -372,14 +372,16 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "GetBeneficiaryMovementsOfFunds",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/GetBeneficiaryMovementsOfFunds"
         }
     ],
     "response": {

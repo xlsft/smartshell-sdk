@@ -1,7 +1,7 @@
 <h1>api.importUsersHours</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { club_id: number, org_id: number, code: string, file: string, columns?: ImportUserHoursColumnsInput, timeMultiplier: number, tariff_id: number }</code></pre>
+<pre><code lang="ts">type InputType = { club_id: number, org_id: number, code: string, file: string, columns?: "||--['/docs/reference/types/ImportUserHoursColumnsInput','ImportUserHoursColumnsInput'--||", timeMultiplier: number, tariff_id: number }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = boolean</code></pre>
 <h3>Codegen method map</h3>
@@ -24,49 +24,56 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "org_id",
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "code",
             "required": true,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         },
         {
             "key": "file",
             "required": true,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         },
         {
             "key": "columns",
             "required": false,
             "array": false,
             "value": "ImportUserHoursColumnsInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/ImportUserHoursColumnsInput"
         },
         {
             "key": "timeMultiplier",
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "tariff_id",
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         }
     ],
     "response": {

@@ -1,9 +1,9 @@
 <h1>api.paymentTransactions</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, company_id?: number }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", company_id?: number }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = PaymentTransactionPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/PaymentTransactionPaginated','PaymentTransactionPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -1513,14 +1513,16 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "company_id",
             "required": false,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         }
     ],
     "response": {

@@ -1,2 +1,4 @@
 main.ts
 deno.lock
+.vscode
+node_modules

@@ -1,9 +1,9 @@
 <h1>api.eventList</h1>
 <p><code>Paginated</code></p>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ShellSdkPaginatorInput, input?: EventsInput }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input?: "||--['/docs/reference/types/EventsInput','EventsInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = EventListPaginated</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/EventListPaginated','EventListPaginated'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -1307,14 +1307,16 @@
             "key": "paginator",
             "value": "ShellSdkPaginatorInput",
             "required": false,
-            "array": false
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
         },
         {
             "key": "input",
             "required": false,
             "array": false,
             "value": "EventsInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/EventsInput"
         }
     ],
     "response": {

@@ -1,8 +1,22 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css');
+@import "tailwindcss";
+
 
 * {
-    @apply transition-all box-border font-[Rubik] text-gray-200
+    @apply transition-all box-border font-[Rubik] text-gray-200 scroll-smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent
+}
+
+&::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    @apply overflow-hidden
 }
 
 
@@ -13,4 +27,65 @@ a {
 
 h1 {
     @apply text-4xl font-bold
+}
+
+h2 {
+    @apply text-2xl font-bold
+}
+
+
+h3 {
+    @apply text-xl font-bold
+}
+
+p {
+    @apply max-w-[850px] leading-[28px]
+}
+
+code {
+    @apply px-[8px] py-[4px] rounded-md text-xs h-[24px] gap-[8px] w-fit bg-gray-800 border border-gray-600
+}
+
+pre code {
+    all: unset !important;
+    @apply relative h-fit max-w-full
+}
+
+
+pre code a {
+    @apply underline-offset-[2px] text-[#bb9af7] underline 
+}
+
+.hljs {
+    @apply bg-[#0A101D] relative
+}
+pre {
+    @apply font-[JetBrains_Mono] text-sm w-full h-fit overflow-x-clip;
+    
+    background: #0A101D;
+    padding: 24px;
+    position: relative;
+    border: 1px solid #101828;
+    border-radius: 8px;
+}
+
+.card {
+    background: #0A101D;
+    padding: 24px;
+    position: relative;
+    border: 1px solid #101828;
+    border-radius: 8px;
+}
+
+pre * {
+    @apply font-[JetBrains_Mono]
+}
+.wireframe {
+    background-color: #0A101D;
+    background-image: radial-gradient(circle, #152035 1px, transparent 1px);
+    background-size: 20px 20px, 50px 50px, cover;
+    background-position: 0 0, 10px 10px, center;
+    background-repeat: repeat, repeat, no-repeat;
+    border: 1px solid #101828;
+    border-radius: 8px;
 }

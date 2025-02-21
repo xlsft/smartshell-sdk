@@ -1,9 +1,9 @@
 <h1>api.updatePromoCode</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: PromoCodeInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/PromoCodeInput','PromoCodeInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = PromoCode</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/PromoCode','PromoCode'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -2868,14 +2868,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "PromoCodeInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/PromoCodeInput"
         }
     ],
     "response": {

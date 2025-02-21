@@ -3,7 +3,7 @@
 <h3>Input</h3>
 <pre><code lang="ts">type InputType = { company_id: number, host_group_id: number, tariff_id: number, from: string }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = ClientHost[]</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ClientHost','ClientHost'--||"[]</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -139,28 +139,32 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "host_group_id",
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "tariff_id",
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "from",
             "required": true,
             "array": false,
             "value": "string",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
         }
     ],
     "response": {

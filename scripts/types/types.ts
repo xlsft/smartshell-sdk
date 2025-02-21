@@ -70,7 +70,7 @@ export type ResolvedMethod = {
     type: "query" | "mutation"
     name: string
     schema: Node[]
-    props: { key: string, value: string, required: boolean, array: boolean }[]
+    props: { key: string, value: string, required: boolean, array: boolean, docs: string }[]
     paginated: boolean
     response: ResolvedType
     deprecated?: string

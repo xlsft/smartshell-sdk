@@ -1,9 +1,9 @@
 <h1>api.updateShortcutGroup</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: ShortcutGroupInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/ShortcutGroupInput','ShortcutGroupInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = ShortcutGroup</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ShortcutGroup','ShortcutGroup'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -54,14 +54,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "ShortcutGroupInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/ShortcutGroupInput"
         }
     ],
     "response": {

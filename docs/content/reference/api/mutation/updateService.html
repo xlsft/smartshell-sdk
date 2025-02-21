@@ -1,9 +1,9 @@
 <h1>api.updateService</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: ServiceInput }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/ServiceInput','ServiceInput'--||" }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = Service</code></pre>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Service','Service'--||"</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json" data-expandable>{
     "imports": {
@@ -96,14 +96,16 @@
             "required": true,
             "array": false,
             "value": "number",
-            "type": "scalar"
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
         },
         {
             "key": "input",
             "required": true,
             "array": false,
             "value": "ServiceInput",
-            "type": "object"
+            "type": "object",
+            "docs": "/docs/reference/types/ServiceInput"
         }
     ],
     "response": {

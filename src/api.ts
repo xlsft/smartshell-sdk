@@ -176,14 +176,6 @@ import type { Shell } from "../mod.ts";
             */
         clientPhoneExists: async (input: Parameters<typeof q.clientPhoneExists>[1],) => await q.clientPhoneExists(ctx, input,),
         /**
-            * # query `clients`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clients
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
-        /**
             * # query `clientSession`
             * 
             * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientSession
@@ -200,14 +192,6 @@ import type { Shell } from "../mod.ts";
             */
         clientSessions: async (input: Parameters<typeof q.clientSessions>[1],paginator?: ShellSdkPaginatorInput) => await q.clientSessions(ctx, input, paginator),
         /**
-            * # query `clientsPaymentReport`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientsPaymentReport
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        clientsPaymentReport: async (input: Parameters<typeof q.clientsPaymentReport>[1],paginator?: ShellSdkPaginatorInput) => await q.clientsPaymentReport(ctx, input, paginator),
-        /**
             * # query `clientTariffGrid`
             * 
             * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientTariffGrid
@@ -215,6 +199,22 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         clientTariffGrid: async (input: Parameters<typeof q.clientTariffGrid>[1],) => await q.clientTariffGrid(ctx, input,),
+        /**
+            * # query `clients`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clients
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
+        /**
+            * # query `clientsPaymentReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientsPaymentReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clientsPaymentReport: async (input: Parameters<typeof q.clientsPaymentReport>[1],paginator?: ShellSdkPaginatorInput) => await q.clientsPaymentReport(ctx, input, paginator),
         /**
             * # query `club`
             * 
@@ -664,6 +664,14 @@ import type { Shell } from "../mod.ts";
             */
         hostGroup: async (input: Parameters<typeof q.hostGroup>[1],) => await q.hostGroup(ctx, input,),
         /**
+            * # query `hostGroupTitles`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroupTitles
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostGroupTitles: async () => await q.hostGroupTitles(ctx),
+        /**
             * # query `hostGroups`
             * 
             * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroups
@@ -680,13 +688,21 @@ import type { Shell } from "../mod.ts";
             */
         hostGroupsOverview: async () => await q.hostGroupsOverview(ctx),
         /**
-            * # query `hostGroupTitles`
+            * # query `hostType`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroupTitles
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostType
             * 
             * `@xlsoftware/smartshell-sdk`
             */
-        hostGroupTitles: async () => await q.hostGroupTitles(ctx),
+        hostType: async (input: Parameters<typeof q.hostType>[1],) => await q.hostType(ctx, input,),
+        /**
+            * # query `hostTypes`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostTypes
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostTypes: async () => await q.hostTypes(ctx),
         /**
             * # query `hosts`
             * 
@@ -719,22 +735,6 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         hostsOverview: async () => await q.hostsOverview(ctx),
-        /**
-            * # query `hostType`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostType
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostType: async (input: Parameters<typeof q.hostType>[1],) => await q.hostType(ctx, input,),
-        /**
-            * # query `hostTypes`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostTypes
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostTypes: async () => await q.hostTypes(ctx),
         /**
             * # query `income`
             * 
@@ -1208,14 +1208,6 @@ import type { Shell } from "../mod.ts";
             */
         versions: async () => await q.versions(ctx),
         /**
-            * # query `workers`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workers
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
-        /**
             * # query `workShift`
             * 
             * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShift
@@ -1223,6 +1215,14 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         workShift: async (input: Parameters<typeof q.workShift>[1],) => await q.workShift(ctx, input,),
+        /**
+            * # query `workShiftSummary`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShiftSummary
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        workShiftSummary: async (input: Parameters<typeof q.workShiftSummary>[1],) => await q.workShiftSummary(ctx, input,),
         /**
             * # query `workShifts`
             * 
@@ -1248,13 +1248,13 @@ import type { Shell } from "../mod.ts";
             */
         workShiftsSummaryReport: async (input: Parameters<typeof q.workShiftsSummaryReport>[1],) => await q.workShiftsSummaryReport(ctx, input,),
         /**
-            * # query `workShiftSummary`
+            * # query `workers`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShiftSummary
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workers
             * 
             * `@xlsoftware/smartshell-sdk`
             */
-        workShiftSummary: async (input: Parameters<typeof q.workShiftSummary>[1],) => await q.workShiftSummary(ctx, input,),
+        workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
 
         // mutation
 
@@ -2371,14 +2371,6 @@ import type { Shell } from "../mod.ts";
             */
         setSetting: async (input: Parameters<typeof m.setSetting>[1],) => await m.setSetting(ctx, input,),
         /**
-            * # mutation `setSettings`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSettings
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        setSettings: async (input: Parameters<typeof m.setSettings>[1],) => await m.setSettings(ctx, input,),
-        /**
             * # mutation `setSettingValue`
             * 
             * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSettingValue
@@ -2386,6 +2378,14 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         setSettingValue: async (input: Parameters<typeof m.setSettingValue>[1],) => await m.setSettingValue(ctx, input,),
+        /**
+            * # mutation `setSettings`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSettings
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        setSettings: async (input: Parameters<typeof m.setSettings>[1],) => await m.setSettings(ctx, input,),
         /**
             * # mutation `setShellMode`
             * 

@@ -19,5 +19,6 @@
         "rules": {
             "tags": ["recommended"]
         }
-    }
+    },
+    "nodeModulesDir": "auto"
 }
