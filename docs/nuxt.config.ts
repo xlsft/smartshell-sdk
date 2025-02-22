@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     vite: { plugins: [tailwindcss() as any] },
     css: ['~/assets/css/main.css'],
+    ssr: false,
     app: {
         head: {
             title: 'SmartShell SDK',

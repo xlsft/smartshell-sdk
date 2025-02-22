@@ -79,5 +79,5 @@ export const typedocs = async (type: Type): Promise<string | undefined> => {
     `
 
     log.log(`${options.type} "${type.name}" docs rendered`)
-    await Deno.writeTextFile(`docs/content/reference/types/${type.name}`, await prettier.format(content, { parser: "html", tabWidth: 4 }))
+    await Deno.writeTextFile(`docs/public/content/reference/types/${type.name}`, await prettier.format(content, { parser: "html", tabWidth: 4 }))
 }
