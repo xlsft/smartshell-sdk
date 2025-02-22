@@ -1,0 +1,43 @@
+<h1 id="api_query_getAgeRatings">query getAgeRatings</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/AgeRating','AgeRating'--||"[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "AgeRating"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "getAgeRatings",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "alias",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "value",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": false,
+        "array": true,
+        "value": [
+            "AgeRating"
+        ],
+        "type": "object"
+    }
+}</code></pre>

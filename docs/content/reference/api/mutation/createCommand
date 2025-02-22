@@ -1,0 +1,69 @@
+<h1 id="api_mutation_createCommand">mutation createCommand</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input?: "||--['/docs/reference/types/CreateCommandInput','CreateCommandInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/HostCommand','HostCommand'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "HostCommand",
+            "CreateCommandInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createCommand",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "action",
+            "value": [
+                "HostCommandAction"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "status",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "param",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": false,
+            "array": false,
+            "value": "CreateCommandInput",
+            "type": "object",
+            "docs": "/docs/reference/types/CreateCommandInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "HostCommand"
+        ],
+        "type": "object"
+    }
+}</code></pre>

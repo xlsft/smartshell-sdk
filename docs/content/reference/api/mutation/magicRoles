@@ -1,0 +1,26 @@
+<h1 id="api_mutation_magicRoles">mutation magicRoles</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "magicRoles",
+    "schema": [],
+    "props": [],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

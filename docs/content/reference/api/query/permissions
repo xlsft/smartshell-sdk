@@ -1,0 +1,57 @@
+<h1 id="api_query_permissions">query permissions</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Permission','Permission'--||"[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "Permission"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "permissions",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "alias",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "description",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "Permission"
+        ],
+        "type": "object"
+    }
+}</code></pre>

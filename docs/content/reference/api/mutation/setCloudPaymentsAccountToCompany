@@ -1,0 +1,57 @@
+<h1 id="api_mutation_setCloudPaymentsAccountToCompany">
+    mutation setCloudPaymentsAccountToCompany
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/SetCloudPaymentsAccountToCompanyInput','SetCloudPaymentsAccountToCompanyInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/CloudPaymentsAccount','CloudPaymentsAccount'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "CloudPaymentsAccount",
+            "SetCloudPaymentsAccountToCompanyInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "setCloudPaymentsAccountToCompany",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "publicId",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "secretKey",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "SetCloudPaymentsAccountToCompanyInput",
+            "type": "object",
+            "docs": "/docs/reference/types/SetCloudPaymentsAccountToCompanyInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "CloudPaymentsAccount"
+        ],
+        "type": "object"
+    }
+}</code></pre>

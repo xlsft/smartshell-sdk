@@ -1,0 +1,62 @@
+<h1 id="api_mutation_pickGameAccount">mutation pickGameAccount</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/pickGameAccountInput','pickGameAccountInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/FreeGameAccount','FreeGameAccount'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "FreeGameAccount",
+            "pickGameAccountInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "pickGameAccount",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "login",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "password",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "pickGameAccountInput",
+            "type": "object",
+            "docs": "/docs/reference/types/pickGameAccountInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "FreeGameAccount"
+        ],
+        "type": "object"
+    }
+}</code></pre>

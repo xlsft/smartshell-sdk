@@ -1,0 +1,37 @@
+<h1 id="api_query_clientPhoneExists">query clientPhoneExists</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { phone: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "clientPhoneExists",
+    "schema": [],
+    "props": [
+        {
+            "key": "phone",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

@@ -1,0 +1,37 @@
+<h1 id="api_mutation_deleteGoods">mutation deleteGoods</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { ids: number[] }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "deleteGoods",
+    "schema": [],
+    "props": [
+        {
+            "key": "ids",
+            "required": true,
+            "array": true,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

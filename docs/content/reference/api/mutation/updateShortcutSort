@@ -1,0 +1,39 @@
+<h1 id="api_mutation_updateShortcutSort">mutation updateShortcutSort</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/UpdateShortcutSortInput','UpdateShortcutSortInput'--||"[] }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "UpdateShortcutSortInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateShortcutSort",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": true,
+            "value": "UpdateShortcutSortInput",
+            "type": "object",
+            "docs": "/docs/reference/types/UpdateShortcutSortInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

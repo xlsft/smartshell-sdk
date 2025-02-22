@@ -26,24 +26,24 @@ a {
 
 
 h1 {
-    @apply text-4xl font-bold
+    @apply text-4xl font-bold mb-[24px] 
 }
 
 h2 {
-    @apply text-2xl font-bold
+    @apply text-2xl font-bold my-[24px]
 }
 
 
 h3 {
-    @apply text-xl font-bold
+    @apply text-xl font-bold my-[12px]
 }
 
 p {
-    @apply max-w-[850px] leading-[28px]
+    @apply max-w-[850px] leading-[28px] my-[12px]
 }
 
 code {
-    @apply px-[8px] py-[4px] rounded-md text-xs h-[24px] gap-[8px] w-fit bg-gray-800 border border-gray-600
+    @apply px-[8px] py-[4px] rounded-md text-xs h-[24px] gap-[8px] w-fit bg-gray-800 border border-gray-600 mr-[4px] text-center
 }
 
 pre code {
@@ -60,7 +60,7 @@ pre code a {
     @apply bg-[#0A101D] relative
 }
 pre {
-    @apply font-[JetBrains_Mono] text-sm w-full h-fit overflow-x-clip;
+    @apply font-[JetBrains_Mono] text-sm w-full h-fit overflow-x-clip my-[24px];
     
     background: #0A101D;
     padding: 24px;

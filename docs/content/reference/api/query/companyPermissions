@@ -1,0 +1,110 @@
+<h1 id="api_query_companyPermissions">query companyPermissions</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/CompanyPermissionsData','CompanyPermissionsData'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "CompanyPermissionsData"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "companyPermissions",
+    "schema": [
+        {
+            "type": "object",
+            "key": "companyPermissions",
+            "value": [
+                "CompanyPermissions"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "role_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "permissions",
+                    "value": [
+                        "PermissionData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "alias",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "locked",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "CompanyPermissionsData"
+        ],
+        "type": "object"
+    }
+}</code></pre>

@@ -1,0 +1,69 @@
+<h1 id="api_mutation_createShortcutGroups">mutation createShortcutGroups</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/ShortcutGroupItem','ShortcutGroupItem'--||"[] }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ShortcutGroup','ShortcutGroup'--||"[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "ShortcutGroup",
+            "ShortcutGroupItem"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createShortcutGroups",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sort",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "groupType",
+            "value": [
+                "AppGroupType"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": true,
+            "value": "ShortcutGroupItem",
+            "type": "object",
+            "docs": "/docs/reference/types/ShortcutGroupItem"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ShortcutGroup"
+        ],
+        "type": "object"
+    }
+}</code></pre>

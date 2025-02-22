@@ -1,0 +1,91 @@
+<h1 id="api_mutation_updateLicenseModule">mutation updateLicenseModule</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/LicenseTariffModuleInput','LicenseTariffModuleInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/LicenseTariffModule','LicenseTariffModule'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "LicenseTariffModule",
+            "LicenseTariffModuleInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateLicenseModule",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "description",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "category_id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "alias",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "LicenseTariffModuleInput",
+            "type": "object",
+            "docs": "/docs/reference/types/LicenseTariffModuleInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "LicenseTariffModule"
+        ],
+        "type": "object"
+    }
+}</code></pre>

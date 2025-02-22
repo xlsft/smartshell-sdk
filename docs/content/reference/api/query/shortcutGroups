@@ -1,0 +1,57 @@
+<h1 id="api_query_shortcutGroups">query shortcutGroups</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ShortcutGroup','ShortcutGroup'--||"[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "ShortcutGroup"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "shortcutGroups",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "sort",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "groupType",
+            "value": [
+                "AppGroupType"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ShortcutGroup"
+        ],
+        "type": "object"
+    }
+}</code></pre>

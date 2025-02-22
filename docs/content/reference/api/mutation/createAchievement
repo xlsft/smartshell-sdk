@@ -1,0 +1,129 @@
+<h1 id="api_mutation_createAchievement">mutation createAchievement</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/AchievementInput','AchievementInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Achievement','Achievement'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "Achievement",
+            "AchievementInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createAchievement",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "icon_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "conditions",
+            "value": [
+                "Condition"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "value",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "rewards",
+            "value": [
+                "Reward"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "value",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "status",
+            "value": [
+                "AchievementStatus"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "assigned_count",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "AchievementInput",
+            "type": "object",
+            "docs": "/docs/reference/types/AchievementInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Achievement"
+        ],
+        "type": "object"
+    }
+}</code></pre>

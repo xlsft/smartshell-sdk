@@ -1,0 +1,41 @@
+<h1 id="api_query_getBeneficiaryMovementsOfFundsCsv">
+    query getBeneficiaryMovementsOfFundsCsv
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/GetBeneficiaryMovementsOfFundsReport','GetBeneficiaryMovementsOfFundsReport'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "GetBeneficiaryMovementsOfFundsReport"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "getBeneficiaryMovementsOfFundsCsv",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GetBeneficiaryMovementsOfFundsReport",
+            "type": "object",
+            "docs": "/docs/reference/types/GetBeneficiaryMovementsOfFundsReport"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

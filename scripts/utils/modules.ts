@@ -107,7 +107,7 @@ const set = async (method: ResolvedMethod): Promise<void> => {
     }
 
     await Deno.writeTextFile(`src/api/${method.type}/${method.name}.ts`, result.file)
-    await Deno.writeTextFile(`docs/content/reference/api/${method.type}/${method.name}.html`, result.docs)
+    await Deno.writeTextFile(`docs/content/reference/api/${method.type}/${method.name}`, result.docs)
 }
 
 export const modules = async (query: Method[], mutations: Method[], types: Type[]) => {

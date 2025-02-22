@@ -1,0 +1,41 @@
+<h1 id="api_mutation_organizationSendConfirmationCode">
+    mutation organizationSendConfirmationCode
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input?: "||--['/docs/reference/types/OrganizationSendConfirmationCodeInput','OrganizationSendConfirmationCodeInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = boolean</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "OrganizationSendConfirmationCodeInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "organizationSendConfirmationCode",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": false,
+            "array": false,
+            "value": "OrganizationSendConfirmationCodeInput",
+            "type": "object",
+            "docs": "/docs/reference/types/OrganizationSendConfirmationCodeInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "boolean"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

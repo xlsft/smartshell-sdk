@@ -1,0 +1,39 @@
+<h1 id="api_query_hostAccessToken">query hostAccessToken</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/HostAccessTokenInput','HostAccessTokenInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "HostAccessTokenInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "hostAccessToken",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "HostAccessTokenInput",
+            "type": "object",
+            "docs": "/docs/reference/types/HostAccessTokenInput"
+        }
+    ],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

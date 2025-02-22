@@ -142,8 +142,9 @@
     };
 
     const controller = new AbortController();
-    const interval = ref(setInterval(() => update.state(), 200))
+    const interval = ref()
     onMounted(() => {
+        interval.value = setInterval(() => update.state(), 200)
         update.value();
         update.state();
 

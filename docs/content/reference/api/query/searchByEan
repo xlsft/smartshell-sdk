@@ -1,0 +1,54 @@
+<h1 id="api_query_searchByEan">query searchByEan</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { ean: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/EanEntity','EanEntity'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "EanEntity"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "searchByEan",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "entity_id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "entity_type",
+            "value": [
+                "EanEntityType"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "ean",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        }
+    ],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "EanEntity"
+        ],
+        "type": "object"
+    }
+}</code></pre>

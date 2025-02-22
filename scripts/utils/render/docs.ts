@@ -8,13 +8,15 @@ import { parse } from "../parse.ts";
 export const docs = async (method: ResolvedMethod): Promise<string> => {
 
     const content = /*html*/`
-        <h1>api.${method.name}</h1>
-        ${method.paginated ? `<p><code>Paginated</code></p>` : ``}
+        <h1 id="${`api_${method.type}_${method.name}`}">
+            ${method.type} ${method.name}
+        </h1>
+        ${method.paginated ? `<code>Paginated</code>` : ``}
         ${method.props.length === 0 ? '' : `<h3>Input</h3>\n<pre><code lang="ts">type InputType = { ${method.props.map(v => `${v.key}${v.required ? '' : '?'}: ${primitives.map(v => v.type).includes(v.value) ? v.value : `"||--['${v.docs}','${v.value}'--||"`}${v.array ? '[]' : ''}`).join(', ')} }</code></pre>`}
         <h3>Response</h3>
         <pre><code lang="ts">type ResponseType = ${primitives.map(v => v.type).includes(method.response.value[0]) ? method.response.value[0] : `"||--['/docs/reference/types/${method.response.value[0]}','${method.response.value[0]}'--||"`}${method.response.array === true ? '[]' : ''}</code></pre>
         <h3>Codegen method map</h3>
-        <pre><code lang="json" data-expandable>${JSON.stringify(method, null, 4)}</code></pre>
+        <pre><code lang="json">${JSON.stringify(method, null, 4)}</code></pre>
     `
     log.log(`${method.type} module "${method.name}" docs rendered`)
     return await prettier.format(content, { parser: "html", tabWidth: 4 })
@@ -52,7 +54,9 @@ export const typedocs = async (type: Type): Promise<string | undefined> => {
         'type': 'Type properties',
     }
     const content = /*html*/`
-        <h1 id="${`${options.type} ${type.name}`.toLowerCase().replaceAll(' ', '_')}">${options.type} ${type.name}</h1>
+        <h1 id="${`${options.type} ${type.name}`.toLowerCase().replaceAll(' ', '_')}">
+            ${options.type} ${type.name}
+        </h1>
         <br>
         <h2 id="${h2[options.type!].toLowerCase().replaceAll(' ', '_')}">${h2[options.type!]}</h2>
         ${options.type === 'type' ? properties?.map((v) => {
@@ -75,5 +79,5 @@ export const typedocs = async (type: Type): Promise<string | undefined> => {
     `
 
     log.log(`${options.type} "${type.name}" docs rendered`)
-    await Deno.writeTextFile(`docs/content/reference/types/${type.name}.html`, await prettier.format(content, { parser: "html", tabWidth: 4 }))
+    await Deno.writeTextFile(`docs/content/reference/types/${type.name}`, await prettier.format(content, { parser: "html", tabWidth: 4 }))
 }

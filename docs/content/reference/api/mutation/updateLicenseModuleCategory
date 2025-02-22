@@ -1,0 +1,123 @@
+<h1 id="api_mutation_updateLicenseModuleCategory">
+    mutation updateLicenseModuleCategory
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/LicenseTariffCategoryInput','LicenseTariffCategoryInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/LicenseTariffCategory','LicenseTariffCategory'--||"</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "LicenseTariffCategory",
+            "LicenseTariffCategoryInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateLicenseModuleCategory",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "modules",
+            "value": [
+                "LicenseTariffModule"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cost",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "category_id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "alias",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "tariff_id",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "LicenseTariffCategoryInput",
+            "type": "object",
+            "docs": "/docs/reference/types/LicenseTariffCategoryInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "LicenseTariffCategory"
+        ],
+        "type": "object"
+    }
+}</code></pre>

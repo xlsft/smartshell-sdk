@@ -17,7 +17,7 @@
 
 <template>
     <Teleport to="body"> 
-        <div class="absolute top-0 left-0 w-dvw h-dvh pointer-events-none flex gap-[12px] items-center md:items-end flex-col pt-[84px] px-[24px] duration-500 transition-all" :style="`z-index: ${z}`" :class="center ? 'opacity-0' : 'opacity-100'">
+        <div class="absolute top-0 left-0 w-dvw h-dvh pointer-events-none flex gap-[12px] items-center md:items-end flex-col pt-[84px] px-[24px] duration-500 transition-all" :style="`z-index: ${z}`">
             <TransitionGroup name="notifications-list">
                 <div 
                     class="
@@ -30,7 +30,6 @@
                         data-[type=info]:outline-blue-500
                         data-[type=dialog]:outline-[#E5E7EB]
                     " 
-                    :class="center ? 'pointer-events-none' : 'pointer-events-auto'"
                     :key="item.key"
                     :id="`notification-${item.id}-list`" 
                     :data-type="item.data.type" 

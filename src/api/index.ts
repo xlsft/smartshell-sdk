@@ -19,11 +19,11 @@ import clientHostGroups from './query/clientHostGroups.ts'
 import clientHosts from './query/clientHosts.ts'
 import clientMe from './query/clientMe.ts'
 import clientPhoneExists from './query/clientPhoneExists.ts'
+import clients from './query/clients.ts'
 import clientSession from './query/clientSession.ts'
 import clientSessions from './query/clientSessions.ts'
-import clientTariffGrid from './query/clientTariffGrid.ts'
-import clients from './query/clients.ts'
 import clientsPaymentReport from './query/clientsPaymentReport.ts'
+import clientTariffGrid from './query/clientTariffGrid.ts'
 import club from './query/club.ts'
 import clubComments from './query/clubComments.ts'
 import clubOrganization from './query/clubOrganization.ts'
@@ -80,15 +80,15 @@ import goods from './query/goods.ts'
 import host from './query/host.ts'
 import hostAccessToken from './query/hostAccessToken.ts'
 import hostGroup from './query/hostGroup.ts'
-import hostGroupTitles from './query/hostGroupTitles.ts'
 import hostGroups from './query/hostGroups.ts'
 import hostGroupsOverview from './query/hostGroupsOverview.ts'
-import hostType from './query/hostType.ts'
-import hostTypes from './query/hostTypes.ts'
+import hostGroupTitles from './query/hostGroupTitles.ts'
 import hosts from './query/hosts.ts'
 import hostsByIds from './query/hostsByIds.ts'
 import hostsOccupationReport from './query/hostsOccupationReport.ts'
 import hostsOverview from './query/hostsOverview.ts'
+import hostType from './query/hostType.ts'
+import hostTypes from './query/hostTypes.ts'
 import income from './query/income.ts'
 import leaderboard from './query/leaderboard.ts'
 import licenseModule from './query/licenseModule.ts'
@@ -148,12 +148,12 @@ import userImportStatus from './query/userImportStatus.ts'
 import validatePayment from './query/validatePayment.ts'
 import validatePromoCode from './query/validatePromoCode.ts'
 import versions from './query/versions.ts'
+import workers from './query/workers.ts'
 import workShift from './query/workShift.ts'
-import workShiftSummary from './query/workShiftSummary.ts'
 import workShifts from './query/workShifts.ts'
 import workShiftsReport from './query/workShiftsReport.ts'
 import workShiftsSummaryReport from './query/workShiftsSummaryReport.ts'
-import workers from './query/workers.ts'
+import workShiftSummary from './query/workShiftSummary.ts'
 
 
 export const query = {
@@ -178,11 +178,11 @@ export const query = {
     clientHosts,
     clientMe,
     clientPhoneExists,
+    clients,
     clientSession,
     clientSessions,
-    clientTariffGrid,
-    clients,
     clientsPaymentReport,
+    clientTariffGrid,
     club,
     clubComments,
     clubOrganization,
@@ -239,15 +239,15 @@ export const query = {
     host,
     hostAccessToken,
     hostGroup,
-    hostGroupTitles,
     hostGroups,
     hostGroupsOverview,
-    hostType,
-    hostTypes,
+    hostGroupTitles,
     hosts,
     hostsByIds,
     hostsOccupationReport,
     hostsOverview,
+    hostType,
+    hostTypes,
     income,
     leaderboard,
     licenseModule,
@@ -307,12 +307,12 @@ export const query = {
     validatePayment,
     validatePromoCode,
     versions,
+    workers,
     workShift,
-    workShiftSummary,
     workShifts,
     workShiftsReport,
     workShiftsSummaryReport,
-    workers,
+    workShiftSummary,
 }
 
 
@@ -455,8 +455,8 @@ import setDeposit from './mutation/setDeposit.ts'
 import setHostServiceMode from './mutation/setHostServiceMode.ts'
 import setMultipleSettingValues from './mutation/setMultipleSettingValues.ts'
 import setSetting from './mutation/setSetting.ts'
-import setSettingValue from './mutation/setSettingValue.ts'
 import setSettings from './mutation/setSettings.ts'
+import setSettingValue from './mutation/setSettingValue.ts'
 import setShellMode from './mutation/setShellMode.ts'
 import setTelegramChannel from './mutation/setTelegramChannel.ts'
 import setUserDiscount from './mutation/setUserDiscount.ts'
@@ -652,8 +652,8 @@ export const mutation = {
     setHostServiceMode,
     setMultipleSettingValues,
     setSetting,
-    setSettingValue,
     setSettings,
+    setSettingValue,
     setShellMode,
     setTelegramChannel,
     setUserDiscount,

@@ -1,0 +1,84 @@
+<h1 id="api_query_getActiveClientList">query getActiveClientList</h1>
+<code>Paginated</code>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input: "||--['/docs/reference/types/GetActiveClientListInput','GetActiveClientListInput'--||" }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ActiveClient','ActiveClient'--||"[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "ActiveClient",
+            "GetActiveClientListInput"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "getActiveClientList",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "client_uuid",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "nickname",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "payments",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "total_seconds",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "last_client_activity",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "GetActiveClientListInput",
+            "type": "object",
+            "docs": "/docs/reference/types/GetActiveClientListInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ActiveClient"
+        ],
+        "type": "object"
+    }
+}</code></pre>
