@@ -1,8 +1,8 @@
 {
-  "name": "@xlsoftware/smartshell-sdk/docs",
+  "name": "@xlsoftware/smartshell-sdk-docs",
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --preset node-server",
     "dev": "nuxt dev"
   },
   "dependencies": {
