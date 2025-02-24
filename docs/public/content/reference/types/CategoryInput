@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="show_in_shell">show_in_shell</h3>
-<pre><code lang="ts">
-                    show_in_shell: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_shell: boolean</code></pre>

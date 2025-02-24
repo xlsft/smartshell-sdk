@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="companyid">companyId</h3>
-<pre><code lang="ts">
-                    companyId: number
-                </code></pre>
+<pre><code lang="ts">companyId: number</code></pre>
 
 <h3 id="hosts">hosts</h3>
-<pre><code lang="ts">
-                    hosts: number[]
-                </code></pre>
+<pre><code lang="ts">hosts: number[]</code></pre>
 
 <h3 id="from">from</h3>
-<pre><code lang="ts">
-                    from: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">from: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="to">to</h3>
-<pre><code lang="ts">
-                    to?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">to?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="tariffid">tariffId</h3>
-<pre><code lang="ts">
-                    tariffId: number
-                </code></pre>
+<pre><code lang="ts">tariffId: number</code></pre>

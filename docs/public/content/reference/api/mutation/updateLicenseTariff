@@ -1,9 +1,9 @@
 <h1 id="api_mutation_updateLicenseTariff">mutation updateLicenseTariff</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/LicenseTariffInput','LicenseTariffInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/LicenseTariffInput','LicenseTariffInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/LicenseTariff','LicenseTariff'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/LicenseTariff','LicenseTariff'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

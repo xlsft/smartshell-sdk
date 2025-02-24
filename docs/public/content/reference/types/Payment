@@ -3,96 +3,58 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="client">client</h3>
-<pre><code lang="ts">
-                    client?: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">client?: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="client_session">client_session</h3>
-<pre><code lang="ts">
-                    client_session?: "||--['/docs/reference/types/ClientSession','ClientSession']--||"
-                </code></pre>
+<pre><code lang="ts">client_session?: ||--['/docs/reference/types/ClientSession','ClientSession']--||</code></pre>
 
 <h3 id="work_shift">work_shift</h3>
-<pre><code lang="ts">
-                    work_shift?: "||--['/docs/reference/types/WorkShift','WorkShift']--||"
-                </code></pre>
+<pre><code lang="ts">work_shift?: ||--['/docs/reference/types/WorkShift','WorkShift']--||</code></pre>
 
 <h3 id="promo_code">promo_code</h3>
-<pre><code lang="ts">
-                    promo_code?: "||--['/docs/reference/types/PromoCode','PromoCode']--||"
-                </code></pre>
+<pre><code lang="ts">promo_code?: ||--['/docs/reference/types/PromoCode','PromoCode']--||</code></pre>
 
 <h3 id="discount">discount</h3>
-<pre><code lang="ts">
-                    discount?: "||--['/docs/reference/types/Discount','Discount']--||"
-                </code></pre>
+<pre><code lang="ts">discount?: ||--['/docs/reference/types/Discount','Discount']--||</code></pre>
 
 <h3 id="method">method</h3>
-<pre><code lang="ts">
-                    method: "||--['/docs/reference/types/PaymentMethod','PaymentMethod']--||"
-                </code></pre>
+<pre><code lang="ts">method: ||--['/docs/reference/types/PaymentMethod','PaymentMethod']--||</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/PaymentStatus','PaymentStatus']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/PaymentStatus','PaymentStatus']--||</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">
-                    bonus: number
-                </code></pre>
+<pre><code lang="ts">bonus: number</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="items">items</h3>
-<pre><code lang="ts">
-                    items: "||--['/docs/reference/types/PaymentItem','PaymentItem']--||"[]
-                </code></pre>
+<pre><code lang="ts">items: ||--['/docs/reference/types/PaymentItem','PaymentItem']--||[]</code></pre>
 
 <h3 id="is_refunded">is_refunded</h3>
-<pre><code lang="ts">
-                    is_refunded: boolean
-                </code></pre>
+<pre><code lang="ts">is_refunded: boolean</code></pre>
 
 <h3 id="not_refundable">not_refundable</h3>
-<pre><code lang="ts">
-                    not_refundable: boolean
-                </code></pre>
+<pre><code lang="ts">not_refundable: boolean</code></pre>
 
 <h3 id="card_sum">card_sum</h3>
-<pre><code lang="ts">
-                    card_sum: number
-                </code></pre>
+<pre><code lang="ts">card_sum: number</code></pre>
 
 <h3 id="cash_sum">cash_sum</h3>
-<pre><code lang="ts">
-                    cash_sum: number
-                </code></pre>
+<pre><code lang="ts">cash_sum: number</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="cashback">cashback</h3>
-<pre><code lang="ts">
-                    cashback: number
-                </code></pre>
+<pre><code lang="ts">cashback: number</code></pre>
 
 <h3 id="external_data">external_data</h3>
-<pre><code lang="ts">
-                    external_data?: "||--['/docs/reference/types/ExternalPaymentData','ExternalPaymentData']--||"
-                </code></pre>
+<pre><code lang="ts">external_data?: ||--['/docs/reference/types/ExternalPaymentData','ExternalPaymentData']--||</code></pre>

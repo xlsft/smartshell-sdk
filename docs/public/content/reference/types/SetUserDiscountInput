@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="client_uuid">client_uuid</h3>
-<pre><code lang="ts">
-                    client_uuid: string
-                </code></pre>
+<pre><code lang="ts">client_uuid: string</code></pre>
 
 <h3 id="value">value</h3>
-<pre><code lang="ts">
-                    value: number
-                </code></pre>
+<pre><code lang="ts">value: number</code></pre>

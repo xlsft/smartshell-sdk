@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="host_group_id">host_group_id</h3>
-<pre><code lang="ts">
-                    host_group_id?: number
-                </code></pre>
+<pre><code lang="ts">host_group_id?: number</code></pre>
 
 <h3 id="tariff_id">tariff_id</h3>
-<pre><code lang="ts">
-                    tariff_id?: number
-                </code></pre>
+<pre><code lang="ts">tariff_id?: number</code></pre>
 
 <h3 id="items">items</h3>
-<pre><code lang="ts">
-                    items: "||--['/docs/reference/types/ComboItemInput','ComboItemInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">items: ||--['/docs/reference/types/ComboItemInput','ComboItemInput']--||[]</code></pre>
 
 <h3 id="use_global_discount">use_global_discount</h3>
-<pre><code lang="ts">
-                    use_global_discount?: boolean
-                </code></pre>
+<pre><code lang="ts">use_global_discount?: boolean</code></pre>

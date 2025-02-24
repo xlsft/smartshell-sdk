@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="show_in_shell">show_in_shell</h3>
-<pre><code lang="ts">
-                    show_in_shell?: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_shell?: boolean</code></pre>
 
 <h3 id="category_id">category_id</h3>
-<pre><code lang="ts">
-                    category_id?: number
-                </code></pre>
+<pre><code lang="ts">category_id?: number</code></pre>
 
 <h3 id="low_stock_notification">low_stock_notification</h3>
-<pre><code lang="ts">
-                    low_stock_notification?: "||--['/docs/reference/types/LowStockNotificationInput','LowStockNotificationInput']--||"
-                </code></pre>
+<pre><code lang="ts">low_stock_notification?: ||--['/docs/reference/types/LowStockNotificationInput','LowStockNotificationInput']--||</code></pre>

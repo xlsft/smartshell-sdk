@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount: number
-                </code></pre>
+<pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="value">value</h3>
-<pre><code lang="ts">
-                    value: number
-                </code></pre>
+<pre><code lang="ts">value: number</code></pre>
 
 <h3 id="is_percent">is_percent</h3>
-<pre><code lang="ts">
-                    is_percent: boolean
-                </code></pre>
+<pre><code lang="ts">is_percent: boolean</code></pre>
 
 <h3 id="is_active">is_active</h3>
-<pre><code lang="ts">
-                    is_active: boolean
-                </code></pre>
+<pre><code lang="ts">is_active: boolean</code></pre>
 
 <h3 id="starts_at">starts_at</h3>
-<pre><code lang="ts">
-                    starts_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">starts_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="expires_at">expires_at</h3>
-<pre><code lang="ts">
-                    expires_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">expires_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="is_expired">is_expired</h3>
-<pre><code lang="ts">
-                    is_expired: boolean
-                </code></pre>
+<pre><code lang="ts">is_expired: boolean</code></pre>

@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="operation">operation</h3>
-<pre><code lang="ts">
-                    operation: "||--['/docs/reference/types/OperationType','OperationType']--||"
-                </code></pre>
+<pre><code lang="ts">operation: ||--['/docs/reference/types/OperationType','OperationType']--||</code></pre>
 
 <h3 id="transaction">transaction</h3>
-<pre><code lang="ts">
-                    transaction?: "||--['/docs/reference/types/LitePaymentTransaction','LitePaymentTransaction']--||"
-                </code></pre>
+<pre><code lang="ts">transaction?: ||--['/docs/reference/types/LitePaymentTransaction','LitePaymentTransaction']--||</code></pre>
 
 <h3 id="deal">deal</h3>
-<pre><code lang="ts">
-                    deal?: "||--['/docs/reference/types/BeneficiaryDeal','BeneficiaryDeal']--||"
-                </code></pre>
+<pre><code lang="ts">deal?: ||--['/docs/reference/types/BeneficiaryDeal','BeneficiaryDeal']--||</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

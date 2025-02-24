@@ -13,7 +13,7 @@ export const types = async (introspect: Type[]) => {
         const fields = [`/**
 * # type \`${type.name}\`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/reference/types/${type.name}
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/${type.name}
 * 
 * \`@xlsoftware/smartshell-sdk\`
 */`,`export type ${type.name} = {`]
@@ -38,7 +38,7 @@ export const types = async (introspect: Type[]) => {
         return `/**
 * # enum \`${type.name}\`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/reference/types/${type.name}
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/${type.name}
 * 
 * \`@xlsoftware/smartshell-sdk\`
 */

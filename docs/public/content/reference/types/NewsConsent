@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="isgiven">isGiven</h3>
-<pre><code lang="ts">
-                    isGiven: boolean
-                </code></pre>
+<pre><code lang="ts">isGiven: boolean</code></pre>
 
 <h3 id="givenat">givenAt</h3>
-<pre><code lang="ts">
-                    givenAt?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">givenAt?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="revokedat">revokedAt</h3>
-<pre><code lang="ts">
-                    revokedAt?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">revokedAt?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

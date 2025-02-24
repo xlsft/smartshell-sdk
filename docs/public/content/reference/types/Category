@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="company_id">company_id</h3>
-<pre><code lang="ts">
-                    company_id: number
-                </code></pre>
+<pre><code lang="ts">company_id: number</code></pre>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="goods">goods</h3>
-<pre><code lang="ts">
-                    goods: "||--['/docs/reference/types/Good','Good']--||"[]
-                </code></pre>
+<pre><code lang="ts">goods: ||--['/docs/reference/types/Good','Good']--||[]</code></pre>
 
 <h3 id="show_in_shell">show_in_shell</h3>
-<pre><code lang="ts">
-                    show_in_shell: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_shell: boolean</code></pre>

@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="method">method</h3>
-<pre><code lang="ts">
-                    method?: "||--['/docs/reference/types/PaymentMethod','PaymentMethod']--||"
-                </code></pre>
+<pre><code lang="ts">method?: ||--['/docs/reference/types/PaymentMethod','PaymentMethod']--||</code></pre>
 
 <h3 id="cash_sum">cash_sum</h3>
-<pre><code lang="ts">
-                    cash_sum?: number
-                </code></pre>
+<pre><code lang="ts">cash_sum?: number</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="confirm_pass">confirm_pass</h3>
-<pre><code lang="ts">
-                    confirm_pass?: string
-                </code></pre>
+<pre><code lang="ts">confirm_pass?: string</code></pre>

@@ -1,9 +1,9 @@
 <h1 id="api_query_clientsPaymentReport">query clientsPaymentReport</h1>
 <code>Paginated</code>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", input: "||--['/docs/reference/types/ClientsPaymentReportInput','ClientsPaymentReportInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, input: ||--['/docs/reference/types/ClientsPaymentReportInput','ClientsPaymentReportInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ClientsPaymentReportPaginated','ClientsPaymentReportPaginated'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ClientsPaymentReportPaginated','ClientsPaymentReportPaginated'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

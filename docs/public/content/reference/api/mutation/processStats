@@ -1,7 +1,7 @@
 <h1 id="api_mutation_processStats">mutation processStats</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/ProcessStatsInput','ProcessStatsInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/ProcessStatsInput','ProcessStatsInput'--|| }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = boolean</code></pre>
 <h3>Codegen method map</h3>

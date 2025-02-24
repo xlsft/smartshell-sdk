@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="field">field</h3>
-<pre><code lang="ts">
-                    field: string
-                </code></pre>
+<pre><code lang="ts">field: string</code></pre>
 
 <h3 id="direction">direction</h3>
-<pre><code lang="ts">
-                    direction: string
-                </code></pre>
+<pre><code lang="ts">direction: string</code></pre>

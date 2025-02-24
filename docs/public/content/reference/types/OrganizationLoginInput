@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="phone">phone</h3>
-<pre><code lang="ts">
-                    phone: string
-                </code></pre>
+<pre><code lang="ts">phone: string</code></pre>
 
 <h3 id="password">password</h3>
-<pre><code lang="ts">
-                    password: string
-                </code></pre>
+<pre><code lang="ts">password: string</code></pre>

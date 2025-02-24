@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="paginatorinfo">paginatorInfo</h3>
-<pre><code lang="ts">
-                    paginatorInfo?: "||--['/docs/reference/types/PaginatorInfo','PaginatorInfo']--||"
-                </code></pre>
+<pre><code lang="ts">paginatorInfo?: ||--['/docs/reference/types/PaginatorInfo','PaginatorInfo']--||</code></pre>
 
 <h3 id="data">data</h3>
-<pre><code lang="ts">
-                    data: "||--['/docs/reference/types/ClubComment','ClubComment']--||"[]
-                </code></pre>
+<pre><code lang="ts">data: ||--['/docs/reference/types/ClubComment','ClubComment']--||[]</code></pre>
 
 <h3 id="summary">summary</h3>
-<pre><code lang="ts">
-                    summary: "||--['/docs/reference/types/ClubCommentSummary','ClubCommentSummary']--||"
-                </code></pre>
+<pre><code lang="ts">summary: ||--['/docs/reference/types/ClubCommentSummary','ClubCommentSummary']--||</code></pre>

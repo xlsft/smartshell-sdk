@@ -3,56 +3,34 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type: "||--['/docs/reference/types/CommentType','CommentType']--||"
-                </code></pre>
+<pre><code lang="ts">type: ||--['/docs/reference/types/CommentType','CommentType']--||</code></pre>
 
 <h3 id="entity_id">entity_id</h3>
-<pre><code lang="ts">
-                    entity_id: number
-                </code></pre>
+<pre><code lang="ts">entity_id: number</code></pre>
 
 <h3 id="entity">entity</h3>
-<pre><code lang="ts">
-                    entity: "||--['/docs/reference/types/CommentEntity','CommentEntity']--||"
-                </code></pre>
+<pre><code lang="ts">entity: ||--['/docs/reference/types/CommentEntity','CommentEntity']--||</code></pre>
 
 <h3 id="text">text</h3>
-<pre><code lang="ts">
-                    text: string
-                </code></pre>
+<pre><code lang="ts">text: string</code></pre>
 
 <h3 id="author">author</h3>
-<pre><code lang="ts">
-                    author?: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">author?: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="deleted_at">deleted_at</h3>
-<pre><code lang="ts">
-                    deleted_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">deleted_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="data">data</h3>
-<pre><code lang="ts">
-                    data: string
-                </code></pre>
+<pre><code lang="ts">data: string</code></pre>
 
 <h3 id="request_contact">request_contact</h3>
-<pre><code lang="ts">
-                    request_contact: boolean
-                </code></pre>
+<pre><code lang="ts">request_contact: boolean</code></pre>
 
 <h3 id="request_contact_info">request_contact_info</h3>
-<pre><code lang="ts">
-                    request_contact_info?: string
-                </code></pre>
+<pre><code lang="ts">request_contact_info?: string</code></pre>

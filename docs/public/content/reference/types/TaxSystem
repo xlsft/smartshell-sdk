@@ -2,6 +2,4 @@
 <br />
 <h2 id="possible_values">Possible values</h2>
 
-<pre><code lang="ts">
-                "SIMPLE_INCOME" | "SIMPLE_INCOME_EXPENSES" | "PATENT" | "MAIN"
-            </code></pre>
+<pre><code lang="ts">"SIMPLE_INCOME" | "SIMPLE_INCOME_EXPENSES" | "PATENT" | "MAIN"</code></pre>

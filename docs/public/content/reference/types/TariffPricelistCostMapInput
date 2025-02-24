@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: "||--['/docs/reference/types/TariffPricelistCostMapType','TariffPricelistCostMapType']--||"
-                </code></pre>
+<pre><code lang="ts">title: ||--['/docs/reference/types/TariffPricelistCostMapType','TariffPricelistCostMapType']--||</code></pre>
 
 <h3 id="value">value</h3>
-<pre><code lang="ts">
-                    value: number
-                </code></pre>
+<pre><code lang="ts">value: number</code></pre>
 
 <h3 id="currency">currency</h3>
-<pre><code lang="ts">
-                    currency: string
-                </code></pre>
+<pre><code lang="ts">currency: string</code></pre>

@@ -3,126 +3,76 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="has_vr">has_vr</h3>
-<pre><code lang="ts">
-                    has_vr: boolean
-                </code></pre>
+<pre><code lang="ts">has_vr: boolean</code></pre>
 
 <h3 id="vr_count">vr_count</h3>
-<pre><code lang="ts">
-                    vr_count: number
-                </code></pre>
+<pre><code lang="ts">vr_count: number</code></pre>
 
 <h3 id="vr_model">vr_model</h3>
-<pre><code lang="ts">
-                    vr_model: string
-                </code></pre>
+<pre><code lang="ts">vr_model: string</code></pre>
 
 <h3 id="has_autosim">has_autosim</h3>
-<pre><code lang="ts">
-                    has_autosim: boolean
-                </code></pre>
+<pre><code lang="ts">has_autosim: boolean</code></pre>
 
 <h3 id="autosim_count">autosim_count</h3>
-<pre><code lang="ts">
-                    autosim_count: number
-                </code></pre>
+<pre><code lang="ts">autosim_count: number</code></pre>
 
 <h3 id="has_printer">has_printer</h3>
-<pre><code lang="ts">
-                    has_printer: boolean
-                </code></pre>
+<pre><code lang="ts">has_printer: boolean</code></pre>
 
 <h3 id="has_lounge">has_lounge</h3>
-<pre><code lang="ts">
-                    has_lounge: boolean
-                </code></pre>
+<pre><code lang="ts">has_lounge: boolean</code></pre>
 
 <h3 id="has_gifts">has_gifts</h3>
-<pre><code lang="ts">
-                    has_gifts: boolean
-                </code></pre>
+<pre><code lang="ts">has_gifts: boolean</code></pre>
 
 <h3 id="personal_devices_allowed">personal_devices_allowed</h3>
-<pre><code lang="ts">
-                    personal_devices_allowed: boolean
-                </code></pre>
+<pre><code lang="ts">personal_devices_allowed: boolean</code></pre>
 
 <h3 id="has_streaming_boot">has_streaming_boot</h3>
-<pre><code lang="ts">
-                    has_streaming_boot: boolean
-                </code></pre>
+<pre><code lang="ts">has_streaming_boot: boolean</code></pre>
 
 <h3 id="personal_food_allowed">personal_food_allowed</h3>
-<pre><code lang="ts">
-                    personal_food_allowed: boolean
-                </code></pre>
+<pre><code lang="ts">personal_food_allowed: boolean</code></pre>
 
 <h3 id="has_tabletop_games">has_tabletop_games</h3>
-<pre><code lang="ts">
-                    has_tabletop_games: boolean
-                </code></pre>
+<pre><code lang="ts">has_tabletop_games: boolean</code></pre>
 
 <h3 id="can_rent_projector">can_rent_projector</h3>
-<pre><code lang="ts">
-                    can_rent_projector: boolean
-                </code></pre>
+<pre><code lang="ts">can_rent_projector: boolean</code></pre>
 
 <h3 id="has_coworking">has_coworking</h3>
-<pre><code lang="ts">
-                    has_coworking: boolean
-                </code></pre>
+<pre><code lang="ts">has_coworking: boolean</code></pre>
 
 <h3 id="has_snacks">has_snacks</h3>
-<pre><code lang="ts">
-                    has_snacks: boolean
-                </code></pre>
+<pre><code lang="ts">has_snacks: boolean</code></pre>
 
 <h3 id="has_energy_drinks">has_energy_drinks</h3>
-<pre><code lang="ts">
-                    has_energy_drinks: boolean
-                </code></pre>
+<pre><code lang="ts">has_energy_drinks: boolean</code></pre>
 
 <h3 id="has_food_to_go">has_food_to_go</h3>
-<pre><code lang="ts">
-                    has_food_to_go: boolean
-                </code></pre>
+<pre><code lang="ts">has_food_to_go: boolean</code></pre>
 
 <h3 id="has_kitchen">has_kitchen</h3>
-<pre><code lang="ts">
-                    has_kitchen: boolean
-                </code></pre>
+<pre><code lang="ts">has_kitchen: boolean</code></pre>
 
 <h3 id="has_beverages">has_beverages</h3>
-<pre><code lang="ts">
-                    has_beverages: boolean
-                </code></pre>
+<pre><code lang="ts">has_beverages: boolean</code></pre>
 
 <h3 id="has_low_alcohol_beverages">has_low_alcohol_beverages</h3>
-<pre><code lang="ts">
-                    has_low_alcohol_beverages: boolean
-                </code></pre>
+<pre><code lang="ts">has_low_alcohol_beverages: boolean</code></pre>
 
 <h3 id="has_food_discounts">has_food_discounts</h3>
-<pre><code lang="ts">
-                    has_food_discounts: boolean
-                </code></pre>
+<pre><code lang="ts">has_food_discounts: boolean</code></pre>
 
 <h3 id="accept_cash">accept_cash</h3>
-<pre><code lang="ts">
-                    accept_cash: boolean
-                </code></pre>
+<pre><code lang="ts">accept_cash: boolean</code></pre>
 
 <h3 id="accept_card">accept_card</h3>
-<pre><code lang="ts">
-                    accept_card: boolean
-                </code></pre>
+<pre><code lang="ts">accept_card: boolean</code></pre>
 
 <h3 id="accept_qr">accept_qr</h3>
-<pre><code lang="ts">
-                    accept_qr: boolean
-                </code></pre>
+<pre><code lang="ts">accept_qr: boolean</code></pre>
 
 <h3 id="accept_sbp">accept_sbp</h3>
-<pre><code lang="ts">
-                    accept_sbp: boolean
-                </code></pre>
+<pre><code lang="ts">accept_sbp: boolean</code></pre>

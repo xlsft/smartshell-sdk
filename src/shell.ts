@@ -99,15 +99,28 @@ export class Shell {
     private async _update(id: number): Promise<ShellApiClub> {
         const club_i = this._clubs.findIndex((data) => data.id === id)!
         if (club_i === -1) ShellSdkError(this, `Can't update club, it does't exist on current instance!`)
-        const updated = (await this.call<AccessToken>(`mutation Login {
-            login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
-                token_type
-                expires_in
-                access_token
-                refresh_token
-            }
-        }`)).login
-        this._clubs[club_i] = { id, access_token: updated.access_token, refresh_token: updated.refresh_token, expires: Date.now() + (updated.expires_in * 1000) - (60*60*1000)}
+        if (this.options.host !== 'mobile-auth') {
+            const updated = (await this.call<AccessToken>(`mutation Login {
+                login(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}", company_id: ${id} }) {
+                    token_type
+                    expires_in
+                    access_token
+                    refresh_token
+                }
+            }`)).login
+            this._clubs[club_i] = { id, access_token: updated.access_token, refresh_token: updated.refresh_token, expires: Date.now() + (updated.expires_in * 1000) - (60*60*1000)}
+        } else {
+            const updated = (await this.call<AccessToken>(`mutation ClientLogin {
+                clientLogin(input: { login: "${this.options.credentials?.login}", password: "${this.options.credentials?.password}" }) {
+                    token_type
+                    expires_in
+                    access_token
+                    refresh_token
+                }
+            }`)).clientLogin
+            this._clubs[club_i] = { id, access_token: updated.access_token, refresh_token: updated.refresh_token, expires: Date.now() + (updated.expires_in * 1000) - (60*60*1000)}
+        }
+
         return this._clubs[club_i]
     }
     // ---------------- Initialization ----------------

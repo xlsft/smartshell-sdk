@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="windows">windows</h3>
-<pre><code lang="ts">
-                    windows: "||--['/docs/reference/types/ProcessStatsItemInput','ProcessStatsItemInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">windows: ||--['/docs/reference/types/ProcessStatsItemInput','ProcessStatsItemInput']--||[]</code></pre>
 
 <h3 id="applications">applications</h3>
-<pre><code lang="ts">
-                    applications: "||--['/docs/reference/types/ProcessStatsItemInput','ProcessStatsItemInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">applications: ||--['/docs/reference/types/ProcessStatsItemInput','ProcessStatsItemInput']--||[]</code></pre>

@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="first_name">first_name</h3>
-<pre><code lang="ts">
-                    first_name?: number
-                </code></pre>
+<pre><code lang="ts">first_name?: number</code></pre>
 
 <h3 id="last_name">last_name</h3>
-<pre><code lang="ts">
-                    last_name?: number
-                </code></pre>
+<pre><code lang="ts">last_name?: number</code></pre>
 
 <h3 id="phone">phone</h3>
-<pre><code lang="ts">
-                    phone?: number
-                </code></pre>
+<pre><code lang="ts">phone?: number</code></pre>
 
 <h3 id="deposit">deposit</h3>
-<pre><code lang="ts">
-                    deposit?: number
-                </code></pre>
+<pre><code lang="ts">deposit?: number</code></pre>
 
 <h3 id="discount">discount</h3>
-<pre><code lang="ts">
-                    discount?: number
-                </code></pre>
+<pre><code lang="ts">discount?: number</code></pre>
 
 <h3 id="email">email</h3>
-<pre><code lang="ts">
-                    email?: number
-                </code></pre>
+<pre><code lang="ts">email?: number</code></pre>

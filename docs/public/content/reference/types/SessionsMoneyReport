@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="from">from</h3>
-<pre><code lang="ts">
-                    from: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">from: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="to">to</h3>
-<pre><code lang="ts">
-                    to: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">to: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="slice">slice</h3>
-<pre><code lang="ts">
-                    slice: "||--['/docs/reference/types/SliceType','SliceType']--||"
-                </code></pre>
+<pre><code lang="ts">slice: ||--['/docs/reference/types/SliceType','SliceType']--||</code></pre>

@@ -2,6 +2,4 @@
 <br />
 <h2 id="possible_types">Possible types</h2>
 
-<pre><code lang="ts">
-                "||--['/docs/reference/types/Good','Good'--||" | "||--['/docs/reference/types/Service','Service'--||" | "||--['/docs/reference/types/Tariff','Tariff'--||" | "||--['/docs/reference/types/Combo','Combo'--||"
-            </code></pre>
+<pre><code lang="ts">||--['/docs/reference/types/Good','Good'--|| | ||--['/docs/reference/types/Service','Service'--|| | ||--['/docs/reference/types/Tariff','Tariff'--|| | ||--['/docs/reference/types/Combo','Combo'--||</code></pre>

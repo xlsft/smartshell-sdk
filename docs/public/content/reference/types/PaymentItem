@@ -3,36 +3,22 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="payment_id">payment_id</h3>
-<pre><code lang="ts">
-                    payment_id: number
-                </code></pre>
+<pre><code lang="ts">payment_id: number</code></pre>
 
 <h3 id="combo_id">combo_id</h3>
-<pre><code lang="ts">
-                    combo_id?: number
-                </code></pre>
+<pre><code lang="ts">combo_id?: number</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type: "||--['/docs/reference/types/PaymentItemType','PaymentItemType']--||"
-                </code></pre>
+<pre><code lang="ts">type: ||--['/docs/reference/types/PaymentItemType','PaymentItemType']--||</code></pre>
 
 <h3 id="entity">entity</h3>
-<pre><code lang="ts">
-                    entity?: "||--['/docs/reference/types/PaymentItemEntity','PaymentItemEntity']--||"
-                </code></pre>
+<pre><code lang="ts">entity?: ||--['/docs/reference/types/PaymentItemEntity','PaymentItemEntity']--||</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount: number
-                </code></pre>
+<pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>

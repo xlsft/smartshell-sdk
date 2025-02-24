@@ -47,8 +47,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           exclude_types: other,docs,chore
       
-      - name: Publish to Deno X
-        id: create_release_and_publish_to_denox
+      - name: Create release
+        id: create_release
         if: steps.compare_versions.outputs.create_release == 'true'
         uses: actions/create-release@v1
         with:
@@ -58,7 +58,7 @@ jobs:
             ${{ steps.changelog.outputs.changes }}
 
             ## Summary
-            [smartshell-sdk@${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }}](https://github.com/xl-soft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
+            [smartshell-sdk@${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }}](https://github.com/xlsft/smartshell-sdk/compare/${{ steps.get_tag.outputs.tag }}...${{ steps.read_version.outputs.version }})
           draft: false
           prerelease: false
         env:

@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="name">name</h3>
-<pre><code lang="ts">
-                    name: string
-                </code></pre>
+<pre><code lang="ts">name: string</code></pre>
 
 <h3 id="inn">inn</h3>
-<pre><code lang="ts">
-                    inn: string
-                </code></pre>
+<pre><code lang="ts">inn: string</code></pre>
 
 <h3 id="kpp">kpp</h3>
-<pre><code lang="ts">
-                    kpp: string
-                </code></pre>
+<pre><code lang="ts">kpp: string</code></pre>
 
 <h3 id="address">address</h3>
-<pre><code lang="ts">
-                    address: string
-                </code></pre>
+<pre><code lang="ts">address: string</code></pre>
 
 <h3 id="phone">phone</h3>
-<pre><code lang="ts">
-                    phone: string
-                </code></pre>
+<pre><code lang="ts">phone: string</code></pre>
 
 <h3 id="email">email</h3>
-<pre><code lang="ts">
-                    email: string
-                </code></pre>
+<pre><code lang="ts">email: string</code></pre>

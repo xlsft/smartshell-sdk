@@ -1,9 +1,9 @@
 <h1 id="api_query_paymentTransactions">query paymentTransactions</h1>
 <code>Paginated</code>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: "||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||", company_id?: number }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, company_id?: number }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/PaymentTransactionPaginated','PaymentTransactionPaginated'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/PaymentTransactionPaginated','PaymentTransactionPaginated'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

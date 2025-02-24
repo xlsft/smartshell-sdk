@@ -3,51 +3,31 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="userid">userId</h3>
-<pre><code lang="ts">
-                    userId: number
-                </code></pre>
+<pre><code lang="ts">userId: number</code></pre>
 
 <h3 id="totaltime">totalTime</h3>
-<pre><code lang="ts">
-                    totalTime: number
-                </code></pre>
+<pre><code lang="ts">totalTime: number</code></pre>
 
 <h3 id="nickname">nickname</h3>
-<pre><code lang="ts">
-                    nickname: string
-                </code></pre>
+<pre><code lang="ts">nickname: string</code></pre>
 
 <h3 id="name">name</h3>
-<pre><code lang="ts">
-                    name?: string
-                </code></pre>
+<pre><code lang="ts">name?: string</code></pre>
 
 <h3 id="avatarurl">avatarUrl</h3>
-<pre><code lang="ts">
-                    avatarUrl?: string
-                </code></pre>
+<pre><code lang="ts">avatarUrl?: string</code></pre>
 
 <h3 id="telegram_link">telegram_link</h3>
-<pre><code lang="ts">
-                    telegram_link?: string
-                </code></pre>
+<pre><code lang="ts">telegram_link?: string</code></pre>
 
 <h3 id="discord_link">discord_link</h3>
-<pre><code lang="ts">
-                    discord_link?: string
-                </code></pre>
+<pre><code lang="ts">discord_link?: string</code></pre>
 
 <h3 id="steam_link">steam_link</h3>
-<pre><code lang="ts">
-                    steam_link?: string
-                </code></pre>
+<pre><code lang="ts">steam_link?: string</code></pre>
 
 <h3 id="vk_link">vk_link</h3>
-<pre><code lang="ts">
-                    vk_link?: string
-                </code></pre>
+<pre><code lang="ts">vk_link?: string</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/Date','Date']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/Date','Date']--||</code></pre>

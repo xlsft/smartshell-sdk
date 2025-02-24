@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="host_groups">host_groups</h3>
-<pre><code lang="ts">
-                    host_groups: number[]
-                </code></pre>
+<pre><code lang="ts">host_groups: number[]</code></pre>
 
 <h3 id="cost_map">cost_map</h3>
-<pre><code lang="ts">
-                    cost_map: "||--['/docs/reference/types/TariffPricelistCostMapInput','TariffPricelistCostMapInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">cost_map: ||--['/docs/reference/types/TariffPricelistCostMapInput','TariffPricelistCostMapInput']--||[]</code></pre>

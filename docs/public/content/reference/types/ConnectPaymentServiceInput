@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="existing_beneficiary">existing_beneficiary</h3>
-<pre><code lang="ts">
-                    existing_beneficiary?: string
-                </code></pre>
+<pre><code lang="ts">existing_beneficiary?: string</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type?: "||--['/docs/reference/types/BeneficiaryType','BeneficiaryType']--||"
-                </code></pre>
+<pre><code lang="ts">type?: ||--['/docs/reference/types/BeneficiaryType','BeneficiaryType']--||</code></pre>
 
 <h3 id="ul">ul</h3>
-<pre><code lang="ts">
-                    ul?: "||--['/docs/reference/types/ULResidentInput','ULResidentInput']--||"
-                </code></pre>
+<pre><code lang="ts">ul?: ||--['/docs/reference/types/ULResidentInput','ULResidentInput']--||</code></pre>
 
 <h3 id="ip">ip</h3>
-<pre><code lang="ts">
-                    ip?: "||--['/docs/reference/types/IPResidentInput','IPResidentInput']--||"
-                </code></pre>
+<pre><code lang="ts">ip?: ||--['/docs/reference/types/IPResidentInput','IPResidentInput']--||</code></pre>
 
 <h3 id="bank_account">bank_account</h3>
-<pre><code lang="ts">
-                    bank_account?: "||--['/docs/reference/types/BankAccountInput','BankAccountInput']--||"
-                </code></pre>
+<pre><code lang="ts">bank_account?: ||--['/docs/reference/types/BankAccountInput','BankAccountInput']--||</code></pre>

@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="q">q</h3>
-<pre><code lang="ts">
-                    q: string
-                </code></pre>
+<pre><code lang="ts">q: string</code></pre>
 
 <h3 id="sort">sort</h3>
-<pre><code lang="ts">
-                    sort?: "||--['/docs/reference/types/SortInput','SortInput']--||"
-                </code></pre>
+<pre><code lang="ts">sort?: ||--['/docs/reference/types/SortInput','SortInput']--||</code></pre>
 
 <h3 id="filter">filter</h3>
-<pre><code lang="ts">
-                    filter?: "||--['/docs/reference/types/FilterInput','FilterInput']--||"
-                </code></pre>
+<pre><code lang="ts">filter?: ||--['/docs/reference/types/FilterInput','FilterInput']--||</code></pre>

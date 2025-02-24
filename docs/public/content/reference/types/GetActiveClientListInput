@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="from">from</h3>
-<pre><code lang="ts">
-                    from?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">from?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="to">to</h3>
-<pre><code lang="ts">
-                    to?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">to?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="preset">preset</h3>
-<pre><code lang="ts">
-                    preset?: "||--['/docs/reference/types/DateReportEnum','DateReportEnum']--||"
-                </code></pre>
+<pre><code lang="ts">preset?: ||--['/docs/reference/types/DateReportEnum','DateReportEnum']--||</code></pre>
 
 <h3 id="sort">sort</h3>
-<pre><code lang="ts">
-                    sort: "||--['/docs/reference/types/SortActiveClientEnum','SortActiveClientEnum']--||"
-                </code></pre>
+<pre><code lang="ts">sort: ||--['/docs/reference/types/SortActiveClientEnum','SortActiveClientEnum']--||</code></pre>

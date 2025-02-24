@@ -1,9 +1,9 @@
 <h1 id="api_mutation_createContractor">mutation createContractor</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/ContractorInput','ContractorInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/ContractorInput','ContractorInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Contractor','Contractor'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Contractor','Contractor'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

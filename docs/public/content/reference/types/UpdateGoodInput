@@ -3,96 +3,58 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title?: string
-                </code></pre>
+<pre><code lang="ts">title?: string</code></pre>
 
 <h3 id="subtitle">subtitle</h3>
-<pre><code lang="ts">
-                    subtitle?: string
-                </code></pre>
+<pre><code lang="ts">subtitle?: string</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost?: number
-                </code></pre>
+<pre><code lang="ts">cost?: number</code></pre>
 
 <h3 id="wholesale_cost">wholesale_cost</h3>
-<pre><code lang="ts">
-                    wholesale_cost?: number
-                </code></pre>
+<pre><code lang="ts">wholesale_cost?: number</code></pre>
 
 <h3 id="tax_percent">tax_percent</h3>
-<pre><code lang="ts">
-                    tax_percent?: number
-                </code></pre>
+<pre><code lang="ts">tax_percent?: number</code></pre>
 
 <h3 id="unit_name">unit_name</h3>
-<pre><code lang="ts">
-                    unit_name?: string
-                </code></pre>
+<pre><code lang="ts">unit_name?: string</code></pre>
 
 <h3 id="unit_value">unit_value</h3>
-<pre><code lang="ts">
-                    unit_value?: number
-                </code></pre>
+<pre><code lang="ts">unit_value?: number</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount?: number
-                </code></pre>
+<pre><code lang="ts">amount?: number</code></pre>
 
 <h3 id="image">image</h3>
-<pre><code lang="ts">
-                    image?: string
-                </code></pre>
+<pre><code lang="ts">image?: string</code></pre>
 
 <h3 id="use_global_discounts">use_global_discounts</h3>
-<pre><code lang="ts">
-                    use_global_discounts?: boolean
-                </code></pre>
+<pre><code lang="ts">use_global_discounts?: boolean</code></pre>
 
 <h3 id="tax_system">tax_system</h3>
-<pre><code lang="ts">
-                    tax_system?: "||--['/docs/reference/types/TaxSystem','TaxSystem']--||"
-                </code></pre>
+<pre><code lang="ts">tax_system?: ||--['/docs/reference/types/TaxSystem','TaxSystem']--||</code></pre>
 
 <h3 id="vat">vat</h3>
-<pre><code lang="ts">
-                    vat?: "||--['/docs/reference/types/Vat','Vat']--||"
-                </code></pre>
+<pre><code lang="ts">vat?: ||--['/docs/reference/types/Vat','Vat']--||</code></pre>
 
 <h3 id="ean">ean</h3>
-<pre><code lang="ts">
-                    ean?: string
-                </code></pre>
+<pre><code lang="ts">ean?: string</code></pre>
 
 <h3 id="use_fair_sign">use_fair_sign</h3>
-<pre><code lang="ts">
-                    use_fair_sign?: boolean
-                </code></pre>
+<pre><code lang="ts">use_fair_sign?: boolean</code></pre>
 
 <h3 id="is_excise">is_excise</h3>
-<pre><code lang="ts">
-                    is_excise?: boolean
-                </code></pre>
+<pre><code lang="ts">is_excise?: boolean</code></pre>
 
 <h3 id="price">price</h3>
-<pre><code lang="ts">
-                    price?: number
-                </code></pre>
+<pre><code lang="ts">price?: number</code></pre>
 
 <h3 id="show_in_shell">show_in_shell</h3>
-<pre><code lang="ts">
-                    show_in_shell?: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_shell?: boolean</code></pre>
 
 <h3 id="category_id">category_id</h3>
-<pre><code lang="ts">
-                    category_id?: number
-                </code></pre>
+<pre><code lang="ts">category_id?: number</code></pre>

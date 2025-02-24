@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="phone">phone</h3>
-<pre><code lang="ts">
-                    phone?: string
-                </code></pre>
+<pre><code lang="ts">phone?: string</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type?: "||--['/docs/reference/types/ConfirmationCodeType','ConfirmationCodeType']--||"
-                </code></pre>
+<pre><code lang="ts">type?: ||--['/docs/reference/types/ConfirmationCodeType','ConfirmationCodeType']--||</code></pre>
 
 <h3 id="method">method</h3>
-<pre><code lang="ts">
-                    method?: "||--['/docs/reference/types/MethodType','MethodType']--||"
-                </code></pre>
+<pre><code lang="ts">method?: ||--['/docs/reference/types/MethodType','MethodType']--||</code></pre>
 
 <h3 id="captcha_token">captcha_token</h3>
-<pre><code lang="ts">
-                    captcha_token?: string
-                </code></pre>
+<pre><code lang="ts">captcha_token?: string</code></pre>

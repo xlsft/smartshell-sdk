@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="received">received</h3>
-<pre><code lang="ts">
-                    received: number
-                </code></pre>
+<pre><code lang="ts">received: number</code></pre>
 
 <h3 id="income">income</h3>
-<pre><code lang="ts">
-                    income: number
-                </code></pre>
+<pre><code lang="ts">income: number</code></pre>
 
 <h3 id="sold">sold</h3>
-<pre><code lang="ts">
-                    sold: number
-                </code></pre>
+<pre><code lang="ts">sold: number</code></pre>
 
 <h3 id="disposal">disposal</h3>
-<pre><code lang="ts">
-                    disposal: number
-                </code></pre>
+<pre><code lang="ts">disposal: number</code></pre>

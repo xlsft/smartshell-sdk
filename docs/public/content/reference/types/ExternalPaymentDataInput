@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="external_id">external_id</h3>
-<pre><code lang="ts">
-                    external_id?: string
-                </code></pre>
+<pre><code lang="ts">external_id?: string</code></pre>
 
 <h3 id="external_method">external_method</h3>
-<pre><code lang="ts">
-                    external_method?: string
-                </code></pre>
+<pre><code lang="ts">external_method?: string</code></pre>

@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||</code></pre>
 
 <h3 id="tariff">tariff</h3>
-<pre><code lang="ts">
-                    tariff: "||--['/docs/reference/types/TariffOverview','TariffOverview']--||"
-                </code></pre>
+<pre><code lang="ts">tariff: ||--['/docs/reference/types/TariffOverview','TariffOverview']--||</code></pre>

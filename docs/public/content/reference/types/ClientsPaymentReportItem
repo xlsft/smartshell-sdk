@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="user">user</h3>
-<pre><code lang="ts">
-                    user: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">user: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="shop">shop</h3>
-<pre><code lang="ts">
-                    shop: "||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||"
-                </code></pre>
+<pre><code lang="ts">shop: ||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||</code></pre>
 
 <h3 id="tariff">tariff</h3>
-<pre><code lang="ts">
-                    tariff: "||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||"
-                </code></pre>
+<pre><code lang="ts">tariff: ||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">
-                    bonus: "||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||"
-                </code></pre>
+<pre><code lang="ts">bonus: ||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||</code></pre>
 
 <h3 id="total">total</h3>
-<pre><code lang="ts">
-                    total: "||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||"
-                </code></pre>
+<pre><code lang="ts">total: ||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||</code></pre>
 
 <h3 id="average">average</h3>
-<pre><code lang="ts">
-                    average: "||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||"
-                </code></pre>
+<pre><code lang="ts">average: ||--['/docs/reference/types/PaymentReportItem','PaymentReportItem']--||</code></pre>

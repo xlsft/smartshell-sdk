@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: string
-                </code></pre>
+<pre><code lang="ts">id: string</code></pre>
 
 <h3 id="name">name</h3>
-<pre><code lang="ts">
-                    name: string
-                </code></pre>
+<pre><code lang="ts">name: string</code></pre>
 
 <h3 id="icon_url">icon_url</h3>
-<pre><code lang="ts">
-                    icon_url?: string
-                </code></pre>
+<pre><code lang="ts">icon_url?: string</code></pre>
 
 <h3 id="conditions">conditions</h3>
-<pre><code lang="ts">
-                    conditions: "||--['/docs/reference/types/Condition','Condition']--||"[]
-                </code></pre>
+<pre><code lang="ts">conditions: ||--['/docs/reference/types/Condition','Condition']--||[]</code></pre>
 
 <h3 id="rewards">rewards</h3>
-<pre><code lang="ts">
-                    rewards: "||--['/docs/reference/types/Reward','Reward']--||"[]
-                </code></pre>
+<pre><code lang="ts">rewards: ||--['/docs/reference/types/Reward','Reward']--||[]</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: string
-                </code></pre>
+<pre><code lang="ts">created_at: string</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/AchievementStatus','AchievementStatus']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/AchievementStatus','AchievementStatus']--||</code></pre>
 
 <h3 id="assigned_count">assigned_count</h3>
-<pre><code lang="ts">
-                    assigned_count: number
-                </code></pre>
+<pre><code lang="ts">assigned_count: number</code></pre>

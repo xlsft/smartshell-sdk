@@ -4,7 +4,7 @@ import { resolve } from 'path';
 type Item = { value: string, label: string, type: 'dir' | 'file' | 'section', icon?: string, children?: Item[] }
 const useTree = async () => {
     const tree: Item[] = []
-    const route = (...path: string[]) => resolve(`content${path ? `/${path.join('/')}` : ''}`)
+    const route = (...path: string[]) => resolve(`public/content${path ? `/${path.join('/')}` : ''}`)
 
     tree.push({ value: '/docs/start', label: 'Начало работы', icon: '/tree/start.svg', type: 'file', children: [
         { value: '/docs/start#introduction', label: 'Введение', icon: '/tree/info.svg', type: 'section' },
@@ -53,7 +53,7 @@ const useTree = async () => {
 export default defineEventHandler(async (event) => {
  
     const { path, index } = await readBody(event)
-    const route = resolve(`content${path ? `/${path.join('/')}` : ''}`)
+    const route = resolve(`public/content${path ? `/${path.join('/')}` : ''}`)
     const options: { type?: 'dir' | 'file' } = {}
     const tree = await useTree()
     const find = (route: string): Item | undefined => {

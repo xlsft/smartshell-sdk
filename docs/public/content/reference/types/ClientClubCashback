@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount: number
-                </code></pre>
+<pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="is_percent">is_percent</h3>
-<pre><code lang="ts">
-                    is_percent: boolean
-                </code></pre>
+<pre><code lang="ts">is_percent: boolean</code></pre>
 
 <h3 id="value">value</h3>
-<pre><code lang="ts">
-                    value: number
-                </code></pre>
+<pre><code lang="ts">value: number</code></pre>

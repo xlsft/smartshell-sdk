@@ -1,9 +1,9 @@
 <h1 id="api_query_updateLicensePayment">query updateLicensePayment</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, status: "||--['/docs/reference/types/LicensePaymentStatus','LicensePaymentStatus'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, status: ||--['/docs/reference/types/LicensePaymentStatus','LicensePaymentStatus'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/LicensePaymentData','LicensePaymentData'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/LicensePaymentData','LicensePaymentData'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

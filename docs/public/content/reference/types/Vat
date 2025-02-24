@@ -2,6 +2,4 @@
 <br />
 <h2 id="possible_values">Possible values</h2>
 
-<pre><code lang="ts">
-                "NO_NDS" | "NDS_0" | "NDS_5" | "NDS_7" | "NDS_10" | "NDS_20" | "NDS_110" | "NDS_120"
-            </code></pre>
+<pre><code lang="ts">"NO_NDS" | "NDS_0" | "NDS_5" | "NDS_7" | "NDS_10" | "NDS_20" | "NDS_110" | "NDS_120"</code></pre>

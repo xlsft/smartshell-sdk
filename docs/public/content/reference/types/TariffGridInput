@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="host_group_id">host_group_id</h3>
-<pre><code lang="ts">
-                    host_group_id?: number
-                </code></pre>
+<pre><code lang="ts">host_group_id?: number</code></pre>
 
 <h3 id="host_id">host_id</h3>
-<pre><code lang="ts">
-                    host_id?: number
-                </code></pre>
+<pre><code lang="ts">host_id?: number</code></pre>
 
 <h3 id="client_id">client_id</h3>
-<pre><code lang="ts">
-                    client_id?: number
-                </code></pre>
+<pre><code lang="ts">client_id?: number</code></pre>
 
 <h3 id="client_uuid">client_uuid</h3>
-<pre><code lang="ts">
-                    client_uuid?: string
-                </code></pre>
+<pre><code lang="ts">client_uuid?: string</code></pre>
 
 <h3 id="shift">shift</h3>
-<pre><code lang="ts">
-                    shift?: number
-                </code></pre>
+<pre><code lang="ts">shift?: number</code></pre>
 
 <h3 id="use_bonus">use_bonus</h3>
-<pre><code lang="ts">
-                    use_bonus?: boolean
-                </code></pre>
+<pre><code lang="ts">use_bonus?: boolean</code></pre>

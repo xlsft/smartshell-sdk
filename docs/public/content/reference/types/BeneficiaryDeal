@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: string
-                </code></pre>
+<pre><code lang="ts">id: string</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="beneficiary">beneficiary</h3>
-<pre><code lang="ts">
-                    beneficiary: "||--['/docs/reference/types/Beneficiary','Beneficiary']--||"
-                </code></pre>
+<pre><code lang="ts">beneficiary: ||--['/docs/reference/types/Beneficiary','Beneficiary']--||</code></pre>
 
 <h3 id="commission">commission</h3>
-<pre><code lang="ts">
-                    commission: number
-                </code></pre>
+<pre><code lang="ts">commission: number</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: string
-                </code></pre>
+<pre><code lang="ts">status: string</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

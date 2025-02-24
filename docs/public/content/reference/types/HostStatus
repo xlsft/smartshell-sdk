@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="client_session">client_session</h3>
-<pre><code lang="ts">
-                    client_session?: "||--['/docs/reference/types/ClientSession','ClientSession']--||"
-                </code></pre>
+<pre><code lang="ts">client_session?: ||--['/docs/reference/types/ClientSession','ClientSession']--||</code></pre>
 
 <h3 id="current_tariff">current_tariff</h3>
-<pre><code lang="ts">
-                    current_tariff?: "||--['/docs/reference/types/CurrentTariff','CurrentTariff']--||"
-                </code></pre>
+<pre><code lang="ts">current_tariff?: ||--['/docs/reference/types/CurrentTariff','CurrentTariff']--||</code></pre>
 
 <h3 id="command">command</h3>
-<pre><code lang="ts">
-                    command?: "||--['/docs/reference/types/HostCommand','HostCommand']--||"
-                </code></pre>
+<pre><code lang="ts">command?: ||--['/docs/reference/types/HostCommand','HostCommand']--||</code></pre>
 
 <h3 id="host">host</h3>
-<pre><code lang="ts">
-                    host: "||--['/docs/reference/types/Host','Host']--||"
-                </code></pre>
+<pre><code lang="ts">host: ||--['/docs/reference/types/Host','Host']--||</code></pre>

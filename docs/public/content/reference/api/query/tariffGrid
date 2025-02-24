@@ -1,9 +1,9 @@
 <h1 id="api_query_tariffGrid">query tariffGrid</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input?: "||--['/docs/reference/types/TariffGridInput','TariffGridInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input?: ||--['/docs/reference/types/TariffGridInput','TariffGridInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/TariffGridItem','TariffGridItem'--||"[]</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/TariffGridItem','TariffGridItem'--||[]</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

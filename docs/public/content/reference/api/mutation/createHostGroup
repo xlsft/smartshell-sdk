@@ -1,9 +1,9 @@
 <h1 id="api_mutation_createHostGroup">mutation createHostGroup</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/HostGroupInput','HostGroupInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/HostGroupInput','HostGroupInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/HostGroup','HostGroup'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/HostGroup','HostGroup'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

@@ -11,8 +11,11 @@
             
             const highlighted = hljs.highlight(element.textContent || '', { language: element.getAttribute('lang') || 'typescript' })
             element.innerHTML = highlighted.value
-            element.innerHTML = element.innerHTML.replaceAll(/"\|\|--\['(.*?)','(.*?)'\]--\|\|"/g, (_, href, text) => `<a target="_blank" rel="noreferrer" href="${href}">${text}</a>`)
-
+            console.log(element.innerHTML)
+            element.innerHTML = element.innerHTML.replaceAll(
+  /\|\|--\[\s*<span[^>]*>'(.*?)'<\/span>\s*,\s*<span[^>]*>'(.*?)'<\/span>\s*\]--\|\|/gm, 
+  (_, href, text) => `<a target="_blank" rel="noreferrer" href="${href}">${text}</a>`
+);
             const button = document.createElement('button');
             button.classList.add('code-copy-button');
             button.onclick = () => { useClipboard(element.textContent || ''); toast.info('Скопировано в буфер обмена') }

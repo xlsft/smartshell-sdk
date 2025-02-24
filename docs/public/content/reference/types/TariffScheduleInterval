@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="week_day">week_day</h3>
-<pre><code lang="ts">
-                    week_day: number
-                </code></pre>
+<pre><code lang="ts">week_day: number</code></pre>
 
 <h3 id="time_from">time_from</h3>
-<pre><code lang="ts">
-                    time_from: "||--['/docs/reference/types/Time','Time']--||"
-                </code></pre>
+<pre><code lang="ts">time_from: ||--['/docs/reference/types/Time','Time']--||</code></pre>
 
 <h3 id="time_to">time_to</h3>
-<pre><code lang="ts">
-                    time_to: "||--['/docs/reference/types/Time','Time']--||"
-                </code></pre>
+<pre><code lang="ts">time_to: ||--['/docs/reference/types/Time','Time']--||</code></pre>

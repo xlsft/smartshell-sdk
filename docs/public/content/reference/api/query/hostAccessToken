@@ -1,7 +1,7 @@
 <h1 id="api_query_hostAccessToken">query hostAccessToken</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/HostAccessTokenInput','HostAccessTokenInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/HostAccessTokenInput','HostAccessTokenInput'--|| }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = string</code></pre>
 <h3>Codegen method map</h3>

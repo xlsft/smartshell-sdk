@@ -3,36 +3,22 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="statseances">statSeances</h3>
-<pre><code lang="ts">
-                    statSeances: "||--['/docs/reference/types/StatBySeances','StatBySeances']--||"
-                </code></pre>
+<pre><code lang="ts">statSeances: ||--['/docs/reference/types/StatBySeances','StatBySeances']--||</code></pre>
 
 <h3 id="statservices">statServices</h3>
-<pre><code lang="ts">
-                    statServices: "||--['/docs/reference/types/StatByServices','StatByServices']--||"
-                </code></pre>
+<pre><code lang="ts">statServices: ||--['/docs/reference/types/StatByServices','StatByServices']--||</code></pre>
 
 <h3 id="statgoods">statGoods</h3>
-<pre><code lang="ts">
-                    statGoods: "||--['/docs/reference/types/StatByGoods','StatByGoods']--||"
-                </code></pre>
+<pre><code lang="ts">statGoods: ||--['/docs/reference/types/StatByGoods','StatByGoods']--||</code></pre>
 
 <h3 id="statorders">statOrders</h3>
-<pre><code lang="ts">
-                    statOrders: "||--['/docs/reference/types/StatByOrders','StatByOrders']--||"
-                </code></pre>
+<pre><code lang="ts">statOrders: ||--['/docs/reference/types/StatByOrders','StatByOrders']--||</code></pre>
 
 <h3 id="statdeposit">statDeposit</h3>
-<pre><code lang="ts">
-                    statDeposit: "||--['/docs/reference/types/MoneyByTypes','MoneyByTypes']--||"
-                </code></pre>
+<pre><code lang="ts">statDeposit: ||--['/docs/reference/types/MoneyByTypes','MoneyByTypes']--||</code></pre>
 
 <h3 id="statmoney">statMoney</h3>
-<pre><code lang="ts">
-                    statMoney: "||--['/docs/reference/types/MoneyByTypes','MoneyByTypes']--||"
-                </code></pre>
+<pre><code lang="ts">statMoney: ||--['/docs/reference/types/MoneyByTypes','MoneyByTypes']--||</code></pre>
 
 <h3 id="stattransfer">statTransfer</h3>
-<pre><code lang="ts">
-                    statTransfer: "||--['/docs/reference/types/StatByTransfers','StatByTransfers']--||"
-                </code></pre>
+<pre><code lang="ts">statTransfer: ||--['/docs/reference/types/StatByTransfers','StatByTransfers']--||</code></pre>

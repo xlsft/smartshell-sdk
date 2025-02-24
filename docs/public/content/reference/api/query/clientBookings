@@ -1,9 +1,9 @@
 <h1 id="api_query_clientBookings">query clientBookings</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { status?: "||--['/docs/reference/types/BookingClientStatus','BookingClientStatus'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { status?: ||--['/docs/reference/types/BookingClientStatus','BookingClientStatus'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ClientBooking','ClientBooking'--||"[]</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ClientBooking','ClientBooking'--||[]</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

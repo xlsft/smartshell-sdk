@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="wholesale_cost">wholesale_cost</h3>
-<pre><code lang="ts">
-                    wholesale_cost: number
-                </code></pre>
+<pre><code lang="ts">wholesale_cost: number</code></pre>
 
 <h3 id="tax_percent">tax_percent</h3>
-<pre><code lang="ts">
-                    tax_percent?: number
-                </code></pre>
+<pre><code lang="ts">tax_percent?: number</code></pre>
 
 <h3 id="use_global_discounts">use_global_discounts</h3>
-<pre><code lang="ts">
-                    use_global_discounts: boolean
-                </code></pre>
+<pre><code lang="ts">use_global_discounts: boolean</code></pre>
 
 <h3 id="tax_system">tax_system</h3>
-<pre><code lang="ts">
-                    tax_system?: "||--['/docs/reference/types/TaxSystem','TaxSystem']--||"
-                </code></pre>
+<pre><code lang="ts">tax_system?: ||--['/docs/reference/types/TaxSystem','TaxSystem']--||</code></pre>
 
 <h3 id="vat">vat</h3>
-<pre><code lang="ts">
-                    vat?: "||--['/docs/reference/types/Vat','Vat']--||"
-                </code></pre>
+<pre><code lang="ts">vat?: ||--['/docs/reference/types/Vat','Vat']--||</code></pre>
 
 <h3 id="ean">ean</h3>
-<pre><code lang="ts">
-                    ean?: string
-                </code></pre>
+<pre><code lang="ts">ean?: string</code></pre>

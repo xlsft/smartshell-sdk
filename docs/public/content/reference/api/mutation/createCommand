@@ -1,9 +1,9 @@
 <h1 id="api_mutation_createCommand">mutation createCommand</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input?: "||--['/docs/reference/types/CreateCommandInput','CreateCommandInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input?: ||--['/docs/reference/types/CreateCommandInput','CreateCommandInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/HostCommand','HostCommand'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/HostCommand','HostCommand'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

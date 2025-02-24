@@ -2,6 +2,4 @@
 <br />
 <h2 id="possible_values">Possible values</h2>
 
-<pre><code lang="ts">
-                "NONE" | "VAT0" | "VAT5" | "VAT7" | "VAT10" | "VAT20" | "VAT110" | "VAT120"
-            </code></pre>
+<pre><code lang="ts">"NONE" | "VAT0" | "VAT5" | "VAT7" | "VAT10" | "VAT20" | "VAT110" | "VAT120"</code></pre>

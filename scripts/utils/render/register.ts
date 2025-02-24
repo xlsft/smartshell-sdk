@@ -113,7 +113,7 @@ export const register = async () => {
                 module_register.push(`        /**
             * # ${type} \`${module.name}\`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/${type}/${module.name}
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/${type}/${module.name}
             * 
             * \`@xlsoftware/smartshell-sdk\`
             */`)

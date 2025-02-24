@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="user_cost">user_cost</h3>
-<pre><code lang="ts">
-                    user_cost: number
-                </code></pre>
+<pre><code lang="ts">user_cost: number</code></pre>
 
 <h3 id="intervals">intervals</h3>
-<pre><code lang="ts">
-                    intervals: "||--['/docs/reference/types/TariffScheduleInterval','TariffScheduleInterval']--||"[]
-                </code></pre>
+<pre><code lang="ts">intervals: ||--['/docs/reference/types/TariffScheduleInterval','TariffScheduleInterval']--||[]</code></pre>

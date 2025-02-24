@@ -3,106 +3,64 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="use_global_discounts">use_global_discounts</h3>
-<pre><code lang="ts">
-                    use_global_discounts: boolean
-                </code></pre>
+<pre><code lang="ts">use_global_discounts: boolean</code></pre>
 
 <h3 id="has_fixed_finish_time">has_fixed_finish_time</h3>
-<pre><code lang="ts">
-                    has_fixed_finish_time: boolean
-                </code></pre>
+<pre><code lang="ts">has_fixed_finish_time: boolean</code></pre>
 
 <h3 id="duration">duration</h3>
-<pre><code lang="ts">
-                    duration: number
-                </code></pre>
+<pre><code lang="ts">duration: number</code></pre>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="is_active">is_active</h3>
-<pre><code lang="ts">
-                    is_active: boolean
-                </code></pre>
+<pre><code lang="ts">is_active: boolean</code></pre>
 
 <h3 id="per_minute">per_minute</h3>
-<pre><code lang="ts">
-                    per_minute: boolean
-                </code></pre>
+<pre><code lang="ts">per_minute: boolean</code></pre>
 
 <h3 id="show_in_shell">show_in_shell</h3>
-<pre><code lang="ts">
-                    show_in_shell: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_shell: boolean</code></pre>
 
 <h3 id="show_in_billing">show_in_billing</h3>
-<pre><code lang="ts">
-                    show_in_billing?: boolean
-                </code></pre>
+<pre><code lang="ts">show_in_billing?: boolean</code></pre>
 
 <h3 id="schedules">schedules</h3>
-<pre><code lang="ts">
-                    schedules: "||--['/docs/reference/types/TariffPeriodInput','TariffPeriodInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">schedules: ||--['/docs/reference/types/TariffPeriodInput','TariffPeriodInput']--||[]</code></pre>
 
 <h3 id="sell_schedules">sell_schedules</h3>
-<pre><code lang="ts">
-                    sell_schedules: "||--['/docs/reference/types/TariffPeriodInput','TariffPeriodInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">sell_schedules: ||--['/docs/reference/types/TariffPeriodInput','TariffPeriodInput']--||[]</code></pre>
 
 <h3 id="price_list">price_list</h3>
-<pre><code lang="ts">
-                    price_list: "||--['/docs/reference/types/TariffPricelistInput','TariffPricelistInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">price_list: ||--['/docs/reference/types/TariffPricelistInput','TariffPricelistInput']--||[]</code></pre>
 
 <h3 id="pausable">pausable</h3>
-<pre><code lang="ts">
-                    pausable?: boolean
-                </code></pre>
+<pre><code lang="ts">pausable?: boolean</code></pre>
 
 <h3 id="lifetime">lifetime</h3>
-<pre><code lang="ts">
-                    lifetime?: number
-                </code></pre>
+<pre><code lang="ts">lifetime?: number</code></pre>
 
 <h3 id="ean">ean</h3>
-<pre><code lang="ts">
-                    ean?: string
-                </code></pre>
+<pre><code lang="ts">ean?: string</code></pre>
 
 <h3 id="highlighted">highlighted</h3>
-<pre><code lang="ts">
-                    highlighted?: boolean
-                </code></pre>
+<pre><code lang="ts">highlighted?: boolean</code></pre>
 
 <h3 id="description">description</h3>
-<pre><code lang="ts">
-                    description?: string
-                </code></pre>
+<pre><code lang="ts">description?: string</code></pre>
 
 <h3 id="sort">sort</h3>
-<pre><code lang="ts">
-                    sort?: number
-                </code></pre>
+<pre><code lang="ts">sort?: number</code></pre>
 
 <h3 id="is_tracked">is_tracked</h3>
-<pre><code lang="ts">
-                    is_tracked?: boolean
-                </code></pre>
+<pre><code lang="ts">is_tracked?: boolean</code></pre>
 
 <h3 id="disable_sale_receipt_printing">disable_sale_receipt_printing</h3>
-<pre><code lang="ts">
-                    disable_sale_receipt_printing?: boolean
-                </code></pre>
+<pre><code lang="ts">disable_sale_receipt_printing?: boolean</code></pre>
 
 <h3 id="online_booking_enabled">online_booking_enabled</h3>
-<pre><code lang="ts">
-                    online_booking_enabled?: boolean
-                </code></pre>
+<pre><code lang="ts">online_booking_enabled?: boolean</code></pre>
 
 <h3 id="use_on_holidays">use_on_holidays</h3>
-<pre><code lang="ts">
-                    use_on_holidays?: boolean
-                </code></pre>
+<pre><code lang="ts">use_on_holidays?: boolean</code></pre>

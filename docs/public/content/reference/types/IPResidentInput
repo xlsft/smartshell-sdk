@@ -3,66 +3,40 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="first_name">first_name</h3>
-<pre><code lang="ts">
-                    first_name: string
-                </code></pre>
+<pre><code lang="ts">first_name: string</code></pre>
 
 <h3 id="middle_name">middle_name</h3>
-<pre><code lang="ts">
-                    middle_name?: string
-                </code></pre>
+<pre><code lang="ts">middle_name?: string</code></pre>
 
 <h3 id="last_name">last_name</h3>
-<pre><code lang="ts">
-                    last_name: string
-                </code></pre>
+<pre><code lang="ts">last_name: string</code></pre>
 
 <h3 id="inn">inn</h3>
-<pre><code lang="ts">
-                    inn: string
-                </code></pre>
+<pre><code lang="ts">inn: string</code></pre>
 
 <h3 id="birth_date">birth_date</h3>
-<pre><code lang="ts">
-                    birth_date: "||--['/docs/reference/types/Date','Date']--||"
-                </code></pre>
+<pre><code lang="ts">birth_date: ||--['/docs/reference/types/Date','Date']--||</code></pre>
 
 <h3 id="birth_place">birth_place</h3>
-<pre><code lang="ts">
-                    birth_place?: string
-                </code></pre>
+<pre><code lang="ts">birth_place?: string</code></pre>
 
 <h3 id="citizenship">citizenship</h3>
-<pre><code lang="ts">
-                    citizenship: string
-                </code></pre>
+<pre><code lang="ts">citizenship: string</code></pre>
 
 <h3 id="passport">passport</h3>
-<pre><code lang="ts">
-                    passport: "||--['/docs/reference/types/PassportInput','PassportInput']--||"
-                </code></pre>
+<pre><code lang="ts">passport: ||--['/docs/reference/types/PassportInput','PassportInput']--||</code></pre>
 
 <h3 id="registration_address">registration_address</h3>
-<pre><code lang="ts">
-                    registration_address: string
-                </code></pre>
+<pre><code lang="ts">registration_address: string</code></pre>
 
 <h3 id="residence_address">residence_address</h3>
-<pre><code lang="ts">
-                    residence_address?: string
-                </code></pre>
+<pre><code lang="ts">residence_address?: string</code></pre>
 
 <h3 id="registration_date">registration_date</h3>
-<pre><code lang="ts">
-                    registration_date: "||--['/docs/reference/types/Date','Date']--||"
-                </code></pre>
+<pre><code lang="ts">registration_date: ||--['/docs/reference/types/Date','Date']--||</code></pre>
 
 <h3 id="phone">phone</h3>
-<pre><code lang="ts">
-                    phone: string
-                </code></pre>
+<pre><code lang="ts">phone: string</code></pre>
 
 <h3 id="email">email</h3>
-<pre><code lang="ts">
-                    email?: string
-                </code></pre>
+<pre><code lang="ts">email?: string</code></pre>

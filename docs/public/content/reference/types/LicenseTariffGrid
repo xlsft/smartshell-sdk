@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="tariffs">tariffs</h3>
-<pre><code lang="ts">
-                    tariffs: "||--['/docs/reference/types/LicenseTariff','LicenseTariff']--||"[]
-                </code></pre>
+<pre><code lang="ts">tariffs: ||--['/docs/reference/types/LicenseTariff','LicenseTariff']--||[]</code></pre>
 
 <h3 id="modules">modules</h3>
-<pre><code lang="ts">
-                    modules: "||--['/docs/reference/types/LicenseTariffModule','LicenseTariffModule']--||"[]
-                </code></pre>
+<pre><code lang="ts">modules: ||--['/docs/reference/types/LicenseTariffModule','LicenseTariffModule']--||[]</code></pre>

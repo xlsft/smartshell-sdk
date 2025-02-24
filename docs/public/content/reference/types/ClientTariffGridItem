@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="duration">duration</h3>
-<pre><code lang="ts">
-                    duration: number
-                </code></pre>
+<pre><code lang="ts">duration: number</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="has_fixed_finish_time">has_fixed_finish_time</h3>
-<pre><code lang="ts">
-                    has_fixed_finish_time: boolean
-                </code></pre>
+<pre><code lang="ts">has_fixed_finish_time: boolean</code></pre>
 
 <h3 id="currency">currency</h3>
-<pre><code lang="ts">
-                    currency: "||--['/docs/reference/types/Currency','Currency']--||"
-                </code></pre>
+<pre><code lang="ts">currency: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>
 
 <h3 id="highlighted">highlighted</h3>
-<pre><code lang="ts">
-                    highlighted?: boolean
-                </code></pre>
+<pre><code lang="ts">highlighted?: boolean</code></pre>
 
 <h3 id="finished_at">finished_at</h3>
-<pre><code lang="ts">
-                    finished_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">finished_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

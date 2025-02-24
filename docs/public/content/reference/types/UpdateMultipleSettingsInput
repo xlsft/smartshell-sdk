@@ -3,6 +3,4 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="list">list</h3>
-<pre><code lang="ts">
-                    list: "||--['/docs/reference/types/UpdateSettingInput','UpdateSettingInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">list: ||--['/docs/reference/types/UpdateSettingInput','UpdateSettingInput']--||[]</code></pre>

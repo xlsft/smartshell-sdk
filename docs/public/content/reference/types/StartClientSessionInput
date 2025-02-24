@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="user_id">user_id</h3>
-<pre><code lang="ts">
-                    user_id?: number
-                </code></pre>
+<pre><code lang="ts">user_id?: number</code></pre>
 
 <h3 id="host_id">host_id</h3>
-<pre><code lang="ts">
-                    host_id?: number
-                </code></pre>
+<pre><code lang="ts">host_id?: number</code></pre>
 
 <h3 id="post_paid">post_paid</h3>
-<pre><code lang="ts">
-                    post_paid?: boolean
-                </code></pre>
+<pre><code lang="ts">post_paid?: boolean</code></pre>

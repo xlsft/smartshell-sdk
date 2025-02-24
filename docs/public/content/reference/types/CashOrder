@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="work_shift">work_shift</h3>
-<pre><code lang="ts">
-                    work_shift: "||--['/docs/reference/types/WorkShift','WorkShift']--||"
-                </code></pre>
+<pre><code lang="ts">work_shift: ||--['/docs/reference/types/WorkShift','WorkShift']--||</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type: "||--['/docs/reference/types/CashOrderType','CashOrderType']--||"
-                </code></pre>
+<pre><code lang="ts">type: ||--['/docs/reference/types/CashOrderType','CashOrderType']--||</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment: string
-                </code></pre>
+<pre><code lang="ts">comment: string</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

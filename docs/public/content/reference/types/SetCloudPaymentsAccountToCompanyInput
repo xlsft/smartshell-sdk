@@ -5,21 +5,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="action">action</h3>
-<pre><code lang="ts">
-                    action: "||--['/docs/reference/types/CloudPaymentsAccountAction','CloudPaymentsAccountAction']--||"
-                </code></pre>
+<pre><code lang="ts">action: ||--['/docs/reference/types/CloudPaymentsAccountAction','CloudPaymentsAccountAction']--||</code></pre>
 
 <h3 id="publicid">publicId</h3>
-<pre><code lang="ts">
-                    publicId?: string
-                </code></pre>
+<pre><code lang="ts">publicId?: string</code></pre>
 
 <h3 id="secretkey">secretKey</h3>
-<pre><code lang="ts">
-                    secretKey?: string
-                </code></pre>
+<pre><code lang="ts">secretKey?: string</code></pre>
 
 <h3 id="vat">vat</h3>
-<pre><code lang="ts">
-                    vat?: "||--['/docs/reference/types/Vat','Vat']--||"
-                </code></pre>
+<pre><code lang="ts">vat?: ||--['/docs/reference/types/Vat','Vat']--||</code></pre>

@@ -5,11 +5,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="beneficiary_id">beneficiary_id</h3>
-<pre><code lang="ts">
-                    beneficiary_id: string
-                </code></pre>
+<pre><code lang="ts">beneficiary_id: string</code></pre>
 
 <h3 id="code">code</h3>
-<pre><code lang="ts">
-                    code: string
-                </code></pre>
+<pre><code lang="ts">code: string</code></pre>

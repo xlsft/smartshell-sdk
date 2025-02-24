@@ -1,9 +1,9 @@
 <h1 id="api_mutation_updateWorkerTask">mutation updateWorkerTask</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/WorkerTaskInput','WorkerTaskInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/WorkerTaskInput','WorkerTaskInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/WorkerTask','WorkerTask'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/WorkerTask','WorkerTask'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

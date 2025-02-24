@@ -3,91 +3,55 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="hall_title">hall_title</h3>
-<pre><code lang="ts">
-                    hall_title: string
-                </code></pre>
+<pre><code lang="ts">hall_title: string</code></pre>
 
 <h3 id="hall_type">hall_type</h3>
-<pre><code lang="ts">
-                    hall_type: "||--['/docs/reference/types/HallType','HallType']--||"
-                </code></pre>
+<pre><code lang="ts">hall_type: ||--['/docs/reference/types/HallType','HallType']--||</code></pre>
 
 <h3 id="device_count">device_count</h3>
-<pre><code lang="ts">
-                    device_count: number
-                </code></pre>
+<pre><code lang="ts">device_count: number</code></pre>
 
 <h3 id="console_model">console_model</h3>
-<pre><code lang="ts">
-                    console_model?: string
-                </code></pre>
+<pre><code lang="ts">console_model?: string</code></pre>
 
 <h3 id="processor_brand">processor_brand</h3>
-<pre><code lang="ts">
-                    processor_brand?: string
-                </code></pre>
+<pre><code lang="ts">processor_brand?: string</code></pre>
 
 <h3 id="processor_model">processor_model</h3>
-<pre><code lang="ts">
-                    processor_model?: string
-                </code></pre>
+<pre><code lang="ts">processor_model?: string</code></pre>
 
 <h3 id="gpu_brand">gpu_brand</h3>
-<pre><code lang="ts">
-                    gpu_brand?: string
-                </code></pre>
+<pre><code lang="ts">gpu_brand?: string</code></pre>
 
 <h3 id="gpu_model">gpu_model</h3>
-<pre><code lang="ts">
-                    gpu_model?: string
-                </code></pre>
+<pre><code lang="ts">gpu_model?: string</code></pre>
 
 <h3 id="ram_size">ram_size</h3>
-<pre><code lang="ts">
-                    ram_size?: string
-                </code></pre>
+<pre><code lang="ts">ram_size?: string</code></pre>
 
 <h3 id="ram_type">ram_type</h3>
-<pre><code lang="ts">
-                    ram_type?: string
-                </code></pre>
+<pre><code lang="ts">ram_type?: string</code></pre>
 
 <h3 id="hdd_type">hdd_type</h3>
-<pre><code lang="ts">
-                    hdd_type?: string
-                </code></pre>
+<pre><code lang="ts">hdd_type?: string</code></pre>
 
 <h3 id="keyboard">keyboard</h3>
-<pre><code lang="ts">
-                    keyboard?: string
-                </code></pre>
+<pre><code lang="ts">keyboard?: string</code></pre>
 
 <h3 id="mouse">mouse</h3>
-<pre><code lang="ts">
-                    mouse?: string
-                </code></pre>
+<pre><code lang="ts">mouse?: string</code></pre>
 
 <h3 id="speakers">speakers</h3>
-<pre><code lang="ts">
-                    speakers?: string
-                </code></pre>
+<pre><code lang="ts">speakers?: string</code></pre>
 
 <h3 id="chair">chair</h3>
-<pre><code lang="ts">
-                    chair?: string
-                </code></pre>
+<pre><code lang="ts">chair?: string</code></pre>
 
 <h3 id="monitor_brand">monitor_brand</h3>
-<pre><code lang="ts">
-                    monitor_brand?: string
-                </code></pre>
+<pre><code lang="ts">monitor_brand?: string</code></pre>
 
 <h3 id="monitor_size">monitor_size</h3>
-<pre><code lang="ts">
-                    monitor_size?: string
-                </code></pre>
+<pre><code lang="ts">monitor_size?: string</code></pre>
 
 <h3 id="monitor_hz">monitor_hz</h3>
-<pre><code lang="ts">
-                    monitor_hz?: string
-                </code></pre>
+<pre><code lang="ts">monitor_hz?: string</code></pre>

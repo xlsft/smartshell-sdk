@@ -3,141 +3,85 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="group_id">group_id</h3>
-<pre><code lang="ts">
-                    group_id: number
-                </code></pre>
+<pre><code lang="ts">group_id: number</code></pre>
 
 <h3 id="group">group</h3>
-<pre><code lang="ts">
-                    group: "||--['/docs/reference/types/HostGroup','HostGroup']--||"
-                </code></pre>
+<pre><code lang="ts">group: ||--['/docs/reference/types/HostGroup','HostGroup']--||</code></pre>
 
 <h3 id="type_id">type_id</h3>
-<pre><code lang="ts">
-                    type_id?: number
-                </code></pre>
+<pre><code lang="ts">type_id?: number</code></pre>
 
 <h3 id="position">position</h3>
-<pre><code lang="ts">
-                    position?: number
-                </code></pre>
+<pre><code lang="ts">position?: number</code></pre>
 
 <h3 id="alias">alias</h3>
-<pre><code lang="ts">
-                    alias: string
-                </code></pre>
+<pre><code lang="ts">alias: string</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="mac_addr">mac_addr</h3>
-<pre><code lang="ts">
-                    mac_addr?: "||--['/docs/reference/types/MacAddress','MacAddress']--||"
-                </code></pre>
+<pre><code lang="ts">mac_addr?: ||--['/docs/reference/types/MacAddress','MacAddress']--||</code></pre>
 
 <h3 id="ip_addr">ip_addr</h3>
-<pre><code lang="ts">
-                    ip_addr?: "||--['/docs/reference/types/IpAddress','IpAddress']--||"
-                </code></pre>
+<pre><code lang="ts">ip_addr?: ||--['/docs/reference/types/IpAddress','IpAddress']--||</code></pre>
 
 <h3 id="dns_name">dns_name</h3>
-<pre><code lang="ts">
-                    dns_name?: string
-                </code></pre>
+<pre><code lang="ts">dns_name?: string</code></pre>
 
 <h3 id="coord_x">coord_x</h3>
-<pre><code lang="ts">
-                    coord_x?: number
-                </code></pre>
+<pre><code lang="ts">coord_x?: number</code></pre>
 
 <h3 id="coord_y">coord_y</h3>
-<pre><code lang="ts">
-                    coord_y?: number
-                </code></pre>
+<pre><code lang="ts">coord_y?: number</code></pre>
 
 <h3 id="is_deleted">is_deleted</h3>
-<pre><code lang="ts">
-                    is_deleted: boolean
-                </code></pre>
+<pre><code lang="ts">is_deleted: boolean</code></pre>
 
 <h3 id="in_service">in_service</h3>
-<pre><code lang="ts">
-                    in_service: boolean
-                </code></pre>
+<pre><code lang="ts">in_service: boolean</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="info">info</h3>
-<pre><code lang="ts">
-                    info?: "||--['/docs/reference/types/HostInfo','HostInfo']--||"
-                </code></pre>
+<pre><code lang="ts">info?: ||--['/docs/reference/types/HostInfo','HostInfo']--||</code></pre>
 
 <h3 id="counters">counters</h3>
-<pre><code lang="ts">
-                    counters?: "||--['/docs/reference/types/HostCounters','HostCounters']--||"
-                </code></pre>
+<pre><code lang="ts">counters?: ||--['/docs/reference/types/HostCounters','HostCounters']--||</code></pre>
 
 <h3 id="sessions">sessions</h3>
-<pre><code lang="ts">
-                    sessions: "||--['/docs/reference/types/HostSession','HostSession']--||"[]
-                </code></pre>
+<pre><code lang="ts">sessions: ||--['/docs/reference/types/HostSession','HostSession']--||[]</code></pre>
 
 <h3 id="client_sessions">client_sessions</h3>
-<pre><code lang="ts">
-                    client_sessions: "||--['/docs/reference/types/ClientSession','ClientSession']--||"[]
-                </code></pre>
+<pre><code lang="ts">client_sessions: ||--['/docs/reference/types/ClientSession','ClientSession']--||[]</code></pre>
 
 <h3 id="shell_mode">shell_mode</h3>
-<pre><code lang="ts">
-                    shell_mode: "||--['/docs/reference/types/ShellMode','ShellMode']--||"
-                </code></pre>
+<pre><code lang="ts">shell_mode: ||--['/docs/reference/types/ShellMode','ShellMode']--||</code></pre>
 
 <h3 id="last_online">last_online</h3>
-<pre><code lang="ts">
-                    last_online?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">last_online?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="online">online</h3>
-<pre><code lang="ts">
-                    online: boolean
-                </code></pre>
+<pre><code lang="ts">online: boolean</code></pre>
 
 <h3 id="bookings">bookings</h3>
-<pre><code lang="ts">
-                    bookings: "||--['/docs/reference/types/Booking','Booking']--||"[]
-                </code></pre>
+<pre><code lang="ts">bookings: ||--['/docs/reference/types/Booking','Booking']--||[]</code></pre>
 
 <h3 id="device_has_changed">device_has_changed</h3>
-<pre><code lang="ts">
-                    device_has_changed: boolean
-                </code></pre>
+<pre><code lang="ts">device_has_changed: boolean</code></pre>
 
 <h3 id="device_updated_at">device_updated_at</h3>
-<pre><code lang="ts">
-                    device_updated_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">device_updated_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="device_changes">device_changes</h3>
-<pre><code lang="ts">
-                    device_changes: "||--['/docs/reference/types/HostDevice','HostDevice']--||"[]
-                </code></pre>
+<pre><code lang="ts">device_changes: ||--['/docs/reference/types/HostDevice','HostDevice']--||[]</code></pre>
 
 <h3 id="locked">locked</h3>
-<pre><code lang="ts">
-                    locked: boolean
-                </code></pre>
+<pre><code lang="ts">locked: boolean</code></pre>
 
 <h3 id="admin_called_at">admin_called_at</h3>
-<pre><code lang="ts">
-                    admin_called_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">admin_called_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

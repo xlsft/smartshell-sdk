@@ -1,7 +1,7 @@
 <h1 id="api_query_contractors">query contractors</h1>
 
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Contractor','Contractor'--||"[]</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Contractor','Contractor'--||[]</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

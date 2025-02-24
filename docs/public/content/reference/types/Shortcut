@@ -3,91 +3,55 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="path">path</h3>
-<pre><code lang="ts">
-                    path: string[]
-                </code></pre>
+<pre><code lang="ts">path: string[]</code></pre>
 
 <h3 id="group_id">group_id</h3>
-<pre><code lang="ts">
-                    group_id: number
-                </code></pre>
+<pre><code lang="ts">group_id: number</code></pre>
 
 <h3 id="group">group</h3>
-<pre><code lang="ts">
-                    group: "||--['/docs/reference/types/ShortcutGroup','ShortcutGroup']--||"
-                </code></pre>
+<pre><code lang="ts">group: ||--['/docs/reference/types/ShortcutGroup','ShortcutGroup']--||</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type: "||--['/docs/reference/types/AppType','AppType']--||"
-                </code></pre>
+<pre><code lang="ts">type: ||--['/docs/reference/types/AppType','AppType']--||</code></pre>
 
 <h3 id="popular">popular</h3>
-<pre><code lang="ts">
-                    popular: boolean
-                </code></pre>
+<pre><code lang="ts">popular: boolean</code></pre>
 
 <h3 id="sort">sort</h3>
-<pre><code lang="ts">
-                    sort: number
-                </code></pre>
+<pre><code lang="ts">sort: number</code></pre>
 
 <h3 id="args">args</h3>
-<pre><code lang="ts">
-                    args?: string
-                </code></pre>
+<pre><code lang="ts">args?: string</code></pre>
 
 <h3 id="icon_path">icon_path</h3>
-<pre><code lang="ts">
-                    icon_path?: string
-                </code></pre>
+<pre><code lang="ts">icon_path?: string</code></pre>
 
 <h3 id="password">password</h3>
-<pre><code lang="ts">
-                    password?: string
-                </code></pre>
+<pre><code lang="ts">password?: string</code></pre>
 
 <h3 id="main_picture">main_picture</h3>
-<pre><code lang="ts">
-                    main_picture?: string
-                </code></pre>
+<pre><code lang="ts">main_picture?: string</code></pre>
 
 <h3 id="game_account_group">game_account_group</h3>
-<pre><code lang="ts">
-                    game_account_group?: "||--['/docs/reference/types/GameAccountGroup','GameAccountGroup']--||"
-                </code></pre>
+<pre><code lang="ts">game_account_group?: ||--['/docs/reference/types/GameAccountGroup','GameAccountGroup']--||</code></pre>
 
 <h3 id="run_as_admin">run_as_admin</h3>
-<pre><code lang="ts">
-                    run_as_admin: boolean
-                </code></pre>
+<pre><code lang="ts">run_as_admin: boolean</code></pre>
 
 <h3 id="work_dir">work_dir</h3>
-<pre><code lang="ts">
-                    work_dir?: string
-                </code></pre>
+<pre><code lang="ts">work_dir?: string</code></pre>
 
 <h3 id="only_for_registered">only_for_registered</h3>
-<pre><code lang="ts">
-                    only_for_registered?: boolean
-                </code></pre>
+<pre><code lang="ts">only_for_registered?: boolean</code></pre>
 
 <h3 id="age_rating">age_rating</h3>
-<pre><code lang="ts">
-                    age_rating?: number
-                </code></pre>
+<pre><code lang="ts">age_rating?: number</code></pre>
 
 <h3 id="free_run">free_run</h3>
-<pre><code lang="ts">
-                    free_run?: boolean
-                </code></pre>
+<pre><code lang="ts">free_run?: boolean</code></pre>

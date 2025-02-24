@@ -3,7 +3,7 @@
 <h3>Input</h3>
 <pre><code lang="ts">type InputType = { id: string }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/PaymentTransaction','PaymentTransaction'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/PaymentTransaction','PaymentTransaction'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

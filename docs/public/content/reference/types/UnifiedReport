@@ -3,46 +3,28 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="labels">labels</h3>
-<pre><code lang="ts">
-                    labels: string[]
-                </code></pre>
+<pre><code lang="ts">labels: string[]</code></pre>
 
 <h3 id="extralabels">extraLabels</h3>
-<pre><code lang="ts">
-                    extraLabels: string[]
-                </code></pre>
+<pre><code lang="ts">extraLabels: string[]</code></pre>
 
 <h3 id="extralabels2">extraLabels2</h3>
-<pre><code lang="ts">
-                    extraLabels2: string[]
-                </code></pre>
+<pre><code lang="ts">extraLabels2: string[]</code></pre>
 
 <h3 id="extralabels3">extraLabels3</h3>
-<pre><code lang="ts">
-                    extraLabels3: string[]
-                </code></pre>
+<pre><code lang="ts">extraLabels3: string[]</code></pre>
 
 <h3 id="keys">keys</h3>
-<pre><code lang="ts">
-                    keys: string[]
-                </code></pre>
+<pre><code lang="ts">keys: string[]</code></pre>
 
 <h3 id="points">points</h3>
-<pre><code lang="ts">
-                    points: number
-                </code></pre>
+<pre><code lang="ts">points: number</code></pre>
 
 <h3 id="data">data</h3>
-<pre><code lang="ts">
-                    data: "||--['/docs/reference/types/UnifiedReportData','UnifiedReportData']--||"[]
-                </code></pre>
+<pre><code lang="ts">data: ||--['/docs/reference/types/UnifiedReportData','UnifiedReportData']--||[]</code></pre>
 
 <h3 id="url">url</h3>
-<pre><code lang="ts">
-                    url?: string
-                </code></pre>
+<pre><code lang="ts">url?: string</code></pre>
 
 <h3 id="summary">summary</h3>
-<pre><code lang="ts">
-                    summary: "||--['/docs/reference/types/UnifiedSummaryData','UnifiedSummaryData']--||"[]
-                </code></pre>
+<pre><code lang="ts">summary: ||--['/docs/reference/types/UnifiedSummaryData','UnifiedSummaryData']--||[]</code></pre>

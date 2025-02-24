@@ -3,36 +3,22 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="bank_name">bank_name</h3>
-<pre><code lang="ts">
-                    bank_name: string
-                </code></pre>
+<pre><code lang="ts">bank_name: string</code></pre>
 
 <h3 id="bank_bik">bank_bik</h3>
-<pre><code lang="ts">
-                    bank_bik: string
-                </code></pre>
+<pre><code lang="ts">bank_bik: string</code></pre>
 
 <h3 id="bank_kpp">bank_kpp</h3>
-<pre><code lang="ts">
-                    bank_kpp?: string
-                </code></pre>
+<pre><code lang="ts">bank_kpp?: string</code></pre>
 
 <h3 id="bank_account">bank_account</h3>
-<pre><code lang="ts">
-                    bank_account: string
-                </code></pre>
+<pre><code lang="ts">bank_account: string</code></pre>
 
 <h3 id="correspondent_account">correspondent_account</h3>
-<pre><code lang="ts">
-                    correspondent_account: string
-                </code></pre>
+<pre><code lang="ts">correspondent_account: string</code></pre>
 
 <h3 id="service_name">service_name</h3>
-<pre><code lang="ts">
-                    service_name?: string
-                </code></pre>
+<pre><code lang="ts">service_name?: string</code></pre>
 
 <h3 id="tax">tax</h3>
-<pre><code lang="ts">
-                    tax: "||--['/docs/reference/types/Tax','Tax']--||"
-                </code></pre>
+<pre><code lang="ts">tax: ||--['/docs/reference/types/Tax','Tax']--||</code></pre>

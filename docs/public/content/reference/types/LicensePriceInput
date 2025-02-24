@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="host_count">host_count</h3>
-<pre><code lang="ts">
-                    host_count: number
-                </code></pre>
+<pre><code lang="ts">host_count: number</code></pre>
 
 <h3 id="license_tariff_id">license_tariff_id</h3>
-<pre><code lang="ts">
-                    license_tariff_id: number
-                </code></pre>
+<pre><code lang="ts">license_tariff_id: number</code></pre>
 
 <h3 id="promocode">promocode</h3>
-<pre><code lang="ts">
-                    promocode?: string
-                </code></pre>
+<pre><code lang="ts">promocode?: string</code></pre>
 
 <h3 id="license_payment_method">license_payment_method</h3>
-<pre><code lang="ts">
-                    license_payment_method: "||--['/docs/reference/types/LicensePaymentMethod','LicensePaymentMethod']--||"
-                </code></pre>
+<pre><code lang="ts">license_payment_method: ||--['/docs/reference/types/LicensePaymentMethod','LicensePaymentMethod']--||</code></pre>
 
 <h3 id="auto_payment">auto_payment</h3>
-<pre><code lang="ts">
-                    auto_payment?: boolean
-                </code></pre>
+<pre><code lang="ts">auto_payment?: boolean</code></pre>
 
 <h3 id="club_id">club_id</h3>
-<pre><code lang="ts">
-                    club_id: number
-                </code></pre>
+<pre><code lang="ts">club_id: number</code></pre>
 
 <h3 id="modules">modules</h3>
-<pre><code lang="ts">
-                    modules: number[]
-                </code></pre>
+<pre><code lang="ts">modules: number[]</code></pre>
 
 <h3 id="months">months</h3>
-<pre><code lang="ts">
-                    months: number
-                </code></pre>
+<pre><code lang="ts">months: number</code></pre>

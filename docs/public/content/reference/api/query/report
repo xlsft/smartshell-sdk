@@ -1,9 +1,9 @@
 <h1 id="api_query_report">query report</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { input: "||--['/docs/reference/types/ReportInput','ReportInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/ReportInput','ReportInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Report','Report'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Report','Report'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

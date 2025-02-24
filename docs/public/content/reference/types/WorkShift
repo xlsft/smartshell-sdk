@@ -3,46 +3,28 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="worker">worker</h3>
-<pre><code lang="ts">
-                    worker: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">worker: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="finished_at">finished_at</h3>
-<pre><code lang="ts">
-                    finished_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">finished_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="events">events</h3>
-<pre><code lang="ts">
-                    events: "||--['/docs/reference/types/WorkShiftEvent','WorkShiftEvent']--||"[]
-                </code></pre>
+<pre><code lang="ts">events: ||--['/docs/reference/types/WorkShiftEvent','WorkShiftEvent']--||[]</code></pre>
 
 <h3 id="money">money</h3>
-<pre><code lang="ts">
-                    money: "||--['/docs/reference/types/WorkShiftMoney','WorkShiftMoney']--||"
-                </code></pre>
+<pre><code lang="ts">money: ||--['/docs/reference/types/WorkShiftMoney','WorkShiftMoney']--||</code></pre>
 
 <h3 id="payments">payments</h3>
-<pre><code lang="ts">
-                    payments: "||--['/docs/reference/types/Payment','Payment']--||"[]
-                </code></pre>
+<pre><code lang="ts">payments: ||--['/docs/reference/types/Payment','Payment']--||[]</code></pre>
 
 <h3 id="cashorders">cashOrders</h3>
-<pre><code lang="ts">
-                    cashOrders: "||--['/docs/reference/types/CashOrder','CashOrder']--||"[]
-                </code></pre>
+<pre><code lang="ts">cashOrders: ||--['/docs/reference/types/CashOrder','CashOrder']--||[]</code></pre>

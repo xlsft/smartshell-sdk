@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="single">single</h3>
-<pre><code lang="ts">
-                    single: "||--['/docs/reference/types/UserAchievement','UserAchievement']--||"[]
-                </code></pre>
+<pre><code lang="ts">single: ||--['/docs/reference/types/UserAchievement','UserAchievement']--||[]</code></pre>
 
 <h3 id="continuous">continuous</h3>
-<pre><code lang="ts">
-                    continuous: "||--['/docs/reference/types/UserAchievement','UserAchievement']--||"[]
-                </code></pre>
+<pre><code lang="ts">continuous: ||--['/docs/reference/types/UserAchievement','UserAchievement']--||[]</code></pre>

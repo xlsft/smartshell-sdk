@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="visited_at">visited_at</h3>
-<pre><code lang="ts">
-                    visited_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">visited_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="client_session_id">client_session_id</h3>
-<pre><code lang="ts">
-                    client_session_id: number
-                </code></pre>
+<pre><code lang="ts">client_session_id: number</code></pre>

@@ -3,46 +3,28 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="login">login</h3>
-<pre><code lang="ts">
-                    login: string
-                </code></pre>
+<pre><code lang="ts">login: string</code></pre>
 
 <h3 id="password">password</h3>
-<pre><code lang="ts">
-                    password: string
-                </code></pre>
+<pre><code lang="ts">password: string</code></pre>
 
 <h3 id="group">group</h3>
-<pre><code lang="ts">
-                    group: "||--['/docs/reference/types/GameAccountGroup','GameAccountGroup']--||"
-                </code></pre>
+<pre><code lang="ts">group: ||--['/docs/reference/types/GameAccountGroup','GameAccountGroup']--||</code></pre>
 
 <h3 id="host">host</h3>
-<pre><code lang="ts">
-                    host?: "||--['/docs/reference/types/Host','Host']--||"
-                </code></pre>
+<pre><code lang="ts">host?: ||--['/docs/reference/types/Host','Host']--||</code></pre>
 
 <h3 id="assignment">assignment</h3>
-<pre><code lang="ts">
-                    assignment?: "||--['/docs/reference/types/GameAccountAssignment','GameAccountAssignment']--||"
-                </code></pre>
+<pre><code lang="ts">assignment?: ||--['/docs/reference/types/GameAccountAssignment','GameAccountAssignment']--||</code></pre>
 
 <h3 id="active">active</h3>
-<pre><code lang="ts">
-                    active: boolean
-                </code></pre>
+<pre><code lang="ts">active: boolean</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/GameAccountStatus','GameAccountStatus']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/GameAccountStatus','GameAccountStatus']--||</code></pre>
 
 <h3 id="busy">busy</h3>
-<pre><code lang="ts">
-                    busy: boolean
-                </code></pre>
+<pre><code lang="ts">busy: boolean</code></pre>

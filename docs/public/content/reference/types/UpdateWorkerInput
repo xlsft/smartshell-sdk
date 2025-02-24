@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="first_name">first_name</h3>
-<pre><code lang="ts">
-                    first_name: string
-                </code></pre>
+<pre><code lang="ts">first_name: string</code></pre>
 
 <h3 id="last_name">last_name</h3>
-<pre><code lang="ts">
-                    last_name: string
-                </code></pre>
+<pre><code lang="ts">last_name: string</code></pre>
 
 <h3 id="middle_name">middle_name</h3>
-<pre><code lang="ts">
-                    middle_name: string
-                </code></pre>
+<pre><code lang="ts">middle_name: string</code></pre>
 
 <h3 id="role_ids">role_ids</h3>
-<pre><code lang="ts">
-                    role_ids: number[]
-                </code></pre>
+<pre><code lang="ts">role_ids: number[]</code></pre>

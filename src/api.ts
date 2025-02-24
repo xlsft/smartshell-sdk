@@ -10,7 +10,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `achievements`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/achievements
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/achievements
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -18,7 +18,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `activeWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/activeWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/activeWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -26,7 +26,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `additionalLicensePrice`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/additionalLicensePrice
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/additionalLicensePrice
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -34,7 +34,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `applicationsReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/applicationsReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/applicationsReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -42,7 +42,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `bonusHistoryReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/bonusHistoryReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/bonusHistoryReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -50,7 +50,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `bonusReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/bonusReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/bonusReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -58,7 +58,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `boughtTariffsReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/boughtTariffsReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/boughtTariffsReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -66,7 +66,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `canFinishWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/canFinishWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/canFinishWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -74,7 +74,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `canStartWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/canStartWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/canStartWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -82,7 +82,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `canUnpauseClientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/canUnpauseClientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/canUnpauseClientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -90,7 +90,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `canUseDebt`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/canUseDebt
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/canUseDebt
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -98,7 +98,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `cashBoxLicenseToken`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/cashBoxLicenseToken
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/cashBoxLicenseToken
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -106,7 +106,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `categories`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/categories
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/categories
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -114,7 +114,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `category`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/category
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/category
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -122,7 +122,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientBookingCheckPenalty`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientBookingCheckPenalty
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientBookingCheckPenalty
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -130,7 +130,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientBookings`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientBookings
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientBookings
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -138,7 +138,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientEmailExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientEmailExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientEmailExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -146,7 +146,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientHostGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientHostGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientHostGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -154,7 +154,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientHosts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientHosts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientHosts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -162,7 +162,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientMe`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientMe
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientMe
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -170,23 +170,15 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientPhoneExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientPhoneExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientPhoneExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         clientPhoneExists: async (input: Parameters<typeof q.clientPhoneExists>[1],) => await q.clientPhoneExists(ctx, input,),
         /**
-            * # query `clients`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clients
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
-        /**
             * # query `clientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -194,31 +186,39 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clientSessions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientSessions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientSessions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         clientSessions: async (input: Parameters<typeof q.clientSessions>[1],paginator?: ShellSdkPaginatorInput) => await q.clientSessions(ctx, input, paginator),
         /**
-            * # query `clientsPaymentReport`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientsPaymentReport
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        clientsPaymentReport: async (input: Parameters<typeof q.clientsPaymentReport>[1],paginator?: ShellSdkPaginatorInput) => await q.clientsPaymentReport(ctx, input, paginator),
-        /**
             * # query `clientTariffGrid`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clientTariffGrid
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientTariffGrid
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         clientTariffGrid: async (input: Parameters<typeof q.clientTariffGrid>[1],) => await q.clientTariffGrid(ctx, input,),
         /**
+            * # query `clients`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clients
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clients: async (input: Parameters<typeof q.clients>[1],paginator?: ShellSdkPaginatorInput) => await q.clients(ctx, input, paginator),
+        /**
+            * # query `clientsPaymentReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientsPaymentReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clientsPaymentReport: async (input: Parameters<typeof q.clientsPaymentReport>[1],paginator?: ShellSdkPaginatorInput) => await q.clientsPaymentReport(ctx, input, paginator),
+        /**
             * # query `club`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/club
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/club
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -226,7 +226,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clubComments`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clubComments
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clubComments
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -234,7 +234,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clubOrganization`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clubOrganization
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clubOrganization
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -242,7 +242,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `clubs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/clubs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clubs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -250,7 +250,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `combo`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/combo
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/combo
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -258,7 +258,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `comboList`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/comboList
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/comboList
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -266,7 +266,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `combos`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/combos
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/combos
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -274,7 +274,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `comments`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/comments
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/comments
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -282,7 +282,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `companyPermissions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/companyPermissions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/companyPermissions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -290,7 +290,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `contractors`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/contractors
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/contractors
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -298,7 +298,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `currencies`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/currencies
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/currencies
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -306,7 +306,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `currency`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/currency
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/currency
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -314,7 +314,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `currentClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/currentClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/currentClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -322,7 +322,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `currentHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/currentHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/currentHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -330,7 +330,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `depositCashback`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/depositCashback
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/depositCashback
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -338,7 +338,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `depositCashbacks`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/depositCashbacks
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/depositCashbacks
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -346,7 +346,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `discount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/discount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/discount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -354,7 +354,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `discounts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/discounts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/discounts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -362,7 +362,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `emailExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/emailExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/emailExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -370,7 +370,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `eventList`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/eventList
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/eventList
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -378,7 +378,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `events`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/events
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/events
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -386,7 +386,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `exportGoods`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/exportGoods
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/exportGoods
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -394,7 +394,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `exportUsers`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/exportUsers
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/exportUsers
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -402,7 +402,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `featureFlags`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/featureFlags
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/featureFlags
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -410,7 +410,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `finishedWorkShifts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/finishedWorkShifts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/finishedWorkShifts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -418,7 +418,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `freeHosts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/freeHosts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/freeHosts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -426,7 +426,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `gameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/gameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/gameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -434,7 +434,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `gameAccountGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/gameAccountGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/gameAccountGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -442,7 +442,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `gameAccountGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/gameAccountGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/gameAccountGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -450,7 +450,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `gameAccounts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/gameAccounts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/gameAccounts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -458,7 +458,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getActiveClientList`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getActiveClientList
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getActiveClientList
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -466,7 +466,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getAgeRatings`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getAgeRatings
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getAgeRatings
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -474,7 +474,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBeneficiaries`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBeneficiaries
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBeneficiaries
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -482,7 +482,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBeneficiaryMovementsOfFunds`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBeneficiaryMovementsOfFunds
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBeneficiaryMovementsOfFunds
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -490,7 +490,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBeneficiaryMovementsOfFundsCsv`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBeneficiaryMovementsOfFundsCsv
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBeneficiaryMovementsOfFundsCsv
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -498,7 +498,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBonusHistory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBonusHistory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBonusHistory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -506,7 +506,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBooking`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBooking
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBooking
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -514,7 +514,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getBookings`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getBookings
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getBookings
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -522,7 +522,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getClientDepositAccounts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getClientDepositAccounts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getClientDepositAccounts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -530,7 +530,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getClientDepositTransfers`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getClientDepositTransfers
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getClientDepositTransfers
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -538,7 +538,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getClubOptions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getClubOptions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getClubOptions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -546,7 +546,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getCurrentBeneficiary`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getCurrentBeneficiary
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getCurrentBeneficiary
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -554,7 +554,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getCurrentTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getCurrentTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getCurrentTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -562,7 +562,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getDepositHistory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getDepositHistory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getDepositHistory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -570,7 +570,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getDetailedWorkShiftMoneyData`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getDetailedWorkShiftMoneyData
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getDetailedWorkShiftMoneyData
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -578,7 +578,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getOrganizationPaymentCard`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getOrganizationPaymentCard
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getOrganizationPaymentCard
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -586,7 +586,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getOrganizationPaymentCards`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getOrganizationPaymentCards
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getOrganizationPaymentCards
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -594,7 +594,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getPaymentsByClientId`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getPaymentsByClientId
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getPaymentsByClientId
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -602,7 +602,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getSumForWithdrawToCheckingAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getSumForWithdrawToCheckingAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getSumForWithdrawToCheckingAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -610,7 +610,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getUpcomingAutoPaymentData`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getUpcomingAutoPaymentData
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getUpcomingAutoPaymentData
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -618,7 +618,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `getWorkShiftPaymentOverviewData`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/getWorkShiftPaymentOverviewData
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getWorkShiftPaymentOverviewData
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -626,7 +626,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `good`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/good
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/good
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -634,7 +634,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `goods`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/goods
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/goods
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -642,7 +642,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `host`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/host
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/host
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -650,7 +650,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `hostAccessToken`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostAccessToken
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostAccessToken
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -658,15 +658,23 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `hostGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         hostGroup: async (input: Parameters<typeof q.hostGroup>[1],) => await q.hostGroup(ctx, input,),
         /**
+            * # query `hostGroupTitles`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostGroupTitles
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostGroupTitles: async () => await q.hostGroupTitles(ctx),
+        /**
             * # query `hostGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -674,55 +682,15 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `hostGroupsOverview`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroupsOverview
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostGroupsOverview
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         hostGroupsOverview: async () => await q.hostGroupsOverview(ctx),
         /**
-            * # query `hostGroupTitles`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostGroupTitles
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostGroupTitles: async () => await q.hostGroupTitles(ctx),
-        /**
-            * # query `hosts`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hosts
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hosts: async () => await q.hosts(ctx),
-        /**
-            * # query `hostsByIds`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostsByIds
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostsByIds: async (input: Parameters<typeof q.hostsByIds>[1],) => await q.hostsByIds(ctx, input,),
-        /**
-            * # query `hostsOccupationReport`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostsOccupationReport
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostsOccupationReport: async (input: Parameters<typeof q.hostsOccupationReport>[1],) => await q.hostsOccupationReport(ctx, input,),
-        /**
-            * # query `hostsOverview`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostsOverview
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        hostsOverview: async () => await q.hostsOverview(ctx),
-        /**
             * # query `hostType`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostType
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostType
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -730,15 +698,47 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `hostTypes`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/hostTypes
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostTypes
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         hostTypes: async () => await q.hostTypes(ctx),
         /**
+            * # query `hosts`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hosts
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hosts: async () => await q.hosts(ctx),
+        /**
+            * # query `hostsByIds`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostsByIds
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostsByIds: async (input: Parameters<typeof q.hostsByIds>[1],) => await q.hostsByIds(ctx, input,),
+        /**
+            * # query `hostsOccupationReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostsOccupationReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostsOccupationReport: async (input: Parameters<typeof q.hostsOccupationReport>[1],) => await q.hostsOccupationReport(ctx, input,),
+        /**
+            * # query `hostsOverview`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostsOverview
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostsOverview: async () => await q.hostsOverview(ctx),
+        /**
             * # query `income`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/income
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/income
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -746,7 +746,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `leaderboard`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/leaderboard
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/leaderboard
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -754,7 +754,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licenseModule`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licenseModule
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licenseModule
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -762,7 +762,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licenseModuleCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licenseModuleCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licenseModuleCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -770,7 +770,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licensePayments`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licensePayments
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licensePayments
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -778,7 +778,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licensePrice`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licensePrice
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licensePrice
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -786,7 +786,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licenseTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licenseTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licenseTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -794,7 +794,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licenseTariffGrid`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licenseTariffGrid
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licenseTariffGrid
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -802,7 +802,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `licenseTariffs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/licenseTariffs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licenseTariffs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -810,7 +810,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `loginExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/loginExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/loginExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -818,7 +818,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `magicPeriods`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/magicPeriods
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/magicPeriods
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -826,7 +826,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `magicSuperInit`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/magicSuperInit
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/magicSuperInit
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -834,7 +834,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `me`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/me
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/me
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -842,7 +842,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `myClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/myClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/myClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -850,7 +850,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `myClubs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/myClubs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/myClubs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -858,7 +858,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `myLastVisitedClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/myLastVisitedClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/myLastVisitedClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -866,7 +866,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `news`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/news
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/news
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -874,7 +874,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `nicknameExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/nicknameExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/nicknameExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -882,7 +882,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `now`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/now
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/now
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -890,7 +890,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `organizationClubs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/organizationClubs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/organizationClubs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -898,7 +898,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `organizationMe`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/organizationMe
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/organizationMe
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -906,7 +906,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `pausableClientSessions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/pausableClientSessions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/pausableClientSessions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -914,7 +914,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `paymentTransaction`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/paymentTransaction
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/paymentTransaction
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -922,7 +922,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `paymentTransactions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/paymentTransactions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/paymentTransactions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -930,7 +930,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `permissions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/permissions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/permissions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -938,7 +938,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `phoneExists`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/phoneExists
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/phoneExists
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -946,7 +946,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `promoCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/promoCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/promoCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -954,7 +954,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `promoCodes`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/promoCodes
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/promoCodes
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -962,7 +962,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `publicKey`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/publicKey
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/publicKey
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -970,7 +970,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `regions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/regions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/regions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -978,7 +978,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `report`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/report
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/report
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -986,7 +986,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `roles`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/roles
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/roles
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -994,7 +994,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `salesReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/salesReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/salesReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1002,7 +1002,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `searchByEan`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/searchByEan
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/searchByEan
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1010,7 +1010,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `searchClients`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/searchClients
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/searchClients
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1018,7 +1018,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `searchClubs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/searchClubs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/searchClubs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1026,7 +1026,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `service`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/service
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/service
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1034,7 +1034,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `services`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/services
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/services
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1042,7 +1042,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `sessionsMoneyReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/sessionsMoneyReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/sessionsMoneyReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1050,7 +1050,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `settingValues`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/settingValues
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/settingValues
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1058,7 +1058,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shellSettingList`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shellSettingList
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shellSettingList
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1066,7 +1066,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shellSettingValues`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shellSettingValues
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shellSettingValues
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1074,7 +1074,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shortcut`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shortcut
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shortcut
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1082,7 +1082,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shortcutGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shortcutGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shortcutGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1090,7 +1090,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shortcutGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shortcutGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shortcutGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1098,7 +1098,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `shortcuts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/shortcuts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/shortcuts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1106,7 +1106,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `tariffGrid`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/tariffGrid
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/tariffGrid
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1114,7 +1114,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `tariffs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/tariffs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/tariffs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1122,7 +1122,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `tasks`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/tasks
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/tasks
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1130,7 +1130,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `uniqueUsersReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/uniqueUsersReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/uniqueUsersReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1138,7 +1138,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `updateLicensePayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/updateLicensePayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/updateLicensePayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1146,7 +1146,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `user`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/user
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/user
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1154,7 +1154,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `userClubs`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/userClubs
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/userClubs
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1162,7 +1162,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `userGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/userGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/userGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1170,7 +1170,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `userGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/userGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/userGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1178,7 +1178,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `userImportStatus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/userImportStatus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/userImportStatus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1186,7 +1186,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `validatePayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/validatePayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/validatePayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1194,7 +1194,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `validatePromoCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/validatePromoCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/validatePromoCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1202,31 +1202,31 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `versions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/versions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/versions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         versions: async () => await q.versions(ctx),
         /**
-            * # query `workers`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workers
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
-        /**
             * # query `workShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         workShift: async (input: Parameters<typeof q.workShift>[1],) => await q.workShift(ctx, input,),
         /**
+            * # query `workShiftSummary`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workShiftSummary
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        workShiftSummary: async (input: Parameters<typeof q.workShiftSummary>[1],) => await q.workShiftSummary(ctx, input,),
+        /**
             * # query `workShifts`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShifts
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workShifts
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1234,7 +1234,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `workShiftsReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShiftsReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workShiftsReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1242,26 +1242,26 @@ import type { Shell } from "../mod.ts";
         /**
             * # query `workShiftsSummaryReport`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShiftsSummaryReport
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workShiftsSummaryReport
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         workShiftsSummaryReport: async (input: Parameters<typeof q.workShiftsSummaryReport>[1],) => await q.workShiftsSummaryReport(ctx, input,),
         /**
-            * # query `workShiftSummary`
+            * # query `workers`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/query/workShiftSummary
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/workers
             * 
             * `@xlsoftware/smartshell-sdk`
             */
-        workShiftSummary: async (input: Parameters<typeof q.workShiftSummary>[1],) => await q.workShiftSummary(ctx, input,),
+        workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
 
         // mutation
 
         /**
             * # mutation `activateTrial`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/activateTrial
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/activateTrial
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1269,7 +1269,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `adminCallDone`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/adminCallDone
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/adminCallDone
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1277,7 +1277,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `applyNewHostDevices`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/applyNewHostDevices
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/applyNewHostDevices
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1285,7 +1285,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `banClient`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/banClient
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/banClient
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1293,7 +1293,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `callAdmin`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/callAdmin
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/callAdmin
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1301,7 +1301,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `changeClientSessionHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/changeClientSessionHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/changeClientSessionHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1309,7 +1309,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `changeGoodsQuantity`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/changeGoodsQuantity
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/changeGoodsQuantity
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1317,7 +1317,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `changeUsersGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/changeUsersGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/changeUsersGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1325,7 +1325,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientBookingCancel`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientBookingCancel
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientBookingCancel
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1333,7 +1333,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientBuyPremium`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientBuyPremium
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientBuyPremium
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1341,7 +1341,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientLogin`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientLogin
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientLogin
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1349,7 +1349,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientRefreshToken`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientRefreshToken
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientRefreshToken
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1357,7 +1357,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientRegister`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientRegister
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientRegister
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1365,7 +1365,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientResetPassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientResetPassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientResetPassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1373,7 +1373,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientUpdateMe`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientUpdateMe
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientUpdateMe
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1381,7 +1381,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `clientUpdatePassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/clientUpdatePassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/clientUpdatePassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1389,7 +1389,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `connectPaymentService`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/connectPaymentService
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/connectPaymentService
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1397,7 +1397,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createAchievement`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createAchievement
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createAchievement
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1405,7 +1405,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createAdditionalLicensePayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createAdditionalLicensePayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createAdditionalLicensePayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1413,7 +1413,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createBooking`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createBooking
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createBooking
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1421,7 +1421,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createCashOrder`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createCashOrder
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCashOrder
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1429,7 +1429,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1437,7 +1437,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createClientBooking`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createClientBooking
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createClientBooking
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1445,7 +1445,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createClientClubComment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createClientClubComment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createClientClubComment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1453,7 +1453,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1461,7 +1461,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createClubComment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createClubComment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createClubComment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1469,7 +1469,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createCombo`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createCombo
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCombo
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1477,7 +1477,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createCommand`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createCommand
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCommand
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1485,7 +1485,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createComment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createComment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createComment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1493,7 +1493,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createContractor`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createContractor
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createContractor
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1501,7 +1501,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createDepositCashback`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createDepositCashback
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createDepositCashback
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1509,7 +1509,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createDiscount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createDiscount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createDiscount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1517,7 +1517,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createGameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createGameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createGameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1525,7 +1525,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createGameAccountGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createGameAccountGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createGameAccountGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1533,7 +1533,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createGood`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createGood
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createGood
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1541,7 +1541,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1549,7 +1549,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createHostGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createHostGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createHostGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1557,7 +1557,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createHostType`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createHostType
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createHostType
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1565,7 +1565,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createLicenseModule`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createLicenseModule
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createLicenseModule
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1573,7 +1573,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createLicenseModuleCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createLicenseModuleCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createLicenseModuleCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1581,7 +1581,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createLicensePayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createLicensePayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createLicensePayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1589,7 +1589,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createLicenseTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createLicenseTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createLicenseTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1597,7 +1597,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createPayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createPayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createPayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1605,7 +1605,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createPaymentTransaction`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createPaymentTransaction
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createPaymentTransaction
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1613,7 +1613,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createPromoCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createPromoCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createPromoCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1621,7 +1621,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createService`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createService
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createService
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1629,7 +1629,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createShortcut`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createShortcut
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createShortcut
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1637,7 +1637,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createShortcutGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createShortcutGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createShortcutGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1645,7 +1645,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createShortcutGroups`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createShortcutGroups
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createShortcutGroups
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1653,7 +1653,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1661,7 +1661,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createUserGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createUserGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createUserGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1669,7 +1669,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createWorker`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createWorker
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createWorker
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1677,7 +1677,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `createWorkerTask`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/createWorkerTask
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createWorkerTask
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1685,7 +1685,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteAchievement`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteAchievement
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteAchievement
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1693,7 +1693,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1701,7 +1701,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1709,7 +1709,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteCombo`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteCombo
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteCombo
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1717,7 +1717,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteComment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteComment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteComment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1725,7 +1725,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteContractor`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteContractor
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteContractor
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1733,7 +1733,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteDepositCashback`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteDepositCashback
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteDepositCashback
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1741,7 +1741,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteDiscount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteDiscount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteDiscount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1749,7 +1749,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteGameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteGameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteGameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1757,7 +1757,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteGameAccountGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteGameAccountGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteGameAccountGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1765,7 +1765,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteGood`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteGood
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteGood
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1773,7 +1773,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteGoods`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteGoods
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteGoods
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1781,7 +1781,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1789,7 +1789,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteHostGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteHostGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteHostGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1797,7 +1797,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteHostType`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteHostType
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteHostType
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1805,7 +1805,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteLicenseModule`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteLicenseModule
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteLicenseModule
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1813,7 +1813,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteLicenseModuleCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteLicenseModuleCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteLicenseModuleCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1821,7 +1821,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteLicenseTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteLicenseTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteLicenseTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1829,7 +1829,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteOrganizationPaymentCard`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteOrganizationPaymentCard
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteOrganizationPaymentCard
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1837,7 +1837,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deletePromoCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deletePromoCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deletePromoCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1845,7 +1845,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteService`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteService
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteService
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1853,7 +1853,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteShortcut`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteShortcut
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteShortcut
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1861,7 +1861,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteShortcutGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteShortcutGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteShortcutGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1869,7 +1869,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1877,7 +1877,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteUserGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteUserGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteUserGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1885,7 +1885,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteWorker`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteWorker
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteWorker
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1893,7 +1893,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `deleteWorkerTask`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/deleteWorkerTask
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteWorkerTask
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1901,7 +1901,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `disableWorker`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/disableWorker
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/disableWorker
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1909,7 +1909,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `disconnectPaymentService`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/disconnectPaymentService
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/disconnectPaymentService
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1917,7 +1917,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `emailRegister`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/emailRegister
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/emailRegister
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1925,7 +1925,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `executeDealAndPayToCheckingAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/executeDealAndPayToCheckingAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/executeDealAndPayToCheckingAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1933,7 +1933,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `finishClientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/finishClientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/finishClientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1941,7 +1941,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `finishHostSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/finishHostSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/finishHostSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1949,7 +1949,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `finishWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/finishWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/finishWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1957,7 +1957,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `forceDeleteUser`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/forceDeleteUser
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/forceDeleteUser
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1965,7 +1965,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `forceFinishWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/forceFinishWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/forceFinishWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1973,7 +1973,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `freeGameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/freeGameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/freeGameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1981,7 +1981,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `generateQR`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/generateQR
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/generateQR
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1989,7 +1989,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `importClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/importClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/importClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -1997,7 +1997,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `importUsers`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/importUsers
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/importUsers
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2005,7 +2005,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `importUsersHours`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/importUsersHours
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/importUsersHours
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2013,7 +2013,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `login`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/login
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/login
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2021,7 +2021,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `loginQR`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/loginQR
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/loginQR
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2029,7 +2029,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `logout`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/logout
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/logout
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2037,7 +2037,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `magicInit`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/magicInit
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/magicInit
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2045,7 +2045,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `magicRoles`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/magicRoles
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/magicRoles
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2053,7 +2053,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `magicRoles2`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/magicRoles2
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/magicRoles2
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2061,7 +2061,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationConfirmCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationConfirmCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationConfirmCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2069,7 +2069,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationLogin`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationLogin
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationLogin
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2077,7 +2077,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationLogout`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationLogout
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationLogout
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2085,7 +2085,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationRegister`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationRegister
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationRegister
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2093,7 +2093,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationResetPassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationResetPassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationResetPassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2101,7 +2101,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationSendConfirmationCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationSendConfirmationCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationSendConfirmationCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2109,7 +2109,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationStartResetPassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationStartResetPassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationStartResetPassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2117,7 +2117,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationUpdate`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationUpdate
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationUpdate
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2125,7 +2125,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `organizationVerifyConfirmationCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/organizationVerifyConfirmationCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/organizationVerifyConfirmationCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2133,7 +2133,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `penaltyHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/penaltyHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/penaltyHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2141,7 +2141,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `pickGameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/pickGameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/pickGameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2149,7 +2149,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `processPostPayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/processPostPayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/processPostPayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2157,7 +2157,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `processStats`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/processStats
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/processStats
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2165,7 +2165,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `readAllClubComments`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/readAllClubComments
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/readAllClubComments
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2173,7 +2173,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `readClubComment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/readClubComment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/readClubComment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2181,7 +2181,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `recalculateAchievements`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/recalculateAchievements
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/recalculateAchievements
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2189,7 +2189,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `refreshToken`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/refreshToken
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/refreshToken
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2197,7 +2197,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `refundPayment`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/refundPayment
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/refundPayment
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2205,7 +2205,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `register`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/register
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/register
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2213,7 +2213,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `registerHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/registerHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/registerHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2221,7 +2221,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `relogin`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/relogin
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/relogin
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2229,7 +2229,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `resetPassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/resetPassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/resetPassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2237,7 +2237,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `resetUserPassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/resetUserPassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/resetUserPassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2245,7 +2245,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendClientConfirmationCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendClientConfirmationCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendClientConfirmationCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2253,7 +2253,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendClubOnVerification`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendClubOnVerification
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendClubOnVerification
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2261,7 +2261,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendConfirmationCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendConfirmationCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendConfirmationCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2269,7 +2269,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendConfirmationCodeToEnter`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendConfirmationCodeToEnter
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendConfirmationCodeToEnter
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2277,7 +2277,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendExtendConfirmationCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendExtendConfirmationCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendExtendConfirmationCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2285,7 +2285,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `sendWakePacket`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/sendWakePacket
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendWakePacket
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2293,7 +2293,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setBonus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setBonus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setBonus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2301,7 +2301,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setBookingStatus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setBookingStatus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setBookingStatus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2309,7 +2309,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setCloudPaymentsAccountToCompany`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setCloudPaymentsAccountToCompany
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setCloudPaymentsAccountToCompany
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2317,7 +2317,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setClubAutoPayCardId`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setClubAutoPayCardId
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setClubAutoPayCardId
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2325,7 +2325,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setClubAutoPayStatus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setClubAutoPayStatus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setClubAutoPayStatus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2333,7 +2333,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setClubDepositTransferStatus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setClubDepositTransferStatus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setClubDepositTransferStatus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2341,7 +2341,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setDeposit`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setDeposit
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setDeposit
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2349,7 +2349,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setHostServiceMode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setHostServiceMode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setHostServiceMode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2357,7 +2357,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setMultipleSettingValues`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setMultipleSettingValues
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setMultipleSettingValues
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2365,31 +2365,31 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setSetting`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSetting
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setSetting
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         setSetting: async (input: Parameters<typeof m.setSetting>[1],) => await m.setSetting(ctx, input,),
         /**
-            * # mutation `setSettings`
-            * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSettings
-            * 
-            * `@xlsoftware/smartshell-sdk`
-            */
-        setSettings: async (input: Parameters<typeof m.setSettings>[1],) => await m.setSettings(ctx, input,),
-        /**
             * # mutation `setSettingValue`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setSettingValue
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setSettingValue
             * 
             * `@xlsoftware/smartshell-sdk`
             */
         setSettingValue: async (input: Parameters<typeof m.setSettingValue>[1],) => await m.setSettingValue(ctx, input,),
         /**
+            * # mutation `setSettings`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setSettings
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        setSettings: async (input: Parameters<typeof m.setSettings>[1],) => await m.setSettings(ctx, input,),
+        /**
             * # mutation `setShellMode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setShellMode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setShellMode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2397,7 +2397,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setTelegramChannel`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setTelegramChannel
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setTelegramChannel
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2405,7 +2405,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setUserDiscount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setUserDiscount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setUserDiscount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2413,7 +2413,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `setWorkerTaskComplete`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/setWorkerTaskComplete
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/setWorkerTaskComplete
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2421,7 +2421,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `shortcutClicked`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/shortcutClicked
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/shortcutClicked
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2429,7 +2429,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `startClientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/startClientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/startClientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2437,7 +2437,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `startHostSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/startHostSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/startHostSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2445,7 +2445,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `startWorkShift`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/startWorkShift
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/startWorkShift
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2453,7 +2453,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `stopClientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/stopClientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/stopClientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2461,7 +2461,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `transferDeposit`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/transferDeposit
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/transferDeposit
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2469,7 +2469,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `unpauseClientSession`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/unpauseClientSession
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/unpauseClientSession
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2477,7 +2477,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateBooking`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateBooking
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateBooking
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2485,7 +2485,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2493,7 +2493,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateClub`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateClub
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateClub
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2501,7 +2501,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateCombo`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateCombo
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateCombo
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2509,7 +2509,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateCompanyPermissions`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateCompanyPermissions
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateCompanyPermissions
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2517,7 +2517,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateContractor`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateContractor
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateContractor
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2525,7 +2525,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateDepositCashback`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateDepositCashback
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateDepositCashback
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2533,7 +2533,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateDiscount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateDiscount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateDiscount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2541,7 +2541,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateGameAccount`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateGameAccount
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateGameAccount
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2549,7 +2549,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateGameAccountGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateGameAccountGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateGameAccountGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2557,7 +2557,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateGood`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateGood
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateGood
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2565,7 +2565,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateGoods`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateGoods
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateGoods
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2573,7 +2573,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHost`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHost
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHost
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2581,7 +2581,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHostCommandStatus`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHostCommandStatus
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostCommandStatus
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2589,7 +2589,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHostGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHostGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2597,7 +2597,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHostIpAddress`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHostIpAddress
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostIpAddress
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2605,7 +2605,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHostState`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHostState
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostState
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2613,7 +2613,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateHostType`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateHostType
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostType
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2621,7 +2621,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateLicenseModule`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateLicenseModule
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateLicenseModule
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2629,7 +2629,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateLicenseModuleCategory`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateLicenseModuleCategory
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateLicenseModuleCategory
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2637,7 +2637,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateLicenseTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateLicenseTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateLicenseTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2645,7 +2645,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateMe`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateMe
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateMe
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2653,7 +2653,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateNewsConsent`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateNewsConsent
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateNewsConsent
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2661,7 +2661,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updatePassword`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updatePassword
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updatePassword
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2669,7 +2669,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updatePromoCode`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updatePromoCode
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updatePromoCode
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2677,7 +2677,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateService`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateService
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateService
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2685,7 +2685,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateShortcut`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateShortcut
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateShortcut
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2693,7 +2693,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateShortcutGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateShortcutGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateShortcutGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2701,7 +2701,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateShortcutGroupSort`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateShortcutGroupSort
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateShortcutGroupSort
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2709,7 +2709,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateShortcutSort`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateShortcutSort
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateShortcutSort
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2717,7 +2717,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateTariff`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateTariff
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateTariff
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2725,7 +2725,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateTariffSort`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateTariffSort
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateTariffSort
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2733,7 +2733,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateUserGroup`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateUserGroup
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateUserGroup
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2741,7 +2741,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateWorker`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateWorker
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateWorker
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2749,7 +2749,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `updateWorkerTask`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/updateWorkerTask
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateWorkerTask
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2757,7 +2757,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `uploadShortcutImage`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/uploadShortcutImage
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/uploadShortcutImage
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2765,7 +2765,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `uploadUserTable`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/uploadUserTable
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/uploadUserTable
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2773,7 +2773,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `useDebt`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/useDebt
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/useDebt
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2781,7 +2781,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `validateQR`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/validateQR
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/validateQR
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2789,7 +2789,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `verifyClient`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/verifyClient
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/verifyClient
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2797,7 +2797,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `verifyMe`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/verifyMe
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/verifyMe
             * 
             * `@xlsoftware/smartshell-sdk`
             */
@@ -2805,7 +2805,7 @@ import type { Shell } from "../mod.ts";
         /**
             * # mutation `verifyUser`
             * 
-            * 🔗 https://smartshell.xlsoftware.ru/reference/api/mutation/verifyUser
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/verifyUser
             * 
             * `@xlsoftware/smartshell-sdk`
             */

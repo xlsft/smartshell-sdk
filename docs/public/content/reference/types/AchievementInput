@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="name">name</h3>
-<pre><code lang="ts">
-                    name: string
-                </code></pre>
+<pre><code lang="ts">name: string</code></pre>
 
 <h3 id="icon_url">icon_url</h3>
-<pre><code lang="ts">
-                    icon_url?: string
-                </code></pre>
+<pre><code lang="ts">icon_url?: string</code></pre>
 
 <h3 id="conditions">conditions</h3>
-<pre><code lang="ts">
-                    conditions: "||--['/docs/reference/types/ConditionRequest','ConditionRequest']--||"[]
-                </code></pre>
+<pre><code lang="ts">conditions: ||--['/docs/reference/types/ConditionRequest','ConditionRequest']--||[]</code></pre>
 
 <h3 id="rewards">rewards</h3>
-<pre><code lang="ts">
-                    rewards: "||--['/docs/reference/types/RewardRequest','RewardRequest']--||"[]
-                </code></pre>
+<pre><code lang="ts">rewards: ||--['/docs/reference/types/RewardRequest','RewardRequest']--||[]</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/AchievementStatus','AchievementStatus']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/AchievementStatus','AchievementStatus']--||</code></pre>

@@ -3,9 +3,9 @@
 </h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: "||--['/docs/reference/types/LicenseTariffCategoryInput','LicenseTariffCategoryInput'--||" }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/LicenseTariffCategoryInput','LicenseTariffCategoryInput'--|| }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/LicenseTariffCategory','LicenseTariffCategory'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/LicenseTariffCategory','LicenseTariffCategory'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

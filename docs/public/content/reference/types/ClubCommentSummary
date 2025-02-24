@@ -3,36 +3,22 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="average_grade">average_grade</h3>
-<pre><code lang="ts">
-                    average_grade: number
-                </code></pre>
+<pre><code lang="ts">average_grade: number</code></pre>
 
 <h3 id="unread_total">unread_total</h3>
-<pre><code lang="ts">
-                    unread_total: number
-                </code></pre>
+<pre><code lang="ts">unread_total: number</code></pre>
 
 <h3 id="five">five</h3>
-<pre><code lang="ts">
-                    five: number
-                </code></pre>
+<pre><code lang="ts">five: number</code></pre>
 
 <h3 id="four">four</h3>
-<pre><code lang="ts">
-                    four: number
-                </code></pre>
+<pre><code lang="ts">four: number</code></pre>
 
 <h3 id="three">three</h3>
-<pre><code lang="ts">
-                    three: number
-                </code></pre>
+<pre><code lang="ts">three: number</code></pre>
 
 <h3 id="two">two</h3>
-<pre><code lang="ts">
-                    two: number
-                </code></pre>
+<pre><code lang="ts">two: number</code></pre>
 
 <h3 id="one">one</h3>
-<pre><code lang="ts">
-                    one: number
-                </code></pre>
+<pre><code lang="ts">one: number</code></pre>

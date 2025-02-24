@@ -1,7 +1,7 @@
 <h1 id="api_mutation_importUsersHours">mutation importUsersHours</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { club_id: number, org_id: number, code: string, file: string, columns?: "||--['/docs/reference/types/ImportUserHoursColumnsInput','ImportUserHoursColumnsInput'--||", timeMultiplier: number, tariff_id: number }</code></pre>
+<pre><code lang="ts">type InputType = { club_id: number, org_id: number, code: string, file: string, columns?: ||--['/docs/reference/types/ImportUserHoursColumnsInput','ImportUserHoursColumnsInput'--||, timeMultiplier: number, tariff_id: number }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = boolean</code></pre>
 <h3>Codegen method map</h3>

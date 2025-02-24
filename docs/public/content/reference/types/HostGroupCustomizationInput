@@ -3,16 +3,10 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="color">color</h3>
-<pre><code lang="ts">
-                    color?: string
-                </code></pre>
+<pre><code lang="ts">color?: string</code></pre>
 
 <h3 id="background">background</h3>
-<pre><code lang="ts">
-                    background?: string
-                </code></pre>
+<pre><code lang="ts">background?: string</code></pre>
 
 <h3 id="screensaver">screensaver</h3>
-<pre><code lang="ts">
-                    screensaver?: string
-                </code></pre>
+<pre><code lang="ts">screensaver?: string</code></pre>

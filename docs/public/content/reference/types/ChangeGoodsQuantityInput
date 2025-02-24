@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="items">items</h3>
-<pre><code lang="ts">
-                    items: "||--['/docs/reference/types/ChangeGoodsQuantityItemInput','ChangeGoodsQuantityItemInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">items: ||--['/docs/reference/types/ChangeGoodsQuantityItemInput','ChangeGoodsQuantityItemInput']--||[]</code></pre>
 
 <h3 id="operation">operation</h3>
-<pre><code lang="ts">
-                    operation: "||--['/docs/reference/types/WarehouseOperationType','WarehouseOperationType']--||"
-                </code></pre>
+<pre><code lang="ts">operation: ||--['/docs/reference/types/WarehouseOperationType','WarehouseOperationType']--||</code></pre>
 
 <h3 id="comment">comment</h3>
-<pre><code lang="ts">
-                    comment?: string
-                </code></pre>
+<pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="price">price</h3>
-<pre><code lang="ts">
-                    price?: number
-                </code></pre>
+<pre><code lang="ts">price?: number</code></pre>

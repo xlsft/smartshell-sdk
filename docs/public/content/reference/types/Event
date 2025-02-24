@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">
-                    type: string
-                </code></pre>
+<pre><code lang="ts">type: string</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="relations">relations</h3>
-<pre><code lang="ts">
-                    relations?: string
-                </code></pre>
+<pre><code lang="ts">relations?: string</code></pre>
 
 <h3 id="workshift">workShift</h3>
-<pre><code lang="ts">
-                    workShift?: "||--['/docs/reference/types/WorkShift','WorkShift']--||"
-                </code></pre>
+<pre><code lang="ts">workShift?: ||--['/docs/reference/types/WorkShift','WorkShift']--||</code></pre>
 
 <h3 id="initiator">initiator</h3>
-<pre><code lang="ts">
-                    initiator?: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">initiator?: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="initiatorhost">initiatorHost</h3>
-<pre><code lang="ts">
-                    initiatorHost?: "||--['/docs/reference/types/Host','Host']--||"
-                </code></pre>
+<pre><code lang="ts">initiatorHost?: ||--['/docs/reference/types/Host','Host']--||</code></pre>
 
 <h3 id="description">description</h3>
-<pre><code lang="ts">
-                    description?: string
-                </code></pre>
+<pre><code lang="ts">description?: string</code></pre>

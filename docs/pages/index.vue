@@ -9,13 +9,16 @@
         'deno': 'deno add jsr:@xlsoftware/smartshell-sdk',
         'npm': 'npx jsr add @xlsoftware/smartshell-sdk',
         'bun': 'bunx jsr add @xlsoftware/smartshell-sdk',
-        'yarn': 'yarn dlx jsr add @xlsoftware/smartshell-sdk'
+        'yarn': 'yarn dlx jsr add @xlsoftware/smartshell-sdk',
+        'denojsr': 'import { Shell } from "jsr:@xlsoftware/smartshell-sdk";'
     }
+
+    const version = ref((await $fetch('https://api.github.com/repos/xlsft/smartshell-sdk/releases/latest')).tag_name)
 </script>
 
 <template>
     <div class="w-full h-fit relative flex flex-col">
-        <h1 data-no-back>SmartShell SDK</h1> <Badge title="v1.0.1 (Все еще бета)" class="absolute top-0 right-0 hidden lg:flex"/>
+        <h1 data-no-back>SmartShell SDK</h1> <Badge :title="`v${version} (Все еще бета)`" class="absolute top-0 right-0 hidden lg:flex"/>
         <p>Современное, полностью типизированное, динамически генерирующееся, постоянно актуальное SDK для взаимодействия с публичным API ERP системы управления компьютерными клубами SmartShell</p>
         <div class="w-full h-full flex flex-wrap items-center justify-center gap-[24px] my-[12px]">
             <FactCard title="100% покрытие типами" subtitle="Типы напрямую экспортированные из интроспекции API" art="typescript"/>
@@ -26,12 +29,14 @@
         <h3>Установка</h3> 
         <p>Установите пакет <code>smartshell-sdk </code> с помощью вашего пакетного менеджера. Для хранения пакета используется <code>JSR</code> - реестр пакетов доступный во всех пакетных менеджерах экосистемы JS и TS</p>
         <div class="w-full flex items-center justify-center gap-[12px] card my-[24px]">
-            <Dropdown :options="[{ label: 'PNPM', value: 'pnpm' }, { label: 'Deno', value: 'deno' }, { label: 'NPM', value: 'npm' }, { label: 'Bun', value: 'bun' }, { label: 'Yarn', value: 'yarn' }]" v-model="helper"  class="w-[150px]"/>
+            <Dropdown :options="[{ label: 'PNPM', value: 'pnpm' }, { label: 'Deno', value: 'deno' }, { label: 'NPM', value: 'npm' }, { label: 'Bun', value: 'bun' }, { label: 'Yarn', value: 'yarn' }, { label: 'JSR Import', value: 'denojsr' }]" v-model="helper"  class="w-[150px]"/>
             <Text readonly @action="() => { useClipboard(install[helper as keyof typeof install]); toast.info('Скопировано в буфер обмена')}" v-model="install[helper as keyof typeof install]" :icon="IconCopy" class="w-full"/>
         </div>
 
         <p>Импортируйте пакет в свой проект</p>
-        <pre><code>import { "||--['/docs/reference/sdk/Shell','Shell']--||" } from "@xlsoftware/smartshell-sdk";</code></pre>
+        <pre><code>import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "@xlsoftware/smartshell-sdk";
+// ...or with jsr deno import
+import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "jsr:@xlsoftware/smartshell-sdk";</code></pre>
         
         <p>Создайте инстанс класса <code>Shell</code>. Можно указать данные для авторизации, изменить хост (scope) api, или сделать инстанс анонимным для запроса публичной информации без нужды в авторизации</p>
         <pre><code>// Shell instance

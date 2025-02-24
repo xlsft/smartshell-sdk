@@ -3,56 +3,34 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: string
-                </code></pre>
+<pre><code lang="ts">id: string</code></pre>
 
 <h3 id="company_id">company_id</h3>
-<pre><code lang="ts">
-                    company_id: number
-                </code></pre>
+<pre><code lang="ts">company_id: number</code></pre>
 
 <h3 id="service">service</h3>
-<pre><code lang="ts">
-                    service: "||--['/docs/reference/types/ServiceEnum','ServiceEnum']--||"
-                </code></pre>
+<pre><code lang="ts">service: ||--['/docs/reference/types/ServiceEnum','ServiceEnum']--||</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount: number
-                </code></pre>
+<pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="client">client</h3>
-<pre><code lang="ts">
-                    client: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">client: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: string
-                </code></pre>
+<pre><code lang="ts">status: string</code></pre>
 
 <h3 id="additional">additional</h3>
-<pre><code lang="ts">
-                    additional?: "||--['/docs/reference/types/AdditionalTransactionData','AdditionalTransactionData']--||"
-                </code></pre>
+<pre><code lang="ts">additional?: ||--['/docs/reference/types/AdditionalTransactionData','AdditionalTransactionData']--||</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="vat">vat</h3>
-<pre><code lang="ts">
-                    vat?: number
-                </code></pre>
+<pre><code lang="ts">vat?: number</code></pre>
 
 <h3 id="label">label</h3>
-<pre><code lang="ts">
-                    label: string
-                </code></pre>
+<pre><code lang="ts">label: string</code></pre>

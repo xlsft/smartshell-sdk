@@ -3,76 +3,46 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="client">client</h3>
-<pre><code lang="ts">
-                    client?: "||--['/docs/reference/types/User','User']--||"
-                </code></pre>
+<pre><code lang="ts">client?: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="hosts">hosts</h3>
-<pre><code lang="ts">
-                    hosts: "||--['/docs/reference/types/ClientSessionHost','ClientSessionHost']--||"[]
-                </code></pre>
+<pre><code lang="ts">hosts: ||--['/docs/reference/types/ClientSessionHost','ClientSessionHost']--||[]</code></pre>
 
 <h3 id="duration">duration</h3>
-<pre><code lang="ts">
-                    duration: number
-                </code></pre>
+<pre><code lang="ts">duration: number</code></pre>
 
 <h3 id="elapsed">elapsed</h3>
-<pre><code lang="ts">
-                    elapsed: number
-                </code></pre>
+<pre><code lang="ts">elapsed: number</code></pre>
 
 <h3 id="payment">payment</h3>
-<pre><code lang="ts">
-                    payment?: "||--['/docs/reference/types/Payment','Payment']--||"
-                </code></pre>
+<pre><code lang="ts">payment?: ||--['/docs/reference/types/Payment','Payment']--||</code></pre>
 
 <h3 id="postpaid">postpaid</h3>
-<pre><code lang="ts">
-                    postpaid: boolean
-                </code></pre>
+<pre><code lang="ts">postpaid: boolean</code></pre>
 
 <h3 id="total_cost">total_cost</h3>
-<pre><code lang="ts">
-                    total_cost: number
-                </code></pre>
+<pre><code lang="ts">total_cost: number</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||</code></pre>
 
 <h3 id="seances">seances</h3>
-<pre><code lang="ts">
-                    seances: "||--['/docs/reference/types/Seance','Seance']--||"[]
-                </code></pre>
+<pre><code lang="ts">seances: ||--['/docs/reference/types/Seance','Seance']--||[]</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="started_at">started_at</h3>
-<pre><code lang="ts">
-                    started_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">started_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="finished_at">finished_at</h3>
-<pre><code lang="ts">
-                    finished_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">finished_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="canceled_at">canceled_at</h3>
-<pre><code lang="ts">
-                    canceled_at?: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">canceled_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="time_left">time_left</h3>
-<pre><code lang="ts">
-                    time_left?: number
-                </code></pre>
+<pre><code lang="ts">time_left?: number</code></pre>

@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="count">count</h3>
-<pre><code lang="ts">
-                    count: number
-                </code></pre>
+<pre><code lang="ts">count: number</code></pre>
 
 <h3 id="currentpage">currentPage</h3>
-<pre><code lang="ts">
-                    currentPage: number
-                </code></pre>
+<pre><code lang="ts">currentPage: number</code></pre>
 
 <h3 id="firstitem">firstItem</h3>
-<pre><code lang="ts">
-                    firstItem?: number
-                </code></pre>
+<pre><code lang="ts">firstItem?: number</code></pre>
 
 <h3 id="hasmorepages">hasMorePages</h3>
-<pre><code lang="ts">
-                    hasMorePages: boolean
-                </code></pre>
+<pre><code lang="ts">hasMorePages: boolean</code></pre>
 
 <h3 id="lastitem">lastItem</h3>
-<pre><code lang="ts">
-                    lastItem?: number
-                </code></pre>
+<pre><code lang="ts">lastItem?: number</code></pre>
 
 <h3 id="lastpage">lastPage</h3>
-<pre><code lang="ts">
-                    lastPage: number
-                </code></pre>
+<pre><code lang="ts">lastPage: number</code></pre>
 
 <h3 id="perpage">perPage</h3>
-<pre><code lang="ts">
-                    perPage: number
-                </code></pre>
+<pre><code lang="ts">perPage: number</code></pre>
 
 <h3 id="total">total</h3>
-<pre><code lang="ts">
-                    total: number
-                </code></pre>
+<pre><code lang="ts">total: number</code></pre>

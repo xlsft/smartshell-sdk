@@ -3,11 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="role_id">role_id</h3>
-<pre><code lang="ts">
-                    role_id: number
-                </code></pre>
+<pre><code lang="ts">role_id: number</code></pre>
 
 <h3 id="permissions">permissions</h3>
-<pre><code lang="ts">
-                    permissions: "||--['/docs/reference/types/PermissionInput','PermissionInput']--||"[]
-                </code></pre>
+<pre><code lang="ts">permissions: ||--['/docs/reference/types/PermissionInput','PermissionInput']--||[]</code></pre>

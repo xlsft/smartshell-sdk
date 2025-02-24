@@ -3,6 +3,4 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="file">file</h3>
-<pre><code lang="ts">
-                    file: "||--['/docs/reference/types/Upload','Upload']--||"
-                </code></pre>
+<pre><code lang="ts">file: ||--['/docs/reference/types/Upload','Upload']--||</code></pre>

@@ -3,56 +3,34 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="group_id">group_id</h3>
-<pre><code lang="ts">
-                    group_id: number
-                </code></pre>
+<pre><code lang="ts">group_id: number</code></pre>
 
 <h3 id="type_id">type_id</h3>
-<pre><code lang="ts">
-                    type_id?: number
-                </code></pre>
+<pre><code lang="ts">type_id?: number</code></pre>
 
 <h3 id="position">position</h3>
-<pre><code lang="ts">
-                    position: number
-                </code></pre>
+<pre><code lang="ts">position: number</code></pre>
 
 <h3 id="alias">alias</h3>
-<pre><code lang="ts">
-                    alias: string
-                </code></pre>
+<pre><code lang="ts">alias: string</code></pre>
 
 <h3 id="coord_x">coord_x</h3>
-<pre><code lang="ts">
-                    coord_x?: number
-                </code></pre>
+<pre><code lang="ts">coord_x?: number</code></pre>
 
 <h3 id="coord_y">coord_y</h3>
-<pre><code lang="ts">
-                    coord_y?: number
-                </code></pre>
+<pre><code lang="ts">coord_y?: number</code></pre>
 
 <h3 id="is_occupied">is_occupied</h3>
-<pre><code lang="ts">
-                    is_occupied: boolean
-                </code></pre>
+<pre><code lang="ts">is_occupied: boolean</code></pre>
 
 <h3 id="is_booked">is_booked</h3>
-<pre><code lang="ts">
-                    is_booked: boolean
-                </code></pre>
+<pre><code lang="ts">is_booked: boolean</code></pre>
 
 <h3 id="in_service">in_service</h3>
-<pre><code lang="ts">
-                    in_service: boolean
-                </code></pre>
+<pre><code lang="ts">in_service: boolean</code></pre>
 
 <h3 id="info">info</h3>
-<pre><code lang="ts">
-                    info?: "||--['/docs/reference/types/HostInfo','HostInfo']--||"
-                </code></pre>
+<pre><code lang="ts">info?: ||--['/docs/reference/types/HostInfo','HostInfo']--||</code></pre>

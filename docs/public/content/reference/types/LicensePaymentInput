@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="license_price">license_price</h3>
-<pre><code lang="ts">
-                    license_price: "||--['/docs/reference/types/LicensePriceInput','LicensePriceInput']--||"
-                </code></pre>
+<pre><code lang="ts">license_price: ||--['/docs/reference/types/LicensePriceInput','LicensePriceInput']--||</code></pre>
 
 <h3 id="contractor_id">contractor_id</h3>
-<pre><code lang="ts">
-                    contractor_id?: number
-                </code></pre>
+<pre><code lang="ts">contractor_id?: number</code></pre>
 
 <h3 id="success_url">success_url</h3>
-<pre><code lang="ts">
-                    success_url?: string
-                </code></pre>
+<pre><code lang="ts">success_url?: string</code></pre>
 
 <h3 id="fail_url">fail_url</h3>
-<pre><code lang="ts">
-                    fail_url?: string
-                </code></pre>
+<pre><code lang="ts">fail_url?: string</code></pre>

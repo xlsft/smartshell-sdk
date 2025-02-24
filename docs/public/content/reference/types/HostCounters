@@ -3,21 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="cpu_temp">cpu_temp</h3>
-<pre><code lang="ts">
-                    cpu_temp: number
-                </code></pre>
+<pre><code lang="ts">cpu_temp: number</code></pre>
 
 <h3 id="disk_temp">disk_temp</h3>
-<pre><code lang="ts">
-                    disk_temp: number
-                </code></pre>
+<pre><code lang="ts">disk_temp: number</code></pre>
 
 <h3 id="disk_status">disk_status</h3>
-<pre><code lang="ts">
-                    disk_status: "||--['/docs/reference/types/HostDiskInfo','HostDiskInfo']--||"[]
-                </code></pre>
+<pre><code lang="ts">disk_status: ||--['/docs/reference/types/HostDiskInfo','HostDiskInfo']--||[]</code></pre>
 
 <h3 id="active_window">active_window</h3>
-<pre><code lang="ts">
-                    active_window?: string
-                </code></pre>
+<pre><code lang="ts">active_window?: string</code></pre>

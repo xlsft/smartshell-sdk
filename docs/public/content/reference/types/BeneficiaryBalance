@@ -3,26 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="balance">balance</h3>
-<pre><code lang="ts">
-                    balance: number
-                </code></pre>
+<pre><code lang="ts">balance: number</code></pre>
 
 <h3 id="commission">commission</h3>
-<pre><code lang="ts">
-                    commission: number
-                </code></pre>
+<pre><code lang="ts">commission: number</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>
 
 <h3 id="net_sum">net_sum</h3>
-<pre><code lang="ts">
-                    net_sum: number
-                </code></pre>
+<pre><code lang="ts">net_sum: number</code></pre>
 
 <h3 id="locked">locked</h3>
-<pre><code lang="ts">
-                    locked: boolean
-                </code></pre>
+<pre><code lang="ts">locked: boolean</code></pre>

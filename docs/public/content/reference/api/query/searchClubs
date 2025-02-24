@@ -3,7 +3,7 @@
 <h3>Input</h3>
 <pre><code lang="ts">type InputType = { q?: string, city?: string, accept_payments?: boolean, booking_enabled?: boolean }</code></pre>
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/ClientClub','ClientClub'--||"[]</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ClientClub','ClientClub'--||[]</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

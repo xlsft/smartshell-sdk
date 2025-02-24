@@ -3,41 +3,25 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="tariff">tariff</h3>
-<pre><code lang="ts">
-                    tariff?: "||--['/docs/reference/types/TariffGridItem','TariffGridItem']--||"
-                </code></pre>
+<pre><code lang="ts">tariff?: ||--['/docs/reference/types/TariffGridItem','TariffGridItem']--||</code></pre>
 
 <h3 id="host_group">host_group</h3>
-<pre><code lang="ts">
-                    host_group?: "||--['/docs/reference/types/HostGroup','HostGroup']--||"
-                </code></pre>
+<pre><code lang="ts">host_group?: ||--['/docs/reference/types/HostGroup','HostGroup']--||</code></pre>
 
 <h3 id="items">items</h3>
-<pre><code lang="ts">
-                    items: "||--['/docs/reference/types/ComboItem','ComboItem']--||"[]
-                </code></pre>
+<pre><code lang="ts">items: ||--['/docs/reference/types/ComboItem','ComboItem']--||[]</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="quantity">quantity</h3>
-<pre><code lang="ts">
-                    quantity: number
-                </code></pre>
+<pre><code lang="ts">quantity: number</code></pre>
 
 <h3 id="use_global_discounts">use_global_discounts</h3>
-<pre><code lang="ts">
-                    use_global_discounts: boolean
-                </code></pre>
+<pre><code lang="ts">use_global_discounts: boolean</code></pre>

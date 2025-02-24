@@ -12,9 +12,9 @@ export const docs = async (method: ResolvedMethod): Promise<string> => {
             ${method.type} ${method.name}
         </h1>
         ${method.paginated ? `<code>Paginated</code>` : ``}
-        ${method.props.length === 0 ? '' : `<h3>Input</h3>\n<pre><code lang="ts">type InputType = { ${method.props.map(v => `${v.key}${v.required ? '' : '?'}: ${primitives.map(v => v.type).includes(v.value) ? v.value : `"||--['${v.docs}','${v.value}'--||"`}${v.array ? '[]' : ''}`).join(', ')} }</code></pre>`}
+        ${method.props.length === 0 ? '' : `<h3>Input</h3>\n<pre><code lang="ts">type InputType = { ${method.props.map(v => `${v.key}${v.required ? '' : '?'}: ${primitives.map(v => v.type).includes(v.value) ? v.value : `||--['${v.docs}','${v.value}'--||`}${v.array ? '[]' : ''}`).join(', ')} }</code></pre>`}
         <h3>Response</h3>
-        <pre><code lang="ts">type ResponseType = ${primitives.map(v => v.type).includes(method.response.value[0]) ? method.response.value[0] : `"||--['/docs/reference/types/${method.response.value[0]}','${method.response.value[0]}'--||"`}${method.response.array === true ? '[]' : ''}</code></pre>
+        <pre><code lang="ts">type ResponseType = ${primitives.map(v => v.type).includes(method.response.value[0]) ? method.response.value[0] : `||--['/docs/reference/types/${method.response.value[0]}','${method.response.value[0]}'--||`}${method.response.array === true ? '[]' : ''}</code></pre>
         <h3>Codegen method map</h3>
         <pre><code lang="json">${JSON.stringify(method, null, 4)}</code></pre>
     `
@@ -64,17 +64,13 @@ export const typedocs = async (type: Type): Promise<string | undefined> => {
             if (!data) return ''
             return /*html*/`
                 <h3 id="${data.name!.toLowerCase().replaceAll(' ', '_')}">${data.name}</h3>
-                <pre><code lang="ts">
-                    ${data.name}${data.rules?.nullable ? '?' : ''}: ${!data.primitive ? data.type : `"||--['/docs/reference/types/${data.type}','${data.type}']--||"`}${data.rules?.array ? '[]' : ''}
-                </code></pre>
+                <pre><code lang="ts">${data.name}${data.rules?.nullable ? '?' : ''}: ${!data.primitive ? data.type : `||--['/docs/reference/types/${data.type}','${data.type}']--||`}${data.rules?.array ? '[]' : ''}</code></pre>
             `    
         }).join('\n') : /*html*/`
-            <pre><code lang="ts">
-                ${properties?.map((v) => {
-                    const data = v as string
-                    return options.union ? `${primitives.map(v => v.type).includes(data) ? data : `"||--['/docs/reference/types/${data}','${data}'--||"`}` : `"${data}"`
-                }).join(' | ')}
-            </code></pre>
+            <pre><code lang="ts">${properties?.map((v) => {
+                const data = v as string
+                return options.union ? `${primitives.map(v => v.type).includes(data) ? data : `||--['/docs/reference/types/${data}','${data}'--||`}` : `"${data}"`
+            }).join(' | ')}</code></pre>
         `}
     `
 

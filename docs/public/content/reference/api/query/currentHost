@@ -1,7 +1,7 @@
 <h1 id="api_query_currentHost">query currentHost</h1>
 
 <h3>Response</h3>
-<pre><code lang="ts">type ResponseType = "||--['/docs/reference/types/Host','Host'--||"</code></pre>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Host','Host'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {

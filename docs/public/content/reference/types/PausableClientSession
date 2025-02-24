@@ -3,46 +3,28 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="id">id</h3>
-<pre><code lang="ts">
-                    id: number
-                </code></pre>
+<pre><code lang="ts">id: number</code></pre>
 
 <h3 id="tariff">tariff</h3>
-<pre><code lang="ts">
-                    tariff: "||--['/docs/reference/types/Tariff','Tariff']--||"
-                </code></pre>
+<pre><code lang="ts">tariff: ||--['/docs/reference/types/Tariff','Tariff']--||</code></pre>
 
 <h3 id="duration">duration</h3>
-<pre><code lang="ts">
-                    duration: number
-                </code></pre>
+<pre><code lang="ts">duration: number</code></pre>
 
 <h3 id="host_group">host_group</h3>
-<pre><code lang="ts">
-                    host_group?: "||--['/docs/reference/types/HostGroup','HostGroup']--||"
-                </code></pre>
+<pre><code lang="ts">host_group?: ||--['/docs/reference/types/HostGroup','HostGroup']--||</code></pre>
 
 <h3 id="elapsed">elapsed</h3>
-<pre><code lang="ts">
-                    elapsed: number
-                </code></pre>
+<pre><code lang="ts">elapsed: number</code></pre>
 
 <h3 id="status">status</h3>
-<pre><code lang="ts">
-                    status: "||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||"
-                </code></pre>
+<pre><code lang="ts">status: ||--['/docs/reference/types/ClientSessionType','ClientSessionType']--||</code></pre>
 
 <h3 id="available">available</h3>
-<pre><code lang="ts">
-                    available: boolean
-                </code></pre>
+<pre><code lang="ts">available: boolean</code></pre>
 
 <h3 id="created_at">created_at</h3>
-<pre><code lang="ts">
-                    created_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="expires_at">expires_at</h3>
-<pre><code lang="ts">
-                    expires_at: "||--['/docs/reference/types/DateTime','DateTime']--||"
-                </code></pre>
+<pre><code lang="ts">expires_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

@@ -5,26 +5,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="title">title</h3>
-<pre><code lang="ts">
-                    title: string
-                </code></pre>
+<pre><code lang="ts">title: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">
-                    amount: number
-                </code></pre>
+<pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="in_stock">in_stock</h3>
-<pre><code lang="ts">
-                    in_stock: number
-                </code></pre>
+<pre><code lang="ts">in_stock: number</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">
-                    sum: number
-                </code></pre>
+<pre><code lang="ts">sum: number</code></pre>

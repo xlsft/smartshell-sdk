@@ -3,31 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="name">name</h3>
-<pre><code lang="ts">
-                    name: string
-                </code></pre>
+<pre><code lang="ts">name: string</code></pre>
 
 <h3 id="description">description</h3>
-<pre><code lang="ts">
-                    description?: string
-                </code></pre>
+<pre><code lang="ts">description?: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">
-                    cost: number
-                </code></pre>
+<pre><code lang="ts">cost: number</code></pre>
 
 <h3 id="kz_cost">kz_cost</h3>
-<pre><code lang="ts">
-                    kz_cost: number
-                </code></pre>
+<pre><code lang="ts">kz_cost: number</code></pre>
 
 <h3 id="category_id">category_id</h3>
-<pre><code lang="ts">
-                    category_id: number
-                </code></pre>
+<pre><code lang="ts">category_id: number</code></pre>
 
 <h3 id="alias">alias</h3>
-<pre><code lang="ts">
-                    alias: string
-                </code></pre>
+<pre><code lang="ts">alias: string</code></pre>
