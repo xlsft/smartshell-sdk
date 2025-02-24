@@ -1,0 +1,12 @@
+name: 'docs'
+services:
+  widget:
+    container_name: 'docs'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - PORT=80
+    ports:
+      - "8080:80"
