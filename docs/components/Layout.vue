@@ -14,7 +14,7 @@
             console.log(element.innerHTML)
             element.innerHTML = element.innerHTML.replaceAll(
   /\|\|--\[\s*<span[^>]*>'(.*?)'<\/span>\s*,\s*<span[^>]*>'(.*?)'<\/span>\s*\]--\|\|/gm, 
-  (_, href, text) => `<a target="_blank" rel="noreferrer" href="${href}">${text}</a>`
+  (_, href, text) => `<a href="${href}">${text}</a>`
 );
             const button = document.createElement('button');
             button.classList.add('code-copy-button');
@@ -52,7 +52,7 @@
                     <img src="/logo/compact.png" alt="Smartshell SDK" class="text-white h-[42px] mb-[4px] hover:opacity-50 cursor-pointer flex md:hidden max-sm:hidden" @click="router.push('/')">
                 </div>
                 <div class="flex items-center justify-end max-sm:justify-center gap-[24px] grow text-sm">
-                    <a href="/docs/start">Начало работы</a>
+                    <a href="/docs/start">Старт</a>
                     <a href="/docs/examples">Примеры</a>
                     <a href="/docs/reference/api">API</a>
                     <a href="/docs/reference/types">Референс</a>
