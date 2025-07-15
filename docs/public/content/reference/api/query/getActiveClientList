@@ -38,7 +38,7 @@
             "type": "scalar",
             "key": "payments",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {

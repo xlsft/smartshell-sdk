@@ -50,6 +50,20 @@
             "value": [
                 "boolean"
             ]
+        },
+        {
+            "type": "scalar",
+            "key": "deposit_transfer_enabled",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "it_adviser_support",
+            "value": [
+                "boolean"
+            ]
         }
     ],
     "props": [],

@@ -16,15 +16,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "hours",
         key("visits", ["visited_at", "client_session_id"]),
         "last_visited_at",
-        "accept_payments",
         "accept_sbp",
-        "booking_enabled",
-        key("booking_settings", [
-            "self_cancellation_enabled",
-            "cancellation_penalty",
-            "cancellation_free_headroom",
-            "online_booking_discount",
-        ]),
         key("currency", ["id", "title", "alias", "letter"]),
         "rules",
         key("achievements", [
@@ -115,6 +107,19 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "available_host_count",
         key("cashback", ["amount", "is_percent", "value"]),
         "user_bonus",
+        key("club_settings", [
+            "accept_payments",
+            "booking_enabled",
+            key("booking_settings", [
+                "self_cancellation_enabled",
+                "cancellation_penalty",
+                "cancellation_free_headroom",
+                "online_booking_discount",
+            ]),
+            "online_booking_discount",
+            "OnlinePaymentMinLimit",
+        ]),
+        "deposit_transfer_enabled",
     ])
 }
 

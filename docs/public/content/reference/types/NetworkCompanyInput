@@ -1,0 +1,9 @@
+<h1 id="type_networkcompanyinput">type NetworkCompanyInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="max_discount_enabled">max_discount_enabled</h3>
+<pre><code lang="ts">max_discount_enabled?: boolean</code></pre>
+
+<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
+<pre><code lang="ts">deposit_transfer_enabled?: boolean</code></pre>

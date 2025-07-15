@@ -24,28 +24,28 @@
             "type": "scalar",
             "key": "balance",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "commission",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "sum",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "net_sum",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {

@@ -1,0 +1,152 @@
+<h1 id="api_query_topSoldOverviewItemsReport">
+    query topSoldOverviewItemsReport
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/ReportInput','ReportInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/UnifiedReport','UnifiedReport'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "UnifiedReport",
+            "ReportInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "topSoldOverviewItemsReport",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "labels",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "extraLabels",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "extraLabels2",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "extraLabels3",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "keys",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "points",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "UnifiedReportData"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "values",
+                    "value": [
+                        "Decimal"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "summary",
+            "value": [
+                "UnifiedSummaryData"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "value",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "extraValue",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "extraString",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ReportInput",
+            "type": "object",
+            "docs": "/docs/reference/types/ReportInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "UnifiedReport"
+        ],
+        "type": "object"
+    }
+}</code></pre>

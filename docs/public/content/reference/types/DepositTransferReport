@@ -1,0 +1,12 @@
+<h1 id="type_deposittransferreport">type DepositTransferReport</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="paginatorinfo">paginatorInfo</h3>
+<pre><code lang="ts">paginatorInfo: ||--['/docs/reference/types/PaginatorInfo','PaginatorInfo']--||</code></pre>
+
+<h3 id="data">data</h3>
+<pre><code lang="ts">data: ||--['/docs/reference/types/DepositTransferReportItem','DepositTransferReportItem']--||[]</code></pre>
+
+<h3 id="url">url</h3>
+<pre><code lang="ts">url?: string</code></pre>

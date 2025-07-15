@@ -12,6 +12,8 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "modules",
         "host_count",
         "used_trial",
+        "deposit_transfer_enabled",
+        "it_adviser_support",
     ])
 }
 

@@ -1,0 +1,90 @@
+<h1 id="api_query_clubsOnMap">query clubsOnMap</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { q?: string, city?: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ClientClubOnMap','ClientClubOnMap'--||[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "ClientClubOnMap"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "clubsOnMap",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "address",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "city",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "lat",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "lng",
+            "value": [
+                "number"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "q",
+            "required": false,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        },
+        {
+            "key": "city",
+            "required": false,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "ClientClubOnMap"
+        ],
+        "type": "object"
+    }
+}</code></pre>

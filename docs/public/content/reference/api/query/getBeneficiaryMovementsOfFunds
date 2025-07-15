@@ -84,14 +84,14 @@
                             "type": "scalar",
                             "key": "amount",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "sum",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -135,7 +135,7 @@
                             "type": "scalar",
                             "key": "sum",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -212,7 +212,7 @@
                                     "type": "scalar",
                                     "key": "balance",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -273,14 +273,14 @@
                                             "type": "scalar",
                                             "key": "sum",
                                             "value": [
-                                                "number"
+                                                "Decimal"
                                             ]
                                         },
                                         {
                                             "type": "scalar",
                                             "key": "commission",
                                             "value": [
-                                                "number"
+                                                "Decimal"
                                             ]
                                         },
                                         {
@@ -319,7 +319,7 @@
                             "type": "scalar",
                             "key": "commission",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -342,7 +342,7 @@
                     "type": "scalar",
                     "key": "sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -358,14 +358,14 @@
             "type": "scalar",
             "key": "deposit",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "withdrawal",
             "value": [
-                "number"
+                "Decimal"
             ]
         }
     ],

@@ -1,0 +1,87 @@
+<h1 id="api_mutation_updateTelegramSettings">
+    mutation updateTelegramSettings
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/SetTelegramSettingsInput','SetTelegramSettingsInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/TelegramSettings','TelegramSettings'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "TelegramSettings",
+            "SetTelegramSettingsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateTelegramSettings",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "token",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "channel",
+            "value": [
+                "TelegramChannel"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "enum",
+                    "key": "type",
+                    "value": [
+                        "TelegramChannelType"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "notification",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "SetTelegramSettingsInput",
+            "type": "object",
+            "docs": "/docs/reference/types/SetTelegramSettingsInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "TelegramSettings"
+        ],
+        "type": "object"
+    }
+}</code></pre>

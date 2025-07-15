@@ -9,4 +9,4 @@
 <pre><code lang="ts">data: ||--['/docs/reference/types/User','User']--||[]</code></pre>
 
 <h3 id="total_deposits">total_deposits</h3>
-<pre><code lang="ts">total_deposits?: number</code></pre>
+<pre><code lang="ts">total_deposits?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

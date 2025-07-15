@@ -67,7 +67,7 @@
                     "type": "scalar",
                     "key": "cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {

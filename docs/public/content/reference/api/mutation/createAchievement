@@ -58,7 +58,7 @@
                     "type": "scalar",
                     "key": "value",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 }
             ]
@@ -81,7 +81,7 @@
                     "type": "scalar",
                     "key": "value",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 }
             ]

@@ -1,0 +1,21 @@
+<h1 id="type_clientclubonmap">type ClientClubOnMap</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id: number</code></pre>
+
+<h3 id="name">name</h3>
+<pre><code lang="ts">name: string</code></pre>
+
+<h3 id="address">address</h3>
+<pre><code lang="ts">address: string</code></pre>
+
+<h3 id="city">city</h3>
+<pre><code lang="ts">city: string</code></pre>
+
+<h3 id="lat">lat</h3>
+<pre><code lang="ts">lat: number</code></pre>
+
+<h3 id="lng">lng</h3>
+<pre><code lang="ts">lng: number</code></pre>

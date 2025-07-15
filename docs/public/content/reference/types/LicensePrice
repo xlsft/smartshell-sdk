@@ -3,13 +3,13 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">sum: number</code></pre>
+<pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="total_sum">total_sum</h3>
-<pre><code lang="ts">total_sum: number</code></pre>
+<pre><code lang="ts">total_sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="host_price">host_price</h3>
-<pre><code lang="ts">host_price: number</code></pre>
+<pre><code lang="ts">host_price: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="modules">modules</h3>
 <pre><code lang="ts">modules: ||--['/docs/reference/types/LicenseModulePrice','LicenseModulePrice']--||[]</code></pre>
@@ -27,4 +27,4 @@
 <pre><code lang="ts">month_discount?: number</code></pre>
 
 <h3 id="debt">debt</h3>
-<pre><code lang="ts">debt?: number</code></pre>
+<pre><code lang="ts">debt?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

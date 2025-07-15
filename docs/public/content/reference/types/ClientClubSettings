@@ -1,0 +1,18 @@
+<h1 id="type_clientclubsettings">type ClientClubSettings</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="accept_payments">accept_payments</h3>
+<pre><code lang="ts">accept_payments: boolean</code></pre>
+
+<h3 id="booking_enabled">booking_enabled</h3>
+<pre><code lang="ts">booking_enabled: boolean</code></pre>
+
+<h3 id="booking_settings">booking_settings</h3>
+<pre><code lang="ts">booking_settings?: ||--['/docs/reference/types/BookingSettings','BookingSettings']--||</code></pre>
+
+<h3 id="online_booking_discount">online_booking_discount</h3>
+<pre><code lang="ts">online_booking_discount: number</code></pre>
+
+<h3 id="onlinepaymentminlimit">OnlinePaymentMinLimit</h3>
+<pre><code lang="ts">OnlinePaymentMinLimit: number</code></pre>

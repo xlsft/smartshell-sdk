@@ -8,6 +8,9 @@
 <h3 id="name">name</h3>
 <pre><code lang="ts">name: string</code></pre>
 
+<h3 id="network_company">network_company</h3>
+<pre><code lang="ts">network_company?: ||--['/docs/reference/types/NetworkCompany','NetworkCompany']--||</code></pre>
+
 <h3 id="pc_count">pc_count</h3>
 <pre><code lang="ts">pc_count: number</code></pre>
 
@@ -87,7 +90,7 @@
 <pre><code lang="ts">verification_status_updated_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
 <h3 id="debt">debt</h3>
-<pre><code lang="ts">debt: number</code></pre>
+<pre><code lang="ts">debt: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="used_trial">used_trial</h3>
 <pre><code lang="ts">used_trial: boolean</code></pre>
@@ -143,5 +146,5 @@
 <h3 id="services">services</h3>
 <pre><code lang="ts">services: ||--['/docs/reference/types/ClubServices','ClubServices']--||</code></pre>
 
-<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
-<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>
+<h3 id="it_adviser_support">it_adviser_support</h3>
+<pre><code lang="ts">it_adviser_support: boolean</code></pre>

@@ -52,7 +52,7 @@
             "type": "scalar",
             "key": "balance",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {

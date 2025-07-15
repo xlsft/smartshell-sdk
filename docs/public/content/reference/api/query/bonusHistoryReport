@@ -28,6 +28,13 @@
             "child": [
                 {
                     "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
                     "key": "labels",
                     "value": [
                         "string"
@@ -79,7 +86,7 @@
                             "type": "scalar",
                             "key": "values",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         }
                     ]
@@ -109,7 +116,21 @@
                             "type": "scalar",
                             "key": "value",
                             "value": [
-                                "number"
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "extraValue",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "extraString",
+                            "value": [
+                                "string"
                             ]
                         }
                     ]

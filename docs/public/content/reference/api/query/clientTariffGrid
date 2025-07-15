@@ -49,6 +49,13 @@
         },
         {
             "type": "scalar",
+            "key": "mobile_cost",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "has_fixed_finish_time",
             "value": [
                 "boolean"

@@ -132,21 +132,21 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "wholesale_cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "tax_percent",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -175,13 +175,6 @@
                                     "key": "vat",
                                     "value": [
                                         "Vat"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "ean",
-                                    "value": [
-                                        "string"
                                     ]
                                 },
                                 {
@@ -246,6 +239,13 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "highlighted",
+                                    "value": [
+                                        "boolean"
+                                    ]
                                 }
                             ]
                         },
@@ -269,21 +269,21 @@
                     "type": "scalar",
                     "key": "cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "wholesale_cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "tax_percent",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -349,13 +349,6 @@
                     "key": "vat",
                     "value": [
                         "Vat"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "ean",
-                    "value": [
-                        "string"
                     ]
                 },
                 {
@@ -442,6 +435,13 @@
                                 "number"
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "highlighted",
+                    "value": [
+                        "boolean"
                     ]
                 }
             ]

@@ -1,0 +1,18 @@
+<h1 id="type_createnetworkinput">type CreateNetworkInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="name">name</h3>
+<pre><code lang="ts">name: string</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code lang="ts">description?: string</code></pre>
+
+<h3 id="main_company_id">main_company_id</h3>
+<pre><code lang="ts">main_company_id: number</code></pre>
+
+<h3 id="max_discount_enabled">max_discount_enabled</h3>
+<pre><code lang="ts">max_discount_enabled: boolean</code></pre>
+
+<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
+<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>

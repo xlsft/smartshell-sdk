@@ -16,15 +16,15 @@ const module = async <Input extends InputType, Response extends ResponseType>(
         [
             "id",
             "group_id",
+            "group_title",
             "type_id",
             "position",
             "alias",
             "coord_x",
             "coord_y",
-            "is_occupied",
-            "is_booked",
-            "in_service",
+            "can_book",
             key("info", ["processor", "ram", "video", "disc", "shell_version"]),
+            "is_current_users_session",
         ],
         { ...(props as any) },
     )

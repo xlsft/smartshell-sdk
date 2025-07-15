@@ -34,6 +34,13 @@
             ]
         },
         {
+            "type": "scalar",
+            "key": "qr",
+            "value": [
+                "string"
+            ]
+        },
+        {
             "type": "enum",
             "key": "license_payment_method",
             "value": [
@@ -65,7 +72,7 @@
                     "type": "scalar",
                     "key": "amount",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -110,6 +117,13 @@
                                 "string"
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "data",
+                    "value": [
+                        "string"
                     ]
                 }
             ]

@@ -3,19 +3,19 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="cash">cash</h3>
-<pre><code lang="ts">cash: number</code></pre>
+<pre><code lang="ts">cash: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="card">card</h3>
-<pre><code lang="ts">card: number</code></pre>
+<pre><code lang="ts">card: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="deposit">deposit</h3>
-<pre><code lang="ts">deposit: number</code></pre>
+<pre><code lang="ts">deposit: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">bonus: number</code></pre>
+<pre><code lang="ts">bonus: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="total">total</h3>
-<pre><code lang="ts">total: number</code></pre>
+<pre><code lang="ts">total: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="currency">currency</h3>
 <pre><code lang="ts">currency?: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>

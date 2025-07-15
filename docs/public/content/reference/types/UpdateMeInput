@@ -13,3 +13,18 @@
 
 <h3 id="nickname">nickname</h3>
 <pre><code lang="ts">nickname?: string</code></pre>
+
+<h3 id="email">email</h3>
+<pre><code lang="ts">email?: string</code></pre>
+
+<h3 id="news_consent">news_consent</h3>
+<pre><code lang="ts">news_consent?: boolean</code></pre>
+
+<h3 id="password">password</h3>
+<pre><code lang="ts">password?: string</code></pre>
+
+<h3 id="password_confirmation">password_confirmation</h3>
+<pre><code lang="ts">password_confirmation?: string</code></pre>
+
+<h3 id="lead_source">lead_source</h3>
+<pre><code lang="ts">lead_source?: string</code></pre>

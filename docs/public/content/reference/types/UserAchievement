@@ -21,4 +21,4 @@
 <pre><code lang="ts">rewards: ||--['/docs/reference/types/Reward','Reward']--||[]</code></pre>
 
 <h3 id="progress">progress</h3>
-<pre><code lang="ts">progress: number</code></pre>
+<pre><code lang="ts">progress: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

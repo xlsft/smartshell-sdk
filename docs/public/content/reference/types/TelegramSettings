@@ -1,0 +1,12 @@
+<h1 id="type_telegramsettings">type TelegramSettings</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="token">token</h3>
+<pre><code lang="ts">token?: string</code></pre>
+
+<h3 id="channel">channel</h3>
+<pre><code lang="ts">channel?: ||--['/docs/reference/types/TelegramChannel','TelegramChannel']--||</code></pre>
+
+<h3 id="notification">notification</h3>
+<pre><code lang="ts">notification: string</code></pre>

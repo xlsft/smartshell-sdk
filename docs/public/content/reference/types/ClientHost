@@ -8,6 +8,9 @@
 <h3 id="group_id">group_id</h3>
 <pre><code lang="ts">group_id: number</code></pre>
 
+<h3 id="group_title">group_title</h3>
+<pre><code lang="ts">group_title: string</code></pre>
+
 <h3 id="type_id">type_id</h3>
 <pre><code lang="ts">type_id?: number</code></pre>
 
@@ -23,14 +26,11 @@
 <h3 id="coord_y">coord_y</h3>
 <pre><code lang="ts">coord_y?: number</code></pre>
 
-<h3 id="is_occupied">is_occupied</h3>
-<pre><code lang="ts">is_occupied: boolean</code></pre>
-
-<h3 id="is_booked">is_booked</h3>
-<pre><code lang="ts">is_booked: boolean</code></pre>
-
-<h3 id="in_service">in_service</h3>
-<pre><code lang="ts">in_service: boolean</code></pre>
+<h3 id="can_book">can_book</h3>
+<pre><code lang="ts">can_book: boolean</code></pre>
 
 <h3 id="info">info</h3>
 <pre><code lang="ts">info?: ||--['/docs/reference/types/HostInfo','HostInfo']--||</code></pre>
+
+<h3 id="is_current_users_session">is_current_users_session</h3>
+<pre><code lang="ts">is_current_users_session: boolean</code></pre>

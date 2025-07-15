@@ -14,6 +14,9 @@
 <h3 id="cost">cost</h3>
 <pre><code lang="ts">cost: number</code></pre>
 
+<h3 id="mobile_cost">mobile_cost</h3>
+<pre><code lang="ts">mobile_cost: number</code></pre>
+
 <h3 id="has_fixed_finish_time">has_fixed_finish_time</h3>
 <pre><code lang="ts">has_fixed_finish_time: boolean</code></pre>
 

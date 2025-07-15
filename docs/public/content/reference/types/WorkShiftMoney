@@ -6,4 +6,4 @@
 <pre><code lang="ts">sum: ||--['/docs/reference/types/MoneyByTypes','MoneyByTypes']--||</code></pre>
 
 <h3 id="cash_on_start">cash_on_start</h3>
-<pre><code lang="ts">cash_on_start: number</code></pre>
+<pre><code lang="ts">cash_on_start: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

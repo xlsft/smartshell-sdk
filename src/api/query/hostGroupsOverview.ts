@@ -67,6 +67,8 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                     "is_private",
                     "premium",
                     "unverified",
+                    "lead_source",
+                    "favorite_club",
                 ]),
                 "from",
                 "to",
@@ -111,6 +113,8 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                     "is_private",
                     "premium",
                     "unverified",
+                    "lead_source",
+                    "favorite_club",
                 ]),
                 "login",
                 "nickname",
@@ -136,6 +140,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                     "data",
                     "request_contact",
                     "request_contact_info",
+                    "is_important",
                 ]),
                 "user_discount",
                 "created_at",
@@ -154,6 +159,9 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                 "is_private",
                 "premium",
                 "unverified",
+                "lead_source",
+                key("discounts", ["value"]),
+                "favorite_club",
             ]),
             key("client_sessions", [
                 "id",
@@ -168,6 +176,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             ]),
             "comment",
             "admin_called_at",
+            "online_booking_enabled",
         ]),
     ])
 }

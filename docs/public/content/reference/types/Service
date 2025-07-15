@@ -9,13 +9,13 @@
 <pre><code lang="ts">title: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">cost: number</code></pre>
+<pre><code lang="ts">cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="wholesale_cost">wholesale_cost</h3>
-<pre><code lang="ts">wholesale_cost: number</code></pre>
+<pre><code lang="ts">wholesale_cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="tax_percent">tax_percent</h3>
-<pre><code lang="ts">tax_percent?: number</code></pre>
+<pre><code lang="ts">tax_percent?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="use_global_discounts">use_global_discounts</h3>
 <pre><code lang="ts">use_global_discounts: boolean</code></pre>

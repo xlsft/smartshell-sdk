@@ -1,0 +1,293 @@
+<h1 id="api_mutation_deleteNetworkCompany">mutation deleteNetworkCompany</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/NetworkCompany','NetworkCompany'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "NetworkCompany"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "deleteNetworkCompany",
+    "schema": [
+        {
+            "type": "object",
+            "key": "club",
+            "value": [
+                "LiteCompany"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "address",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "network",
+            "value": [
+                "Network"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "ID"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "description",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "organization",
+                    "value": [
+                        "Organization"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "address",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "hosts_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "network",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "ID"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "description",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "verified_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "activated_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "banned_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "updated_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "deleted_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "news_consent",
+                            "value": [
+                                "boolean"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "companies",
+                    "value": [
+                        "NetworkCompaniesData"
+                    ],
+                    "child": [
+                        {
+                            "type": "object",
+                            "key": "data",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "is_main",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "max_discount_enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "deposit_transfer_enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "total",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "is_main",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "max_discount_enabled",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "deposit_transfer_enabled",
+            "value": [
+                "boolean"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "NetworkCompany"
+        ],
+        "type": "object"
+    }
+}</code></pre>

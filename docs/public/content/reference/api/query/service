@@ -36,21 +36,21 @@
             "type": "scalar",
             "key": "cost",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "wholesale_cost",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "tax_percent",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {

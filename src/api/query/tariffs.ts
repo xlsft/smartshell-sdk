@@ -55,6 +55,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                             "device_updated_at",
                             "locked",
                             "admin_called_at",
+                            "online_booking_enabled",
                         ]),
                         key("customization", ["color", "background", "screensaver"]),
                     ]),

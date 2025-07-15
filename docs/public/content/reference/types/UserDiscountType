@@ -1,0 +1,5 @@
+<h1 id="enum_userdiscounttype">enum UserDiscountType</h1>
+<br />
+<h2 id="possible_values">Possible values</h2>
+
+<pre><code lang="ts">"PERSONAL" | "GROUP" | "NETWORK"</code></pre>

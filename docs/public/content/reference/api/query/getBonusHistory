@@ -30,21 +30,21 @@
                     "type": "scalar",
                     "key": "delta",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "old_value",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "new_value",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {

@@ -34,6 +34,13 @@
         },
         {
             "type": "scalar",
+            "key": "group_title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "type_id",
             "value": [
                 "number"
@@ -69,21 +76,7 @@
         },
         {
             "type": "scalar",
-            "key": "is_occupied",
-            "value": [
-                "boolean"
-            ]
-        },
-        {
-            "type": "scalar",
-            "key": "is_booked",
-            "value": [
-                "boolean"
-            ]
-        },
-        {
-            "type": "scalar",
-            "key": "in_service",
+            "key": "can_book",
             "value": [
                 "boolean"
             ]
@@ -130,6 +123,13 @@
                         "string"
                     ]
                 }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "is_current_users_session",
+            "value": [
+                "boolean"
             ]
         }
     ],

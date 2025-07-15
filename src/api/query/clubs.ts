@@ -9,6 +9,33 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
     return await ctx.request("query", "clubs", [
         "id",
         "name",
+        key("network_company", [
+            key("club", ["id", "name", "address"]),
+            key("network", [
+                "id",
+                "name",
+                "description",
+                key("organization", [
+                    "id",
+                    "title",
+                    "phone",
+                    "email",
+                    "address",
+                    "hosts_count",
+                    "verified_at",
+                    "activated_at",
+                    "banned_at",
+                    "created_at",
+                    "updated_at",
+                    "deleted_at",
+                    "news_consent",
+                ]),
+                key("companies", ["total"]),
+            ]),
+            "is_main",
+            "max_discount_enabled",
+            "deposit_transfer_enabled",
+        ]),
         "pc_count",
         "console_count",
         "contact_name",
@@ -142,7 +169,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "accept_qr",
             "accept_sbp",
         ]),
-        "deposit_transfer_enabled",
+        "it_adviser_support",
     ])
 }
 

@@ -41,9 +41,6 @@
 <h3 id="vat">vat</h3>
 <pre><code lang="ts">vat?: ||--['/docs/reference/types/Vat','Vat']--||</code></pre>
 
-<h3 id="ean">ean</h3>
-<pre><code lang="ts">ean?: string</code></pre>
-
 <h3 id="eans">eans</h3>
 <pre><code lang="ts">eans: string[]</code></pre>
 
@@ -64,3 +61,6 @@
 
 <h3 id="category_id">category_id</h3>
 <pre><code lang="ts">category_id?: number</code></pre>
+
+<h3 id="highlighted">highlighted</h3>
+<pre><code lang="ts">highlighted?: boolean</code></pre>

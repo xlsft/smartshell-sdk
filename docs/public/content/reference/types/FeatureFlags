@@ -16,3 +16,9 @@
 
 <h3 id="used_trial">used_trial</h3>
 <pre><code lang="ts">used_trial: boolean</code></pre>
+
+<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
+<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>
+
+<h3 id="it_adviser_support">it_adviser_support</h3>
+<pre><code lang="ts">it_adviser_support: boolean</code></pre>

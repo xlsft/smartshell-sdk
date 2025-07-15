@@ -88,6 +88,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     key("device_changes", ["alias", "old", "new"]),
                     "locked",
                     "admin_called_at",
+                    "online_booking_enabled",
                 ]),
                 key("customization", ["color", "background", "screensaver"]),
             ]),

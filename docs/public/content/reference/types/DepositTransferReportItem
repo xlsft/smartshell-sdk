@@ -1,0 +1,9 @@
+<h1 id="type_deposittransferreportitem">type DepositTransferReportItem</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="transfer">transfer</h3>
+<pre><code lang="ts">transfer: ||--['/docs/reference/types/DepositTransferHistoryItem','DepositTransferHistoryItem']--||</code></pre>
+
+<h3 id="user">user</h3>
+<pre><code lang="ts">user: ||--['/docs/reference/types/User','User']--||</code></pre>

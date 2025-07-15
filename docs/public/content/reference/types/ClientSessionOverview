@@ -24,7 +24,7 @@
 <pre><code lang="ts">postpaid: boolean</code></pre>
 
 <h3 id="total_cost">total_cost</h3>
-<pre><code lang="ts">total_cost: number</code></pre>
+<pre><code lang="ts">total_cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="seances">seances</h3>
 <pre><code lang="ts">seances: ||--['/docs/reference/types/SeanceOverview','SeanceOverview']--||[]</code></pre>

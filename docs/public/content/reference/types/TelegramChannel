@@ -1,0 +1,12 @@
+<h1 id="type_telegramchannel">type TelegramChannel</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id: string</code></pre>
+
+<h3 id="type">type</h3>
+<pre><code lang="ts">type: ||--['/docs/reference/types/TelegramChannelType','TelegramChannelType']--||</code></pre>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title: string</code></pre>

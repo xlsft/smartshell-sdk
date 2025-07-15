@@ -64,7 +64,7 @@
                     "type": "scalar",
                     "key": "deposit",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -113,60 +113,9 @@
                 },
                 {
                     "type": "scalar",
-                    "key": "accept_payments",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
                     "key": "accept_sbp",
                     "value": [
                         "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "booking_enabled",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "object",
-                    "key": "booking_settings",
-                    "value": [
-                        "BookingSettings"
-                    ],
-                    "child": [
-                        {
-                            "type": "scalar",
-                            "key": "self_cancellation_enabled",
-                            "value": [
-                                "boolean"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "cancellation_penalty",
-                            "value": [
-                                "number"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "cancellation_free_headroom",
-                            "value": [
-                                "number"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "online_booking_discount",
-                            "value": [
-                                "number"
-                            ]
-                        }
                     ]
                 },
                 {
@@ -257,7 +206,7 @@
                                     "type": "scalar",
                                     "key": "progress",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -299,7 +248,7 @@
                                     "type": "scalar",
                                     "key": "progress",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -799,7 +748,7 @@
                             "type": "scalar",
                             "key": "amount",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -813,7 +762,7 @@
                             "type": "scalar",
                             "key": "value",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         }
                     ]
@@ -822,7 +771,86 @@
                     "type": "scalar",
                     "key": "user_bonus",
                     "value": [
-                        "number"
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "club_settings",
+                    "value": [
+                        "ClientClubSettings"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "accept_payments",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "booking_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "booking_settings",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "self_cancellation_enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cancellation_penalty",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cancellation_free_headroom",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "online_booking_discount",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "online_booking_discount",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "OnlinePaymentMinLimit",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "deposit_transfer_enabled",
+                    "value": [
+                        "boolean"
                     ]
                 }
             ]
@@ -846,6 +874,13 @@
                     "key": "group_id",
                     "value": [
                         "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "group_title",
+                    "value": [
+                        "string"
                     ]
                 },
                 {
@@ -885,21 +920,7 @@
                 },
                 {
                     "type": "scalar",
-                    "key": "is_occupied",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "is_booked",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "in_service",
+                    "key": "can_book",
                     "value": [
                         "boolean"
                     ]
@@ -946,6 +967,13 @@
                                 "string"
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "is_current_users_session",
+                    "value": [
+                        "boolean"
                     ]
                 }
             ]

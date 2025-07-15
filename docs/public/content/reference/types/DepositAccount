@@ -6,7 +6,7 @@
 <pre><code lang="ts">club: ||--['/docs/reference/types/LiteCompany','LiteCompany']--||</code></pre>
 
 <h3 id="balance">balance</h3>
-<pre><code lang="ts">balance: number</code></pre>
+<pre><code lang="ts">balance: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="current">current</h3>
 <pre><code lang="ts">current: boolean</code></pre>

@@ -1,7 +1,7 @@
 <h1 id="api_query_searchClubs">query searchClubs</h1>
-
+<code>Paginated</code>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { q?: string, city?: string, accept_payments?: boolean, booking_enabled?: boolean }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, q?: string, city?: string, accept_payments?: boolean, booking_enabled?: boolean }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ClientClub','ClientClub'--||[]</code></pre>
 <h3>Codegen method map</h3>
@@ -11,11 +11,12 @@
             "ClientClub"
         ],
         "sdk": [
-            "ShellSdkContext"
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
         ]
     },
     "type": "query",
-    "paginated": false,
+    "paginated": true,
     "name": "searchClubs",
     "schema": [
         {
@@ -50,7 +51,7 @@
             "type": "scalar",
             "key": "deposit",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
@@ -99,60 +100,9 @@
         },
         {
             "type": "scalar",
-            "key": "accept_payments",
-            "value": [
-                "boolean"
-            ]
-        },
-        {
-            "type": "scalar",
             "key": "accept_sbp",
             "value": [
                 "boolean"
-            ]
-        },
-        {
-            "type": "scalar",
-            "key": "booking_enabled",
-            "value": [
-                "boolean"
-            ]
-        },
-        {
-            "type": "object",
-            "key": "booking_settings",
-            "value": [
-                "BookingSettings"
-            ],
-            "child": [
-                {
-                    "type": "scalar",
-                    "key": "self_cancellation_enabled",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "cancellation_penalty",
-                    "value": [
-                        "number"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "cancellation_free_headroom",
-                    "value": [
-                        "number"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "online_booking_discount",
-                    "value": [
-                        "number"
-                    ]
-                }
             ]
         },
         {
@@ -244,7 +194,9 @@
                         {
                             "type": "object",
                             "key": "conditions",
-                            "value": [],
+                            "value": [
+                                "Condition"
+                            ],
                             "child": [
                                 {
                                     "type": "scalar",
@@ -257,7 +209,7 @@
                                     "type": "scalar",
                                     "key": "value",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -265,7 +217,9 @@
                         {
                             "type": "object",
                             "key": "rewards",
-                            "value": [],
+                            "value": [
+                                "Reward"
+                            ],
                             "child": [
                                 {
                                     "type": "scalar",
@@ -278,7 +232,7 @@
                                     "type": "scalar",
                                     "key": "value",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -287,7 +241,7 @@
                             "type": "scalar",
                             "key": "progress",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         }
                     ]
@@ -330,7 +284,9 @@
                         {
                             "type": "object",
                             "key": "conditions",
-                            "value": [],
+                            "value": [
+                                "Condition"
+                            ],
                             "child": [
                                 {
                                     "type": "scalar",
@@ -343,7 +299,7 @@
                                     "type": "scalar",
                                     "key": "value",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -351,7 +307,9 @@
                         {
                             "type": "object",
                             "key": "rewards",
-                            "value": [],
+                            "value": [
+                                "Reward"
+                            ],
                             "child": [
                                 {
                                     "type": "scalar",
@@ -364,7 +322,7 @@
                                     "type": "scalar",
                                     "key": "value",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -373,7 +331,7 @@
                             "type": "scalar",
                             "key": "progress",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         }
                     ]
@@ -873,7 +831,7 @@
                     "type": "scalar",
                     "key": "amount",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -887,7 +845,7 @@
                     "type": "scalar",
                     "key": "value",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 }
             ]
@@ -896,11 +854,99 @@
             "type": "scalar",
             "key": "user_bonus",
             "value": [
-                "number"
+                "Decimal"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "club_settings",
+            "value": [
+                "ClientClubSettings"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "accept_payments",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "booking_enabled",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "booking_settings",
+                    "value": [
+                        "BookingSettings"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "self_cancellation_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cancellation_penalty",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cancellation_free_headroom",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "online_booking_discount",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "online_booking_discount",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "OnlinePaymentMinLimit",
+                    "value": [
+                        "number"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "deposit_transfer_enabled",
+            "value": [
+                "boolean"
             ]
         }
     ],
     "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
+        },
         {
             "key": "q",
             "required": false,

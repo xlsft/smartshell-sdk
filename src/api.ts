@@ -1022,7 +1022,7 @@ import type { Shell } from "../mod.ts";
             * 
             * `@xlsoftware/smartshell-sdk`
             */
-        searchClubs: async (input: Parameters<typeof q.searchClubs>[1],) => await q.searchClubs(ctx, input,),
+        searchClubs: async (input: Parameters<typeof q.searchClubs>[1],paginator?: ShellSdkPaginatorInput) => await q.searchClubs(ctx, input, paginator),
         /**
             * # query `service`
             * 
@@ -1255,6 +1255,102 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
+        /**
+            * # query `clubsOnMap`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clubsOnMap
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clubsOnMap: async (input: Parameters<typeof q.clubsOnMap>[1],) => await q.clubsOnMap(ctx, input,),
+        /**
+            * # query `exportSales`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/exportSales
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        exportSales: async (input: Parameters<typeof q.exportSales>[1],) => await q.exportSales(ctx, input,),
+        /**
+            * # query `clientHost`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clientHost
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clientHost: async (input: Parameters<typeof q.clientHost>[1],) => await q.clientHost(ctx, input,),
+        /**
+            * # query `hostTokenByPIN`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostTokenByPIN
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostTokenByPIN: async (input: Parameters<typeof q.hostTokenByPIN>[1],) => await q.hostTokenByPIN(ctx, input,),
+        /**
+            * # query `network`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/network
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        network: async () => await q.network(ctx),
+        /**
+            * # query `licensePayment`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/licensePayment
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        licensePayment: async (input: Parameters<typeof q.licensePayment>[1],) => await q.licensePayment(ctx, input,),
+        /**
+            * # query `depositTransferReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/depositTransferReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        depositTransferReport: async (input: Parameters<typeof q.depositTransferReport>[1],paginator?: ShellSdkPaginatorInput) => await q.depositTransferReport(ctx, input, paginator),
+        /**
+            * # query `depositTransferSummaryReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/depositTransferSummaryReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        depositTransferSummaryReport: async (input: Parameters<typeof q.depositTransferSummaryReport>[1],) => await q.depositTransferSummaryReport(ctx, input,),
+        /**
+            * # query `overviewReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/overviewReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        overviewReport: async (input: Parameters<typeof q.overviewReport>[1],) => await q.overviewReport(ctx, input,),
+        /**
+            * # query `topSoldOverviewItemsReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/topSoldOverviewItemsReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        topSoldOverviewItemsReport: async (input: Parameters<typeof q.topSoldOverviewItemsReport>[1],) => await q.topSoldOverviewItemsReport(ctx, input,),
+        /**
+            * # query `clubLoadByDayOfWeekReport`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/clubLoadByDayOfWeekReport
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        clubLoadByDayOfWeekReport: async (input: Parameters<typeof q.clubLoadByDayOfWeekReport>[1],) => await q.clubLoadByDayOfWeekReport(ctx, input,),
+        /**
+            * # query `getTelegramChannels`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getTelegramChannels
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        getTelegramChannels: async (input: Parameters<typeof q.getTelegramChannels>[1],) => await q.getTelegramChannels(ctx, input,),
 
         // mutation
 
@@ -2810,5 +2906,77 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         verifyUser: async (input: Parameters<typeof m.verifyUser>[1],) => await m.verifyUser(ctx, input,),
+        /**
+            * # mutation `updateComment`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateComment
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateComment: async (input: Parameters<typeof m.updateComment>[1],) => await m.updateComment(ctx, input,),
+        /**
+            * # mutation `createHostPIN`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createHostPIN
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        createHostPIN: async (input: Parameters<typeof m.createHostPIN>[1],) => await m.createHostPIN(ctx, input,),
+        /**
+            * # mutation `createNetwork`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createNetwork
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        createNetwork: async (input: Parameters<typeof m.createNetwork>[1],) => await m.createNetwork(ctx, input,),
+        /**
+            * # mutation `updateNetwork`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateNetwork
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateNetwork: async (input: Parameters<typeof m.updateNetwork>[1],) => await m.updateNetwork(ctx, input,),
+        /**
+            * # mutation `addCompaniesToNetwork`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/addCompaniesToNetwork
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        addCompaniesToNetwork: async (input: Parameters<typeof m.addCompaniesToNetwork>[1],) => await m.addCompaniesToNetwork(ctx, input,),
+        /**
+            * # mutation `updateNetworkCompany`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateNetworkCompany
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateNetworkCompany: async (input: Parameters<typeof m.updateNetworkCompany>[1],) => await m.updateNetworkCompany(ctx, input,),
+        /**
+            * # mutation `deleteNetworkCompany`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteNetworkCompany
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        deleteNetworkCompany: async (input: Parameters<typeof m.deleteNetworkCompany>[1],) => await m.deleteNetworkCompany(ctx, input,),
+        /**
+            * # mutation `updateTelegramSettings`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateTelegramSettings
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateTelegramSettings: async (input: Parameters<typeof m.updateTelegramSettings>[1],) => await m.updateTelegramSettings(ctx, input,),
+        /**
+            * # mutation `purchaseTariffByQR`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/purchaseTariffByQR
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        purchaseTariffByQR: async (input: Parameters<typeof m.purchaseTariffByQR>[1],) => await m.purchaseTariffByQR(ctx, input,),
     }
     }

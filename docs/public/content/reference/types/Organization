@@ -20,6 +20,9 @@
 <h3 id="hosts_count">hosts_count</h3>
 <pre><code lang="ts">hosts_count: number</code></pre>
 
+<h3 id="network">network</h3>
+<pre><code lang="ts">network?: ||--['/docs/reference/types/Network','Network']--||</code></pre>
+
 <h3 id="verified_at">verified_at</h3>
 <pre><code lang="ts">verified_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
@@ -37,3 +40,6 @@
 
 <h3 id="deleted_at">deleted_at</h3>
 <pre><code lang="ts">deleted_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="news_consent">news_consent</h3>
+<pre><code lang="ts">news_consent?: boolean</code></pre>

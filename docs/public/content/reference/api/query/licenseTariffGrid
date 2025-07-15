@@ -50,7 +50,7 @@
                     "type": "scalar",
                     "key": "cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -104,7 +104,7 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -166,7 +166,7 @@
                     "type": "scalar",
                     "key": "cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {

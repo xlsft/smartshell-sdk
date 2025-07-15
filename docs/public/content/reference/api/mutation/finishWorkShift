@@ -284,14 +284,14 @@
                             "type": "scalar",
                             "key": "deposit",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "bonus",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -374,6 +374,13 @@
                                     "key": "request_contact_info",
                                     "value": [
                                         "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "is_important",
+                                    "value": [
+                                        "boolean"
                                     ]
                                 }
                             ]
@@ -566,6 +573,41 @@
                             "value": [
                                 "boolean"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "lead_source",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "discounts",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "enum",
+                                    "key": "type",
+                                    "value": [
+                                        "UserDiscountType"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "value",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "favorite_club",
+                            "value": [
+                                "number"
+                            ]
                         }
                     ]
                 },
@@ -729,14 +771,14 @@
                     "type": "scalar",
                     "key": "deposit",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "bonus",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -881,14 +923,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -1009,6 +1051,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -1045,6 +1101,13 @@
                             "key": "request_contact_info",
                             "value": [
                                 "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "is_important",
+                            "value": [
+                                "boolean"
                             ]
                         }
                     ]
@@ -1423,6 +1486,43 @@
                     "value": [
                         "boolean"
                     ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "lead_source",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "discounts",
+                    "value": [
+                        "UserDiscount"
+                    ],
+                    "child": [
+                        {
+                            "type": "enum",
+                            "key": "type",
+                            "value": [
+                                "UserDiscountType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "favorite_club",
+                    "value": [
+                        "number"
+                    ]
                 }
             ]
         },
@@ -1488,35 +1588,35 @@
                             "type": "scalar",
                             "key": "cash",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "card",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "deposit",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "bonus",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "total",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -1560,7 +1660,7 @@
                     "type": "scalar",
                     "key": "cash_on_start",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 }
             ]
@@ -1735,14 +1835,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -1862,6 +1962,20 @@
                                     "key": "unverified",
                                     "value": [
                                         "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]
@@ -1989,14 +2103,14 @@
                             "type": "scalar",
                             "key": "deposit",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "bonus",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -2079,6 +2193,13 @@
                                     "key": "request_contact_info",
                                     "value": [
                                         "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "is_important",
+                                    "value": [
+                                        "boolean"
                                     ]
                                 }
                             ]
@@ -2271,6 +2392,41 @@
                             "value": [
                                 "boolean"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "lead_source",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "discounts",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "enum",
+                                    "key": "type",
+                                    "value": [
+                                        "UserDiscountType"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "value",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "favorite_club",
+                            "value": [
+                                "number"
+                            ]
                         }
                     ]
                 },
@@ -2381,14 +2537,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -2509,6 +2665,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -2584,14 +2754,14 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -2619,14 +2789,14 @@
                                     "type": "scalar",
                                     "key": "card_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "cash_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -2640,7 +2810,7 @@
                                     "type": "scalar",
                                     "key": "cashback",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -2880,14 +3050,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3008,6 +3178,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -3062,7 +3246,7 @@
                                     "type": "scalar",
                                     "key": "cash_on_start",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -3097,14 +3281,14 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3132,14 +3316,14 @@
                                     "type": "scalar",
                                     "key": "card_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "cash_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3153,7 +3337,7 @@
                                     "type": "scalar",
                                     "key": "cashback",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -3181,7 +3365,7 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3309,14 +3493,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3436,6 +3620,20 @@
                                     "key": "unverified",
                                     "value": [
                                         "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]
@@ -3533,14 +3731,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3661,6 +3859,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -3675,7 +3887,7 @@
                             "type": "scalar",
                             "key": "value",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -3822,14 +4034,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -3949,6 +4161,20 @@
                                     "key": "unverified",
                                     "value": [
                                         "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]
@@ -4046,14 +4272,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -4174,6 +4400,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -4239,14 +4479,14 @@
                     "type": "scalar",
                     "key": "sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "bonus",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -4325,14 +4565,14 @@
                     "type": "scalar",
                     "key": "card_sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
                     "type": "scalar",
                     "key": "cash_sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -4346,7 +4586,7 @@
                     "type": "scalar",
                     "key": "cashback",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -4502,14 +4742,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -4630,6 +4870,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -4684,7 +4938,7 @@
                                     "type": "scalar",
                                     "key": "cash_on_start",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -4719,14 +4973,14 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -4754,14 +5008,14 @@
                                     "type": "scalar",
                                     "key": "card_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "cash_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -4775,7 +5029,7 @@
                                     "type": "scalar",
                                     "key": "cashback",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -4803,7 +5057,7 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -4835,7 +5089,7 @@
                     "type": "scalar",
                     "key": "sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {

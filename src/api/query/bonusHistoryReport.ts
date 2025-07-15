@@ -15,6 +15,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
         "bonusHistoryReport",
         [
             key("report", [
+                "title",
                 "labels",
                 "extraLabels",
                 "extraLabels2",
@@ -23,7 +24,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "points",
                 key("data", ["values"]),
                 "url",
-                key("summary", ["title", "value"]),
+                key("summary", ["title", "value", "extraValue", "extraString"]),
             ]),
             "hasNext",
         ],

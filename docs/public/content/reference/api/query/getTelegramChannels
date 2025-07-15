@@ -1,0 +1,61 @@
+<h1 id="api_query_getTelegramChannels">query getTelegramChannels</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { token: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/TelegramChannel','TelegramChannel'--||[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "TelegramChannel"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "getTelegramChannels",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "type",
+            "value": [
+                "TelegramChannelType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "token",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "TelegramChannel"
+        ],
+        "type": "object"
+    }
+}</code></pre>

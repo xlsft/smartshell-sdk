@@ -6,4 +6,4 @@
 <pre><code lang="ts">module_id: number</code></pre>
 
 <h3 id="price">price</h3>
-<pre><code lang="ts">price: number</code></pre>
+<pre><code lang="ts">price: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

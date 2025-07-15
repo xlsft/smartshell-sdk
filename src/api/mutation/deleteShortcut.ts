@@ -54,6 +54,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                         "device_updated_at",
                         "locked",
                         "admin_called_at",
+                        "online_booking_enabled",
                     ]),
                     "active",
                     "busy",

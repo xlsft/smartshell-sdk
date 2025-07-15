@@ -1,0 +1,39 @@
+<h1 id="api_query_exportSales">query exportSales</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/SalesExportInput','SalesExportInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "SalesExportInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "exportSales",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "SalesExportInput",
+            "type": "object",
+            "docs": "/docs/reference/types/SalesExportInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

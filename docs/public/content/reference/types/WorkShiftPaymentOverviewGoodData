@@ -8,7 +8,7 @@
 <pre><code lang="ts">title: string</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">cost: number</code></pre>
+<pre><code lang="ts">cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="amount">amount</h3>
 <pre><code lang="ts">amount: number</code></pre>
@@ -17,4 +17,4 @@
 <pre><code lang="ts">in_stock: number</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">sum: number</code></pre>
+<pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

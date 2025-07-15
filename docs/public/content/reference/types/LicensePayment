@@ -8,6 +8,9 @@
 <h3 id="url">url</h3>
 <pre><code lang="ts">url: string</code></pre>
 
+<h3 id="qr">qr</h3>
+<pre><code lang="ts">qr?: string</code></pre>
+
 <h3 id="license_payment_method">license_payment_method</h3>
 <pre><code lang="ts">license_payment_method: ||--['/docs/reference/types/LicensePaymentMethod','LicensePaymentMethod']--||</code></pre>
 

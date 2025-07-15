@@ -1,14 +1,21 @@
 // deno-lint-ignore-file no-unused-vars ban-unused-ignore no-explicit-any
-import type { ShellSdkContext } from "../../types/sdk.ts"
+import type { ShellSdkContext, ShellSdkPaginatorInput } from "../../types/sdk.ts"
 import type { ClientClub } from "../../types/types.ts"
 import { key } from "../../utils/key.ts"
 
-export type InputType = { q?: string; city?: string; accept_payments?: boolean; booking_enabled?: boolean }
+export type InputType = {
+    paginator?: ShellSdkPaginatorInput
+    q?: string
+    city?: string
+    accept_payments?: boolean
+    booking_enabled?: boolean
+}
 export type ResponseType = ClientClub[]
 
-const module = async <Input extends InputType, Response extends ResponseType>(
+const module = async <Input extends InputType["input"], Response extends ResponseType>(
     ctx: ShellSdkContext,
     props: Input,
+    paginator?: ShellSdkPaginatorInput,
 ): Promise<Response> => {
     return await ctx.request(
         "query",
@@ -23,15 +30,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "hours",
             key("visits", ["visited_at", "client_session_id"]),
             "last_visited_at",
-            "accept_payments",
             "accept_sbp",
-            "booking_enabled",
-            key("booking_settings", [
-                "self_cancellation_enabled",
-                "cancellation_penalty",
-                "cancellation_free_headroom",
-                "online_booking_discount",
-            ]),
             key("currency", ["id", "title", "alias", "letter"]),
             "rules",
             key("achievements", [
@@ -122,9 +121,23 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "available_host_count",
             key("cashback", ["amount", "is_percent", "value"]),
             "user_bonus",
+            key("club_settings", [
+                "accept_payments",
+                "booking_enabled",
+                key("booking_settings", [
+                    "self_cancellation_enabled",
+                    "cancellation_penalty",
+                    "cancellation_free_headroom",
+                    "online_booking_discount",
+                ]),
+                "online_booking_discount",
+                "OnlinePaymentMinLimit",
+            ]),
+            "deposit_transfer_enabled",
         ],
-        { ...(props as any) },
+        { input: props },
+        paginator || { page: 1 },
     )
 }
 
-export default module<InputType, ResponseType>
+export default module<InputType["input"], ResponseType>

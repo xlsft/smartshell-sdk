@@ -34,3 +34,6 @@
 
 <h3 id="request_contact_info">request_contact_info</h3>
 <pre><code lang="ts">request_contact_info?: string</code></pre>
+
+<h3 id="is_important">is_important</h3>
+<pre><code lang="ts">is_important?: boolean</code></pre>

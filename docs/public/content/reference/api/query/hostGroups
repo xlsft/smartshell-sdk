@@ -251,6 +251,13 @@
                                     "value": [
                                         "string"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "online_booking_enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
                                 }
                             ]
                         },
@@ -423,14 +430,14 @@
                             "type": "scalar",
                             "key": "cpu_temp",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
                             "type": "scalar",
                             "key": "disk_temp",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -598,14 +605,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -725,6 +732,20 @@
                                     "key": "unverified",
                                     "value": [
                                         "boolean"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]
@@ -852,14 +873,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -980,6 +1001,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -1055,14 +1090,14 @@
                                     "type": "scalar",
                                     "key": "sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -1090,14 +1125,14 @@
                                     "type": "scalar",
                                     "key": "card_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "cash_sum",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -1111,7 +1146,7 @@
                                     "type": "scalar",
                                     "key": "cashback",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -1372,14 +1407,14 @@
                                     "type": "scalar",
                                     "key": "deposit",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "bonus",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -1500,6 +1535,20 @@
                                     "value": [
                                         "boolean"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "lead_source",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "favorite_club",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -1610,6 +1659,13 @@
                     "key": "admin_called_at",
                     "value": [
                         "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "online_booking_enabled",
+                    "value": [
+                        "boolean"
                     ]
                 }
             ]

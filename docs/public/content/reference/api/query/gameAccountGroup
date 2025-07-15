@@ -456,14 +456,14 @@
                                     "type": "scalar",
                                     "key": "cpu_temp",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
                                     "type": "scalar",
                                     "key": "disk_temp",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -754,6 +754,13 @@
                             "value": [
                                 "string"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "online_booking_enabled",
+                            "value": [
+                                "boolean"
+                            ]
                         }
                     ]
                 },
@@ -914,6 +921,13 @@
                                     "key": "admin_called_at",
                                     "value": [
                                         "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "online_booking_enabled",
+                                    "value": [
+                                        "boolean"
                                     ]
                                 }
                             ]

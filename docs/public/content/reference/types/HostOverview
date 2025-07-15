@@ -67,3 +67,6 @@
 
 <h3 id="admin_called_at">admin_called_at</h3>
 <pre><code lang="ts">admin_called_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="online_booking_enabled">online_booking_enabled</h3>
+<pre><code lang="ts">online_booking_enabled: boolean</code></pre>

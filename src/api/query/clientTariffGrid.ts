@@ -18,6 +18,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "title",
             "duration",
             "cost",
+            "mobile_cost",
             "has_fixed_finish_time",
             key("currency", ["id", "title", "alias", "letter"]),
             "highlighted",

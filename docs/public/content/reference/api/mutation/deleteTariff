@@ -327,6 +327,13 @@
                                     "value": [
                                         "string"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "online_booking_enabled",
+                                    "value": [
+                                        "boolean"
+                                    ]
                                 }
                             ]
                         },

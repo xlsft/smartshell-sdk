@@ -12,13 +12,13 @@
 <pre><code lang="ts">middle_name?: string</code></pre>
 
 <h3 id="nickname">nickname</h3>
-<pre><code lang="ts">nickname: string</code></pre>
+<pre><code lang="ts">nickname?: string</code></pre>
 
 <h3 id="email">email</h3>
-<pre><code lang="ts">email: ||--['/docs/reference/types/Email','Email']--||</code></pre>
+<pre><code lang="ts">email?: ||--['/docs/reference/types/Email','Email']--||</code></pre>
 
 <h3 id="dob">dob</h3>
-<pre><code lang="ts">dob: ||--['/docs/reference/types/Date','Date']--||</code></pre>
+<pre><code lang="ts">dob?: ||--['/docs/reference/types/Date','Date']--||</code></pre>
 
 <h3 id="city">city</h3>
 <pre><code lang="ts">city?: string</code></pre>
@@ -40,3 +40,6 @@
 
 <h3 id="is_private">is_private</h3>
 <pre><code lang="ts">is_private?: boolean</code></pre>
+
+<h3 id="favorite_club">favorite_club</h3>
+<pre><code lang="ts">favorite_club?: number</code></pre>

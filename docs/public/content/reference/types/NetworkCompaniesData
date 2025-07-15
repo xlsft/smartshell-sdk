@@ -1,0 +1,9 @@
+<h1 id="type_networkcompaniesdata">type NetworkCompaniesData</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="data">data</h3>
+<pre><code lang="ts">data: ||--['/docs/reference/types/NetworkCompany','NetworkCompany']--||[]</code></pre>
+
+<h3 id="total">total</h3>
+<pre><code lang="ts">total: number</code></pre>

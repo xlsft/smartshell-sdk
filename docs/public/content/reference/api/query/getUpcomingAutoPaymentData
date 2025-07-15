@@ -68,7 +68,7 @@
             "type": "scalar",
             "key": "amount",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {

@@ -6,7 +6,7 @@
 <pre><code lang="ts">card: ||--['/docs/reference/types/OrganizationPaymentCard','OrganizationPaymentCard']--||</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">amount: number</code></pre>
+<pre><code lang="ts">amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="payment_date">payment_date</h3>
 <pre><code lang="ts">payment_date: ||--['/docs/reference/types/Date','Date']--||</code></pre>

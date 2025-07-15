@@ -1,0 +1,37 @@
+<h1 id="api_mutation_createHostPIN">mutation createHostPIN</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { hostId: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createHostPIN",
+    "schema": [],
+    "props": [
+        {
+            "key": "hostId",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

@@ -15,7 +15,7 @@
 <pre><code lang="ts">city: string</code></pre>
 
 <h3 id="deposit">deposit</h3>
-<pre><code lang="ts">deposit: number</code></pre>
+<pre><code lang="ts">deposit: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="discount">discount</h3>
 <pre><code lang="ts">discount: number</code></pre>
@@ -29,17 +29,8 @@
 <h3 id="last_visited_at">last_visited_at</h3>
 <pre><code lang="ts">last_visited_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
 
-<h3 id="accept_payments">accept_payments</h3>
-<pre><code lang="ts">accept_payments: boolean</code></pre>
-
 <h3 id="accept_sbp">accept_sbp</h3>
 <pre><code lang="ts">accept_sbp: boolean</code></pre>
-
-<h3 id="booking_enabled">booking_enabled</h3>
-<pre><code lang="ts">booking_enabled: boolean</code></pre>
-
-<h3 id="booking_settings">booking_settings</h3>
-<pre><code lang="ts">booking_settings?: ||--['/docs/reference/types/BookingSettings','BookingSettings']--||</code></pre>
 
 <h3 id="currency">currency</h3>
 <pre><code lang="ts">currency: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>
@@ -120,4 +111,10 @@
 <pre><code lang="ts">cashback: ||--['/docs/reference/types/ClientClubCashback','ClientClubCashback']--||[]</code></pre>
 
 <h3 id="user_bonus">user_bonus</h3>
-<pre><code lang="ts">user_bonus: number</code></pre>
+<pre><code lang="ts">user_bonus: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="club_settings">club_settings</h3>
+<pre><code lang="ts">club_settings: ||--['/docs/reference/types/ClientClubSettings','ClientClubSettings']--||</code></pre>
+
+<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
+<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>

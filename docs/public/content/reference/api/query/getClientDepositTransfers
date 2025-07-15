@@ -69,7 +69,7 @@
                     "type": "scalar",
                     "key": "sum",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {

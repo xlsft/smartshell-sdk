@@ -3,16 +3,16 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="group_id">group_id</h3>
-<pre><code lang="ts">group_id: number</code></pre>
+<pre><code lang="ts">group_id?: number</code></pre>
 
 <h3 id="type_id">type_id</h3>
-<pre><code lang="ts">type_id: number</code></pre>
+<pre><code lang="ts">type_id?: number</code></pre>
 
 <h3 id="position">position</h3>
 <pre><code lang="ts">position?: number</code></pre>
 
 <h3 id="alias">alias</h3>
-<pre><code lang="ts">alias: string</code></pre>
+<pre><code lang="ts">alias?: string</code></pre>
 
 <h3 id="comment">comment</h3>
 <pre><code lang="ts">comment?: string</code></pre>
@@ -31,3 +31,6 @@
 
 <h3 id="coord_y">coord_y</h3>
 <pre><code lang="ts">coord_y?: number</code></pre>
+
+<h3 id="online_booking_enabled">online_booking_enabled</h3>
+<pre><code lang="ts">online_booking_enabled?: boolean</code></pre>

@@ -23,21 +23,21 @@
             "type": "scalar",
             "key": "sum",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "total_sum",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
             "type": "scalar",
             "key": "host_price",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
@@ -58,7 +58,7 @@
                     "type": "scalar",
                     "key": "price",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 }
             ]
@@ -95,7 +95,7 @@
             "type": "scalar",
             "key": "debt",
             "value": [
-                "number"
+                "Decimal"
             ]
         }
     ],

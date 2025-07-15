@@ -48,10 +48,10 @@
 <pre><code lang="ts">middle_name?: string</code></pre>
 
 <h3 id="deposit">deposit</h3>
-<pre><code lang="ts">deposit: number</code></pre>
+<pre><code lang="ts">deposit: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">bonus: number</code></pre>
+<pre><code lang="ts">bonus: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="last_client_activity">last_client_activity</h3>
 <pre><code lang="ts">last_client_activity?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
@@ -112,3 +112,12 @@
 
 <h3 id="unverified">unverified</h3>
 <pre><code lang="ts">unverified: boolean</code></pre>
+
+<h3 id="lead_source">lead_source</h3>
+<pre><code lang="ts">lead_source?: string</code></pre>
+
+<h3 id="discounts">discounts</h3>
+<pre><code lang="ts">discounts: ||--['/docs/reference/types/UserDiscount','UserDiscount']--||[]</code></pre>
+
+<h3 id="favorite_club">favorite_club</h3>
+<pre><code lang="ts">favorite_club?: number</code></pre>

@@ -1,0 +1,150 @@
+<h1 id="api_query_overviewReport">query overviewReport</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/ReportInput','ReportInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/OverviewReport','OverviewReport'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "OverviewReport",
+            "ReportInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "overviewReport",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "UnifiedReport"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "labels",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "extraLabels",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "extraLabels2",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "extraLabels3",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "keys",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "points",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "url",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "summary",
+                    "value": [
+                        "UnifiedSummaryData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "extraValue",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "extraString",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ReportInput",
+            "type": "object",
+            "docs": "/docs/reference/types/ReportInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "OverviewReport"
+        ],
+        "type": "object"
+    }
+}</code></pre>

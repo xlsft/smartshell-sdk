@@ -3,7 +3,7 @@
 <h2 id="type_properties">Type properties</h2>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">cost: number</code></pre>
+<pre><code lang="ts">cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="currency">currency</h3>
 <pre><code lang="ts">currency: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>

@@ -11,28 +11,28 @@
 <pre><code lang="ts">worker: ||--['/docs/reference/types/User','User']--||</code></pre>
 
 <h3 id="cash_on_start">cash_on_start</h3>
-<pre><code lang="ts">cash_on_start: number</code></pre>
+<pre><code lang="ts">cash_on_start: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="total">total</h3>
-<pre><code lang="ts">total: number</code></pre>
+<pre><code lang="ts">total: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="deposit">deposit</h3>
-<pre><code lang="ts">deposit: number</code></pre>
+<pre><code lang="ts">deposit: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="online_deposit">online_deposit</h3>
-<pre><code lang="ts">online_deposit: number</code></pre>
+<pre><code lang="ts">online_deposit: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">bonus: number</code></pre>
+<pre><code lang="ts">bonus: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="refunded">refunded</h3>
-<pre><code lang="ts">refunded: number</code></pre>
+<pre><code lang="ts">refunded: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="cash">cash</h3>
-<pre><code lang="ts">cash: number</code></pre>
+<pre><code lang="ts">cash: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="card">card</h3>
-<pre><code lang="ts">card: number</code></pre>
+<pre><code lang="ts">card: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="cash_orders">cash_orders</h3>
 <pre><code lang="ts">cash_orders: ||--['/docs/reference/types/CashOrder','CashOrder']--||[]</code></pre>

@@ -34,6 +34,208 @@
             ]
         },
         {
+            "type": "object",
+            "key": "network_company",
+            "value": [
+                "NetworkCompany"
+            ],
+            "child": [
+                {
+                    "type": "object",
+                    "key": "club",
+                    "value": [
+                        "LiteCompany"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "address",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "network",
+                    "value": [
+                        "Network"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "ID"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "description",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "organization",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "title",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "email",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "address",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "hosts_count",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "verified_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "activated_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "banned_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "created_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "updated_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "deleted_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "news_consent",
+                                    "value": [
+                                        "boolean"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "companies",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "total",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "is_main",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "max_discount_enabled",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "deposit_transfer_enabled",
+                    "value": [
+                        "boolean"
+                    ]
+                }
+            ]
+        },
+        {
             "type": "scalar",
             "key": "pc_count",
             "value": [
@@ -231,7 +433,7 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -266,7 +468,7 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -303,7 +505,7 @@
                             "type": "scalar",
                             "key": "cost",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -459,7 +661,7 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 }
                             ]
@@ -494,7 +696,7 @@
                                     "type": "scalar",
                                     "key": "cost",
                                     "value": [
-                                        "number"
+                                        "Decimal"
                                     ]
                                 },
                                 {
@@ -531,7 +733,7 @@
                             "type": "scalar",
                             "key": "cost",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -668,7 +870,7 @@
                             "type": "scalar",
                             "key": "cost",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -733,7 +935,7 @@
                             "type": "scalar",
                             "key": "cost",
                             "value": [
-                                "number"
+                                "Decimal"
                             ]
                         },
                         {
@@ -770,7 +972,7 @@
                     "type": "scalar",
                     "key": "cost",
                     "value": [
-                        "number"
+                        "Decimal"
                     ]
                 },
                 {
@@ -930,7 +1132,7 @@
             "type": "scalar",
             "key": "debt",
             "value": [
-                "number"
+                "Decimal"
             ]
         },
         {
@@ -1389,7 +1591,7 @@
         },
         {
             "type": "scalar",
-            "key": "deposit_transfer_enabled",
+            "key": "it_adviser_support",
             "value": [
                 "boolean"
             ]

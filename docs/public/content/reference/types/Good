@@ -18,13 +18,13 @@
 <pre><code lang="ts">amount: number</code></pre>
 
 <h3 id="cost">cost</h3>
-<pre><code lang="ts">cost: number</code></pre>
+<pre><code lang="ts">cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="wholesale_cost">wholesale_cost</h3>
-<pre><code lang="ts">wholesale_cost: number</code></pre>
+<pre><code lang="ts">wholesale_cost: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="tax_percent">tax_percent</h3>
-<pre><code lang="ts">tax_percent: number</code></pre>
+<pre><code lang="ts">tax_percent: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="unit_name">unit_name</h3>
 <pre><code lang="ts">unit_name: string</code></pre>
@@ -40,9 +40,6 @@
 
 <h3 id="vat">vat</h3>
 <pre><code lang="ts">vat?: ||--['/docs/reference/types/Vat','Vat']--||</code></pre>
-
-<h3 id="ean">ean</h3>
-<pre><code lang="ts">ean?: string</code></pre>
 
 <h3 id="eans">eans</h3>
 <pre><code lang="ts">eans: string[]</code></pre>
@@ -73,3 +70,6 @@
 
 <h3 id="low_stock_notification">low_stock_notification</h3>
 <pre><code lang="ts">low_stock_notification?: ||--['/docs/reference/types/LowStockNotification','LowStockNotification']--||</code></pre>
+
+<h3 id="highlighted">highlighted</h3>
+<pre><code lang="ts">highlighted: boolean</code></pre>

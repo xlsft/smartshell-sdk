@@ -154,6 +154,18 @@ import workShifts from './query/workShifts.ts'
 import workShiftsReport from './query/workShiftsReport.ts'
 import workShiftsSummaryReport from './query/workShiftsSummaryReport.ts'
 import workers from './query/workers.ts'
+import clubsOnMap from './query/clubsOnMap.ts'
+import exportSales from './query/exportSales.ts'
+import clientHost from './query/clientHost.ts'
+import hostTokenByPIN from './query/hostTokenByPIN.ts'
+import network from './query/network.ts'
+import licensePayment from './query/licensePayment.ts'
+import depositTransferReport from './query/depositTransferReport.ts'
+import depositTransferSummaryReport from './query/depositTransferSummaryReport.ts'
+import overviewReport from './query/overviewReport.ts'
+import topSoldOverviewItemsReport from './query/topSoldOverviewItemsReport.ts'
+import clubLoadByDayOfWeekReport from './query/clubLoadByDayOfWeekReport.ts'
+import getTelegramChannels from './query/getTelegramChannels.ts'
 
 
 export const query = {
@@ -313,6 +325,18 @@ export const query = {
     workShiftsReport,
     workShiftsSummaryReport,
     workers,
+    clubsOnMap,
+    exportSales,
+    clientHost,
+    hostTokenByPIN,
+    network,
+    licensePayment,
+    depositTransferReport,
+    depositTransferSummaryReport,
+    overviewReport,
+    topSoldOverviewItemsReport,
+    clubLoadByDayOfWeekReport,
+    getTelegramChannels,
 }
 
 
@@ -510,6 +534,15 @@ import validateQR from './mutation/validateQR.ts'
 import verifyClient from './mutation/verifyClient.ts'
 import verifyMe from './mutation/verifyMe.ts'
 import verifyUser from './mutation/verifyUser.ts'
+import updateComment from './mutation/updateComment.ts'
+import createHostPIN from './mutation/createHostPIN.ts'
+import createNetwork from './mutation/createNetwork.ts'
+import updateNetwork from './mutation/updateNetwork.ts'
+import addCompaniesToNetwork from './mutation/addCompaniesToNetwork.ts'
+import updateNetworkCompany from './mutation/updateNetworkCompany.ts'
+import deleteNetworkCompany from './mutation/deleteNetworkCompany.ts'
+import updateTelegramSettings from './mutation/updateTelegramSettings.ts'
+import purchaseTariffByQR from './mutation/purchaseTariffByQR.ts'
 
 
 export const mutation = {
@@ -707,5 +740,14 @@ export const mutation = {
     verifyClient,
     verifyMe,
     verifyUser,
+    updateComment,
+    createHostPIN,
+    createNetwork,
+    updateNetwork,
+    addCompaniesToNetwork,
+    updateNetworkCompany,
+    deleteNetworkCompany,
+    updateTelegramSettings,
+    purchaseTariffByQR,
 }
 

@@ -16,12 +16,14 @@ const module = async <Input extends InputType, Response extends ResponseType>(
         [
             "id",
             "url",
+            "qr",
             key("additional", [
                 "public_id",
                 "org_id",
                 "amount",
                 "description",
                 key("currency", ["id", "title", "alias", "letter"]),
+                "data",
             ]),
         ],
         { ...(props as any) },

@@ -1,0 +1,5 @@
+<h1 id="enum_telegramchanneltype">enum TelegramChannelType</h1>
+<br />
+<h2 id="possible_values">Possible values</h2>
+
+<pre><code lang="ts">"SUPERGROUP" | "GROUP" | "CHANNEL" | "PRIVATE"</code></pre>

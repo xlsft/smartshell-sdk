@@ -12,10 +12,10 @@
 <pre><code lang="ts">service: ||--['/docs/reference/types/ServiceEnum','ServiceEnum']--||</code></pre>
 
 <h3 id="amount">amount</h3>
-<pre><code lang="ts">amount: number</code></pre>
+<pre><code lang="ts">amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">sum: number</code></pre>
+<pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="client">client</h3>
 <pre><code lang="ts">client: ||--['/docs/reference/types/User','User']--||</code></pre>

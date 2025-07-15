@@ -27,10 +27,10 @@
 <pre><code lang="ts">status: ||--['/docs/reference/types/PaymentStatus','PaymentStatus']--||</code></pre>
 
 <h3 id="sum">sum</h3>
-<pre><code lang="ts">sum: number</code></pre>
+<pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="bonus">bonus</h3>
-<pre><code lang="ts">bonus: number</code></pre>
+<pre><code lang="ts">bonus: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="created_at">created_at</h3>
 <pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
@@ -45,16 +45,16 @@
 <pre><code lang="ts">not_refundable: boolean</code></pre>
 
 <h3 id="card_sum">card_sum</h3>
-<pre><code lang="ts">card_sum: number</code></pre>
+<pre><code lang="ts">card_sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="cash_sum">cash_sum</h3>
-<pre><code lang="ts">cash_sum: number</code></pre>
+<pre><code lang="ts">cash_sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="comment">comment</h3>
 <pre><code lang="ts">comment?: string</code></pre>
 
 <h3 id="cashback">cashback</h3>
-<pre><code lang="ts">cashback: number</code></pre>
+<pre><code lang="ts">cashback: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="external_data">external_data</h3>
 <pre><code lang="ts">external_data?: ||--['/docs/reference/types/ExternalPaymentData','ExternalPaymentData']--||</code></pre>

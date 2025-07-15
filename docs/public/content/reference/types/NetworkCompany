@@ -1,0 +1,18 @@
+<h1 id="type_networkcompany">type NetworkCompany</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="club">club</h3>
+<pre><code lang="ts">club: ||--['/docs/reference/types/LiteCompany','LiteCompany']--||</code></pre>
+
+<h3 id="network">network</h3>
+<pre><code lang="ts">network: ||--['/docs/reference/types/Network','Network']--||</code></pre>
+
+<h3 id="is_main">is_main</h3>
+<pre><code lang="ts">is_main: boolean</code></pre>
+
+<h3 id="max_discount_enabled">max_discount_enabled</h3>
+<pre><code lang="ts">max_discount_enabled: boolean</code></pre>
+
+<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
+<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>

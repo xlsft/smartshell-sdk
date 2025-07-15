@@ -15,7 +15,7 @@
 <pre><code lang="ts">code: string</code></pre>
 
 <h3 id="value">value</h3>
-<pre><code lang="ts">value: number</code></pre>
+<pre><code lang="ts">value: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="amount">amount</h3>
 <pre><code lang="ts">amount?: number</code></pre>
