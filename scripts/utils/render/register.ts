@@ -112,7 +112,7 @@ export const register = async () => {
                 
                 module_register.push(`        /**
             * # ${type} \`${module.name}\`
-            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/${type}/${module.name}
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/${type}/${module.name}
             * \`@xlsft/smartshell-sdk\`
             */`)
                 module_register.push(`        ${module.name}: async (${module.types.InputType ? `input: Parameters<typeof ${type.split('')[0]}.${module.name}>[1],` : ``}${module.paginator === true ? 'paginator?: ShellSdkPaginatorInput' : ''}) => await ${type.split('')[0]}.${module.name}(ctx${module.types.InputType ? ', input,' : ''}${module.paginator === true ? ' paginator' : ''}),`)

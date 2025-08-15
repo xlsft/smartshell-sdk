@@ -19,7 +19,7 @@ export type DateTime = `${Date} ${Time}`
 /**
 * # type `AccessToken`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AccessToken
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AccessToken
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -34,7 +34,7 @@ export type AccessToken = {
 /**
 * # type `AccessTokenMetadata`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AccessTokenMetadata
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AccessTokenMetadata
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -45,7 +45,7 @@ export type AccessTokenMetadata = {
 /**
 * # type `Achievement`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Achievement
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Achievement
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -63,7 +63,7 @@ export type Achievement = {
 /**
 * # type `AchievementInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AchievementInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AchievementInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -78,7 +78,7 @@ export type AchievementInput = {
 /**
 * # enum `AchievementStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AchievementStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AchievementStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -87,7 +87,7 @@ export type AchievementStatus = "ACTIVE" | "DISABLED"
 /**
 * # type `ActiveClient`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ActiveClient
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ActiveClient
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -103,7 +103,7 @@ export type ActiveClient = {
 /**
 * # type `AdditionalLicensePaymentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AdditionalLicensePaymentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AdditionalLicensePaymentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -117,7 +117,7 @@ export type AdditionalLicensePaymentInput = {
 /**
 * # type `AdditionalLicensePriceInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AdditionalLicensePriceInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AdditionalLicensePriceInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -132,7 +132,7 @@ export type AdditionalLicensePriceInput = {
 /**
 * # type `AdditionalPaymentData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AdditionalPaymentData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AdditionalPaymentData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -148,7 +148,7 @@ export type AdditionalPaymentData = {
 /**
 * # type `AdditionalTransactionData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AdditionalTransactionData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AdditionalTransactionData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -160,7 +160,7 @@ export type AdditionalTransactionData = {
 /**
 * # type `AgeRating`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AgeRating
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AgeRating
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -172,7 +172,7 @@ export type AgeRating = {
 /**
 * # enum `AppGroupType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AppGroupType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AppGroupType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -181,7 +181,7 @@ export type AppGroupType = "APPLICATION" | "GAME" | "DEFAULT"
 /**
 * # enum `AppType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/AppType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/AppType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -190,7 +190,7 @@ export type AppType = "APPLICATION" | "GAME"
 /**
 * # type `ApplicationsReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ApplicationsReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ApplicationsReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -205,7 +205,7 @@ export type ApplicationsReportInput = {
 /**
 * # enum `ApplicationsReportType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ApplicationsReportType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ApplicationsReportType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -214,7 +214,7 @@ export type ApplicationsReportType = "APPLICATION" | "WINDOW" | "CLICK"
 /**
 * # type `Article`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Article
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Article
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -230,7 +230,7 @@ export type Article = {
 /**
 * # type `ArticleLink`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ArticleLink
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ArticleLink
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -242,7 +242,7 @@ export type ArticleLink = {
 /**
 * # type `ArticleLinkInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ArticleLinkInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ArticleLinkInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -254,7 +254,7 @@ export type ArticleLinkInput = {
 /**
 * # type `BankAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BankAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BankAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -271,7 +271,7 @@ export type BankAccountInput = {
 /**
 * # type `Beneficiary`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Beneficiary
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Beneficiary
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -297,7 +297,7 @@ export type Beneficiary = {
 /**
 * # type `BeneficiaryBalance`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BeneficiaryBalance
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BeneficiaryBalance
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -312,7 +312,7 @@ export type BeneficiaryBalance = {
 /**
 * # type `BeneficiaryDeal`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BeneficiaryDeal
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BeneficiaryDeal
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -328,7 +328,7 @@ export type BeneficiaryDeal = {
 /**
 * # enum `BeneficiaryType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BeneficiaryType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BeneficiaryType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -337,7 +337,7 @@ export type BeneficiaryType = "UL_RESIDENT" | "IP_RESIDENT"
 /**
 * # type `BonusHistory`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BonusHistory
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BonusHistory
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -349,7 +349,7 @@ export type BonusHistory = {
 /**
 * # type `BonusHistoryItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BonusHistoryItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BonusHistoryItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -368,7 +368,7 @@ export type BonusHistoryItem = {
 /**
 * # type `BonusHistoryReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BonusHistoryReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BonusHistoryReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -383,7 +383,7 @@ export type BonusHistoryReportInput = {
 /**
 * # type `BonusReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BonusReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BonusReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -396,7 +396,7 @@ export type BonusReport = {
 /**
 * # enum `BonusReportOrderByType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BonusReportOrderByType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BonusReportOrderByType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -405,7 +405,7 @@ export type BonusReportOrderByType = "MANAGED"
 /**
 * # type `Booking`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Booking
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Booking
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -425,7 +425,7 @@ export type Booking = {
 /**
 * # enum `BookingClientStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BookingClientStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BookingClientStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -434,7 +434,7 @@ export type BookingClientStatus = "ACTIVE" | "INACTIVE"
 /**
 * # type `BookingInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BookingInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BookingInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -450,7 +450,7 @@ export type BookingInput = {
 /**
 * # type `BookingPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BookingPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BookingPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -462,7 +462,7 @@ export type BookingPaginated = {
 /**
 * # type `BookingSettings`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BookingSettings
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BookingSettings
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -476,7 +476,7 @@ export type BookingSettings = {
 /**
 * # enum `BookingStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BookingStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BookingStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -485,7 +485,7 @@ export type BookingStatus = "ACTIVE" | "FINISHED" | "CANCELED" | "REDEEMED" | "R
 /**
 * # type `BoughtTariffsReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/BoughtTariffsReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/BoughtTariffsReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -497,7 +497,7 @@ export type BoughtTariffsReport = {
 /**
 * # enum `CartEntity`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CartEntity
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CartEntity
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -506,7 +506,7 @@ export type CartEntity = "GOOD" | "SERVICE" | "TARIFF"
 /**
 * # type `CashOrder`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CashOrder
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CashOrder
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -522,7 +522,7 @@ export type CashOrder = {
 /**
 * # type `CashOrderData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CashOrderData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CashOrderData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -534,7 +534,7 @@ export type CashOrderData = {
 /**
 * # type `CashOrderInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CashOrderInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CashOrderInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -547,7 +547,7 @@ export type CashOrderInput = {
 /**
 * # enum `CashOrderType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CashOrderType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CashOrderType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -556,7 +556,7 @@ export type CashOrderType = "PKO" | "RKO"
 /**
 * # type `CategoriesInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoriesInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CategoriesInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -567,7 +567,7 @@ export type CategoriesInput = {
 /**
 * # type `Category`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Category
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Category
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -583,7 +583,7 @@ export type Category = {
 /**
 * # type `CategoryInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoryInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CategoryInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -596,7 +596,7 @@ export type CategoryInput = {
 /**
 * # type `CategoryPeriod`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoryPeriod
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CategoryPeriod
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -608,7 +608,7 @@ export type CategoryPeriod = {
 /**
 * # type `CategoryPeriodInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoryPeriodInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CategoryPeriodInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -620,7 +620,7 @@ export type CategoryPeriodInput = {
 /**
 * # type `ChangeClientSessionHostInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ChangeClientSessionHostInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ChangeClientSessionHostInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -631,7 +631,7 @@ export type ChangeClientSessionHostInput = {
 /**
 * # type `ChangeGoodsQuantityInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ChangeGoodsQuantityInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ChangeGoodsQuantityInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -645,7 +645,7 @@ export type ChangeGoodsQuantityInput = {
 /**
 * # type `ChangeGoodsQuantityItemInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ChangeGoodsQuantityItemInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ChangeGoodsQuantityItemInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -657,7 +657,7 @@ export type ChangeGoodsQuantityItemInput = {
 /**
 * # type `ChangeUsersGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ChangeUsersGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ChangeUsersGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -669,7 +669,7 @@ export type ChangeUsersGroupInput = {
 /**
 * # type `ClientBooking`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientBooking
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientBooking
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -688,7 +688,7 @@ export type ClientBooking = {
 /**
 * # type `ClientBookingInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientBookingInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientBookingInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -703,7 +703,7 @@ export type ClientBookingInput = {
 /**
 * # type `ClientBookingPenaltyData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientBookingPenaltyData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientBookingPenaltyData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -715,7 +715,7 @@ export type ClientBookingPenaltyData = {
 /**
 * # type `ClientClub`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClub
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClub
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -766,7 +766,7 @@ export type ClientClub = {
 /**
 * # type `ClientClubCashback`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubCashback
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubCashback
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -779,7 +779,7 @@ export type ClientClubCashback = {
 /**
 * # type `ClientClubCommentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubCommentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubCommentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -795,7 +795,7 @@ export type ClientClubCommentInput = {
 /**
 * # type `ClientClubGood`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubGood
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubGood
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -811,7 +811,7 @@ export type ClientClubGood = {
 /**
 * # type `ClientClubGoodCategory`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubGoodCategory
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubGoodCategory
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -823,7 +823,7 @@ export type ClientClubGoodCategory = {
 /**
 * # type `ClientClubOnMap`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubOnMap
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubOnMap
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -839,7 +839,7 @@ export type ClientClubOnMap = {
 /**
 * # type `ClientClubSettings`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubSettings
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubSettings
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -858,7 +858,7 @@ export type ClientClubSettings = {
 /**
 * # type `ClientClubVisit`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubVisit
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientClubVisit
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -870,7 +870,7 @@ export type ClientClubVisit = {
 /**
 * # type `ClientHost`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientHost
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientHost
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -891,7 +891,7 @@ export type ClientHost = {
 /**
 * # type `ClientHostGroup`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientHostGroup
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientHostGroup
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -904,7 +904,7 @@ export type ClientHostGroup = {
 /**
 * # type `ClientLoginInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientLoginInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientLoginInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -916,7 +916,7 @@ export type ClientLoginInput = {
 /**
 * # type `ClientRegisterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientRegisterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientRegisterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -940,7 +940,7 @@ export type ClientRegisterInput = {
 /**
 * # type `ClientSession`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSession
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSession
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -965,7 +965,7 @@ export type ClientSession = {
 /**
 * # type `ClientSessionHost`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSessionHost
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSessionHost
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -979,7 +979,7 @@ export type ClientSessionHost = {
 /**
 * # type `ClientSessionOverview`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSessionOverview
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSessionOverview
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -998,7 +998,7 @@ export type ClientSessionOverview = {
 /**
 * # type `ClientSessionPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSessionPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSessionPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1010,7 +1010,7 @@ export type ClientSessionPaginated = {
 /**
 * # type `ClientSessionReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSessionReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSessionReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1024,7 +1024,7 @@ export type ClientSessionReportInput = {
 /**
 * # enum `ClientSessionType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientSessionType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientSessionType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1033,7 +1033,7 @@ export type ClientSessionType = "PLANED" | "ACTIVE" | "FINISHED" | "CANCELLED"
 /**
 * # type `ClientTariffGridInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientTariffGridInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientTariffGridInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1047,7 +1047,7 @@ export type ClientTariffGridInput = {
 /**
 * # type `ClientTariffGridItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientTariffGridItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientTariffGridItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1066,7 +1066,7 @@ export type ClientTariffGridItem = {
 /**
 * # type `ClientsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1079,7 +1079,7 @@ export type ClientsInput = {
 /**
 * # type `ClientsPaymentReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientsPaymentReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientsPaymentReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1093,7 +1093,7 @@ export type ClientsPaymentReportInput = {
 /**
 * # type `ClientsPaymentReportItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientsPaymentReportItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientsPaymentReportItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1109,7 +1109,7 @@ export type ClientsPaymentReportItem = {
 /**
 * # type `ClientsPaymentReportPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientsPaymentReportPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClientsPaymentReportPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1121,7 +1121,7 @@ export type ClientsPaymentReportPaginated = {
 /**
 * # type `CloudPaymentsAccount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CloudPaymentsAccount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CloudPaymentsAccount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1133,7 +1133,7 @@ export type CloudPaymentsAccount = {
 /**
 * # enum `CloudPaymentsAccountAction`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CloudPaymentsAccountAction
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CloudPaymentsAccountAction
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1142,7 +1142,7 @@ export type CloudPaymentsAccountAction = "SET" | "REMOVE"
 /**
 * # type `Club`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Club
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Club
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1201,7 +1201,7 @@ export type Club = {
 /**
 * # type `ClubComment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubComment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubComment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1225,7 +1225,7 @@ export type ClubComment = {
 /**
 * # type `ClubCommentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubCommentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubCommentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1240,7 +1240,7 @@ export type ClubCommentInput = {
 /**
 * # type `ClubCommentPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubCommentPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubCommentPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1253,7 +1253,7 @@ export type ClubCommentPaginated = {
 /**
 * # type `ClubCommentSearchInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubCommentSearchInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubCommentSearchInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1265,7 +1265,7 @@ export type ClubCommentSearchInput = {
 /**
 * # enum `ClubCommentSearchSort`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubCommentSearchSort
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubCommentSearchSort
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1274,7 +1274,7 @@ export type ClubCommentSearchSort = "NEW_FIRST" | "OLD_FIRST" | "HIGH_GRADE_FIRS
 /**
 * # type `ClubCommentSummary`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubCommentSummary
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubCommentSummary
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1291,7 +1291,7 @@ export type ClubCommentSummary = {
 /**
 * # type `ClubHardware`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubHardware
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubHardware
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1319,7 +1319,7 @@ export type ClubHardware = {
 /**
 * # type `ClubHardwareInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubHardwareInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubHardwareInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1347,7 +1347,7 @@ export type ClubHardwareInput = {
 /**
 * # type `ClubInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1383,7 +1383,7 @@ export type ClubInput = {
 /**
 * # type `ClubOption`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubOption
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubOption
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1395,7 +1395,7 @@ export type ClubOption = {
 /**
 * # type `ClubServices`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubServices
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubServices
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1430,7 +1430,7 @@ export type ClubServices = {
 /**
 * # type `ClubServicesInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubServicesInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubServicesInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1465,7 +1465,7 @@ export type ClubServicesInput = {
 /**
 * # enum `ClubVerificationStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubVerificationStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubVerificationStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1474,7 +1474,7 @@ export type ClubVerificationStatus = "UNVERIFIED" | "REVIEW" | "VERIFIED" | "DEC
 /**
 * # type `ClubWorkSchedule`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubWorkSchedule
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubWorkSchedule
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1487,7 +1487,7 @@ export type ClubWorkSchedule = {
 /**
 * # type `ClubWorkScheduleInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClubWorkScheduleInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ClubWorkScheduleInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1500,7 +1500,7 @@ export type ClubWorkScheduleInput = {
 /**
 * # type `Combo`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Combo
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Combo
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1520,7 +1520,7 @@ export type Combo = {
 /**
 * # type `ComboInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1535,7 +1535,7 @@ export type ComboInput = {
 /**
 * # type `ComboItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1551,7 +1551,7 @@ export type ComboItem = {
 /**
 * # enum `ComboItemEntity`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboItemEntity
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboItemEntity
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1560,7 +1560,7 @@ export type ComboItemEntity = Record<string, Service | Good>
 /**
 * # enum `ComboItemEntityType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboItemEntityType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboItemEntityType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1569,7 +1569,7 @@ export type ComboItemEntityType = "GOOD" | "SERVICE"
 /**
 * # type `ComboItemInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboItemInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboItemInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1583,7 +1583,7 @@ export type ComboItemInput = {
 /**
 * # type `ComboListInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboListInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboListInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1596,7 +1596,7 @@ export type ComboListInput = {
 /**
 * # type `ComboListItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboListItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboListItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1614,7 +1614,7 @@ export type ComboListItem = {
 /**
 * # type `ComboPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ComboPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ComboPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1626,7 +1626,7 @@ export type ComboPaginated = {
 /**
 * # type `Comment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Comment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Comment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1648,7 +1648,7 @@ export type Comment = {
 /**
 * # enum `CommentEntity`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentEntity
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentEntity
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1657,7 +1657,7 @@ export type CommentEntity = Record<string, User | Host | ClientSession>
 /**
 * # type `CommentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1672,7 +1672,7 @@ export type CommentInput = {
 /**
 * # type `CommentPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1684,7 +1684,7 @@ export type CommentPaginated = {
 /**
 * # type `CommentSearchInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentSearchInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentSearchInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1696,7 +1696,7 @@ export type CommentSearchInput = {
 /**
 * # enum `CommentType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1705,7 +1705,7 @@ export type CommentType = "CLIENT" | "HOST" | "CLIENT_SESSION"
 /**
 * # type `CommentUpdateInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentUpdateInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CommentUpdateInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1716,7 +1716,7 @@ export type CommentUpdateInput = {
 /**
 * # type `CompanyNewsArticle`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsArticle
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyNewsArticle
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1737,7 +1737,7 @@ export type CompanyNewsArticle = {
 /**
 * # type `CompanyNewsList`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsList
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyNewsList
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1749,7 +1749,7 @@ export type CompanyNewsList = {
 /**
 * # type `CompanyNewsListInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyNewsListInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1761,7 +1761,7 @@ export type CompanyNewsListInput = {
 /**
 * # type `CompanyNewsListSort`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListSort
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyNewsListSort
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1773,7 +1773,7 @@ export type CompanyNewsListSort = {
 /**
 * # enum `CompanyNewsListSortField`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListSortField
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyNewsListSortField
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1782,7 +1782,7 @@ export type CompanyNewsListSortField = "TITLE" | "LABEL" | "URL" | "ACTIVE_FROM"
 /**
 * # type `CompanyPermissionInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyPermissionInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyPermissionInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1793,7 +1793,7 @@ export type CompanyPermissionInput = {
 /**
 * # type `CompanyPermissions`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyPermissions
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyPermissions
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1807,7 +1807,7 @@ export type CompanyPermissions = {
 /**
 * # type `CompanyPermissionsData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyPermissionsData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyPermissionsData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1818,7 +1818,7 @@ export type CompanyPermissionsData = {
 /**
 * # type `CompanyPermissionsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyPermissionsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CompanyPermissionsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1830,7 +1830,7 @@ export type CompanyPermissionsInput = {
 /**
 * # type `Condition`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Condition
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Condition
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1842,7 +1842,7 @@ export type Condition = {
 /**
 * # type `ConditionRequest`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ConditionRequest
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ConditionRequest
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1854,7 +1854,7 @@ export type ConditionRequest = {
 /**
 * # enum `ConfirmationCodeType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ConfirmationCodeType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ConfirmationCodeType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1863,7 +1863,7 @@ export type ConfirmationCodeType = "REGISTER" | "RESET_PASSWORD"
 /**
 * # type `ConfirmationResult`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ConfirmationResult
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ConfirmationResult
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1876,7 +1876,7 @@ export type ConfirmationResult = {
 /**
 * # type `ConnectPaymentServiceInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ConnectPaymentServiceInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ConnectPaymentServiceInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1892,7 +1892,7 @@ export type ConnectPaymentServiceInput = {
 /**
 * # type `Contractor`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Contractor
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Contractor
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1909,7 +1909,7 @@ export type Contractor = {
 /**
 * # type `ContractorInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ContractorInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ContractorInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1925,7 +1925,7 @@ export type ContractorInput = {
 /**
 * # type `CreateCommandInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateCommandInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateCommandInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1938,7 +1938,7 @@ export type CreateCommandInput = {
 /**
 * # type `CreateCommandsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateCommandsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateCommandsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1951,7 +1951,7 @@ export type CreateCommandsInput = {
 /**
 * # type `CreateGameAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateGameAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateGameAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1966,7 +1966,7 @@ export type CreateGameAccountInput = {
 /**
 * # type `CreateHostCommandTemplateInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateHostCommandTemplateInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateHostCommandTemplateInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1979,7 +1979,7 @@ export type CreateHostCommandTemplateInput = {
 /**
 * # type `CreateNetworkInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateNetworkInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateNetworkInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -1994,7 +1994,7 @@ export type CreateNetworkInput = {
 /**
 * # type `CreateNewsArticleInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateNewsArticleInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateNewsArticleInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2010,7 +2010,7 @@ export type CreateNewsArticleInput = {
 /**
 * # type `CreateWorkerInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateWorkerInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CreateWorkerInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2025,7 +2025,7 @@ export type CreateWorkerInput = {
 /**
 * # type `Currency`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Currency
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Currency
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2039,7 +2039,7 @@ export type Currency = {
 /**
 * # type `CurrentTariff`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CurrentTariff
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/CurrentTariff
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2059,7 +2059,7 @@ export type CurrentTariff = {
 /**
 * # enum `DateReportEnum`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DateReportEnum
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DateReportEnum
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2068,7 +2068,7 @@ export type DateReportEnum = "TODAY" | "WEEK" | "MONTH" | "YEAR"
 /**
 * # type `DeleteUserGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DeleteUserGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DeleteUserGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2079,7 +2079,7 @@ export type DeleteUserGroupInput = {
 /**
 * # type `DepositAccount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositAccount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositAccount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2093,7 +2093,7 @@ export type DepositAccount = {
 /**
 * # type `DepositCashback`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositCashback
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositCashback
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2111,7 +2111,7 @@ export type DepositCashback = {
 /**
 * # type `DepositCashbackInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositCashbackInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositCashbackInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2127,7 +2127,7 @@ export type DepositCashbackInput = {
 /**
 * # type `DepositTransferHistory`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferHistory
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferHistory
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2139,7 +2139,7 @@ export type DepositTransferHistory = {
 /**
 * # type `DepositTransferHistoryItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferHistoryItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferHistoryItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2153,7 +2153,7 @@ export type DepositTransferHistoryItem = {
 /**
 * # enum `DepositTransferOperationType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferOperationType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferOperationType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2162,7 +2162,7 @@ export type DepositTransferOperationType = "DEPOSIT" | "WITHDRAWAL"
 /**
 * # type `DepositTransferReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2175,7 +2175,7 @@ export type DepositTransferReport = {
 /**
 * # type `DepositTransferReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2190,7 +2190,7 @@ export type DepositTransferReportInput = {
 /**
 * # type `DepositTransferReportItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReportItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferReportItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2202,7 +2202,7 @@ export type DepositTransferReportItem = {
 /**
 * # enum `DepositTransferType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DepositTransferType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2211,7 +2211,7 @@ export type DepositTransferType = "DEPOSIT" | "WITHDRAW"
 /**
 * # type `DetailedWorkShiftMoneyData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DetailedWorkShiftMoneyData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DetailedWorkShiftMoneyData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2234,7 +2234,7 @@ export type DetailedWorkShiftMoneyData = {
 /**
 * # type `Discount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Discount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Discount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2253,7 +2253,7 @@ export type Discount = {
 /**
 * # type `DiscountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DiscountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DiscountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2269,7 +2269,7 @@ export type DiscountInput = {
 /**
 * # type `DiscountPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DiscountPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DiscountPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2281,7 +2281,7 @@ export type DiscountPaginated = {
 /**
 * # enum `DistributionType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DistributionType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/DistributionType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2290,7 +2290,7 @@ export type DistributionType = "LOCAL" | "CLOUD"
 /**
 * # type `EanEntity`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EanEntity
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EanEntity
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2302,7 +2302,7 @@ export type EanEntity = {
 /**
 * # enum `EanEntityType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EanEntityType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EanEntityType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2311,7 +2311,7 @@ export type EanEntityType = "GOOD" | "SERVICE" | "TARIFF" | "HOST" | "USER"
 /**
 * # type `EmailExistsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EmailExistsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EmailExistsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2322,7 +2322,7 @@ export type EmailExistsInput = {
 /**
 * # type `EmailRegisterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EmailRegisterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EmailRegisterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2341,7 +2341,7 @@ export type EmailRegisterInput = {
 /**
 * # type `Event`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Event
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Event
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2359,7 +2359,7 @@ export type Event = {
 /**
 * # type `EventListItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2421,7 +2421,7 @@ export type EventListItem = {
 /**
 * # type `EventListItemAliasValues`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemAliasValues
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemAliasValues
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2434,7 +2434,7 @@ export type EventListItemAliasValues = {
 /**
 * # type `EventListItemBooking`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemBooking
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemBooking
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2448,7 +2448,7 @@ export type EventListItemBooking = {
 /**
 * # type `EventListItemCashOrder`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemCashOrder
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemCashOrder
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2463,7 +2463,7 @@ export type EventListItemCashOrder = {
 /**
 * # type `EventListItemClientSession`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemClientSession
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemClientSession
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2480,7 +2480,7 @@ export type EventListItemClientSession = {
 /**
 * # type `EventListItemCombo`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemCombo
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemCombo
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2496,7 +2496,7 @@ export type EventListItemCombo = {
 /**
 * # type `EventListItemComboItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemComboItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemComboItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2512,7 +2512,7 @@ export type EventListItemComboItem = {
 /**
 * # type `EventListItemIdTime`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemIdTime
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemIdTime
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2524,7 +2524,7 @@ export type EventListItemIdTime = {
 /**
 * # type `EventListItemIdTitle`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemIdTitle
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemIdTitle
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2536,7 +2536,7 @@ export type EventListItemIdTitle = {
 /**
 * # type `EventListItemIdTitleValueF`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemIdTitleValueF
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemIdTitleValueF
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2549,7 +2549,7 @@ export type EventListItemIdTitleValueF = {
 /**
 * # type `EventListItemIdTitleValueI`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemIdTitleValueI
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemIdTitleValueI
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2562,7 +2562,7 @@ export type EventListItemIdTitleValueI = {
 /**
 * # type `EventListItemIdValueF`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemIdValueF
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemIdValueF
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2574,7 +2574,7 @@ export type EventListItemIdValueF = {
 /**
 * # type `EventListItemNews`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemNews
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemNews
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2593,7 +2593,7 @@ export type EventListItemNews = {
 /**
 * # type `EventListItemPaymentItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemPaymentItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemPaymentItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2609,7 +2609,7 @@ export type EventListItemPaymentItem = {
 /**
 * # type `EventListItemTask`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemTask
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemTask
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2624,7 +2624,7 @@ export type EventListItemTask = {
 /**
 * # type `EventListItemUser`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemUser
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemUser
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2640,7 +2640,7 @@ export type EventListItemUser = {
 /**
 * # type `EventListItemWarehouseItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemWarehouseItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListItemWarehouseItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2656,7 +2656,7 @@ export type EventListItemWarehouseItem = {
 /**
 * # type `EventListPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventListPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2668,7 +2668,7 @@ export type EventListPaginated = {
 /**
 * # type `EventPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2680,7 +2680,7 @@ export type EventPaginated = {
 /**
 * # type `EventsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/EventsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2695,7 +2695,7 @@ export type EventsInput = {
 /**
 * # type `ExternalPaymentData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ExternalPaymentData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ExternalPaymentData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2707,7 +2707,7 @@ export type ExternalPaymentData = {
 /**
 * # type `ExternalPaymentDataInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ExternalPaymentDataInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ExternalPaymentDataInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2719,7 +2719,7 @@ export type ExternalPaymentDataInput = {
 /**
 * # type `FeatureFlags`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FeatureFlags
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FeatureFlags
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2736,7 +2736,7 @@ export type FeatureFlags = {
 /**
 * # type `FilterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FilterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FilterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2747,7 +2747,7 @@ export type FilterInput = {
 /**
 * # type `FinishWorkShiftInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FinishWorkShiftInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FinishWorkShiftInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2758,7 +2758,7 @@ export type FinishWorkShiftInput = {
 /**
 * # type `FinishedWorkShiftInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FinishedWorkShiftInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FinishedWorkShiftInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2770,7 +2770,7 @@ export type FinishedWorkShiftInput = {
 /**
 * # type `FlagInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FlagInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FlagInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2781,7 +2781,7 @@ export type FlagInput = {
 /**
 * # type `FreeGameAccount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/FreeGameAccount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/FreeGameAccount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2794,7 +2794,7 @@ export type FreeGameAccount = {
 /**
 * # type `GameAccount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2813,7 +2813,7 @@ export type GameAccount = {
 /**
 * # type `GameAccountAssignment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccountAssignment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccountAssignment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2824,7 +2824,7 @@ export type GameAccountAssignment = {
 /**
 * # type `GameAccountGroup`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccountGroup
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccountGroup
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2839,7 +2839,7 @@ export type GameAccountGroup = {
 /**
 * # type `GameAccountGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccountGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccountGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2851,7 +2851,7 @@ export type GameAccountGroupInput = {
 /**
 * # enum `GameAccountLauncher`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccountLauncher
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccountLauncher
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2860,7 +2860,7 @@ export type GameAccountLauncher = "STEAM" | "EGS" | "BATTLENET" | "ORIGIN" | "EA
 /**
 * # enum `GameAccountStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GameAccountStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GameAccountStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2869,7 +2869,7 @@ export type GameAccountStatus = "OFFLINE" | "ONLINE" | "IN_GAME"
 /**
 * # type `GenerateQRInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GenerateQRInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GenerateQRInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2880,7 +2880,7 @@ export type GenerateQRInput = {
 /**
 * # type `GetActiveClientListInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GetActiveClientListInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GetActiveClientListInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2894,7 +2894,7 @@ export type GetActiveClientListInput = {
 /**
 * # type `GetBeneficiaryMovementsOfFunds`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GetBeneficiaryMovementsOfFunds
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GetBeneficiaryMovementsOfFunds
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2907,7 +2907,7 @@ export type GetBeneficiaryMovementsOfFunds = {
 /**
 * # type `GetBeneficiaryMovementsOfFundsReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GetBeneficiaryMovementsOfFundsReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GetBeneficiaryMovementsOfFundsReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2920,7 +2920,7 @@ export type GetBeneficiaryMovementsOfFundsReport = {
 /**
 * # type `GetCurrentTariff`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GetCurrentTariff
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GetCurrentTariff
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2931,7 +2931,7 @@ export type GetCurrentTariff = {
 /**
 * # type `Good`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Good
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Good
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2965,7 +2965,7 @@ export type Good = {
 /**
 * # type `GoodInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GoodInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GoodInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -2996,7 +2996,7 @@ export type GoodInput = {
 /**
 * # type `GoodsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/GoodsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/GoodsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3009,7 +3009,7 @@ export type GoodsInput = {
 /**
 * # enum `HallType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HallType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HallType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3018,7 +3018,7 @@ export type HallType = "PC" | "CONSOLE"
 /**
 * # type `Host`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Host
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Host
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3057,7 +3057,7 @@ export type Host = {
 /**
 * # type `HostAccessTokenInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostAccessTokenInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostAccessTokenInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3069,7 +3069,7 @@ export type HostAccessTokenInput = {
 /**
 * # type `HostCommand`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommand
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostCommand
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3083,7 +3083,7 @@ export type HostCommand = {
 /**
 * # enum `HostCommandAction`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommandAction
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostCommandAction
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3092,7 +3092,7 @@ export type HostCommandAction = "SHUTDOWN" | "REBOOT" | "ALLOW_ADMIN_MODE" | "DI
 /**
 * # type `HostCommandList`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommandList
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostCommandList
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3103,7 +3103,7 @@ export type HostCommandList = {
 /**
 * # type `HostCommandTemplate`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommandTemplate
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostCommandTemplate
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3117,7 +3117,7 @@ export type HostCommandTemplate = {
 /**
 * # type `HostCounters`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCounters
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostCounters
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3131,7 +3131,7 @@ export type HostCounters = {
 /**
 * # type `HostDevice`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostDevice
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostDevice
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3144,7 +3144,7 @@ export type HostDevice = {
 /**
 * # type `HostDiskInfo`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostDiskInfo
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostDiskInfo
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3157,7 +3157,7 @@ export type HostDiskInfo = {
 /**
 * # type `HostDiskInfoInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostDiskInfoInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostDiskInfoInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3170,7 +3170,7 @@ export type HostDiskInfoInput = {
 /**
 * # type `HostGroup`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroup
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroup
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3187,7 +3187,7 @@ export type HostGroup = {
 /**
 * # type `HostGroupCustomization`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroupCustomization
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroupCustomization
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3200,7 +3200,7 @@ export type HostGroupCustomization = {
 /**
 * # type `HostGroupCustomizationInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroupCustomizationInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroupCustomizationInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3213,7 +3213,7 @@ export type HostGroupCustomizationInput = {
 /**
 * # type `HostGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3226,7 +3226,7 @@ export type HostGroupInput = {
 /**
 * # type `HostGroupOverview`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroupOverview
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroupOverview
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3241,7 +3241,7 @@ export type HostGroupOverview = {
 /**
 * # type `HostGroupTitle`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostGroupTitle
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostGroupTitle
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3254,7 +3254,7 @@ export type HostGroupTitle = {
 /**
 * # type `HostInfo`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostInfo
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostInfo
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3269,7 +3269,7 @@ export type HostInfo = {
 /**
 * # type `HostInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3290,7 +3290,7 @@ export type HostInput = {
 /**
 * # type `HostOverview`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostOverview
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostOverview
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3323,7 +3323,7 @@ export type HostOverview = {
 /**
 * # type `HostSession`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostSession
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostSession
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3340,7 +3340,7 @@ export type HostSession = {
 /**
 * # type `HostSessionInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostSessionInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostSessionInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3356,7 +3356,7 @@ export type HostSessionInput = {
 /**
 * # type `HostStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3370,7 +3370,7 @@ export type HostStatus = {
 /**
 * # type `HostType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3385,7 +3385,7 @@ export type HostType = {
 /**
 * # type `HostTypeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostTypeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostTypeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3397,7 +3397,7 @@ export type HostTypeInput = {
 /**
 * # type `HostsOccupationReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostsOccupationReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/HostsOccupationReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3409,7 +3409,7 @@ export type HostsOccupationReport = {
 /**
 * # type `IPResidentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/IPResidentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/IPResidentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3432,7 +3432,7 @@ export type IPResidentInput = {
 /**
 * # type `Import`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Import
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Import
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3447,7 +3447,7 @@ export type Import = {
 /**
 * # type `ImportFailure`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ImportFailure
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ImportFailure
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3461,7 +3461,7 @@ export type ImportFailure = {
 /**
 * # enum `ImportStatusEnum`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ImportStatusEnum
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ImportStatusEnum
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3470,7 +3470,7 @@ export type ImportStatusEnum = "NEW" | "PROCESSING" | "FINISH" | "FINISH_HAS_ERR
 /**
 * # type `ImportUserColumnsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ImportUserColumnsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ImportUserColumnsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3486,7 +3486,7 @@ export type ImportUserColumnsInput = {
 /**
 * # type `ImportUserHoursColumnsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ImportUserHoursColumnsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ImportUserHoursColumnsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3498,7 +3498,7 @@ export type ImportUserHoursColumnsInput = {
 /**
 * # enum `IntegrationService`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/IntegrationService
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/IntegrationService
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3507,7 +3507,7 @@ export type IntegrationService = "TINKOFF" | "STRIPE"
 /**
 * # type `LeaderboardUser`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LeaderboardUser
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LeaderboardUser
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3527,7 +3527,7 @@ export type LeaderboardUser = {
 /**
 * # type `License`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/License
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/License
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3540,7 +3540,7 @@ export type License = {
 /**
 * # type `LicenseModulePrice`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseModulePrice
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseModulePrice
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3552,7 +3552,7 @@ export type LicenseModulePrice = {
 /**
 * # type `LicensePayment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePayment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePayment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3567,7 +3567,7 @@ export type LicensePayment = {
 /**
 * # type `LicensePaymentData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePaymentData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePaymentData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3588,7 +3588,7 @@ export type LicensePaymentData = {
 /**
 * # type `LicensePaymentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePaymentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePaymentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3602,7 +3602,7 @@ export type LicensePaymentInput = {
 /**
 * # enum `LicensePaymentMethod`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePaymentMethod
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePaymentMethod
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3611,7 +3611,7 @@ export type LicensePaymentMethod = "CARD" | "BILL" | "CLOUD_PAYMENTS" | "KASPI_Q
 /**
 * # enum `LicensePaymentStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePaymentStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePaymentStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3620,7 +3620,7 @@ export type LicensePaymentStatus = "NEW" | "SUCCESS" | "FAILED"
 /**
 * # type `LicensePrice`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePrice
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePrice
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3639,7 +3639,7 @@ export type LicensePrice = {
 /**
 * # type `LicensePriceInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicensePriceInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicensePriceInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3657,7 +3657,7 @@ export type LicensePriceInput = {
 /**
 * # type `LicenseTariff`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariff
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariff
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3672,7 +3672,7 @@ export type LicenseTariff = {
 /**
 * # type `LicenseTariffCategory`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffCategory
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffCategory
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3686,7 +3686,7 @@ export type LicenseTariffCategory = {
 /**
 * # type `LicenseTariffCategoryInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffCategoryInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffCategoryInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3699,7 +3699,7 @@ export type LicenseTariffCategoryInput = {
 /**
 * # type `LicenseTariffGrid`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffGrid
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffGrid
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3711,7 +3711,7 @@ export type LicenseTariffGrid = {
 /**
 * # type `LicenseTariffInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3725,7 +3725,7 @@ export type LicenseTariffInput = {
 /**
 * # type `LicenseTariffModule`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffModule
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffModule
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3741,7 +3741,7 @@ export type LicenseTariffModule = {
 /**
 * # type `LicenseTariffModuleInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LicenseTariffModuleInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LicenseTariffModuleInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3757,7 +3757,7 @@ export type LicenseTariffModuleInput = {
 /**
 * # type `LiteCompany`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LiteCompany
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LiteCompany
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3770,7 +3770,7 @@ export type LiteCompany = {
 /**
 * # type `LitePaymentTransaction`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LitePaymentTransaction
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LitePaymentTransaction
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3787,7 +3787,7 @@ export type LitePaymentTransaction = {
 /**
 * # type `LoginExistsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LoginExistsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LoginExistsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3798,7 +3798,7 @@ export type LoginExistsInput = {
 /**
 * # type `LoginInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LoginInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LoginInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3811,7 +3811,7 @@ export type LoginInput = {
 /**
 * # type `LoginQRInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LoginQRInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LoginQRInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3822,7 +3822,7 @@ export type LoginQRInput = {
 /**
 * # type `LowStockNotification`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LowStockNotification
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LowStockNotification
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3834,7 +3834,7 @@ export type LowStockNotification = {
 /**
 * # type `LowStockNotificationInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/LowStockNotificationInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/LowStockNotificationInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3846,7 +3846,7 @@ export type LowStockNotificationInput = {
 /**
 * # type `MagicInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MagicInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MagicInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3858,7 +3858,7 @@ export type MagicInput = {
 /**
 * # type `Me`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Me
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Me
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3900,7 +3900,7 @@ export type Me = {
 /**
 * # enum `MethodType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MethodType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MethodType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3909,7 +3909,7 @@ export type MethodType = "CASCADE" | "EMAIL" | "TELEGRAM"
 /**
 * # type `MobileEventsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MobileEventsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MobileEventsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3925,7 +3925,7 @@ export type MobileEventsInput = {
 /**
 * # type `MoneyByTypes`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MoneyByTypes
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MoneyByTypes
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3941,7 +3941,7 @@ export type MoneyByTypes = {
 /**
 * # type `MoneyData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MoneyData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MoneyData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3956,7 +3956,7 @@ export type MoneyData = {
 /**
 * # type `MovementOfFunds`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MovementOfFunds
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MovementOfFunds
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3971,7 +3971,7 @@ export type MovementOfFunds = {
 /**
 * # type `MovementOfFundsPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MovementOfFundsPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/MovementOfFundsPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -3985,7 +3985,7 @@ export type MovementOfFundsPaginated = {
 /**
 * # type `Network`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Network
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Network
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4000,7 +4000,7 @@ export type Network = {
 /**
 * # type `NetworkCompaniesData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompaniesData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NetworkCompaniesData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4012,7 +4012,7 @@ export type NetworkCompaniesData = {
 /**
 * # type `NetworkCompany`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompany
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NetworkCompany
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4027,7 +4027,7 @@ export type NetworkCompany = {
 /**
 * # type `NetworkCompanyInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompanyInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NetworkCompanyInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4039,7 +4039,7 @@ export type NetworkCompanyInput = {
 /**
 * # type `News`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/News
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/News
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4051,7 +4051,7 @@ export type News = {
 /**
 * # type `NewsConsent`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NewsConsent
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NewsConsent
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4064,7 +4064,7 @@ export type NewsConsent = {
 /**
 * # type `NewsFeed`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NewsFeed
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NewsFeed
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4076,7 +4076,7 @@ export type NewsFeed = {
 /**
 * # type `NewsFeedArticle`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NewsFeedArticle
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/NewsFeedArticle
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4093,7 +4093,7 @@ export type NewsFeedArticle = {
 /**
 * # enum `OperationType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OperationType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OperationType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4102,7 +4102,7 @@ export type OperationType = "DEPOSIT" | "WITHDRAWAL"
 /**
 * # enum `OpfType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OpfType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OpfType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4111,7 +4111,7 @@ export type OpfType = "OOO" | "OAO" | "AO"
 /**
 * # enum `OrderByDirection`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrderByDirection
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrderByDirection
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4120,7 +4120,7 @@ export type OrderByDirection = "ASC" | "DESC"
 /**
 * # type `Organization`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Organization
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Organization
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4144,7 +4144,7 @@ export type Organization = {
 /**
 * # type `OrganizationConfirmationCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationConfirmationCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationConfirmationCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4157,7 +4157,7 @@ export type OrganizationConfirmationCodeInput = {
 /**
 * # enum `OrganizationConfirmationCodeType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationConfirmationCodeType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationConfirmationCodeType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4166,7 +4166,7 @@ export type OrganizationConfirmationCodeType = "REGISTER" | "RESET_PASSWORD" | "
 /**
 * # type `OrganizationInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4178,7 +4178,7 @@ export type OrganizationInput = {
 /**
 * # type `OrganizationLoginInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationLoginInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationLoginInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4190,7 +4190,7 @@ export type OrganizationLoginInput = {
 /**
 * # type `OrganizationPaymentCard`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationPaymentCard
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationPaymentCard
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4205,7 +4205,7 @@ export type OrganizationPaymentCard = {
 /**
 * # type `OrganizationRegisterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationRegisterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationRegisterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4221,7 +4221,7 @@ export type OrganizationRegisterInput = {
 /**
 * # type `OrganizationResetPasswordInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationResetPasswordInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationResetPasswordInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4235,7 +4235,7 @@ export type OrganizationResetPasswordInput = {
 /**
 * # type `OrganizationSendConfirmationCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationSendConfirmationCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationSendConfirmationCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4248,7 +4248,7 @@ export type OrganizationSendConfirmationCodeInput = {
 /**
 * # type `OrganizationStartResetPasswordInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationStartResetPasswordInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationStartResetPasswordInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4260,7 +4260,7 @@ export type OrganizationStartResetPasswordInput = {
 /**
 * # enum `OrganizationUserType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationUserType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationUserType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4269,7 +4269,7 @@ export type OrganizationUserType = "OWNER" | "DIRECTOR" | "SYSTEM_ADMINISTRATOR"
 /**
 * # type `OrganizationVerifyConfirmationCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OrganizationVerifyConfirmationCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OrganizationVerifyConfirmationCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4281,7 +4281,7 @@ export type OrganizationVerifyConfirmationCodeInput = {
 /**
 * # type `OverviewReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OverviewReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/OverviewReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4293,7 +4293,7 @@ export type OverviewReport = {
 /**
 * # enum `PaginateType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaginateType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaginateType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4302,7 +4302,7 @@ export type PaginateType = "PAGINATOR"
 /**
 * # type `PaginatorInfo`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaginatorInfo
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaginatorInfo
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4320,7 +4320,7 @@ export type PaginatorInfo = {
 /**
 * # type `PassportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PassportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PassportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4335,7 +4335,7 @@ export type PassportInput = {
 /**
 * # type `PausableClientSession`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PausableClientSession
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PausableClientSession
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4354,7 +4354,7 @@ export type PausableClientSession = {
 /**
 * # type `Payment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Payment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Payment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4383,7 +4383,7 @@ export type Payment = {
 /**
 * # type `PaymentHistory`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentHistory
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentHistory
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4395,7 +4395,7 @@ export type PaymentHistory = {
 /**
 * # type `PaymentHistoryItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentHistoryItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentHistoryItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4416,7 +4416,7 @@ export type PaymentHistoryItem = {
 /**
 * # type `PaymentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4436,7 +4436,7 @@ export type PaymentInput = {
 /**
 * # type `PaymentItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4453,7 +4453,7 @@ export type PaymentItem = {
 /**
 * # enum `PaymentItemEntity`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentItemEntity
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentItemEntity
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4462,7 +4462,7 @@ export type PaymentItemEntity = Record<string, Good | Service | Tariff | Combo>
 /**
 * # type `PaymentItemInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentItemInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentItemInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4477,7 +4477,7 @@ export type PaymentItemInput = {
 /**
 * # enum `PaymentItemType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentItemType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentItemType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4486,7 +4486,7 @@ export type PaymentItemType = "DEPOSIT" | "GOOD" | "SERVICE" | "TARIFF" | "COMBO
 /**
 * # enum `PaymentMethod`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentMethod
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentMethod
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4495,7 +4495,7 @@ export type PaymentMethod = "CARD" | "CASH" | "DEPOSIT" | "BONUS" | "COMPOSITE" 
 /**
 * # type `PaymentReportItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentReportItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentReportItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4507,7 +4507,7 @@ export type PaymentReportItem = {
 /**
 * # enum `PaymentStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4516,7 +4516,7 @@ export type PaymentStatus = "PENDING" | "PAID" | "UNPAID"
 /**
 * # type `PaymentTransaction`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentTransaction
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentTransaction
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4537,7 +4537,7 @@ export type PaymentTransaction = {
 /**
 * # type `PaymentTransactionInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentTransactionInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentTransactionInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4554,7 +4554,7 @@ export type PaymentTransactionInput = {
 /**
 * # type `PaymentTransactionPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentTransactionPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentTransactionPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4566,7 +4566,7 @@ export type PaymentTransactionPaginated = {
 /**
 * # enum `PaymentTransactionStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentTransactionStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentTransactionStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4575,7 +4575,7 @@ export type PaymentTransactionStatus = "PENDING" | "SUCCESS" | "EXPIRED" | "FAIL
 /**
 * # enum `PaymentTransactionType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentTransactionType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentTransactionType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4584,7 +4584,7 @@ export type PaymentTransactionType = "MANAGER" | "CLIENT"
 /**
 * # type `PaymentsReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PaymentsReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PaymentsReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4596,7 +4596,7 @@ export type PaymentsReport = {
 /**
 * # type `PenaltyHostInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PenaltyHostInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PenaltyHostInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4608,7 +4608,7 @@ export type PenaltyHostInput = {
 /**
 * # type `Permission`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Permission
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Permission
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4622,7 +4622,7 @@ export type Permission = {
 /**
 * # type `PermissionData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PermissionData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PermissionData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4638,7 +4638,7 @@ export type PermissionData = {
 /**
 * # type `PermissionInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PermissionInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PermissionInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4651,7 +4651,7 @@ export type PermissionInput = {
 /**
 * # type `PhoneExistsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PhoneExistsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PhoneExistsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4662,7 +4662,7 @@ export type PhoneExistsInput = {
 /**
 * # type `PremiumPayment`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PremiumPayment
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PremiumPayment
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4675,7 +4675,7 @@ export type PremiumPayment = {
 /**
 * # type `ProcessPostPaymentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ProcessPostPaymentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ProcessPostPaymentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4689,7 +4689,7 @@ export type ProcessPostPaymentInput = {
 /**
 * # type `ProcessStatsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ProcessStatsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ProcessStatsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4701,7 +4701,7 @@ export type ProcessStatsInput = {
 /**
 * # type `ProcessStatsItemInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ProcessStatsItemInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ProcessStatsItemInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4714,7 +4714,7 @@ export type ProcessStatsItemInput = {
 /**
 * # type `PromoCode`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PromoCode
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PromoCode
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4734,7 +4734,7 @@ export type PromoCode = {
 /**
 * # type `PromoCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PromoCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PromoCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4751,7 +4751,7 @@ export type PromoCodeInput = {
 /**
 * # type `PromoCodePaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PromoCodePaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PromoCodePaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4763,7 +4763,7 @@ export type PromoCodePaginated = {
 /**
 * # type `PublicationPeriod`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PublicationPeriod
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PublicationPeriod
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4775,7 +4775,7 @@ export type PublicationPeriod = {
 /**
 * # type `PublicationPeriodInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PublicationPeriodInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/PublicationPeriodInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4787,7 +4787,7 @@ export type PublicationPeriodInput = {
 /**
 * # type `RefreshTokenInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RefreshTokenInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RefreshTokenInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4798,7 +4798,7 @@ export type RefreshTokenInput = {
 /**
 * # type `RefundPaymentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RefundPaymentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RefundPaymentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4810,7 +4810,7 @@ export type RefundPaymentInput = {
 /**
 * # type `Region`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Region
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Region
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4822,7 +4822,7 @@ export type Region = {
 /**
 * # type `RegisterHostInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RegisterHostInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RegisterHostInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4836,7 +4836,7 @@ export type RegisterHostInput = {
 /**
 * # type `RegisterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RegisterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RegisterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4855,7 +4855,7 @@ export type RegisterInput = {
 /**
 * # enum `RegisterType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RegisterType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RegisterType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4864,7 +4864,7 @@ export type RegisterType = "SHELL" | "STATION" | "MANAGER"
 /**
 * # type `Report`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Report
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Report
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4881,7 +4881,7 @@ export type Report = {
 /**
 * # type `ReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4893,7 +4893,7 @@ export type ReportInput = {
 /**
 * # type `ReportSortInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ReportSortInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ReportSortInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4905,7 +4905,7 @@ export type ReportSortInput = {
 /**
 * # type `ResetPasswordInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ResetPasswordInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ResetPasswordInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4919,7 +4919,7 @@ export type ResetPasswordInput = {
 /**
 * # type `ResultHostCommandInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ResultHostCommandInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ResultHostCommandInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4932,7 +4932,7 @@ export type ResultHostCommandInput = {
 /**
 * # enum `ReturnFormatEnum`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ReturnFormatEnum
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ReturnFormatEnum
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4941,7 +4941,7 @@ export type ReturnFormatEnum = "LINK" | "QR_CODE" | "QR_CODE_BASE64"
 /**
 * # type `Reward`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Reward
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Reward
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4953,7 +4953,7 @@ export type Reward = {
 /**
 * # type `RewardRequest`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RewardRequest
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RewardRequest
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4965,7 +4965,7 @@ export type RewardRequest = {
 /**
 * # type `Role`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Role
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Role
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4982,7 +4982,7 @@ export type Role = {
 /**
 * # type `RulesMessage`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RulesMessage
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/RulesMessage
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -4994,7 +4994,7 @@ export type RulesMessage = {
 /**
 * # type `SalesExportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SalesExportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SalesExportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5006,7 +5006,7 @@ export type SalesExportInput = {
 /**
 * # type `Seance`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Seance
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Seance
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5028,7 +5028,7 @@ export type Seance = {
 /**
 * # type `SeanceOverview`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SeanceOverview
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SeanceOverview
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5041,7 +5041,7 @@ export type SeanceOverview = {
 /**
 * # type `SearchComboInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SearchComboInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SearchComboInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5053,7 +5053,7 @@ export type SearchComboInput = {
 /**
 * # type `SearchReportInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SearchReportInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SearchReportInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5064,7 +5064,7 @@ export type SearchReportInput = {
 /**
 * # type `SendConfirmationCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SendConfirmationCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SendConfirmationCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5078,7 +5078,7 @@ export type SendConfirmationCodeInput = {
 /**
 * # type `SendConfirmationCodeToEnterInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SendConfirmationCodeToEnterInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SendConfirmationCodeToEnterInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5091,7 +5091,7 @@ export type SendConfirmationCodeToEnterInput = {
 /**
 * # type `SendWakePacketInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SendWakePacketInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SendWakePacketInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5102,7 +5102,7 @@ export type SendWakePacketInput = {
 /**
 * # type `SendWakePacketsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SendWakePacketsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SendWakePacketsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5113,7 +5113,7 @@ export type SendWakePacketsInput = {
 /**
 * # type `Service`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Service
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Service
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5133,7 +5133,7 @@ export type Service = {
 /**
 * # enum `ServiceEnum`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ServiceEnum
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ServiceEnum
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5142,7 +5142,7 @@ export type ServiceEnum = "CLOUD_PAYMENTS" | "KASPI_PAY" | "SBP" | "STRIPE"
 /**
 * # type `ServiceInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ServiceInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ServiceInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5160,7 +5160,7 @@ export type ServiceInput = {
 /**
 * # type `ServicesInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ServicesInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ServicesInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5171,7 +5171,7 @@ export type ServicesInput = {
 /**
 * # type `SessionsMoneyReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SessionsMoneyReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SessionsMoneyReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5184,7 +5184,7 @@ export type SessionsMoneyReport = {
 /**
 * # type `SetBonusInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetBonusInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetBonusInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5196,7 +5196,7 @@ export type SetBonusInput = {
 /**
 * # type `SetCloudPaymentsAccountToCompanyInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetCloudPaymentsAccountToCompanyInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetCloudPaymentsAccountToCompanyInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5210,7 +5210,7 @@ export type SetCloudPaymentsAccountToCompanyInput = {
 /**
 * # type `SetDepositInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetDepositInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetDepositInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5222,7 +5222,7 @@ export type SetDepositInput = {
 /**
 * # type `SetTelegramChannelInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetTelegramChannelInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetTelegramChannelInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5233,7 +5233,7 @@ export type SetTelegramChannelInput = {
 /**
 * # type `SetTelegramSettingsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetTelegramSettingsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetTelegramSettingsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5246,7 +5246,7 @@ export type SetTelegramSettingsInput = {
 /**
 * # type `SetUserDiscountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetUserDiscountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SetUserDiscountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5258,7 +5258,7 @@ export type SetUserDiscountInput = {
 /**
 * # type `Setting`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Setting
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Setting
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5272,7 +5272,7 @@ export type Setting = {
 /**
 * # type `SettingPair`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SettingPair
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SettingPair
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5286,7 +5286,7 @@ export type SettingPair = {
 /**
 * # enum `ShellMode`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShellMode
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShellMode
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5295,7 +5295,7 @@ export type ShellMode = "NORMAL" | "DISABLED" | "HIGH_ACCESS"
 /**
 * # type `Shortcut`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Shortcut
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Shortcut
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5323,7 +5323,7 @@ export type Shortcut = {
 /**
 * # type `ShortcutGroup`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutGroup
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutGroup
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5337,7 +5337,7 @@ export type ShortcutGroup = {
 /**
 * # type `ShortcutGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5350,7 +5350,7 @@ export type ShortcutGroupInput = {
 /**
 * # type `ShortcutGroupItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutGroupItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutGroupItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5362,7 +5362,7 @@ export type ShortcutGroupItem = {
 /**
 * # type `ShortcutImageInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutImageInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutImageInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5373,7 +5373,7 @@ export type ShortcutImageInput = {
 /**
 * # type `ShortcutInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5400,7 +5400,7 @@ export type ShortcutInput = {
 /**
 * # type `ShortcutPath`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutPath
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutPath
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5411,7 +5411,7 @@ export type ShortcutPath = {
 /**
 * # type `ShortcutStatsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ShortcutStatsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ShortcutStatsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5422,7 +5422,7 @@ export type ShortcutStatsInput = {
 /**
 * # enum `SliceType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SliceType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SliceType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5431,7 +5431,7 @@ export type SliceType = "DAY" | "WEEK" | "MONTH"
 /**
 * # enum `SortActiveClientEnum`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SortActiveClientEnum
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SortActiveClientEnum
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5440,7 +5440,7 @@ export type SortActiveClientEnum = "ByPayments" | "ByTime"
 /**
 * # type `SortInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SortInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/SortInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5452,7 +5452,7 @@ export type SortInput = {
 /**
 * # type `StartClientSessionInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StartClientSessionInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StartClientSessionInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5465,7 +5465,7 @@ export type StartClientSessionInput = {
 /**
 * # type `StartWorkShiftInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StartWorkShiftInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StartWorkShiftInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5476,7 +5476,7 @@ export type StartWorkShiftInput = {
 /**
 * # type `StatByGoods`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatByGoods
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatByGoods
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5488,7 +5488,7 @@ export type StatByGoods = {
 /**
 * # type `StatByOrders`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatByOrders
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatByOrders
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5500,7 +5500,7 @@ export type StatByOrders = {
 /**
 * # type `StatByRefunds`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatByRefunds
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatByRefunds
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5512,7 +5512,7 @@ export type StatByRefunds = {
 /**
 * # type `StatBySeances`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatBySeances
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatBySeances
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5525,7 +5525,7 @@ export type StatBySeances = {
 /**
 * # type `StatByServices`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatByServices
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatByServices
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5537,7 +5537,7 @@ export type StatByServices = {
 /**
 * # type `StatByTransfers`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StatByTransfers
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StatByTransfers
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5549,7 +5549,7 @@ export type StatByTransfers = {
 /**
 * # type `StripeAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StripeAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/StripeAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5561,7 +5561,7 @@ export type StripeAccountInput = {
 /**
 * # type `Tariff`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Tariff
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Tariff
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5594,7 +5594,7 @@ export type Tariff = {
 /**
 * # type `TariffGridInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffGridInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffGridInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5610,7 +5610,7 @@ export type TariffGridInput = {
 /**
 * # type `TariffGridItem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffGridItem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffGridItem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5638,7 +5638,7 @@ export type TariffGridItem = {
 /**
 * # type `TariffInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5669,7 +5669,7 @@ export type TariffInput = {
 /**
 * # enum `TariffKind`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffKind
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffKind
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5678,7 +5678,7 @@ export type TariffKind = "PER_MINUTE" | "PAUSABLE" | "FIXED" | "PACKET"
 /**
 * # type `TariffOverview`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffOverview
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffOverview
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5691,7 +5691,7 @@ export type TariffOverview = {
 /**
 * # type `TariffPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5703,7 +5703,7 @@ export type TariffPaginated = {
 /**
 * # type `TariffPeriod`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPeriod
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPeriod
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5715,7 +5715,7 @@ export type TariffPeriod = {
 /**
 * # type `TariffPeriodInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPeriodInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPeriodInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5727,7 +5727,7 @@ export type TariffPeriodInput = {
 /**
 * # type `TariffPricelist`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPricelist
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPricelist
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5739,7 +5739,7 @@ export type TariffPricelist = {
 /**
 * # type `TariffPricelistCostMap`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPricelistCostMap
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPricelistCostMap
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5752,7 +5752,7 @@ export type TariffPricelistCostMap = {
 /**
 * # type `TariffPricelistCostMapInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPricelistCostMapInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPricelistCostMapInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5765,7 +5765,7 @@ export type TariffPricelistCostMapInput = {
 /**
 * # enum `TariffPricelistCostMapType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPricelistCostMapType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPricelistCostMapType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5774,7 +5774,7 @@ export type TariffPricelistCostMapType = "DEFAULT" | "USER_COST"
 /**
 * # type `TariffPricelistInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPricelistInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPricelistInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5786,7 +5786,7 @@ export type TariffPricelistInput = {
 /**
 * # type `TariffPurchaseByQRInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPurchaseByQRInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffPurchaseByQRInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5798,7 +5798,7 @@ export type TariffPurchaseByQRInput = {
 /**
 * # type `TariffSchedule`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffSchedule
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffSchedule
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5812,7 +5812,7 @@ export type TariffSchedule = {
 /**
 * # type `TariffScheduleInterval`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffScheduleInterval
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TariffScheduleInterval
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5825,7 +5825,7 @@ export type TariffScheduleInterval = {
 /**
 * # enum `Tax`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Tax
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Tax
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5834,7 +5834,7 @@ export type Tax = "NONE" | "VAT0" | "VAT5" | "VAT7" | "VAT10" | "VAT20" | "VAT11
 /**
 * # enum `TaxSystem`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TaxSystem
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TaxSystem
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5843,7 +5843,7 @@ export type TaxSystem = "SIMPLE_INCOME" | "SIMPLE_INCOME_EXPENSES" | "PATENT" | 
 /**
 * # type `TelegramChannel`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramChannel
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TelegramChannel
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5856,7 +5856,7 @@ export type TelegramChannel = {
 /**
 * # enum `TelegramChannelType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramChannelType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TelegramChannelType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5865,7 +5865,7 @@ export type TelegramChannelType = "SUPERGROUP" | "GROUP" | "CHANNEL" | "PRIVATE"
 /**
 * # type `TelegramSettings`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramSettings
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TelegramSettings
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5878,7 +5878,7 @@ export type TelegramSettings = {
 /**
 * # type `TransferDepositInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TransferDepositInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/TransferDepositInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5891,7 +5891,7 @@ export type TransferDepositInput = {
 /**
 * # type `ULResidentInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ULResidentInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ULResidentInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5909,7 +5909,7 @@ export type ULResidentInput = {
 /**
 * # type `UnifiedReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UnifiedReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UnifiedReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5929,7 +5929,7 @@ export type UnifiedReport = {
 /**
 * # type `UnifiedReportData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UnifiedReportData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UnifiedReportData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5940,7 +5940,7 @@ export type UnifiedReportData = {
 /**
 * # type `UnifiedReportPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UnifiedReportPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UnifiedReportPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5952,7 +5952,7 @@ export type UnifiedReportPaginated = {
 /**
 * # type `UnifiedSummaryData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UnifiedSummaryData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UnifiedSummaryData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5966,7 +5966,7 @@ export type UnifiedSummaryData = {
 /**
 * # type `UniqueUsersReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UniqueUsersReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UniqueUsersReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5979,7 +5979,7 @@ export type UniqueUsersReport = {
 /**
 * # type `UpcomingAutoPaymentData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpcomingAutoPaymentData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpcomingAutoPaymentData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -5992,7 +5992,7 @@ export type UpcomingAutoPaymentData = {
 /**
 * # type `UpdateClientMeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateClientMeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateClientMeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6016,7 +6016,7 @@ export type UpdateClientMeInput = {
 /**
 * # type `UpdateClubInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateClubInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateClubInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6057,7 +6057,7 @@ export type UpdateClubInput = {
 /**
 * # type `UpdateCompanyPermissionsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateCompanyPermissionsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateCompanyPermissionsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6068,7 +6068,7 @@ export type UpdateCompanyPermissionsInput = {
 /**
 * # type `UpdateGameAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateGameAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateGameAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6083,7 +6083,7 @@ export type UpdateGameAccountInput = {
 /**
 * # type `UpdateGoodInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateGoodInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateGoodInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6112,7 +6112,7 @@ export type UpdateGoodInput = {
 /**
 * # type `UpdateGoodsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateGoodsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateGoodsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6126,7 +6126,7 @@ export type UpdateGoodsInput = {
 /**
 * # type `UpdateHostCommandStatusInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateHostCommandStatusInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateHostCommandStatusInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6138,7 +6138,7 @@ export type UpdateHostCommandStatusInput = {
 /**
 * # type `UpdateHostCommandTemplateInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateHostCommandTemplateInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateHostCommandTemplateInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6152,7 +6152,7 @@ export type UpdateHostCommandTemplateInput = {
 /**
 * # type `UpdateHostStateInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateHostStateInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateHostStateInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6167,7 +6167,7 @@ export type UpdateHostStateInput = {
 /**
 * # type `UpdateMeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateMeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateMeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6186,7 +6186,7 @@ export type UpdateMeInput = {
 /**
 * # type `UpdateMultipleSettingsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateMultipleSettingsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateMultipleSettingsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6197,7 +6197,7 @@ export type UpdateMultipleSettingsInput = {
 /**
 * # type `UpdateNetworkInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateNetworkInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateNetworkInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6210,7 +6210,7 @@ export type UpdateNetworkInput = {
 /**
 * # type `UpdateNewsArticleInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateNewsArticleInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateNewsArticleInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6226,7 +6226,7 @@ export type UpdateNewsArticleInput = {
 /**
 * # type `UpdatePasswordInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdatePasswordInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdatePasswordInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6239,7 +6239,7 @@ export type UpdatePasswordInput = {
 /**
 * # type `UpdateSettingInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateSettingInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateSettingInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6251,7 +6251,7 @@ export type UpdateSettingInput = {
 /**
 * # type `UpdateShortcutGroupSortInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateShortcutGroupSortInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateShortcutGroupSortInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6263,7 +6263,7 @@ export type UpdateShortcutGroupSortInput = {
 /**
 * # type `UpdateShortcutSortInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateShortcutSortInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateShortcutSortInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6275,7 +6275,7 @@ export type UpdateShortcutSortInput = {
 /**
 * # type `UpdateTariffsSortInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateTariffsSortInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateTariffsSortInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6287,7 +6287,7 @@ export type UpdateTariffsSortInput = {
 /**
 * # type `UpdateWorkerInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateWorkerInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UpdateWorkerInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6301,7 +6301,7 @@ export type UpdateWorkerInput = {
 /**
 * # type `User`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/User
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/User
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6351,7 +6351,7 @@ export type User = {
 /**
 * # type `UserAchievement`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserAchievement
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserAchievement
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6368,7 +6368,7 @@ export type UserAchievement = {
 /**
 * # type `UserAchievements`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserAchievements
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserAchievements
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6380,7 +6380,7 @@ export type UserAchievements = {
 /**
 * # type `UserClub`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserClub
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserClub
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6398,7 +6398,7 @@ export type UserClub = {
 /**
 * # type `UserClubsInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserClubsInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserClubsInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6410,7 +6410,7 @@ export type UserClubsInput = {
 /**
 * # type `UserDiscount`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserDiscount
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserDiscount
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6422,7 +6422,7 @@ export type UserDiscount = {
 /**
 * # enum `UserDiscountType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserDiscountType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserDiscountType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6431,7 +6431,7 @@ export type UserDiscountType = "PERSONAL" | "GROUP" | "NETWORK"
 /**
 * # type `UserGroup`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserGroup
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserGroup
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6446,7 +6446,7 @@ export type UserGroup = {
 /**
 * # type `UserGroupInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserGroupInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserGroupInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6458,7 +6458,7 @@ export type UserGroupInput = {
 /**
 * # type `UserPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6471,7 +6471,7 @@ export type UserPaginated = {
 /**
 * # type `UserTableInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserTableInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UserTableInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6482,7 +6482,7 @@ export type UserTableInput = {
 /**
 * # type `UsersInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UsersInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/UsersInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6493,7 +6493,7 @@ export type UsersInput = {
 /**
 * # type `ValidatePromoCodeInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ValidatePromoCodeInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ValidatePromoCodeInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6507,7 +6507,7 @@ export type ValidatePromoCodeInput = {
 /**
 * # type `ValidateQRInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ValidateQRInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/ValidateQRInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6518,7 +6518,7 @@ export type ValidateQRInput = {
 /**
 * # enum `Vat`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Vat
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Vat
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6527,7 +6527,7 @@ export type Vat = "NO_NDS" | "NDS_0" | "NDS_5" | "NDS_7" | "NDS_10" | "NDS_20" |
 /**
 * # type `VerifyUserInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/VerifyUserInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/VerifyUserInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6538,7 +6538,7 @@ export type VerifyUserInput = {
 /**
 * # type `Versions`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Versions
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/Versions
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6551,7 +6551,7 @@ export type Versions = {
 /**
 * # enum `WarehouseOperationType`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WarehouseOperationType
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WarehouseOperationType
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6560,7 +6560,7 @@ export type WarehouseOperationType = "ADD" | "DISPOSAL" | "SOLD"
 /**
 * # type `WarehouseState`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WarehouseState
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WarehouseState
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6574,7 +6574,7 @@ export type WarehouseState = {
 /**
 * # type `WithdrawToCheckingAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WithdrawToCheckingAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WithdrawToCheckingAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6586,7 +6586,7 @@ export type WithdrawToCheckingAccountInput = {
 /**
 * # type `WorkShift`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShift
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShift
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6605,7 +6605,7 @@ export type WorkShift = {
 /**
 * # type `WorkShiftEvent`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftEvent
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftEvent
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6618,7 +6618,7 @@ export type WorkShiftEvent = {
 /**
 * # type `WorkShiftInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6631,7 +6631,7 @@ export type WorkShiftInput = {
 /**
 * # type `WorkShiftMoney`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftMoney
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftMoney
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6643,7 +6643,7 @@ export type WorkShiftMoney = {
 /**
 * # type `WorkShiftPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6655,7 +6655,7 @@ export type WorkShiftPaginated = {
 /**
 * # type `WorkShiftPaymentOverviewComboData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftPaymentOverviewComboData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftPaymentOverviewComboData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6668,7 +6668,7 @@ export type WorkShiftPaymentOverviewComboData = {
 /**
 * # type `WorkShiftPaymentOverviewData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftPaymentOverviewData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftPaymentOverviewData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6696,7 +6696,7 @@ export type WorkShiftPaymentOverviewData = {
 /**
 * # type `WorkShiftPaymentOverviewGoodData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftPaymentOverviewGoodData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftPaymentOverviewGoodData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6711,7 +6711,7 @@ export type WorkShiftPaymentOverviewGoodData = {
 /**
 * # type `WorkShiftPaymentOverviewServiceData`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftPaymentOverviewServiceData
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftPaymentOverviewServiceData
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6724,7 +6724,7 @@ export type WorkShiftPaymentOverviewServiceData = {
 /**
 * # enum `WorkShiftStatus`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftStatus
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftStatus
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6733,7 +6733,7 @@ export type WorkShiftStatus = "NONE" | "OPEN" | "MY" | "LOCKED"
 /**
 * # type `WorkShiftSummary`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftSummary
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftSummary
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6745,7 +6745,7 @@ export type WorkShiftSummary = {
 /**
 * # type `WorkShiftsReport`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkShiftsReport
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkShiftsReport
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6758,7 +6758,7 @@ export type WorkShiftsReport = {
 /**
 * # type `WorkerTask`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkerTask
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkerTask
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6777,7 +6777,7 @@ export type WorkerTask = {
 /**
 * # type `WorkerTaskInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkerTaskInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkerTaskInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6790,7 +6790,7 @@ export type WorkerTaskInput = {
 /**
 * # type `WorkerTaskPaginated`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkerTaskPaginated
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkerTaskPaginated
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6802,7 +6802,7 @@ export type WorkerTaskPaginated = {
 /**
 * # type `WorkersInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/WorkersInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/WorkersInput
 * 
 * `@xlsft/smartshell-sdk`
 */
@@ -6813,7 +6813,7 @@ export type WorkersInput = {
 /**
 * # type `pickGameAccountInput`
 * 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/pickGameAccountInput
+* 🔗 https://smartshell.xlsft.ru/docs/reference/types/pickGameAccountInput
 * 
 * `@xlsft/smartshell-sdk`
 */
