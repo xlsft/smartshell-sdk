@@ -15,7 +15,7 @@ export const types = async (introspect: Type[]) => {
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/${type.name}
 * 
-* \`@xlsoftware/smartshell-sdk\`
+* \`@xlsft/smartshell-sdk\`
 */`,`export type ${type.name} = {`]
         const type_fields = type.fields.length === 0 ? type.inputFields : type.fields
         if (type_fields.length === 0) return ''
@@ -40,7 +40,7 @@ export const types = async (introspect: Type[]) => {
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/${type.name}
 * 
-* \`@xlsoftware/smartshell-sdk\`
+* \`@xlsft/smartshell-sdk\`
 */
 export type ${type.name} = ${enums.join(' | ')}`
     }

@@ -5,12 +5,12 @@
     import IconCopy from '~/components/icons/IconCopy.vue'
     const helper = ref('pnpm')
     const install = {
-        'pnpm': 'pnpm dlx jsr add @xlsoftware/smartshell-sdk',
-        'deno': 'deno add jsr:@xlsoftware/smartshell-sdk',
-        'npm': 'npx jsr add @xlsoftware/smartshell-sdk',
-        'bun': 'bunx jsr add @xlsoftware/smartshell-sdk',
-        'yarn': 'yarn dlx jsr add @xlsoftware/smartshell-sdk',
-        'denojsr': 'import { Shell } from "jsr:@xlsoftware/smartshell-sdk";'
+        'pnpm': 'pnpm dlx jsr add @xlsft/smartshell-sdk',
+        'deno': 'deno add jsr:@xlsft/smartshell-sdk',
+        'npm': 'npx jsr add @xlsft/smartshell-sdk',
+        'bun': 'bunx jsr add @xlsft/smartshell-sdk',
+        'yarn': 'yarn dlx jsr add @xlsft/smartshell-sdk',
+        'denojsr': 'import { Shell } from "jsr:@xlsft/smartshell-sdk";'
     }
 
     const version = ref((await $fetch('https://api.github.com/repos/xlsft/smartshell-sdk/releases/latest')).tag_name)
@@ -34,9 +34,9 @@
         </div>
 
         <p>Импортируйте пакет в свой проект</p>
-        <pre><code>import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "@xlsoftware/smartshell-sdk";
+        <pre><code>import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "@xlsft/smartshell-sdk";
 // ...or with jsr deno import
-import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "jsr:@xlsoftware/smartshell-sdk";</code></pre>
+import { ||--['/docs/reference/sdk/Shell','Shell']--|| } from "jsr:@xlsft/smartshell-sdk";</code></pre>
         
         <p>Создайте инстанс класса <code>Shell</code>. Можно указать данные для авторизации, изменить хост (scope) api, или сделать инстанс анонимным для запроса публичной информации без нужды в авторизации</p>
         <pre><code>// Shell instance

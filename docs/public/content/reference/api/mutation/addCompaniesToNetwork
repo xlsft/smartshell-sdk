@@ -127,34 +127,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "network",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "ID"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "description",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "verified_at",
                             "value": [
@@ -212,34 +184,6 @@
                         "NetworkCompaniesData"
                     ],
                     "child": [
-                        {
-                            "type": "object",
-                            "key": "data",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "is_main",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "max_discount_enabled",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "deposit_transfer_enabled",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                }
-                            ]
-                        },
                         {
                             "type": "scalar",
                             "key": "total",

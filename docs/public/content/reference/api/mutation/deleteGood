@@ -96,41 +96,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "category",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "company_id",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "title",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "show_in_shell",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "amount",
                             "value": [
@@ -177,41 +142,6 @@
                             "key": "tax_system",
                             "value": [
                                 "TaxSystem"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "state",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "received",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "income",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "sold",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "disposal",
-                                    "value": [
-                                        "number"
-                                    ]
-                                }
                             ]
                         },
                         {
@@ -282,27 +212,6 @@
                             "key": "in_combo",
                             "value": [
                                 "boolean"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "low_stock_notification",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "enabled",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "threshold",
-                                    "value": [
-                                        "number"
-                                    ]
-                                }
                             ]
                         },
                         {

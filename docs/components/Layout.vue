@@ -57,7 +57,7 @@
                     <a href="/docs/reference/api">API</a>
                     <a href="/docs/reference/types">Референс</a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/xlsft/smartshell-sdk">GitHub</a>
-                    <a target="_blank" rel="noreferrer" href="https://jsr.io/@xlsoftware/smartshell-sdk">JSR</a>
+                    <a target="_blank" rel="noreferrer" href="https://jsr.io/@xlsft/smartshell-sdk">JSR</a>
                 </div>
             </div>
         </div>

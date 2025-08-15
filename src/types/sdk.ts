@@ -7,7 +7,7 @@ import type { ShellApiClub, ShellApiCredentials, ShellApiEndpoint, ShellApiVHost
  * 
  * Main context type extending the base Shell implementation
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkContext = Shell
 
@@ -16,7 +16,7 @@ export type ShellSdkContext = Shell
  *
  * Constructor options for `Shell` class
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export interface ShellSdkOptions {
     credentials?: ShellApiCredentials
@@ -32,7 +32,7 @@ export interface ShellSdkOptions {
  * Public context information exposed by the SDK
  * Contains API configuration, club information, and request/response data
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkContextPublic = {
     ctx: {
@@ -59,7 +59,7 @@ export type ShellSdkContextPublic = {
  * 
  * Raw query string type for SDK operations
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkQuery = string
 
@@ -68,7 +68,7 @@ export type ShellSdkQuery = string
  * 
  * Structured representation of nested queries
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkFormattedDeepQuery = { 
     type: 'object' | 'entity', 
@@ -81,7 +81,7 @@ export type ShellSdkFormattedDeepQuery = {
  * 
  * Top-level query field identifier
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkFormattedTopQuery = string
 
@@ -90,7 +90,7 @@ export type ShellSdkFormattedTopQuery = string
  * 
  * Union type for both deep and top-level queries
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkFormattedCombinedQuery = ShellSdkFormattedDeepQuery | ShellSdkFormattedTopQuery
 
@@ -99,7 +99,7 @@ export type ShellSdkFormattedCombinedQuery = ShellSdkFormattedDeepQuery | ShellS
  * 
  * Array of formatted queries that can be either deep or top-level
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkFormattedQuery = Array<ShellSdkFormattedDeepQuery | ShellSdkFormattedTopQuery>
 
@@ -108,7 +108,7 @@ export type ShellSdkFormattedQuery = Array<ShellSdkFormattedDeepQuery | ShellSdk
  * 
  * Generic input type for SDK modules
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkModuleInput<T> = T
 
@@ -117,7 +117,7 @@ export type ShellSdkModuleInput<T> = T
  * 
  * Module function type definition with generic input and response
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkModule = <TInput, TResponse>(ctx: ShellSdkContext, data?: TInput, anon?: boolean) => Promise<TResponse>
 
@@ -126,7 +126,7 @@ export type ShellSdkModule = <TInput, TResponse>(ctx: ShellSdkContext, data?: TI
  * 
  * Middleware function type for processing SDK context
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkMiddleware = (ctx: ShellSdkContextPublic) => void
 
@@ -135,7 +135,7 @@ export type ShellSdkMiddleware = (ctx: ShellSdkContextPublic) => void
  * 
  * Input parameters for pagination operations
  * 
- * `@xlsoftware/smartshell-sdk/types/sdk`
+ * `@xlsft/smartshell-sdk/types/sdk`
  */
 export type ShellSdkPaginatorInput = { 
     page: number, 

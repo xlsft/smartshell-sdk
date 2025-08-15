@@ -21,7 +21,7 @@ import { key } from "./utils/key.ts";
 * })
 * ```
 * 
-* `@xlsoftware/smartshell-sdk`
+* `@xlsft/smartshell-sdk`
 */
 export class Shell {
 
@@ -162,7 +162,7 @@ export class Shell {
     * shell.use(({ ctx, request, response }) => { console.log(ctx, request, response) })
     * ```
     * 
-    * `@xlsoftware/smartshell-sdk`
+    * `@xlsft/smartshell-sdk`
     */
     public use(...middleware: ShellSdkMiddleware[]) {
         for (let i = 0; i < middleware.length; i++) {
@@ -181,7 +181,7 @@ export class Shell {
     * shell.catch = (errors) => console.log(errors)
     * ```
     * 
-    * `@xlsoftware/smartshell-sdk`
+    * `@xlsft/smartshell-sdk`
     */
     public catch: null | ((errors: ShellApiResponseError[] | string) => void) = null
     // ---------------- Error catcher ----------------

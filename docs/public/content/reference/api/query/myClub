@@ -198,48 +198,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "conditions",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "value",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "rewards",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "value",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "progress",
                             "value": [
@@ -281,48 +239,6 @@
                             "key": "icon_url",
                             "value": [
                                 "string"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "conditions",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "value",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "rewards",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "value",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
                             ]
                         },
                         {

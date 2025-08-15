@@ -110,55 +110,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "modules",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "description",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "cost",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "category_id",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "alias",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "tariff_id",
                             "value": [

@@ -1,5 +1,5 @@
 {
-  "name": "@xlsoftware/smartshell-sdk-docs",
+  "name": "@xlsft/smartshell-sdk-docs",
   "type": "module",
   "scripts": {
     "build": "nuxt build --preset node-server",

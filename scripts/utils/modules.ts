@@ -90,7 +90,7 @@ const method = (type: 'query' | 'mutation', method: Method, types: Type[]): Reso
         type,
         paginated,
         name: method.name,
-        schema: structure(3),
+        schema: structure(2),
         props,
         response,
         deprecated: method.isDeprecated === true ? method.deprecationReason : undefined

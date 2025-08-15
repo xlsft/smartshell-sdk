@@ -34,27 +34,27 @@
 
 ```
 # PNPM
-pnpm dlx jsr add @xlsoftware/smartshell-sdk
+pnpm dlx jsr add @xlsft/smartshell-sdk
 
 # Deno
-deno add jsr:@xlsoftware/smartshell-sdk
+deno add jsr:@xlsft/smartshell-sdk
 
 # NPM
-npx jsr add @xlsoftware/smartshell-sdk
+npx jsr add @xlsft/smartshell-sdk
 
 # Bun
-bunx jsr add @xlsoftware/smartshell-sdk
+bunx jsr add @xlsft/smartshell-sdk
 
 # Yarn
-yarn dlx jsr add @xlsoftware/smartshell-sdk
+yarn dlx jsr add @xlsft/smartshell-sdk
 ```
 
 Импортируйте пакет в свой проект
 
 ```ts
-import { Shell } from "@xlsoftware/smartshell-sdk";
+import { Shell } from "@xlsft/smartshell-sdk";
 // ..or with jsr deno import
-import { Shell } from "jsr:@xlsoftware/smartshell-sdk";
+import { Shell } from "jsr:@xlsft/smartshell-sdk";
 ```
 
 Создайте инстанс класса `Shell`. Можно указать данные для авторизации, изменить хост (scope) api, или сделать инстанс анонимным для запроса публичной информации без нужды в авторизации

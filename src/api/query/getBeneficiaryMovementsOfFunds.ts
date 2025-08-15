@@ -38,8 +38,6 @@ const module = async <Input extends InputType["input"], Response extends Respons
                         "status",
                         "balance",
                         "service_name",
-                        key("companies", ["id", "name", "address"]),
-                        key("locked_by", ["id", "sum", "commission", "status", "created_at"]),
                         "error",
                         "created_at",
                     ]),

@@ -175,92 +175,6 @@
                     "key": "achievements",
                     "value": [
                         "UserAchievements"
-                    ],
-                    "child": [
-                        {
-                            "type": "object",
-                            "key": "single",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "has",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "icon_url",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "progress",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "continuous",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "has",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "name",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "icon_url",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "progress",
-                                    "value": [
-                                        "Decimal"
-                                    ]
-                                }
-                            ]
-                        }
                     ]
                 },
                 {
@@ -825,41 +739,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "booking_settings",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "self_cancellation_enabled",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "cancellation_penalty",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "cancellation_free_headroom",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "online_booking_discount",
-                                    "value": [
-                                        "number"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "online_booking_discount",
                             "value": [
@@ -929,27 +808,6 @@
                             "key": "image",
                             "value": [
                                 "string"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "category",
-                            "value": [],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "id",
-                                    "value": [
-                                        "number"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "title",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
                             ]
                         }
                     ]

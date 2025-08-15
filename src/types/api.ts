@@ -8,7 +8,7 @@
  * For any owner-related workflow use `owner` vhost
  * For any host-related workflow use `host` vhost
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export type ShellApiVHost = 'billing' | 'host' | 'mobile-auth' | 'owner'
 
@@ -17,7 +17,7 @@ export type ShellApiVHost = 'billing' | 'host' | 'mobile-auth' | 'owner'
  * 
  * Full https path for graphql endpoint
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export type ShellApiEndpoint = `https://${ShellApiVHost}.smartshell.gg/api/graphql`
 
@@ -26,7 +26,7 @@ export type ShellApiEndpoint = `https://${ShellApiVHost}.smartshell.gg/api/graph
  *
  * Credentials variant for permanent access tokens
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 // export type ShellApiCredentialsToken = string
 
@@ -35,7 +35,7 @@ export type ShellApiEndpoint = `https://${ShellApiVHost}.smartshell.gg/api/graph
  *
  * Credentials variant for user login
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export interface ShellApiCredentialsUser {
     login: string
@@ -47,7 +47,7 @@ export interface ShellApiCredentialsUser {
  *
  * Credentials input data
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export type ShellApiCredentials = ShellApiCredentialsUser //| ShellApiCredentialsToken 
 
@@ -56,7 +56,7 @@ export type ShellApiCredentials = ShellApiCredentialsUser //| ShellApiCredential
  *
  * Interface that storing credentials for fast club relogin
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export interface ShellApiClub { 
     id: number
@@ -70,7 +70,7 @@ export interface ShellApiClub {
  * 
  * Type for graphql error response
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 
 export interface ShellApiResponseError {
@@ -85,7 +85,7 @@ export interface ShellApiResponseError {
  * 
  * Type for graphql response from smartshell api
  * 
- * `@xlsoftware/smartshell-sdk/types/api`
+ * `@xlsft/smartshell-sdk/types/api`
  */
 export interface ShellApiResponse<T> {
     data: T
