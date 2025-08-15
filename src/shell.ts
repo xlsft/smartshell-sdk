@@ -279,7 +279,7 @@ export class Shell {
         for (let i = 0; i < this._clubs.length; i++) {
             const _club = this._clubs[i];
             this._active_club = _club.id
-            callback(this, _club.id)
+            await callback(this, _club.id)
         }
     }
 
