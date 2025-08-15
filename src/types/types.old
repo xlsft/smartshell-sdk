@@ -90,6 +90,7 @@ export type AchievementStatus = "ACTIVE" | "DISABLED"
 export type ActiveClient = {
     client_uuid: string
     nickname: string
+    avatar_url?: string
     payments: Decimal
     total_seconds: number
     last_client_activity?: DateTime
@@ -220,6 +221,30 @@ export type Article = {
     preview: string
     url: string
     createdAt: string
+}
+
+/**
+* # type `ArticleLink`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ArticleLink
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ArticleLink = {
+    label: string
+    url: string
+}
+
+/**
+* # type `ArticleLinkInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ArticleLinkInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ArticleLinkInput = {
+    label?: string
+    url?: string
 }
 
 /**
@@ -548,6 +573,7 @@ export type Category = {
     title: string
     goods: Good[]
     show_in_shell: boolean
+    sell_periods: CategoryPeriod[]
 }
 
 /**
@@ -560,6 +586,31 @@ export type Category = {
 export type CategoryInput = {
     title: string
     show_in_shell: boolean
+    sell_periods: CategoryPeriodInput[]
+}
+
+/**
+* # type `CategoryPeriod`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoryPeriod
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CategoryPeriod = {
+    start: number
+    end: number
+}
+
+/**
+* # type `CategoryPeriodInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CategoryPeriodInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CategoryPeriodInput = {
+    start: number
+    end: number
 }
 
 /**
@@ -675,6 +726,7 @@ export type ClientClub = {
     visits: ClientClubVisit[]
     last_visited_at: DateTime
     accept_sbp: boolean
+    accept_kaspi: boolean
     currency: Currency
     rules: string
     achievements: UserAchievements
@@ -704,6 +756,7 @@ export type ClientClub = {
     user_bonus: Decimal
     club_settings: ClientClubSettings
     deposit_transfer_enabled: boolean
+    goods: ClientClubGood[]
 }
 
 /**
@@ -736,6 +789,34 @@ export type ClientClubCommentInput = {
 }
 
 /**
+* # type `ClientClubGood`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubGood
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ClientClubGood = {
+    id: number
+    title: string
+    cost: number
+    comment: string
+    image: string
+    category?: ClientClubGoodCategory
+}
+
+/**
+* # type `ClientClubGoodCategory`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubGoodCategory
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ClientClubGoodCategory = {
+    id: number
+    title: string
+}
+
+/**
 * # type `ClientClubOnMap`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubOnMap
@@ -760,10 +841,14 @@ export type ClientClubOnMap = {
 */
 export type ClientClubSettings = {
     accept_payments: boolean
+    accept_sbp: boolean
+    accept_kaspi: boolean
+    accept_stripe: boolean
     booking_enabled: boolean
     booking_settings?: BookingSettings
     online_booking_discount: number
-    OnlinePaymentMinLimit: number
+    goods_display_enabled?: boolean
+    online_payment_min_limit: number
 }
 
 /**
@@ -1130,6 +1215,7 @@ export type ClubComment = {
     request_contact: boolean
     request_contact_info?: string
     tips?: number
+    worker_name?: string
 }
 
 /**
@@ -1624,6 +1710,72 @@ export type CommentUpdateInput = {
 }
 
 /**
+* # type `CompanyNewsArticle`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsArticle
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CompanyNewsArticle = {
+    id: ID
+    title: string
+    company: LiteCompany
+    content: string
+    image?: string
+    link?: ArticleLink
+    creator?: User
+    active: boolean
+    publication_period?: PublicationPeriod
+    created_at: DateTime
+    updated_at: DateTime
+}
+
+/**
+* # type `CompanyNewsList`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsList
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CompanyNewsList = {
+    data: CompanyNewsArticle[]
+    paginatorInfo: PaginatorInfo
+}
+
+/**
+* # type `CompanyNewsListInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CompanyNewsListInput = {
+    sort?: CompanyNewsListSort
+    active?: boolean
+}
+
+/**
+* # type `CompanyNewsListSort`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListSort
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CompanyNewsListSort = {
+    field?: CompanyNewsListSortField
+    direction: string
+}
+
+/**
+* # enum `CompanyNewsListSortField`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyNewsListSortField
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CompanyNewsListSortField = "TITLE" | "LABEL" | "URL" | "ACTIVE_FROM" | "ACTIVE_UNTIL" | "ACTIVE" | "CREATED_AT"
+
+/**
 * # type `CompanyPermissionInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CompanyPermissionInput
@@ -1730,6 +1882,7 @@ export type ConnectPaymentServiceInput = {
     ul?: ULResidentInput
     ip?: IPResidentInput
     bank_account?: BankAccountInput
+    stripe_account?: StripeAccountInput
 }
 
 /**
@@ -1779,6 +1932,19 @@ export type CreateCommandInput = {
 }
 
 /**
+* # type `CreateCommandsInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateCommandsInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CreateCommandsInput = {
+    host_ids: number[]
+    action: HostCommandAction
+    param?: string
+}
+
+/**
 * # type `CreateGameAccountInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateGameAccountInput
@@ -1794,6 +1960,19 @@ export type CreateGameAccountInput = {
 }
 
 /**
+* # type `CreateHostCommandTemplateInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateHostCommandTemplateInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CreateHostCommandTemplateInput = {
+    title: string
+    path: string
+    arguments?: string
+}
+
+/**
 * # type `CreateNetworkInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateNetworkInput
@@ -1806,6 +1985,22 @@ export type CreateNetworkInput = {
     main_company_id: number
     max_discount_enabled: boolean
     deposit_transfer_enabled: boolean
+}
+
+/**
+* # type `CreateNewsArticleInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateNewsArticleInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CreateNewsArticleInput = {
+    title: string
+    content: string
+    image?: string
+    link?: ArticleLinkInput
+    active?: boolean
+    publication_period?: PublicationPeriodInput
 }
 
 /**
@@ -2198,6 +2393,7 @@ export type EventListItem = {
     work_shift?: EventListItemIdTime
     worker_task?: EventListItemTask
     goods: EventListItemIdTitle[]
+    goods_category?: EventListItemIdTitle
     new_goods_amount: EventListItemIdValueF[]
     new_devices: EventListItemAliasValues[]
     cash_on_start: number
@@ -2213,6 +2409,9 @@ export type EventListItem = {
     deposit: number
     combo?: EventListItemCombo
     combo_items: EventListItemComboItem[]
+    company_news_item?: EventListItemNews
+    company_news_item_changes?: EventListItemNews
+    additional_data: string
 }
 
 /**
@@ -2366,6 +2565,25 @@ export type EventListItemIdTitleValueI = {
 export type EventListItemIdValueF = {
     id?: number
     value?: number
+}
+
+/**
+* # type `EventListItemNews`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/EventListItemNews
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type EventListItemNews = {
+    id?: string
+    image?: string
+    label?: string
+    url?: string
+    title?: string
+    active?: boolean
+    active_from?: DateTime
+    active_to?: DateTime
+    created_at?: DateTime
 }
 
 /**
@@ -2868,6 +3086,31 @@ export type HostCommand = {
 export type HostCommandAction = "SHUTDOWN" | "REBOOT" | "ALLOW_ADMIN_MODE" | "DISABLE_SHELL" | "SHOW_MESSAGE" | "LOGOFF" | "RUN" | "SEND_LOGS" | "SHELL_UNINSTALL" | "SHELL_UPDATE" | "LOGIN_QR" | "TINKOFF_SBP_PAYMENT"
 
 /**
+* # type `HostCommandList`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommandList
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type HostCommandList = {
+    commands: HostCommand[]
+}
+
+/**
+* # type `HostCommandTemplate`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCommandTemplate
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type HostCommandTemplate = {
+    id: number
+    title: string
+    path: string
+    arguments?: string
+}
+
+/**
 * # type `HostCounters`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/HostCounters
@@ -2934,6 +3177,7 @@ export type HostGroup = {
     updated_at: DateTime
     hosts: Host[]
     customization?: HostGroupCustomization
+    priority: number
 }
 
 /**
@@ -2972,6 +3216,7 @@ export type HostGroupCustomizationInput = {
 export type HostGroupInput = {
     title: string
     customization?: HostGroupCustomizationInput
+    priority?: number
 }
 
 /**
@@ -2985,6 +3230,7 @@ export type HostGroupOverview = {
     id: number
     title: string
     customization?: HostGroupCustomization
+    priority: number
     hosts: HostOverview[]
 }
 
@@ -2998,6 +3244,7 @@ export type HostGroupOverview = {
 export type HostGroupTitle = {
     id: number
     title: string
+    priority: number
 }
 
 /**
@@ -3251,7 +3498,7 @@ export type ImportUserHoursColumnsInput = {
 * 
 * `@xlsoftware/smartshell-sdk`
 */
-export type IntegrationService = "TINKOFF"
+export type IntegrationService = "TINKOFF" | "STRIPE"
 
 /**
 * # type `LeaderboardUser`
@@ -3656,6 +3903,22 @@ export type Me = {
 export type MethodType = "CASCADE" | "EMAIL" | "TELEGRAM"
 
 /**
+* # type `MobileEventsInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MobileEventsInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type MobileEventsInput = {
+    types: string[]
+    start?: DateTime
+    finish?: DateTime
+    work_shift_id?: number
+    q?: string
+    payment_method?: string
+}
+
+/**
 * # type `MoneyByTypes`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/MoneyByTypes
@@ -3792,6 +4055,35 @@ export type NewsConsent = {
     isGiven: boolean
     givenAt?: DateTime
     revokedAt?: DateTime
+}
+
+/**
+* # type `NewsFeed`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NewsFeed
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type NewsFeed = {
+    data: NewsFeedArticle[]
+    paginatorInfo: PaginatorInfo
+}
+
+/**
+* # type `NewsFeedArticle`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NewsFeedArticle
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type NewsFeedArticle = {
+    id: ID
+    title: string
+    content: string
+    image?: string
+    link?: ArticleLink
+    company: LiteCompany
+    created_at: DateTime
 }
 
 /**
@@ -4465,6 +4757,30 @@ export type PromoCodePaginated = {
 }
 
 /**
+* # type `PublicationPeriod`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PublicationPeriod
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type PublicationPeriod = {
+    from?: DateTime
+    until?: DateTime
+}
+
+/**
+* # type `PublicationPeriodInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/PublicationPeriodInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type PublicationPeriodInput = {
+    from?: DateTime
+    until?: DateTime
+}
+
+/**
 * # type `RefreshTokenInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/RefreshTokenInput
@@ -4780,6 +5096,17 @@ export type SendWakePacketInput = {
 }
 
 /**
+* # type `SendWakePacketsInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SendWakePacketsInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type SendWakePacketsInput = {
+    host_ids: number[]
+}
+
+/**
 * # type `Service`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Service
@@ -4806,7 +5133,7 @@ export type Service = {
 * 
 * `@xlsoftware/smartshell-sdk`
 */
-export type ServiceEnum = "CLOUD_PAYMENTS" | "KASPI_PAY" | "SBP"
+export type ServiceEnum = "CLOUD_PAYMENTS" | "KASPI_PAY" | "SBP" | "STRIPE"
 
 /**
 * # type `ServiceInput`
@@ -5213,6 +5540,18 @@ export type StatByServices = {
 export type StatByTransfers = {
     income: Decimal
     outcome: Decimal
+}
+
+/**
+* # type `StripeAccountInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/StripeAccountInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type StripeAccountInput = {
+    secret_key: string
+    publishable_key: string
 }
 
 /**
@@ -5793,6 +6132,20 @@ export type UpdateHostCommandStatusInput = {
 }
 
 /**
+* # type `UpdateHostCommandTemplateInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateHostCommandTemplateInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type UpdateHostCommandTemplateInput = {
+    id: number
+    title: string
+    path: string
+    arguments?: string
+}
+
+/**
 * # type `UpdateHostStateInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateHostStateInput
@@ -5848,6 +6201,22 @@ export type UpdateNetworkInput = {
     name?: string
     main_company_id?: number
     description?: string
+}
+
+/**
+* # type `UpdateNewsArticleInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateNewsArticleInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type UpdateNewsArticleInput = {
+    title?: string
+    content?: string
+    image?: string
+    link?: ArticleLinkInput
+    active?: boolean
+    publication_period?: PublicationPeriodInput
 }
 
 /**

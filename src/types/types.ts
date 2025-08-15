@@ -1,5 +1,7 @@
 export type Upload = string
 
+export type Decimal = number
+
 export type Email = `${string}@${string}.${string}`;
 
 export type IpAddress = `${number}.${number}.${number}.${number}`;
