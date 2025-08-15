@@ -45,7 +45,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("host", [
                     "id",
                     "group_id",
-                    key("group", ["id", "title", "created_at", "updated_at"]),
+                    key("group", ["id", "title", "created_at", "updated_at", "priority"]),
                     "type_id",
                     "position",
                     "alias",

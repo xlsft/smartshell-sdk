@@ -32,6 +32,9 @@
 <h3 id="accept_sbp">accept_sbp</h3>
 <pre><code lang="ts">accept_sbp: boolean</code></pre>
 
+<h3 id="accept_kaspi">accept_kaspi</h3>
+<pre><code lang="ts">accept_kaspi: boolean</code></pre>
+
 <h3 id="currency">currency</h3>
 <pre><code lang="ts">currency: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>
 
@@ -118,3 +121,6 @@
 
 <h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
 <pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>
+
+<h3 id="goods">goods</h3>
+<pre><code lang="ts">goods: ||--['/docs/reference/types/ClientClubGood','ClientClubGood']--||[]</code></pre>

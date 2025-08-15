@@ -58,6 +58,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                             "online_booking_enabled",
                         ]),
                         key("customization", ["color", "background", "screensaver"]),
+                        "priority",
                     ]),
                     key("cost_map", ["title", "value", key("currency", ["id", "title", "alias", "letter"])]),
                 ]),

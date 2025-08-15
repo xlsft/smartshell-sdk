@@ -46,6 +46,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     "highlighted",
                 ]),
                 "show_in_shell",
+                key("sell_periods", ["start", "end"]),
             ]),
             "amount",
             "cost",

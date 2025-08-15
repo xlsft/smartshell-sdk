@@ -305,6 +305,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                         "online_booking_enabled",
                     ]),
                     key("customization", ["color", "background", "screensaver"]),
+                    "priority",
                 ]),
                 "type_id",
                 "position",

@@ -26,6 +26,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("visits", ["visited_at", "client_session_id"]),
                 "last_visited_at",
                 "accept_sbp",
+                "accept_kaspi",
                 key("currency", ["id", "title", "alias", "letter"]),
                 "rules",
                 key("achievements", [
@@ -102,6 +103,9 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "user_bonus",
                 key("club_settings", [
                     "accept_payments",
+                    "accept_sbp",
+                    "accept_kaspi",
+                    "accept_stripe",
                     "booking_enabled",
                     key("booking_settings", [
                         "self_cancellation_enabled",
@@ -110,9 +114,11 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                         "online_booking_discount",
                     ]),
                     "online_booking_discount",
-                    "OnlinePaymentMinLimit",
+                    "goods_display_enabled",
+                    "online_payment_min_limit",
                 ]),
                 "deposit_transfer_enabled",
+                key("goods", ["id", "title", "cost", "comment", "image", key("category", ["id", "title"])]),
             ]),
             key("hosts", [
                 "id",

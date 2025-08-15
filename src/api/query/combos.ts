@@ -32,7 +32,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     key("schedules", ["start", "end"]),
                     key("sell_schedules", ["start", "end"]),
                     key("price_list", [
-                        key("host_groups", ["id", "title", "created_at", "updated_at"]),
+                        key("host_groups", ["id", "title", "created_at", "updated_at", "priority"]),
                         key("cost_map", ["title", "value"]),
                     ]),
                     "pausable",
@@ -54,7 +54,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     key("hosts", [
                         "id",
                         "group_id",
-                        key("group", ["id", "title", "created_at", "updated_at"]),
+                        key("group", ["id", "title", "created_at", "updated_at", "priority"]),
                         "type_id",
                         "position",
                         "alias",
@@ -93,6 +93,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                         "online_booking_enabled",
                     ]),
                     key("customization", ["color", "background", "screensaver"]),
+                    "priority",
                 ]),
                 key("items", ["id", "combo_id", "amount", "price"]),
                 "quantity",

@@ -106,6 +106,13 @@
             ]
         },
         {
+            "type": "scalar",
+            "key": "accept_kaspi",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
             "type": "object",
             "key": "currency",
             "value": [
@@ -873,6 +880,27 @@
                 },
                 {
                     "type": "scalar",
+                    "key": "accept_sbp",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_kaspi",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "accept_stripe",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
                     "key": "booking_enabled",
                     "value": [
                         "boolean"
@@ -924,7 +952,14 @@
                 },
                 {
                     "type": "scalar",
-                    "key": "OnlinePaymentMinLimit",
+                    "key": "goods_display_enabled",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "online_payment_min_limit",
                     "value": [
                         "number"
                     ]
@@ -936,6 +971,73 @@
             "key": "deposit_transfer_enabled",
             "value": [
                 "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "goods",
+            "value": [
+                "ClientClubGood"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "cost",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "comment",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "image",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "category",
+                    "value": [
+                        "ClientClubGoodCategory"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ],

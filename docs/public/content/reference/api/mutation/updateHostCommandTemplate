@@ -1,0 +1,71 @@
+<h1 id="api_mutation_updateHostCommandTemplate">
+    mutation updateHostCommandTemplate
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/UpdateHostCommandTemplateInput','UpdateHostCommandTemplateInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/HostCommandTemplate','HostCommandTemplate'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "HostCommandTemplate",
+            "UpdateHostCommandTemplateInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateHostCommandTemplate",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "path",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "arguments",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateHostCommandTemplateInput",
+            "type": "object",
+            "docs": "/docs/reference/types/UpdateHostCommandTemplateInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "HostCommandTemplate"
+        ],
+        "type": "object"
+    }
+}</code></pre>

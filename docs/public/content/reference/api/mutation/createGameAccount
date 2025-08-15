@@ -738,6 +738,13 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "priority",
+                            "value": [
+                                "number"
+                            ]
                         }
                     ]
                 },
@@ -2179,6 +2186,13 @@
                                     "key": "updated_at",
                                     "value": [
                                         "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "priority",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]

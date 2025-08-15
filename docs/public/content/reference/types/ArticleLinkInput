@@ -1,0 +1,9 @@
+<h1 id="type_articlelinkinput">type ArticleLinkInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="label">label</h3>
+<pre><code lang="ts">label?: string</code></pre>
+
+<h3 id="url">url</h3>
+<pre><code lang="ts">url?: string</code></pre>

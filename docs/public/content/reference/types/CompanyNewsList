@@ -1,0 +1,9 @@
+<h1 id="type_companynewslist">type CompanyNewsList</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="data">data</h3>
+<pre><code lang="ts">data: ||--['/docs/reference/types/CompanyNewsArticle','CompanyNewsArticle']--||[]</code></pre>
+
+<h3 id="paginatorinfo">paginatorInfo</h3>
+<pre><code lang="ts">paginatorInfo: ||--['/docs/reference/types/PaginatorInfo','PaginatorInfo']--||</code></pre>

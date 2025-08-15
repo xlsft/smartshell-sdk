@@ -1,0 +1,145 @@
+<h1 id="api_query_getNewsFeed">query getNewsFeed</h1>
+<code>Paginated</code>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, company_id?: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/NewsFeed','NewsFeed'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "NewsFeed"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "getNewsFeed",
+    "schema": [
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "NewsFeedArticle"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "ID"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "content",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "image",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "link",
+                    "value": [
+                        "ArticleLink"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "label",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "url",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "company",
+                    "value": [
+                        "LiteCompany"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "address",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
+        },
+        {
+            "key": "company_id",
+            "required": false,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "NewsFeed"
+        ],
+        "type": "object"
+    }
+}</code></pre>

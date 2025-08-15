@@ -1,0 +1,14 @@
+<h1 id="type_createhostcommandtemplateinput">
+    type CreateHostCommandTemplateInput
+</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title: string</code></pre>
+
+<h3 id="path">path</h3>
+<pre><code lang="ts">path: string</code></pre>
+
+<h3 id="arguments">arguments</h3>
+<pre><code lang="ts">arguments?: string</code></pre>

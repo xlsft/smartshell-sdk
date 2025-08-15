@@ -1,0 +1,21 @@
+<h1 id="type_createnewsarticleinput">type CreateNewsArticleInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title: string</code></pre>
+
+<h3 id="content">content</h3>
+<pre><code lang="ts">content: string</code></pre>
+
+<h3 id="image">image</h3>
+<pre><code lang="ts">image?: string</code></pre>
+
+<h3 id="link">link</h3>
+<pre><code lang="ts">link?: ||--['/docs/reference/types/ArticleLinkInput','ArticleLinkInput']--||</code></pre>
+
+<h3 id="active">active</h3>
+<pre><code lang="ts">active?: boolean</code></pre>
+
+<h3 id="publication_period">publication_period</h3>
+<pre><code lang="ts">publication_period?: ||--['/docs/reference/types/PublicationPeriodInput','PublicationPeriodInput']--||</code></pre>

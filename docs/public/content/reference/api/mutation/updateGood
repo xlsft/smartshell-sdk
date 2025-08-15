@@ -321,6 +321,29 @@
                     "value": [
                         "boolean"
                     ]
+                },
+                {
+                    "type": "object",
+                    "key": "sell_periods",
+                    "value": [
+                        "CategoryPeriod"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "start",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "end",
+                            "value": [
+                                "number"
+                            ]
+                        }
+                    ]
                 }
             ]
         },

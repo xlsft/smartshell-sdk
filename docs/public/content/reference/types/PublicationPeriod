@@ -1,0 +1,9 @@
+<h1 id="type_publicationperiod">type PublicationPeriod</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="from">from</h3>
+<pre><code lang="ts">from?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="until">until</h3>
+<pre><code lang="ts">until?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

@@ -61,6 +61,13 @@
             ]
         },
         {
+            "type": "scalar",
+            "key": "priority",
+            "value": [
+                "number"
+            ]
+        },
+        {
             "type": "object",
             "key": "hosts",
             "value": [

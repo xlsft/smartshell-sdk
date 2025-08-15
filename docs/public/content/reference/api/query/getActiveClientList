@@ -36,6 +36,13 @@
         },
         {
             "type": "scalar",
+            "key": "avatar_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "payments",
             "value": [
                 "Decimal"

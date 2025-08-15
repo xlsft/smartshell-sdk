@@ -1,0 +1,57 @@
+<h1 id="api_query_hostCommandTemplates">query hostCommandTemplates</h1>
+
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/HostCommandTemplate','HostCommandTemplate'--||[]</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "HostCommandTemplate"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "hostCommandTemplates",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "title",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "path",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "arguments",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [],
+    "response": {
+        "required": true,
+        "array": true,
+        "value": [
+            "HostCommandTemplate"
+        ],
+        "type": "object"
+    }
+}</code></pre>

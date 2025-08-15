@@ -261,7 +261,6 @@ export class Shell {
             return result.join('');
         }
         const builded = build()
-        console.log(builded)
         const data = (await this.call<Response>(builded))
         if (this._middleware.length !== 0 && query) this._middleware_global(name, type, query, data)
         return data[name as keyof { [key: string]: Response }]

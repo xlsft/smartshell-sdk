@@ -166,6 +166,11 @@ import overviewReport from './query/overviewReport.ts'
 import topSoldOverviewItemsReport from './query/topSoldOverviewItemsReport.ts'
 import clubLoadByDayOfWeekReport from './query/clubLoadByDayOfWeekReport.ts'
 import getTelegramChannels from './query/getTelegramChannels.ts'
+import mobileEvents from './query/mobileEvents.ts'
+import hostCommandTemplates from './query/hostCommandTemplates.ts'
+import getNewsFeed from './query/getNewsFeed.ts'
+import companyNewsList from './query/companyNewsList.ts'
+import companyNewsArticle from './query/companyNewsArticle.ts'
 
 
 export const query = {
@@ -337,6 +342,11 @@ export const query = {
     topSoldOverviewItemsReport,
     clubLoadByDayOfWeekReport,
     getTelegramChannels,
+    mobileEvents,
+    hostCommandTemplates,
+    getNewsFeed,
+    companyNewsList,
+    companyNewsArticle,
 }
 
 
@@ -543,6 +553,14 @@ import updateNetworkCompany from './mutation/updateNetworkCompany.ts'
 import deleteNetworkCompany from './mutation/deleteNetworkCompany.ts'
 import updateTelegramSettings from './mutation/updateTelegramSettings.ts'
 import purchaseTariffByQR from './mutation/purchaseTariffByQR.ts'
+import createCommands from './mutation/createCommands.ts'
+import sendWakePackets from './mutation/sendWakePackets.ts'
+import createHostCommandTemplate from './mutation/createHostCommandTemplate.ts'
+import updateHostCommandTemplate from './mutation/updateHostCommandTemplate.ts'
+import deleteHostCommandTemplate from './mutation/deleteHostCommandTemplate.ts'
+import createCompanyNews from './mutation/createCompanyNews.ts'
+import updateCompanyNews from './mutation/updateCompanyNews.ts'
+import deleteCompanyNews from './mutation/deleteCompanyNews.ts'
 
 
 export const mutation = {
@@ -749,5 +767,13 @@ export const mutation = {
     deleteNetworkCompany,
     updateTelegramSettings,
     purchaseTariffByQR,
+    createCommands,
+    sendWakePackets,
+    createHostCommandTemplate,
+    updateHostCommandTemplate,
+    deleteHostCommandTemplate,
+    createCompanyNews,
+    updateCompanyNews,
+    deleteCompanyNews,
 }
 

@@ -1,0 +1,78 @@
+<h1 id="api_mutation_createCommands">mutation createCommands</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input?: ||--['/docs/reference/types/CreateCommandsInput','CreateCommandsInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/HostCommandList','HostCommandList'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "HostCommandList",
+            "CreateCommandsInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "createCommands",
+    "schema": [
+        {
+            "type": "object",
+            "key": "commands",
+            "value": [
+                "HostCommand"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "enum",
+                    "key": "action",
+                    "value": [
+                        "HostCommandAction"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "status",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "param",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "input",
+            "required": false,
+            "array": false,
+            "value": "CreateCommandsInput",
+            "type": "object",
+            "docs": "/docs/reference/types/CreateCommandsInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "HostCommandList"
+        ],
+        "type": "object"
+    }
+}</code></pre>

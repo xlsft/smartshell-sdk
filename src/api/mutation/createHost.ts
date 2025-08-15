@@ -24,7 +24,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("hosts", [
                     "id",
                     "group_id",
-                    key("group", ["id", "title", "created_at", "updated_at"]),
+                    key("group", ["id", "title", "created_at", "updated_at", "priority"]),
                     "type_id",
                     "position",
                     "alias",
@@ -63,6 +63,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     "online_booking_enabled",
                 ]),
                 key("customization", ["color", "background", "screensaver"]),
+                "priority",
             ]),
             "type_id",
             "position",

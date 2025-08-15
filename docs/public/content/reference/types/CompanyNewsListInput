@@ -1,0 +1,9 @@
+<h1 id="type_companynewslistinput">type CompanyNewsListInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="sort">sort</h3>
+<pre><code lang="ts">sort?: ||--['/docs/reference/types/CompanyNewsListSort','CompanyNewsListSort']--||</code></pre>
+
+<h3 id="active">active</h3>
+<pre><code lang="ts">active?: boolean</code></pre>

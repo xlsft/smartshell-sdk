@@ -8,6 +8,9 @@
 <h3 id="nickname">nickname</h3>
 <pre><code lang="ts">nickname: string</code></pre>
 
+<h3 id="avatar_url">avatar_url</h3>
+<pre><code lang="ts">avatar_url?: string</code></pre>
+
 <h3 id="payments">payments</h3>
 <pre><code lang="ts">payments: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 

@@ -5,6 +5,15 @@
 <h3 id="accept_payments">accept_payments</h3>
 <pre><code lang="ts">accept_payments: boolean</code></pre>
 
+<h3 id="accept_sbp">accept_sbp</h3>
+<pre><code lang="ts">accept_sbp: boolean</code></pre>
+
+<h3 id="accept_kaspi">accept_kaspi</h3>
+<pre><code lang="ts">accept_kaspi: boolean</code></pre>
+
+<h3 id="accept_stripe">accept_stripe</h3>
+<pre><code lang="ts">accept_stripe: boolean</code></pre>
+
 <h3 id="booking_enabled">booking_enabled</h3>
 <pre><code lang="ts">booking_enabled: boolean</code></pre>
 
@@ -14,5 +23,8 @@
 <h3 id="online_booking_discount">online_booking_discount</h3>
 <pre><code lang="ts">online_booking_discount: number</code></pre>
 
-<h3 id="onlinepaymentminlimit">OnlinePaymentMinLimit</h3>
-<pre><code lang="ts">OnlinePaymentMinLimit: number</code></pre>
+<h3 id="goods_display_enabled">goods_display_enabled</h3>
+<pre><code lang="ts">goods_display_enabled?: boolean</code></pre>
+
+<h3 id="online_payment_min_limit">online_payment_min_limit</h3>
+<pre><code lang="ts">online_payment_min_limit: number</code></pre>

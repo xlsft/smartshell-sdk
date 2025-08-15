@@ -96,6 +96,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                     "online_booking_enabled",
                 ]),
                 key("customization", ["color", "background", "screensaver"]),
+                "priority",
             ]),
             "type_id",
             "position",
@@ -286,7 +287,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("host", [
                 "id",
                 "group_id",
-                key("group", ["id", "title", "created_at", "updated_at"]),
+                key("group", ["id", "title", "created_at", "updated_at", "priority"]),
                 "type_id",
                 "position",
                 "alias",

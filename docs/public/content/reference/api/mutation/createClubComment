@@ -3457,6 +3457,13 @@
                                     "value": [
                                         "string"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "priority",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },
@@ -3690,6 +3697,13 @@
             "key": "tips",
             "value": [
                 "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "worker_name",
+            "value": [
+                "string"
             ]
         }
     ],

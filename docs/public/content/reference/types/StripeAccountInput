@@ -1,0 +1,9 @@
+<h1 id="type_stripeaccountinput">type StripeAccountInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="secret_key">secret_key</h3>
+<pre><code lang="ts">secret_key: string</code></pre>
+
+<h3 id="publishable_key">publishable_key</h3>
+<pre><code lang="ts">publishable_key: string</code></pre>

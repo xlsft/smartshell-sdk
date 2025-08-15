@@ -43,6 +43,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                     "online_booking_enabled",
                 ]),
                 key("customization", ["color", "background", "screensaver"]),
+                "priority",
             ]),
             "type_id",
             "position",
@@ -230,6 +231,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "online_booking_enabled",
         ]),
         key("customization", ["color", "background", "screensaver"]),
+        "priority",
     ])
 }
 

@@ -6,7 +6,7 @@ import { key } from "../../utils/key.ts"
 export type ResponseType = HostGroupTitle[]
 
 const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Promise<Response> => {
-    return await ctx.request("query", "hostGroupTitles", ["id", "title"])
+    return await ctx.request("query", "hostGroupTitles", ["id", "title", "priority"])
 }
 
 export default module<ResponseType>

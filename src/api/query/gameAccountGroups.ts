@@ -38,7 +38,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("host", [
                 "id",
                 "group_id",
-                key("group", ["id", "title", "created_at", "updated_at"]),
+                key("group", ["id", "title", "created_at", "updated_at", "priority"]),
                 "type_id",
                 "position",
                 "alias",

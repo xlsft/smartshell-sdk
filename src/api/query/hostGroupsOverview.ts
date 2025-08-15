@@ -10,6 +10,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "id",
         "title",
         key("customization", ["color", "background", "screensaver"]),
+        "priority",
         key("hosts", [
             "id",
             "group_id",

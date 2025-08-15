@@ -101,6 +101,9 @@
 <h3 id="goods">goods</h3>
 <pre><code lang="ts">goods: ||--['/docs/reference/types/EventListItemIdTitle','EventListItemIdTitle']--||[]</code></pre>
 
+<h3 id="goods_category">goods_category</h3>
+<pre><code lang="ts">goods_category?: ||--['/docs/reference/types/EventListItemIdTitle','EventListItemIdTitle']--||</code></pre>
+
 <h3 id="new_goods_amount">new_goods_amount</h3>
 <pre><code lang="ts">new_goods_amount: ||--['/docs/reference/types/EventListItemIdValueF','EventListItemIdValueF']--||[]</code></pre>
 
@@ -145,3 +148,12 @@
 
 <h3 id="combo_items">combo_items</h3>
 <pre><code lang="ts">combo_items: ||--['/docs/reference/types/EventListItemComboItem','EventListItemComboItem']--||[]</code></pre>
+
+<h3 id="company_news_item">company_news_item</h3>
+<pre><code lang="ts">company_news_item?: ||--['/docs/reference/types/EventListItemNews','EventListItemNews']--||</code></pre>
+
+<h3 id="company_news_item_changes">company_news_item_changes</h3>
+<pre><code lang="ts">company_news_item_changes?: ||--['/docs/reference/types/EventListItemNews','EventListItemNews']--||</code></pre>
+
+<h3 id="additional_data">additional_data</h3>
+<pre><code lang="ts">additional_data: string</code></pre>

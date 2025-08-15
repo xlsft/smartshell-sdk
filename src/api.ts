@@ -1351,6 +1351,46 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         getTelegramChannels: async (input: Parameters<typeof q.getTelegramChannels>[1],) => await q.getTelegramChannels(ctx, input,),
+        /**
+            * # query `mobileEvents`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/mobileEvents
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        mobileEvents: async (input: Parameters<typeof q.mobileEvents>[1],paginator?: ShellSdkPaginatorInput) => await q.mobileEvents(ctx, input, paginator),
+        /**
+            * # query `hostCommandTemplates`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/hostCommandTemplates
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        hostCommandTemplates: async () => await q.hostCommandTemplates(ctx),
+        /**
+            * # query `getNewsFeed`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/getNewsFeed
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        getNewsFeed: async (input: Parameters<typeof q.getNewsFeed>[1],paginator?: ShellSdkPaginatorInput) => await q.getNewsFeed(ctx, input, paginator),
+        /**
+            * # query `companyNewsList`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/companyNewsList
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        companyNewsList: async (input: Parameters<typeof q.companyNewsList>[1],paginator?: ShellSdkPaginatorInput) => await q.companyNewsList(ctx, input, paginator),
+        /**
+            * # query `companyNewsArticle`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/query/companyNewsArticle
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        companyNewsArticle: async (input: Parameters<typeof q.companyNewsArticle>[1],) => await q.companyNewsArticle(ctx, input,),
 
         // mutation
 
@@ -2978,5 +3018,69 @@ import type { Shell } from "../mod.ts";
             * `@xlsoftware/smartshell-sdk`
             */
         purchaseTariffByQR: async (input: Parameters<typeof m.purchaseTariffByQR>[1],) => await m.purchaseTariffByQR(ctx, input,),
+        /**
+            * # mutation `createCommands`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCommands
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        createCommands: async (input: Parameters<typeof m.createCommands>[1],) => await m.createCommands(ctx, input,),
+        /**
+            * # mutation `sendWakePackets`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/sendWakePackets
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        sendWakePackets: async (input: Parameters<typeof m.sendWakePackets>[1],) => await m.sendWakePackets(ctx, input,),
+        /**
+            * # mutation `createHostCommandTemplate`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createHostCommandTemplate
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        createHostCommandTemplate: async (input: Parameters<typeof m.createHostCommandTemplate>[1],) => await m.createHostCommandTemplate(ctx, input,),
+        /**
+            * # mutation `updateHostCommandTemplate`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateHostCommandTemplate
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateHostCommandTemplate: async (input: Parameters<typeof m.updateHostCommandTemplate>[1],) => await m.updateHostCommandTemplate(ctx, input,),
+        /**
+            * # mutation `deleteHostCommandTemplate`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteHostCommandTemplate
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        deleteHostCommandTemplate: async (input: Parameters<typeof m.deleteHostCommandTemplate>[1],) => await m.deleteHostCommandTemplate(ctx, input,),
+        /**
+            * # mutation `createCompanyNews`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/createCompanyNews
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        createCompanyNews: async (input: Parameters<typeof m.createCompanyNews>[1],) => await m.createCompanyNews(ctx, input,),
+        /**
+            * # mutation `updateCompanyNews`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/updateCompanyNews
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        updateCompanyNews: async (input: Parameters<typeof m.updateCompanyNews>[1],) => await m.updateCompanyNews(ctx, input,),
+        /**
+            * # mutation `deleteCompanyNews`
+            * 
+            * 🔗 https://smartshell.xlsoftware.ru/docs/reference/api/mutation/deleteCompanyNews
+            * 
+            * `@xlsoftware/smartshell-sdk`
+            */
+        deleteCompanyNews: async (input: Parameters<typeof m.deleteCompanyNews>[1],) => await m.deleteCompanyNews(ctx, input,),
     }
     }

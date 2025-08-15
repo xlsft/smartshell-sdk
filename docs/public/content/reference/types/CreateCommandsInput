@@ -1,0 +1,12 @@
+<h1 id="type_createcommandsinput">type CreateCommandsInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="host_ids">host_ids</h3>
+<pre><code lang="ts">host_ids: number[]</code></pre>
+
+<h3 id="action">action</h3>
+<pre><code lang="ts">action: ||--['/docs/reference/types/HostCommandAction','HostCommandAction']--||</code></pre>
+
+<h3 id="param">param</h3>
+<pre><code lang="ts">param?: string</code></pre>

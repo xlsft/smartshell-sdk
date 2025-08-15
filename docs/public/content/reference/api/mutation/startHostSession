@@ -1368,6 +1368,13 @@
                                     "value": [
                                         "string"
                                     ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "priority",
+                                    "value": [
+                                        "number"
+                                    ]
                                 }
                             ]
                         },

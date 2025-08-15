@@ -40,3 +40,6 @@
 
 <h3 id="tips">tips</h3>
 <pre><code lang="ts">tips?: number</code></pre>
+
+<h3 id="worker_name">worker_name</h3>
+<pre><code lang="ts">worker_name?: string</code></pre>

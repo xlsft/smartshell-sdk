@@ -893,6 +893,13 @@
                                             "value": [
                                                 "string"
                                             ]
+                                        },
+                                        {
+                                            "type": "scalar",
+                                            "key": "priority",
+                                            "value": [
+                                                "number"
+                                            ]
                                         }
                                     ]
                                 },
@@ -2557,6 +2564,13 @@
                                                 "string"
                                             ]
                                         }
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "priority",
+                                    "value": [
+                                        "number"
                                     ]
                                 }
                             ]

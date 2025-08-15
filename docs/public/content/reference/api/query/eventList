@@ -1069,6 +1069,29 @@
                 },
                 {
                     "type": "object",
+                    "key": "goods_category",
+                    "value": [
+                        "EventListItemIdTitle"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
                     "key": "new_goods_amount",
                     "value": [
                         "EventListItemIdValueF"
@@ -1297,6 +1320,157 @@
                                 "number"
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "company_news_item",
+                    "value": [
+                        "EventListItemNews"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "image",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "label",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active_from",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active_to",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "company_news_item_changes",
+                    "value": [
+                        "EventListItemNews"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "image",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "label",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "title",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active_from",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "active_to",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "additional_data",
+                    "value": [
+                        "string"
                     ]
                 }
             ]

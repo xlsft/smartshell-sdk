@@ -90,7 +90,7 @@ export type AchievementStatus = "ACTIVE" | "DISABLED"
 export type ActiveClient = {
     client_uuid: string
     nickname: string
-    payments: number
+    payments: Decimal
     total_seconds: number
     last_client_activity?: DateTime
 }
@@ -132,11 +132,12 @@ export type AdditionalLicensePriceInput = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type AdditionalPaymentData = {
-    public_id: string
+    public_id?: string
     org_id: number
-    amount: number
+    amount: Decimal
     description: string
     currency: Currency
+    data?: string
 }
 
 /**
@@ -255,7 +256,7 @@ export type Beneficiary = {
     email?: string
     inn: string
     status: string
-    balance: number
+    balance: Decimal
     tax: Tax
     service_name?: string
     companies: LiteCompany[]
@@ -272,10 +273,10 @@ export type Beneficiary = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type BeneficiaryBalance = {
-    balance: number
-    commission: number
-    sum: number
-    net_sum: number
+    balance: Decimal
+    commission: Decimal
+    sum: Decimal
+    net_sum: Decimal
     locked: boolean
 }
 
@@ -288,9 +289,9 @@ export type BeneficiaryBalance = {
 */
 export type BeneficiaryDeal = {
     id: string
-    sum: number
+    sum: Decimal
     beneficiary: Beneficiary
-    commission: number
+    commission: Decimal
     status: string
     created_at: DateTime
 }
@@ -324,9 +325,9 @@ export type BonusHistory = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type BonusHistoryItem = {
-    delta: number
-    old_value: number
-    new_value: number
+    delta: Decimal
+    old_value: Decimal
+    new_value: Decimal
     type: string
     type_id: number
     add: boolean
@@ -484,7 +485,7 @@ export type CashOrder = {
     id: number
     work_shift: WorkShift
     type: CashOrderType
-    sum: number
+    sum: Decimal
     comment: string
     created_at: DateTime
 }
@@ -497,8 +498,8 @@ export type CashOrder = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type CashOrderData = {
-    rko: number
-    pko: number
+    rko: Decimal
+    pko: Decimal
 }
 
 /**
@@ -652,7 +653,7 @@ export type ClientBookingInput = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type ClientBookingPenaltyData = {
-    cost: number
+    cost: Decimal
     currency: Currency
 }
 
@@ -668,15 +669,12 @@ export type ClientClub = {
     name: string
     address: string
     city: string
-    deposit: number
+    deposit: Decimal
     discount: number
     hours: number
     visits: ClientClubVisit[]
     last_visited_at: DateTime
-    accept_payments: boolean
     accept_sbp: boolean
-    booking_enabled: boolean
-    booking_settings?: BookingSettings
     currency: Currency
     rules: string
     achievements: UserAchievements
@@ -703,7 +701,9 @@ export type ClientClub = {
     host_count: number
     available_host_count: number
     cashback: ClientClubCashback[]
-    user_bonus: number
+    user_bonus: Decimal
+    club_settings: ClientClubSettings
+    deposit_transfer_enabled: boolean
 }
 
 /**
@@ -714,9 +714,9 @@ export type ClientClub = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type ClientClubCashback = {
-    amount: number
+    amount: Decimal
     is_percent: boolean
-    value: number
+    value: Decimal
 }
 
 /**
@@ -733,6 +733,37 @@ export type ClientClubCommentInput = {
     grade: number
     request_contact?: boolean
     request_contact_info?: string
+}
+
+/**
+* # type `ClientClubOnMap`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubOnMap
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ClientClubOnMap = {
+    id: number
+    name: string
+    address: string
+    city: string
+    lat: number
+    lng: number
+}
+
+/**
+* # type `ClientClubSettings`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientClubSettings
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ClientClubSettings = {
+    accept_payments: boolean
+    booking_enabled: boolean
+    booking_settings?: BookingSettings
+    online_booking_discount: number
+    OnlinePaymentMinLimit: number
 }
 
 /**
@@ -757,15 +788,15 @@ export type ClientClubVisit = {
 export type ClientHost = {
     id: number
     group_id: number
+    group_title: string
     type_id?: number
     position: number
     alias: string
     coord_x?: number
     coord_y?: number
-    is_occupied: boolean
-    is_booked: boolean
-    in_service: boolean
+    can_book: boolean
     info?: HostInfo
+    is_current_users_session: boolean
 }
 
 /**
@@ -871,7 +902,7 @@ export type ClientSessionOverview = {
     started_at: DateTime
     finished_at?: DateTime
     postpaid: boolean
-    total_cost: number
+    total_cost: Decimal
     seances: SeanceOverview[]
 }
 
@@ -918,9 +949,10 @@ export type ClientSessionType = "PLANED" | "ACTIVE" | "FINISHED" | "CANCELLED"
 * `@xlsoftware/smartshell-sdk`
 */
 export type ClientTariffGridInput = {
-    companyId: number
-    host_group_id: number
-    at: DateTime
+    companyId?: number
+    host_group_id?: number
+    at?: DateTime
+    qr?: string
 }
 
 /**
@@ -935,6 +967,7 @@ export type ClientTariffGridItem = {
     title: string
     duration: number
     cost: number
+    mobile_cost: number
     has_fixed_finish_time: boolean
     currency: Currency
     highlighted?: boolean
@@ -964,7 +997,7 @@ export type ClientsInput = {
 export type ClientsPaymentReportInput = {
     from: DateTime
     to: DateTime
-    sorting?: ClientsPaymentReportSortInput
+    sorting?: ReportSortInput
     search?: SearchReportInput
 }
 
@@ -994,18 +1027,6 @@ export type ClientsPaymentReportItem = {
 export type ClientsPaymentReportPaginated = {
     paginatorInfo?: PaginatorInfo
     data: ClientsPaymentReportItem[]
-}
-
-/**
-* # type `ClientsPaymentReportSortInput`
-* 
-* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ClientsPaymentReportSortInput
-* 
-* `@xlsoftware/smartshell-sdk`
-*/
-export type ClientsPaymentReportSortInput = {
-    field: string
-    direction: string
 }
 
 /**
@@ -1039,6 +1060,7 @@ export type CloudPaymentsAccountAction = "SET" | "REMOVE"
 export type Club = {
     id: number
     name: string
+    network_company?: NetworkCompany
     pc_count: number
     console_count: number
     distribution_type: DistributionType
@@ -1065,7 +1087,7 @@ export type Club = {
     organization_payment_card?: OrganizationPaymentCard
     verification_status: ClubVerificationStatus
     verification_status_updated_at?: DateTime
-    debt: number
+    debt: Decimal
     used_trial: boolean
     club_phone: string
     vk_url: string
@@ -1084,7 +1106,7 @@ export type Club = {
     pricelist_urls: string[]
     interior_urls: string[]
     services: ClubServices
-    deposit_transfer_enabled: boolean
+    it_adviser_support: boolean
 }
 
 /**
@@ -1530,6 +1552,7 @@ export type Comment = {
     data: string
     request_contact: boolean
     request_contact_info?: string
+    is_important?: boolean
 }
 
 /**
@@ -1553,6 +1576,7 @@ export type CommentInput = {
     type: CommentType
     entity_id: number
     request_contact?: boolean
+    is_important?: boolean
 }
 
 /**
@@ -1587,6 +1611,17 @@ export type CommentSearchInput = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type CommentType = "CLIENT" | "HOST" | "CLIENT_SESSION"
+
+/**
+* # type `CommentUpdateInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CommentUpdateInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CommentUpdateInput = {
+    is_important: boolean
+}
 
 /**
 * # type `CompanyPermissionInput`
@@ -1645,7 +1680,7 @@ export type CompanyPermissionsInput = {
 */
 export type Condition = {
     name: string
-    value: number
+    value: Decimal
 }
 
 /**
@@ -1759,6 +1794,21 @@ export type CreateGameAccountInput = {
 }
 
 /**
+* # type `CreateNetworkInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateNetworkInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type CreateNetworkInput = {
+    name: string
+    description?: string
+    main_company_id: number
+    max_discount_enabled: boolean
+    deposit_transfer_enabled: boolean
+}
+
+/**
 * # type `CreateWorkerInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/CreateWorkerInput
@@ -1836,7 +1886,7 @@ export type DeleteUserGroupInput = {
 */
 export type DepositAccount = {
     club: LiteCompany
-    balance: number
+    balance: Decimal
     current: boolean
     currency: Currency
 }
@@ -1850,8 +1900,8 @@ export type DepositAccount = {
 */
 export type DepositCashback = {
     id: number
-    amount: number
-    value: number
+    amount: Decimal
+    value: Decimal
     is_percent: boolean
     is_active: boolean
     starts_at?: DateTime
@@ -1897,7 +1947,7 @@ export type DepositTransferHistory = {
 export type DepositTransferHistoryItem = {
     type: DepositTransferOperationType
     club: LiteCompany
-    sum: number
+    sum: Decimal
     created_at: DateTime
 }
 
@@ -1911,6 +1961,55 @@ export type DepositTransferHistoryItem = {
 export type DepositTransferOperationType = "DEPOSIT" | "WITHDRAWAL"
 
 /**
+* # type `DepositTransferReport`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReport
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type DepositTransferReport = {
+    paginatorInfo: PaginatorInfo
+    data: DepositTransferReportItem[]
+    url?: string
+}
+
+/**
+* # type `DepositTransferReportInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReportInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type DepositTransferReportInput = {
+    from: DateTime
+    to: DateTime
+    type?: DepositTransferType
+    search?: SearchReportInput
+    sort?: ReportSortInput
+}
+
+/**
+* # type `DepositTransferReportItem`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferReportItem
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type DepositTransferReportItem = {
+    transfer: DepositTransferHistoryItem
+    user: User
+}
+
+/**
+* # enum `DepositTransferType`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DepositTransferType
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type DepositTransferType = "DEPOSIT" | "WITHDRAW"
+
+/**
 * # type `DetailedWorkShiftMoneyData`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/DetailedWorkShiftMoneyData
@@ -1920,11 +2019,11 @@ export type DepositTransferOperationType = "DEPOSIT" | "WITHDRAWAL"
 export type DetailedWorkShiftMoneyData = {
     id: number
     worker: User
-    cash_on_start: number
-    total: number
-    deposit: number
-    bonus: number
-    refunded: number
+    cash_on_start: Decimal
+    total: Decimal
+    deposit: Decimal
+    bonus: Decimal
+    refunded: Decimal
     cash: MoneyData
     card: MoneyData
     cash_orders: CashOrder[]
@@ -2408,6 +2507,8 @@ export type FeatureFlags = {
     modules: string[]
     host_count: number
     used_trial: boolean
+    deposit_transfer_enabled: boolean
+    it_adviser_support: boolean
 }
 
 /**
@@ -2618,15 +2719,14 @@ export type Good = {
     subtitle: string
     category?: Category
     amount: number
-    cost: number
-    wholesale_cost: number
-    tax_percent: number
+    cost: Decimal
+    wholesale_cost: Decimal
+    tax_percent: Decimal
     unit_name: string
     unit_value: number
     tax_system?: TaxSystem
     state: WarehouseState
     vat?: Vat
-    ean?: string
     eans: string[]
     comment: string
     image: string
@@ -2637,6 +2737,7 @@ export type Good = {
     show_in_shell: boolean
     in_combo: boolean
     low_stock_notification?: LowStockNotification
+    highlighted: boolean
 }
 
 /**
@@ -2660,7 +2761,6 @@ export type GoodInput = {
     use_global_discounts: boolean
     tax_system?: TaxSystem
     vat?: Vat
-    ean?: string
     eans: string[]
     use_fair_sign?: boolean
     is_excise?: boolean
@@ -2668,6 +2768,7 @@ export type GoodInput = {
     show_in_shell?: boolean
     low_stock_notification?: LowStockNotificationInput
     category_id?: number
+    highlighted?: boolean
 }
 
 /**
@@ -2728,6 +2829,7 @@ export type Host = {
     device_changes: HostDevice[]
     locked: boolean
     admin_called_at?: DateTime
+    online_booking_enabled: boolean
 }
 
 /**
@@ -2773,8 +2875,8 @@ export type HostCommandAction = "SHUTDOWN" | "REBOOT" | "ALLOW_ADMIN_MODE" | "DI
 * `@xlsoftware/smartshell-sdk`
 */
 export type HostCounters = {
-    cpu_temp: number
-    disk_temp: number
+    cpu_temp: Decimal
+    disk_temp: Decimal
     disk_status: HostDiskInfo[]
     active_window?: string
 }
@@ -2921,16 +3023,17 @@ export type HostInfo = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type HostInput = {
-    group_id: number
-    type_id: number
+    group_id?: number
+    type_id?: number
     position?: number
-    alias: string
+    alias?: string
     comment?: string
     mac_addr?: MacAddress
     ip_addr?: IpAddress
     dns_name?: string
     coord_x?: number
     coord_y?: number
+    online_booking_enabled?: boolean
 }
 
 /**
@@ -2963,6 +3066,7 @@ export type HostOverview = {
     client_sessions: ClientSessionOverview[]
     comment?: string
     admin_called_at?: DateTime
+    online_booking_enabled: boolean
 }
 
 /**
@@ -3191,7 +3295,7 @@ export type License = {
 */
 export type LicenseModulePrice = {
     module_id: number
-    price: number
+    price: Decimal
 }
 
 /**
@@ -3204,6 +3308,7 @@ export type LicenseModulePrice = {
 export type LicensePayment = {
     id: string
     url: string
+    qr?: string
     license_payment_method: LicensePaymentMethod
     additional?: AdditionalPaymentData
 }
@@ -3225,7 +3330,7 @@ export type LicensePaymentData = {
     modules: LicenseTariffModule[]
     status: LicensePaymentStatus
     months: number
-    cost: number
+    cost: Decimal
     contractor?: Contractor
 }
 
@@ -3250,7 +3355,7 @@ export type LicensePaymentInput = {
 * 
 * `@xlsoftware/smartshell-sdk`
 */
-export type LicensePaymentMethod = "CARD" | "BILL" | "CLOUD_PAYMENTS"
+export type LicensePaymentMethod = "CARD" | "BILL" | "CLOUD_PAYMENTS" | "KASPI_QR"
 
 /**
 * # enum `LicensePaymentStatus`
@@ -3269,15 +3374,15 @@ export type LicensePaymentStatus = "NEW" | "SUCCESS" | "FAILED"
 * `@xlsoftware/smartshell-sdk`
 */
 export type LicensePrice = {
-    sum: number
-    total_sum: number
-    host_price: number
+    sum: Decimal
+    total_sum: Decimal
+    host_price: Decimal
     modules: LicenseModulePrice[]
     discount_value: number
     loyalty_discount?: number
     promocode_discount?: number
     month_discount?: number
-    debt?: number
+    debt?: Decimal
 }
 
 /**
@@ -3309,7 +3414,7 @@ export type LicenseTariff = {
     id: number
     name: string
     description?: string
-    cost: number
+    cost: Decimal
     module_categories?: LicenseTariffCategory[]
 }
 
@@ -3377,7 +3482,7 @@ export type LicenseTariffModule = {
     id: number
     name: string
     description?: string
-    cost: number
+    cost: Decimal
     category_id: number
     alias: string
 }
@@ -3421,8 +3526,8 @@ export type LiteCompany = {
 export type LitePaymentTransaction = {
     id: string
     company: LiteCompany
-    amount: number
-    sum: number
+    amount: Decimal
+    sum: Decimal
     service: ServiceEnum
     status: string
     created_at: DateTime
@@ -3518,9 +3623,10 @@ export type Me = {
     first_name?: string
     last_name?: string
     middle_name?: string
-    deposit: number
-    bonus: number
+    deposit: Decimal
+    bonus: Decimal
     user_discount?: number
+    group_discount?: number
     last_client_activity?: DateTime
     last_worker_activity?: DateTime
     created_at: DateTime
@@ -3536,6 +3642,8 @@ export type Me = {
     news_consent: NewsConsent
     is_private: boolean
     unverified: boolean
+    needs_password_change: boolean
+    lead_source?: string
 }
 
 /**
@@ -3545,7 +3653,7 @@ export type Me = {
 * 
 * `@xlsoftware/smartshell-sdk`
 */
-export type MethodType = "SMS" | "CASCADE" | "FLASH_CALL" | "EMAIL"
+export type MethodType = "CASCADE" | "EMAIL" | "TELEGRAM"
 
 /**
 * # type `MoneyByTypes`
@@ -3555,11 +3663,11 @@ export type MethodType = "SMS" | "CASCADE" | "FLASH_CALL" | "EMAIL"
 * `@xlsoftware/smartshell-sdk`
 */
 export type MoneyByTypes = {
-    cash: number
-    card: number
-    deposit: number
-    bonus: number
-    total: number
+    cash: Decimal
+    card: Decimal
+    deposit: Decimal
+    bonus: Decimal
+    total: Decimal
     currency?: Currency
 }
 
@@ -3571,11 +3679,11 @@ export type MoneyByTypes = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type MoneyData = {
-    good: number
-    service: number
-    tariff: number
-    deposit: number
-    tips: number
+    good: Decimal
+    service: Decimal
+    tariff: Decimal
+    deposit: Decimal
+    tips: Decimal
 }
 
 /**
@@ -3589,7 +3697,7 @@ export type MovementOfFunds = {
     operation: OperationType
     transaction?: LitePaymentTransaction
     deal?: BeneficiaryDeal
-    sum: number
+    sum: Decimal
     created_at: DateTime
 }
 
@@ -3603,8 +3711,62 @@ export type MovementOfFunds = {
 export type MovementOfFundsPaginated = {
     paginatorInfo?: PaginatorInfo
     data: MovementOfFunds[]
-    deposit: number
-    withdrawal: number
+    deposit: Decimal
+    withdrawal: Decimal
+}
+
+/**
+* # type `Network`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/Network
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type Network = {
+    id: ID
+    name: string
+    description?: string
+    organization: Organization
+    companies: NetworkCompaniesData
+}
+
+/**
+* # type `NetworkCompaniesData`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompaniesData
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type NetworkCompaniesData = {
+    data: NetworkCompany[]
+    total: number
+}
+
+/**
+* # type `NetworkCompany`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompany
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type NetworkCompany = {
+    club: LiteCompany
+    network: Network
+    is_main: boolean
+    max_discount_enabled: boolean
+    deposit_transfer_enabled: boolean
+}
+
+/**
+* # type `NetworkCompanyInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/NetworkCompanyInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type NetworkCompanyInput = {
+    max_discount_enabled?: boolean
+    deposit_transfer_enabled?: boolean
 }
 
 /**
@@ -3673,12 +3835,14 @@ export type Organization = {
     email?: Email
     address?: string
     hosts_count: number
+    network?: Network
     verified_at?: DateTime
     activated_at?: DateTime
     banned_at?: DateTime
     created_at: DateTime
     updated_at: DateTime
     deleted_at?: DateTime
+    news_consent?: boolean
 }
 
 /**
@@ -3711,7 +3875,8 @@ export type OrganizationConfirmationCodeType = "REGISTER" | "RESET_PASSWORD" | "
 * `@xlsoftware/smartshell-sdk`
 */
 export type OrganizationInput = {
-    email: Email
+    email?: Email
+    news_consent?: boolean
 }
 
 /**
@@ -3754,6 +3919,7 @@ export type OrganizationRegisterInput = {
     password: string
     password_confirmation: string
     captcha_token: string
+    news_consent?: boolean
 }
 
 /**
@@ -3814,6 +3980,18 @@ export type OrganizationUserType = "OWNER" | "DIRECTOR" | "SYSTEM_ADMINISTRATOR"
 export type OrganizationVerifyConfirmationCodeInput = {
     hash: string
     code: string
+}
+
+/**
+* # type `OverviewReport`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/OverviewReport
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type OverviewReport = {
+    url?: string
+    data: UnifiedReport[]
 }
 
 /**
@@ -3893,16 +4071,16 @@ export type Payment = {
     discount?: Discount
     method: PaymentMethod
     status: PaymentStatus
-    sum: number
-    bonus: number
+    sum: Decimal
+    bonus: Decimal
     created_at: DateTime
     items: PaymentItem[]
     is_refunded: boolean
     not_refundable: boolean
-    card_sum: number
-    cash_sum: number
+    card_sum: Decimal
+    cash_sum: Decimal
     comment?: string
-    cashback: number
+    cashback: Decimal
     external_data?: ExternalPaymentData
 }
 
@@ -3929,10 +4107,10 @@ export type PaymentHistoryItem = {
     created_at: DateTime
     title: string
     amount: number
-    sum: number
-    bonus: number
-    card_sum: number
-    cash_sum: number
+    sum: Decimal
+    bonus: Decimal
+    card_sum: Decimal
+    cash_sum: Decimal
     worker?: User
     items: PaymentItem[]
     is_refunded: boolean
@@ -4026,7 +4204,7 @@ export type PaymentMethod = "CARD" | "CASH" | "DEPOSIT" | "BONUS" | "COMPOSITE" 
 * `@xlsoftware/smartshell-sdk`
 */
 export type PaymentReportItem = {
-    value: number
+    value: Decimal
     currency?: Currency
 }
 
@@ -4050,8 +4228,8 @@ export type PaymentTransaction = {
     id: string
     company_id: number
     service: ServiceEnum
-    amount: number
-    sum: number
+    amount: Decimal
+    sum: Decimal
     client: User
     status: string
     additional?: AdditionalTransactionData
@@ -4194,7 +4372,7 @@ export type PhoneExistsInput = {
 */
 export type PremiumPayment = {
     id: number
-    sum: number
+    sum: Decimal
     status: string
 }
 
@@ -4249,7 +4427,7 @@ export type PromoCode = {
     author: User
     client?: User
     code: string
-    value: number
+    value: Decimal
     amount?: number
     entity?: CartEntity
     entity_id?: number
@@ -4393,6 +4571,18 @@ export type ReportInput = {
 }
 
 /**
+* # type `ReportSortInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ReportSortInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type ReportSortInput = {
+    field: string
+    direction: string
+}
+
+/**
 * # type `ResetPasswordInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/ResetPasswordInput
@@ -4437,7 +4627,7 @@ export type ReturnFormatEnum = "LINK" | "QR_CODE" | "QR_CODE_BASE64"
 */
 export type Reward = {
     name: string
-    value: number
+    value: Decimal
 }
 
 /**
@@ -4479,6 +4669,18 @@ export type Role = {
 export type RulesMessage = {
     rule: string
     message: string
+}
+
+/**
+* # type `SalesExportInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SalesExportInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type SalesExportInput = {
+    from: DateTime
+    to: DateTime
 }
 
 /**
@@ -4587,9 +4789,9 @@ export type SendWakePacketInput = {
 export type Service = {
     id: number
     title: string
-    cost: number
-    wholesale_cost: number
-    tax_percent?: number
+    cost: Decimal
+    wholesale_cost: Decimal
+    tax_percent?: Decimal
     use_global_discounts: boolean
     created_at: DateTime
     tax_system?: TaxSystem
@@ -4604,7 +4806,7 @@ export type Service = {
 * 
 * `@xlsoftware/smartshell-sdk`
 */
-export type ServiceEnum = "CLOUD_PAYMENTS" | "TINKOFF_SBP" | "KASPI_PAY" | "SBP"
+export type ServiceEnum = "CLOUD_PAYMENTS" | "KASPI_PAY" | "SBP"
 
 /**
 * # type `ServiceInput`
@@ -4695,6 +4897,19 @@ export type SetDepositInput = {
 */
 export type SetTelegramChannelInput = {
     value?: string
+}
+
+/**
+* # type `SetTelegramSettingsInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/SetTelegramSettingsInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type SetTelegramSettingsInput = {
+    token?: string
+    chat_id?: string
+    notification?: string
 }
 
 /**
@@ -4996,8 +5211,8 @@ export type StatByServices = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type StatByTransfers = {
-    income: number
-    outcome: number
+    income: Decimal
+    outcome: Decimal
 }
 
 /**
@@ -5226,6 +5441,18 @@ export type TariffPricelistInput = {
 }
 
 /**
+* # type `TariffPurchaseByQRInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffPurchaseByQRInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type TariffPurchaseByQRInput = {
+    tariff_id: number
+    qr: string
+}
+
+/**
 * # type `TariffSchedule`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TariffSchedule
@@ -5271,6 +5498,41 @@ export type Tax = "NONE" | "VAT0" | "VAT5" | "VAT7" | "VAT10" | "VAT20" | "VAT11
 export type TaxSystem = "SIMPLE_INCOME" | "SIMPLE_INCOME_EXPENSES" | "PATENT" | "MAIN"
 
 /**
+* # type `TelegramChannel`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramChannel
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type TelegramChannel = {
+    id: string
+    type: TelegramChannelType
+    title: string
+}
+
+/**
+* # enum `TelegramChannelType`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramChannelType
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type TelegramChannelType = "SUPERGROUP" | "GROUP" | "CHANNEL" | "PRIVATE"
+
+/**
+* # type `TelegramSettings`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TelegramSettings
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type TelegramSettings = {
+    token?: string
+    channel?: TelegramChannel
+    notification: string
+}
+
+/**
 * # type `TransferDepositInput`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/TransferDepositInput
@@ -5309,6 +5571,7 @@ export type ULResidentInput = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type UnifiedReport = {
+    title?: string
     labels: string[]
     extraLabels: string[]
     extraLabels2: string[]
@@ -5328,7 +5591,7 @@ export type UnifiedReport = {
 * `@xlsoftware/smartshell-sdk`
 */
 export type UnifiedReportData = {
-    values: number[]
+    values: Decimal[]
 }
 
 /**
@@ -5352,7 +5615,9 @@ export type UnifiedReportPaginated = {
 */
 export type UnifiedSummaryData = {
     title: string
-    value: number
+    value: Decimal
+    extraValue?: Decimal
+    extraString?: string
 }
 
 /**
@@ -5377,7 +5642,7 @@ export type UniqueUsersReport = {
 */
 export type UpcomingAutoPaymentData = {
     card: OrganizationPaymentCard
-    amount: number
+    amount: Decimal
     payment_date: Date
 }
 
@@ -5392,9 +5657,9 @@ export type UpdateClientMeInput = {
     first_name?: string
     last_name?: string
     middle_name?: string
-    nickname: string
-    email: Email
-    dob: Date
+    nickname?: string
+    email?: Email
+    dob?: Date
     city?: string
     avatar_url?: string
     telegram_link?: string
@@ -5402,6 +5667,7 @@ export type UpdateClientMeInput = {
     steam_link?: string
     vk_link?: string
     is_private?: boolean
+    favorite_club?: number
 }
 
 /**
@@ -5492,12 +5758,12 @@ export type UpdateGoodInput = {
     use_global_discounts?: boolean
     tax_system?: TaxSystem
     vat?: Vat
-    ean?: string
     use_fair_sign?: boolean
     is_excise?: boolean
     price?: number
     show_in_shell?: boolean
     category_id?: number
+    highlighted?: boolean
 }
 
 /**
@@ -5511,6 +5777,7 @@ export type UpdateGoodsInput = {
     show_in_shell?: boolean
     category_id?: number
     low_stock_notification?: LowStockNotificationInput
+    highlighted?: boolean
 }
 
 /**
@@ -5552,6 +5819,11 @@ export type UpdateMeInput = {
     last_name?: string
     middle_name?: string
     nickname?: string
+    email?: string
+    news_consent?: boolean
+    password?: string
+    password_confirmation?: string
+    lead_source?: string
 }
 
 /**
@@ -5563,6 +5835,19 @@ export type UpdateMeInput = {
 */
 export type UpdateMultipleSettingsInput = {
     list: UpdateSettingInput[]
+}
+
+/**
+* # type `UpdateNetworkInput`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UpdateNetworkInput
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type UpdateNetworkInput = {
+    name?: string
+    main_company_id?: number
+    description?: string
 }
 
 /**
@@ -5663,8 +5948,8 @@ export type User = {
     first_name?: string
     last_name?: string
     middle_name?: string
-    deposit: number
-    bonus: number
+    deposit: Decimal
+    bonus: Decimal
     last_client_activity?: DateTime
     last_worker_activity?: DateTime
     last_comment?: Comment
@@ -5685,6 +5970,9 @@ export type User = {
     is_private: boolean
     premium: boolean
     unverified: boolean
+    lead_source?: string
+    discounts: UserDiscount[]
+    favorite_club?: number
 }
 
 /**
@@ -5701,7 +5989,7 @@ export type UserAchievement = {
     icon_url?: string
     conditions: Condition[]
     rewards: Reward[]
-    progress: number
+    progress: Decimal
 }
 
 /**
@@ -5747,6 +6035,27 @@ export type UserClubsInput = {
 }
 
 /**
+* # type `UserDiscount`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserDiscount
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type UserDiscount = {
+    type: UserDiscountType
+    value: number
+}
+
+/**
+* # enum `UserDiscountType`
+* 
+* 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserDiscountType
+* 
+* `@xlsoftware/smartshell-sdk`
+*/
+export type UserDiscountType = "PERSONAL" | "GROUP" | "NETWORK"
+
+/**
 * # type `UserGroup`
 * 
 * 🔗 https://smartshell.xlsoftware.ru/docs/reference/types/UserGroup
@@ -5783,7 +6092,7 @@ export type UserGroupInput = {
 export type UserPaginated = {
     paginatorInfo?: PaginatorInfo
     data: User[]
-    total_deposits?: number
+    total_deposits?: Decimal
 }
 
 /**
@@ -5955,7 +6264,7 @@ export type WorkShiftInput = {
 */
 export type WorkShiftMoney = {
     sum: MoneyByTypes
-    cash_on_start: number
+    cash_on_start: Decimal
 }
 
 /**
@@ -5980,7 +6289,7 @@ export type WorkShiftPaginated = {
 export type WorkShiftPaymentOverviewComboData = {
     title: string
     amount: number
-    sum: number
+    sum: Decimal
 }
 
 /**
@@ -5993,14 +6302,14 @@ export type WorkShiftPaymentOverviewComboData = {
 export type WorkShiftPaymentOverviewData = {
     id: number
     worker: User
-    cash_on_start: number
-    total: number
-    deposit: number
-    online_deposit: number
-    bonus: number
-    refunded: number
-    cash: number
-    card: number
+    cash_on_start: Decimal
+    total: Decimal
+    deposit: Decimal
+    online_deposit: Decimal
+    bonus: Decimal
+    refunded: Decimal
+    cash: Decimal
+    card: Decimal
     cash_orders: CashOrder[]
     sum: MoneyData
     currency?: Currency
@@ -6020,10 +6329,10 @@ export type WorkShiftPaymentOverviewData = {
 */
 export type WorkShiftPaymentOverviewGoodData = {
     title: string
-    cost: number
+    cost: Decimal
     amount: number
     in_stock: number
-    sum: number
+    sum: Decimal
 }
 
 /**
@@ -6036,7 +6345,7 @@ export type WorkShiftPaymentOverviewGoodData = {
 export type WorkShiftPaymentOverviewServiceData = {
     title: string
     amount: number
-    sum: number
+    sum: Decimal
 }
 
 /**

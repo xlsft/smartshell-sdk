@@ -256,6 +256,27 @@
                             "value": [
                                 "boolean"
                             ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "sell_periods",
+                            "value": [],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "start",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "end",
+                                    "value": [
+                                        "number"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -452,6 +473,29 @@
             "key": "show_in_shell",
             "value": [
                 "boolean"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "sell_periods",
+            "value": [
+                "CategoryPeriod"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "start",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "end",
+                    "value": [
+                        "number"
+                    ]
+                }
             ]
         }
     ],

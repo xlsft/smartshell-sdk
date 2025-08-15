@@ -1,0 +1,30 @@
+<h1 id="type_eventlistitemnews">type EventListItemNews</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id?: string</code></pre>
+
+<h3 id="image">image</h3>
+<pre><code lang="ts">image?: string</code></pre>
+
+<h3 id="label">label</h3>
+<pre><code lang="ts">label?: string</code></pre>
+
+<h3 id="url">url</h3>
+<pre><code lang="ts">url?: string</code></pre>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title?: string</code></pre>
+
+<h3 id="active">active</h3>
+<pre><code lang="ts">active?: boolean</code></pre>
+
+<h3 id="active_from">active_from</h3>
+<pre><code lang="ts">active_from?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="active_to">active_to</h3>
+<pre><code lang="ts">active_to?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="created_at">created_at</h3>
+<pre><code lang="ts">created_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

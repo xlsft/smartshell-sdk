@@ -1,0 +1,21 @@
+<h1 id="type_mobileeventsinput">type MobileEventsInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="types">types</h3>
+<pre><code lang="ts">types: string[]</code></pre>
+
+<h3 id="start">start</h3>
+<pre><code lang="ts">start?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="finish">finish</h3>
+<pre><code lang="ts">finish?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="work_shift_id">work_shift_id</h3>
+<pre><code lang="ts">work_shift_id?: number</code></pre>
+
+<h3 id="q">q</h3>
+<pre><code lang="ts">q?: string</code></pre>
+
+<h3 id="payment_method">payment_method</h3>
+<pre><code lang="ts">payment_method?: string</code></pre>

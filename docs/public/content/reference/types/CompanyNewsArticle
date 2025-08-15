@@ -1,0 +1,36 @@
+<h1 id="type_companynewsarticle">type CompanyNewsArticle</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id: ||--['/docs/reference/types/ID','ID']--||</code></pre>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title: string</code></pre>
+
+<h3 id="company">company</h3>
+<pre><code lang="ts">company: ||--['/docs/reference/types/LiteCompany','LiteCompany']--||</code></pre>
+
+<h3 id="content">content</h3>
+<pre><code lang="ts">content: string</code></pre>
+
+<h3 id="image">image</h3>
+<pre><code lang="ts">image?: string</code></pre>
+
+<h3 id="link">link</h3>
+<pre><code lang="ts">link?: ||--['/docs/reference/types/ArticleLink','ArticleLink']--||</code></pre>
+
+<h3 id="creator">creator</h3>
+<pre><code lang="ts">creator?: ||--['/docs/reference/types/User','User']--||</code></pre>
+
+<h3 id="active">active</h3>
+<pre><code lang="ts">active: boolean</code></pre>
+
+<h3 id="publication_period">publication_period</h3>
+<pre><code lang="ts">publication_period?: ||--['/docs/reference/types/PublicationPeriod','PublicationPeriod']--||</code></pre>
+
+<h3 id="created_at">created_at</h3>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="updated_at">updated_at</h3>
+<pre><code lang="ts">updated_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
