@@ -44,7 +44,7 @@ export const types = async (introspect: Type[]) => {
 */
 export type ${type.name} = ${enums.join(' | ')}`
     }
-    const exports = ["export type Upload = string", "export type Decimal = number", "export type Email = `${string}@${string}.${string}`;","export type IpAddress = `${number}.${number}.${number}.${number}`;","export type MacAddress = `${string}:${string}:${string}:${string}:${string}:${string}`;","export type Date = `${number}${number}${number}${number}-${number}${number}-${number}${number}`", "export type Time = `${number}${number}:${number}${number}:${number}${number}`", "export type DateTime = `${Date} ${Time}`"]
+    const exports = ["export type Upload = string", "export type Decimal = number", "export type ID = string", "export type Email = `${string}@${string}.${string}`;","export type IpAddress = `${number}.${number}.${number}.${number}`;","export type MacAddress = `${string}:${string}:${string}:${string}:${string}:${string}`;","export type Date = `${number}${number}${number}${number}-${number}${number}-${number}${number}`", "export type Time = `${number}${number}:${number}${number}:${number}${number}`", "export type DateTime = `${Date} ${Time}`"]
     for (let top_type_i = 0; top_type_i < introspect.length; top_type_i++) {
         const type = introspect[top_type_i];
         if ( type.name === 'Mutation' || type.name === 'Query' ) continue
