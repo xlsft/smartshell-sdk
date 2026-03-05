@@ -13,7 +13,22 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "host_count",
         "used_trial",
         "deposit_transfer_enabled",
+        "shortcuts_sync_enabled",
         "it_adviser_support",
+        "flocktory_url",
+        key("company_owner", [
+            "uuid",
+            "inn",
+            "type",
+            "name",
+            "ogrn",
+            "legal_address",
+            "kpp",
+            "policy_url",
+            "private_policy",
+            "email",
+        ]),
+        "company_key_hash",
     ])
 }
 

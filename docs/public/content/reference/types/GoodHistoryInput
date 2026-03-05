@@ -1,0 +1,21 @@
+<h1 id="type_goodhistoryinput">type GoodHistoryInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id: number</code></pre>
+
+<h3 id="from">from</h3>
+<pre><code lang="ts">from: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="to">to</h3>
+<pre><code lang="ts">to: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="operations">operations</h3>
+<pre><code lang="ts">operations: ||--['/docs/reference/types/WarehouseHistoryOperationType','WarehouseHistoryOperationType']--||[]</code></pre>
+
+<h3 id="page">page</h3>
+<pre><code lang="ts">page?: number</code></pre>
+
+<h3 id="first">first</h3>
+<pre><code lang="ts">first?: number</code></pre>

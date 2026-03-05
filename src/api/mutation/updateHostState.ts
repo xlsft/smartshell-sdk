@@ -100,7 +100,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "id",
                 "group_id",
                 key("group", ["id", "title", "created_at", "updated_at", "priority"]),
-                "type_id",
                 "position",
                 "alias",
                 "comment",
@@ -114,7 +113,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "created_at",
                 key("info", ["processor", "ram", "video", "disc", "shell_version"]),
                 key("counters", ["cpu_temp", "disk_temp", "active_window"]),
-                key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at"]),
+                key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at", "qr"]),
                 key("client_sessions", [
                     "id",
                     "duration",

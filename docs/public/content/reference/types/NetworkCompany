@@ -11,8 +11,5 @@
 <h3 id="is_main">is_main</h3>
 <pre><code lang="ts">is_main: boolean</code></pre>
 
-<h3 id="max_discount_enabled">max_discount_enabled</h3>
-<pre><code lang="ts">max_discount_enabled: boolean</code></pre>
-
-<h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
-<pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>
+<h3 id="settings">settings</h3>
+<pre><code lang="ts">settings: ||--['/docs/reference/types/NetworkCompanySettings','NetworkCompanySettings']--||</code></pre>

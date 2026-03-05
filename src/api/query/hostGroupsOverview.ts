@@ -77,6 +77,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "comment",
             "admin_called_at",
             "online_booking_enabled",
+            "qr",
         ]),
     ])
 }

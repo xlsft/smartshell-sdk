@@ -89,9 +89,6 @@
 <h3 id="avatar_url">avatar_url</h3>
 <pre><code lang="ts">avatar_url: string</code></pre>
 
-<h3 id="news_consent">news_consent</h3>
-<pre><code lang="ts">news_consent: ||--['/docs/reference/types/NewsConsent','NewsConsent']--||</code></pre>
-
 <h3 id="telegram_link">telegram_link</h3>
 <pre><code lang="ts">telegram_link?: string</code></pre>
 

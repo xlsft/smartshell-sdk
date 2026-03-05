@@ -1,0 +1,39 @@
+<h1 id="api_query_exportOverviewReport">query exportOverviewReport</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { input: ||--['/docs/reference/types/OverviewExportInput','OverviewExportInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = string</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "OverviewExportInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "exportOverviewReport",
+    "schema": [],
+    "props": [
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "OverviewExportInput",
+            "type": "object",
+            "docs": "/docs/reference/types/OverviewExportInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "string"
+        ],
+        "type": "scalar"
+    }
+}</code></pre>

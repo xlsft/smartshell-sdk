@@ -50,7 +50,6 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     key("hosts", [
                         "id",
                         "group_id",
-                        "type_id",
                         "position",
                         "alias",
                         "comment",

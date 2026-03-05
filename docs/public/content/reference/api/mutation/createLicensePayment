@@ -127,6 +127,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "scalar",
+            "key": "currency",
+            "value": [
+                "string"
+            ]
         }
     ],
     "props": [

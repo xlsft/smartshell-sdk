@@ -17,7 +17,6 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("hosts", [
                 "id",
                 "group_id",
-                "type_id",
                 "position",
                 "alias",
                 "comment",
@@ -40,7 +39,6 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("customization", ["color", "background", "screensaver"]),
             "priority",
         ]),
-        "type_id",
         "position",
         "alias",
         "comment",
@@ -96,6 +94,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             ]),
             "started_at",
             "finished_at",
+            "qr",
         ]),
         key("client_sessions", [
             "id",

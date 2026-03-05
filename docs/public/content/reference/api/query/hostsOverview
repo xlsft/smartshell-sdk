@@ -38,6 +38,13 @@
             ]
         },
         {
+            "type": "enum",
+            "key": "type",
+            "value": [
+                "HostTypeValue"
+            ]
+        },
+        {
             "type": "scalar",
             "key": "position",
             "value": [
@@ -565,6 +572,13 @@
                         "UserGroup"
                     ],
                     "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
                         {
                             "type": "scalar",
                             "key": "uuid",
@@ -1185,36 +1199,6 @@
                     ]
                 },
                 {
-                    "type": "object",
-                    "key": "news_consent",
-                    "value": [
-                        "NewsConsent"
-                    ],
-                    "child": [
-                        {
-                            "type": "scalar",
-                            "key": "isGiven",
-                            "value": [
-                                "boolean"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "givenAt",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "revokedAt",
-                            "value": [
-                                "string"
-                            ]
-                        }
-                    ]
-                },
-                {
                     "type": "scalar",
                     "key": "telegram_link",
                     "value": [
@@ -1409,6 +1393,13 @@
             "key": "online_booking_enabled",
             "value": [
                 "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "qr",
+            "value": [
+                "string"
             ]
         }
     ],

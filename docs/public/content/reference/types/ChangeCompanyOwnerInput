@@ -1,0 +1,9 @@
+<h1 id="type_changecompanyownerinput">type ChangeCompanyOwnerInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="company_id">company_id</h3>
+<pre><code lang="ts">company_id: number</code></pre>
+
+<h3 id="owner_id">owner_id</h3>
+<pre><code lang="ts">owner_id: number</code></pre>

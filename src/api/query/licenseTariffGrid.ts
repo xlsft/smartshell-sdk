@@ -20,6 +20,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "description",
                 "cost",
                 key("module_categories", ["id", "name", "tariff_id"]),
+                key("currency", ["id", "title", "alias", "letter"]),
             ]),
             key("modules", ["id", "name", "description", "cost", "category_id", "alias"]),
         ],

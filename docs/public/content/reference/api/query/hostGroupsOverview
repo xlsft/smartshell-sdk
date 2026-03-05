@@ -96,6 +96,13 @@
                     ]
                 },
                 {
+                    "type": "enum",
+                    "key": "type",
+                    "value": [
+                        "HostTypeValue"
+                    ]
+                },
+                {
                     "type": "scalar",
                     "key": "position",
                     "value": [
@@ -649,6 +656,13 @@
                     "key": "online_booking_enabled",
                     "value": [
                         "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "qr",
+                    "value": [
+                        "string"
                     ]
                 }
             ]

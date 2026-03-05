@@ -1,0 +1,17 @@
+<h1 id="type_eventlistitempaymenttransaction">
+    type EventListItemPaymentTransaction
+</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="uuid">uuid</h3>
+<pre><code lang="ts">uuid: string</code></pre>
+
+<h3 id="payment_id">payment_id</h3>
+<pre><code lang="ts">payment_id: number</code></pre>
+
+<h3 id="status">status</h3>
+<pre><code lang="ts">status: string</code></pre>
+
+<h3 id="service">service</h3>
+<pre><code lang="ts">service: string</code></pre>

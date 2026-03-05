@@ -26,7 +26,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "deleted_at",
             "news_consent",
         ]),
-        key("companies", [key("data", ["is_main", "max_discount_enabled", "deposit_transfer_enabled"]), "total"]),
+        key("companies", [key("data", ["is_main"]), "total"]),
     ])
 }
 

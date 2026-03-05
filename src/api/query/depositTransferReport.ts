@@ -20,7 +20,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                 key("user", [
                     "id",
                     "uuid",
-                    key("group", ["uuid", "title", "user_count", "discount", "created_at"]),
+                    key("group", ["id", "uuid", "title", "user_count", "discount", "created_at"]),
                     key("creator", [
                         "id",
                         "uuid",
@@ -91,7 +91,6 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     key("pausable_sessions", ["id", "duration", "elapsed", "available", "created_at", "expires_at"]),
                     "city",
                     "avatar_url",
-                    key("news_consent", ["isGiven", "givenAt", "revokedAt"]),
                     "telegram_link",
                     "discord_link",
                     "steam_link",

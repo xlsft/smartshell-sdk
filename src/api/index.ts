@@ -15,6 +15,7 @@ import category from './query/category.ts'
 import clientBookingCheckPenalty from './query/clientBookingCheckPenalty.ts'
 import clientBookings from './query/clientBookings.ts'
 import clientEmailExists from './query/clientEmailExists.ts'
+import clientHost from './query/clientHost.ts'
 import clientHostGroups from './query/clientHostGroups.ts'
 import clientHosts from './query/clientHosts.ts'
 import clientMe from './query/clientMe.ts'
@@ -26,12 +27,16 @@ import clients from './query/clients.ts'
 import clientsPaymentReport from './query/clientsPaymentReport.ts'
 import club from './query/club.ts'
 import clubComments from './query/clubComments.ts'
+import clubLoadByDayOfWeekReport from './query/clubLoadByDayOfWeekReport.ts'
 import clubOrganization from './query/clubOrganization.ts'
 import clubs from './query/clubs.ts'
+import clubsOnMap from './query/clubsOnMap.ts'
 import combo from './query/combo.ts'
 import comboList from './query/comboList.ts'
 import combos from './query/combos.ts'
 import comments from './query/comments.ts'
+import companyNewsArticle from './query/companyNewsArticle.ts'
+import companyNewsList from './query/companyNewsList.ts'
 import companyPermissions from './query/companyPermissions.ts'
 import contractors from './query/contractors.ts'
 import currencies from './query/currencies.ts'
@@ -40,12 +45,15 @@ import currentClub from './query/currentClub.ts'
 import currentHost from './query/currentHost.ts'
 import depositCashback from './query/depositCashback.ts'
 import depositCashbacks from './query/depositCashbacks.ts'
+import depositTransferReport from './query/depositTransferReport.ts'
+import depositTransferSummaryReport from './query/depositTransferSummaryReport.ts'
 import discount from './query/discount.ts'
 import discounts from './query/discounts.ts'
 import emailExists from './query/emailExists.ts'
 import eventList from './query/eventList.ts'
 import events from './query/events.ts'
 import exportGoods from './query/exportGoods.ts'
+import exportSales from './query/exportSales.ts'
 import exportUsers from './query/exportUsers.ts'
 import featureFlags from './query/featureFlags.ts'
 import finishedWorkShifts from './query/finishedWorkShifts.ts'
@@ -69,20 +77,24 @@ import getCurrentBeneficiary from './query/getCurrentBeneficiary.ts'
 import getCurrentTariff from './query/getCurrentTariff.ts'
 import getDepositHistory from './query/getDepositHistory.ts'
 import getDetailedWorkShiftMoneyData from './query/getDetailedWorkShiftMoneyData.ts'
+import getNewsFeed from './query/getNewsFeed.ts'
 import getOrganizationPaymentCard from './query/getOrganizationPaymentCard.ts'
 import getOrganizationPaymentCards from './query/getOrganizationPaymentCards.ts'
 import getPaymentsByClientId from './query/getPaymentsByClientId.ts'
 import getSumForWithdrawToCheckingAccount from './query/getSumForWithdrawToCheckingAccount.ts'
+import getTelegramChannels from './query/getTelegramChannels.ts'
 import getUpcomingAutoPaymentData from './query/getUpcomingAutoPaymentData.ts'
 import getWorkShiftPaymentOverviewData from './query/getWorkShiftPaymentOverviewData.ts'
 import good from './query/good.ts'
 import goods from './query/goods.ts'
 import host from './query/host.ts'
 import hostAccessToken from './query/hostAccessToken.ts'
+import hostCommandTemplates from './query/hostCommandTemplates.ts'
 import hostGroup from './query/hostGroup.ts'
 import hostGroupTitles from './query/hostGroupTitles.ts'
 import hostGroups from './query/hostGroups.ts'
 import hostGroupsOverview from './query/hostGroupsOverview.ts'
+import hostTokenByPIN from './query/hostTokenByPIN.ts'
 import hostType from './query/hostType.ts'
 import hostTypes from './query/hostTypes.ts'
 import hosts from './query/hosts.ts'
@@ -93,6 +105,7 @@ import income from './query/income.ts'
 import leaderboard from './query/leaderboard.ts'
 import licenseModule from './query/licenseModule.ts'
 import licenseModuleCategory from './query/licenseModuleCategory.ts'
+import licensePayment from './query/licensePayment.ts'
 import licensePayments from './query/licensePayments.ts'
 import licensePrice from './query/licensePrice.ts'
 import licenseTariff from './query/licenseTariff.ts'
@@ -102,14 +115,17 @@ import loginExists from './query/loginExists.ts'
 import magicPeriods from './query/magicPeriods.ts'
 import magicSuperInit from './query/magicSuperInit.ts'
 import me from './query/me.ts'
+import mobileEvents from './query/mobileEvents.ts'
 import myClub from './query/myClub.ts'
 import myClubs from './query/myClubs.ts'
 import myLastVisitedClub from './query/myLastVisitedClub.ts'
+import network from './query/network.ts'
 import news from './query/news.ts'
 import nicknameExists from './query/nicknameExists.ts'
 import now from './query/now.ts'
 import organizationClubs from './query/organizationClubs.ts'
 import organizationMe from './query/organizationMe.ts'
+import overviewReport from './query/overviewReport.ts'
 import pausableClientSessions from './query/pausableClientSessions.ts'
 import paymentTransaction from './query/paymentTransaction.ts'
 import paymentTransactions from './query/paymentTransactions.ts'
@@ -138,6 +154,7 @@ import shortcuts from './query/shortcuts.ts'
 import tariffGrid from './query/tariffGrid.ts'
 import tariffs from './query/tariffs.ts'
 import tasks from './query/tasks.ts'
+import topSoldOverviewItemsReport from './query/topSoldOverviewItemsReport.ts'
 import uniqueUsersReport from './query/uniqueUsersReport.ts'
 import updateLicensePayment from './query/updateLicensePayment.ts'
 import user from './query/user.ts'
@@ -154,23 +171,17 @@ import workShifts from './query/workShifts.ts'
 import workShiftsReport from './query/workShiftsReport.ts'
 import workShiftsSummaryReport from './query/workShiftsSummaryReport.ts'
 import workers from './query/workers.ts'
-import clubsOnMap from './query/clubsOnMap.ts'
-import exportSales from './query/exportSales.ts'
-import clientHost from './query/clientHost.ts'
-import hostTokenByPIN from './query/hostTokenByPIN.ts'
-import network from './query/network.ts'
-import licensePayment from './query/licensePayment.ts'
-import depositTransferReport from './query/depositTransferReport.ts'
-import depositTransferSummaryReport from './query/depositTransferSummaryReport.ts'
-import overviewReport from './query/overviewReport.ts'
-import topSoldOverviewItemsReport from './query/topSoldOverviewItemsReport.ts'
-import clubLoadByDayOfWeekReport from './query/clubLoadByDayOfWeekReport.ts'
-import getTelegramChannels from './query/getTelegramChannels.ts'
-import mobileEvents from './query/mobileEvents.ts'
-import hostCommandTemplates from './query/hostCommandTemplates.ts'
-import getNewsFeed from './query/getNewsFeed.ts'
-import companyNewsList from './query/companyNewsList.ts'
-import companyNewsArticle from './query/companyNewsArticle.ts'
+import goodHistory from './query/goodHistory.ts'
+import getCounterpartyDataByInn from './query/getCounterpartyDataByInn.ts'
+import getBeneficiaryBankDetails from './query/getBeneficiaryBankDetails.ts'
+import getBeneficiaryDeal from './query/getBeneficiaryDeal.ts'
+import listBeneficiaryMovementsOfFunds from './query/listBeneficiaryMovementsOfFunds.ts'
+import getOrganizationOwners from './query/getOrganizationOwners.ts'
+import getCompanyOwner from './query/getCompanyOwner.ts'
+import usersBonusReport from './query/usersBonusReport.ts'
+import bonusDetailedSummaryReport from './query/bonusDetailedSummaryReport.ts'
+import bonusDetailedTimeSeriesReport from './query/bonusDetailedTimeSeriesReport.ts'
+import exportOverviewReport from './query/exportOverviewReport.ts'
 
 
 export const query = {
@@ -191,6 +202,7 @@ export const query = {
     clientBookingCheckPenalty,
     clientBookings,
     clientEmailExists,
+    clientHost,
     clientHostGroups,
     clientHosts,
     clientMe,
@@ -202,12 +214,16 @@ export const query = {
     clientsPaymentReport,
     club,
     clubComments,
+    clubLoadByDayOfWeekReport,
     clubOrganization,
     clubs,
+    clubsOnMap,
     combo,
     comboList,
     combos,
     comments,
+    companyNewsArticle,
+    companyNewsList,
     companyPermissions,
     contractors,
     currencies,
@@ -216,12 +232,15 @@ export const query = {
     currentHost,
     depositCashback,
     depositCashbacks,
+    depositTransferReport,
+    depositTransferSummaryReport,
     discount,
     discounts,
     emailExists,
     eventList,
     events,
     exportGoods,
+    exportSales,
     exportUsers,
     featureFlags,
     finishedWorkShifts,
@@ -245,20 +264,24 @@ export const query = {
     getCurrentTariff,
     getDepositHistory,
     getDetailedWorkShiftMoneyData,
+    getNewsFeed,
     getOrganizationPaymentCard,
     getOrganizationPaymentCards,
     getPaymentsByClientId,
     getSumForWithdrawToCheckingAccount,
+    getTelegramChannels,
     getUpcomingAutoPaymentData,
     getWorkShiftPaymentOverviewData,
     good,
     goods,
     host,
     hostAccessToken,
+    hostCommandTemplates,
     hostGroup,
     hostGroupTitles,
     hostGroups,
     hostGroupsOverview,
+    hostTokenByPIN,
     hostType,
     hostTypes,
     hosts,
@@ -269,6 +292,7 @@ export const query = {
     leaderboard,
     licenseModule,
     licenseModuleCategory,
+    licensePayment,
     licensePayments,
     licensePrice,
     licenseTariff,
@@ -278,14 +302,17 @@ export const query = {
     magicPeriods,
     magicSuperInit,
     me,
+    mobileEvents,
     myClub,
     myClubs,
     myLastVisitedClub,
+    network,
     news,
     nicknameExists,
     now,
     organizationClubs,
     organizationMe,
+    overviewReport,
     pausableClientSessions,
     paymentTransaction,
     paymentTransactions,
@@ -314,6 +341,7 @@ export const query = {
     tariffGrid,
     tariffs,
     tasks,
+    topSoldOverviewItemsReport,
     uniqueUsersReport,
     updateLicensePayment,
     user,
@@ -330,27 +358,22 @@ export const query = {
     workShiftsReport,
     workShiftsSummaryReport,
     workers,
-    clubsOnMap,
-    exportSales,
-    clientHost,
-    hostTokenByPIN,
-    network,
-    licensePayment,
-    depositTransferReport,
-    depositTransferSummaryReport,
-    overviewReport,
-    topSoldOverviewItemsReport,
-    clubLoadByDayOfWeekReport,
-    getTelegramChannels,
-    mobileEvents,
-    hostCommandTemplates,
-    getNewsFeed,
-    companyNewsList,
-    companyNewsArticle,
+    goodHistory,
+    getCounterpartyDataByInn,
+    getBeneficiaryBankDetails,
+    getBeneficiaryDeal,
+    listBeneficiaryMovementsOfFunds,
+    getOrganizationOwners,
+    getCompanyOwner,
+    usersBonusReport,
+    bonusDetailedSummaryReport,
+    bonusDetailedTimeSeriesReport,
+    exportOverviewReport,
 }
 
 
 import activateTrial from './mutation/activateTrial.ts'
+import addCompaniesToNetwork from './mutation/addCompaniesToNetwork.ts'
 import adminCallDone from './mutation/adminCallDone.ts'
 import applyNewHostDevices from './mutation/applyNewHostDevices.ts'
 import banClient from './mutation/banClient.ts'
@@ -378,7 +401,9 @@ import createClub from './mutation/createClub.ts'
 import createClubComment from './mutation/createClubComment.ts'
 import createCombo from './mutation/createCombo.ts'
 import createCommand from './mutation/createCommand.ts'
+import createCommands from './mutation/createCommands.ts'
 import createComment from './mutation/createComment.ts'
+import createCompanyNews from './mutation/createCompanyNews.ts'
 import createContractor from './mutation/createContractor.ts'
 import createDepositCashback from './mutation/createDepositCashback.ts'
 import createDiscount from './mutation/createDiscount.ts'
@@ -386,12 +411,15 @@ import createGameAccount from './mutation/createGameAccount.ts'
 import createGameAccountGroup from './mutation/createGameAccountGroup.ts'
 import createGood from './mutation/createGood.ts'
 import createHost from './mutation/createHost.ts'
+import createHostCommandTemplate from './mutation/createHostCommandTemplate.ts'
 import createHostGroup from './mutation/createHostGroup.ts'
+import createHostPIN from './mutation/createHostPIN.ts'
 import createHostType from './mutation/createHostType.ts'
 import createLicenseModule from './mutation/createLicenseModule.ts'
 import createLicenseModuleCategory from './mutation/createLicenseModuleCategory.ts'
 import createLicensePayment from './mutation/createLicensePayment.ts'
 import createLicenseTariff from './mutation/createLicenseTariff.ts'
+import createNetwork from './mutation/createNetwork.ts'
 import createPayment from './mutation/createPayment.ts'
 import createPaymentTransaction from './mutation/createPaymentTransaction.ts'
 import createPromoCode from './mutation/createPromoCode.ts'
@@ -408,6 +436,7 @@ import deleteCategory from './mutation/deleteCategory.ts'
 import deleteClub from './mutation/deleteClub.ts'
 import deleteCombo from './mutation/deleteCombo.ts'
 import deleteComment from './mutation/deleteComment.ts'
+import deleteCompanyNews from './mutation/deleteCompanyNews.ts'
 import deleteContractor from './mutation/deleteContractor.ts'
 import deleteDepositCashback from './mutation/deleteDepositCashback.ts'
 import deleteDiscount from './mutation/deleteDiscount.ts'
@@ -416,11 +445,13 @@ import deleteGameAccountGroup from './mutation/deleteGameAccountGroup.ts'
 import deleteGood from './mutation/deleteGood.ts'
 import deleteGoods from './mutation/deleteGoods.ts'
 import deleteHost from './mutation/deleteHost.ts'
+import deleteHostCommandTemplate from './mutation/deleteHostCommandTemplate.ts'
 import deleteHostGroup from './mutation/deleteHostGroup.ts'
 import deleteHostType from './mutation/deleteHostType.ts'
 import deleteLicenseModule from './mutation/deleteLicenseModule.ts'
 import deleteLicenseModuleCategory from './mutation/deleteLicenseModuleCategory.ts'
 import deleteLicenseTariff from './mutation/deleteLicenseTariff.ts'
+import deleteNetworkCompany from './mutation/deleteNetworkCompany.ts'
 import deleteOrganizationPaymentCard from './mutation/deleteOrganizationPaymentCard.ts'
 import deletePromoCode from './mutation/deletePromoCode.ts'
 import deleteService from './mutation/deleteService.ts'
@@ -463,6 +494,7 @@ import penaltyHost from './mutation/penaltyHost.ts'
 import pickGameAccount from './mutation/pickGameAccount.ts'
 import processPostPayment from './mutation/processPostPayment.ts'
 import processStats from './mutation/processStats.ts'
+import purchaseTariffByQR from './mutation/purchaseTariffByQR.ts'
 import readAllClubComments from './mutation/readAllClubComments.ts'
 import readClubComment from './mutation/readClubComment.ts'
 import recalculateAchievements from './mutation/recalculateAchievements.ts'
@@ -479,6 +511,7 @@ import sendConfirmationCode from './mutation/sendConfirmationCode.ts'
 import sendConfirmationCodeToEnter from './mutation/sendConfirmationCodeToEnter.ts'
 import sendExtendConfirmationCode from './mutation/sendExtendConfirmationCode.ts'
 import sendWakePacket from './mutation/sendWakePacket.ts'
+import sendWakePackets from './mutation/sendWakePackets.ts'
 import setBonus from './mutation/setBonus.ts'
 import setBookingStatus from './mutation/setBookingStatus.ts'
 import setCloudPaymentsAccountToCompany from './mutation/setCloudPaymentsAccountToCompany.ts'
@@ -506,6 +539,8 @@ import updateBooking from './mutation/updateBooking.ts'
 import updateCategory from './mutation/updateCategory.ts'
 import updateClub from './mutation/updateClub.ts'
 import updateCombo from './mutation/updateCombo.ts'
+import updateComment from './mutation/updateComment.ts'
+import updateCompanyNews from './mutation/updateCompanyNews.ts'
 import updateCompanyPermissions from './mutation/updateCompanyPermissions.ts'
 import updateContractor from './mutation/updateContractor.ts'
 import updateDepositCashback from './mutation/updateDepositCashback.ts'
@@ -516,6 +551,7 @@ import updateGood from './mutation/updateGood.ts'
 import updateGoods from './mutation/updateGoods.ts'
 import updateHost from './mutation/updateHost.ts'
 import updateHostCommandStatus from './mutation/updateHostCommandStatus.ts'
+import updateHostCommandTemplate from './mutation/updateHostCommandTemplate.ts'
 import updateHostGroup from './mutation/updateHostGroup.ts'
 import updateHostIpAddress from './mutation/updateHostIpAddress.ts'
 import updateHostState from './mutation/updateHostState.ts'
@@ -524,6 +560,8 @@ import updateLicenseModule from './mutation/updateLicenseModule.ts'
 import updateLicenseModuleCategory from './mutation/updateLicenseModuleCategory.ts'
 import updateLicenseTariff from './mutation/updateLicenseTariff.ts'
 import updateMe from './mutation/updateMe.ts'
+import updateNetwork from './mutation/updateNetwork.ts'
+import updateNetworkCompany from './mutation/updateNetworkCompany.ts'
 import updateNewsConsent from './mutation/updateNewsConsent.ts'
 import updatePassword from './mutation/updatePassword.ts'
 import updatePromoCode from './mutation/updatePromoCode.ts'
@@ -534,6 +572,7 @@ import updateShortcutGroupSort from './mutation/updateShortcutGroupSort.ts'
 import updateShortcutSort from './mutation/updateShortcutSort.ts'
 import updateTariff from './mutation/updateTariff.ts'
 import updateTariffSort from './mutation/updateTariffSort.ts'
+import updateTelegramSettings from './mutation/updateTelegramSettings.ts'
 import updateUserGroup from './mutation/updateUserGroup.ts'
 import updateWorker from './mutation/updateWorker.ts'
 import updateWorkerTask from './mutation/updateWorkerTask.ts'
@@ -544,27 +583,18 @@ import validateQR from './mutation/validateQR.ts'
 import verifyClient from './mutation/verifyClient.ts'
 import verifyMe from './mutation/verifyMe.ts'
 import verifyUser from './mutation/verifyUser.ts'
-import updateComment from './mutation/updateComment.ts'
-import createHostPIN from './mutation/createHostPIN.ts'
-import createNetwork from './mutation/createNetwork.ts'
-import updateNetwork from './mutation/updateNetwork.ts'
-import addCompaniesToNetwork from './mutation/addCompaniesToNetwork.ts'
-import updateNetworkCompany from './mutation/updateNetworkCompany.ts'
-import deleteNetworkCompany from './mutation/deleteNetworkCompany.ts'
-import updateTelegramSettings from './mutation/updateTelegramSettings.ts'
-import purchaseTariffByQR from './mutation/purchaseTariffByQR.ts'
-import createCommands from './mutation/createCommands.ts'
-import sendWakePackets from './mutation/sendWakePackets.ts'
-import createHostCommandTemplate from './mutation/createHostCommandTemplate.ts'
-import updateHostCommandTemplate from './mutation/updateHostCommandTemplate.ts'
-import deleteHostCommandTemplate from './mutation/deleteHostCommandTemplate.ts'
-import createCompanyNews from './mutation/createCompanyNews.ts'
-import updateCompanyNews from './mutation/updateCompanyNews.ts'
-import deleteCompanyNews from './mutation/deleteCompanyNews.ts'
+import createBeneficiaryByInn from './mutation/createBeneficiaryByInn.ts'
+import setBeneficiaryToCompany from './mutation/setBeneficiaryToCompany.ts'
+import updateBeneficiaryBankDetails from './mutation/updateBeneficiaryBankDetails.ts'
+import createOwner from './mutation/createOwner.ts'
+import updateOwner from './mutation/updateOwner.ts'
+import setCompanyOwner from './mutation/setCompanyOwner.ts'
+import copySettings from './mutation/copySettings.ts'
 
 
 export const mutation = {
     activateTrial,
+    addCompaniesToNetwork,
     adminCallDone,
     applyNewHostDevices,
     banClient,
@@ -592,7 +622,9 @@ export const mutation = {
     createClubComment,
     createCombo,
     createCommand,
+    createCommands,
     createComment,
+    createCompanyNews,
     createContractor,
     createDepositCashback,
     createDiscount,
@@ -600,12 +632,15 @@ export const mutation = {
     createGameAccountGroup,
     createGood,
     createHost,
+    createHostCommandTemplate,
     createHostGroup,
+    createHostPIN,
     createHostType,
     createLicenseModule,
     createLicenseModuleCategory,
     createLicensePayment,
     createLicenseTariff,
+    createNetwork,
     createPayment,
     createPaymentTransaction,
     createPromoCode,
@@ -622,6 +657,7 @@ export const mutation = {
     deleteClub,
     deleteCombo,
     deleteComment,
+    deleteCompanyNews,
     deleteContractor,
     deleteDepositCashback,
     deleteDiscount,
@@ -630,11 +666,13 @@ export const mutation = {
     deleteGood,
     deleteGoods,
     deleteHost,
+    deleteHostCommandTemplate,
     deleteHostGroup,
     deleteHostType,
     deleteLicenseModule,
     deleteLicenseModuleCategory,
     deleteLicenseTariff,
+    deleteNetworkCompany,
     deleteOrganizationPaymentCard,
     deletePromoCode,
     deleteService,
@@ -677,6 +715,7 @@ export const mutation = {
     pickGameAccount,
     processPostPayment,
     processStats,
+    purchaseTariffByQR,
     readAllClubComments,
     readClubComment,
     recalculateAchievements,
@@ -693,6 +732,7 @@ export const mutation = {
     sendConfirmationCodeToEnter,
     sendExtendConfirmationCode,
     sendWakePacket,
+    sendWakePackets,
     setBonus,
     setBookingStatus,
     setCloudPaymentsAccountToCompany,
@@ -720,6 +760,8 @@ export const mutation = {
     updateCategory,
     updateClub,
     updateCombo,
+    updateComment,
+    updateCompanyNews,
     updateCompanyPermissions,
     updateContractor,
     updateDepositCashback,
@@ -730,6 +772,7 @@ export const mutation = {
     updateGoods,
     updateHost,
     updateHostCommandStatus,
+    updateHostCommandTemplate,
     updateHostGroup,
     updateHostIpAddress,
     updateHostState,
@@ -738,6 +781,8 @@ export const mutation = {
     updateLicenseModuleCategory,
     updateLicenseTariff,
     updateMe,
+    updateNetwork,
+    updateNetworkCompany,
     updateNewsConsent,
     updatePassword,
     updatePromoCode,
@@ -748,6 +793,7 @@ export const mutation = {
     updateShortcutSort,
     updateTariff,
     updateTariffSort,
+    updateTelegramSettings,
     updateUserGroup,
     updateWorker,
     updateWorkerTask,
@@ -758,22 +804,12 @@ export const mutation = {
     verifyClient,
     verifyMe,
     verifyUser,
-    updateComment,
-    createHostPIN,
-    createNetwork,
-    updateNetwork,
-    addCompaniesToNetwork,
-    updateNetworkCompany,
-    deleteNetworkCompany,
-    updateTelegramSettings,
-    purchaseTariffByQR,
-    createCommands,
-    sendWakePackets,
-    createHostCommandTemplate,
-    updateHostCommandTemplate,
-    deleteHostCommandTemplate,
-    createCompanyNews,
-    updateCompanyNews,
-    deleteCompanyNews,
+    createBeneficiaryByInn,
+    setBeneficiaryToCompany,
+    updateBeneficiaryBankDetails,
+    createOwner,
+    updateOwner,
+    setCompanyOwner,
+    copySettings,
 }
 

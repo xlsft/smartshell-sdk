@@ -50,6 +50,9 @@
 <h3 id="key">key</h3>
 <pre><code lang="ts">key?: string</code></pre>
 
+<h3 id="key_hash">key_hash</h3>
+<pre><code lang="ts">key_hash: string</code></pre>
+
 <h3 id="info">info</h3>
 <pre><code lang="ts">info?: string</code></pre>
 
@@ -148,3 +151,6 @@
 
 <h3 id="it_adviser_support">it_adviser_support</h3>
 <pre><code lang="ts">it_adviser_support: boolean</code></pre>
+
+<h3 id="metro">metro</h3>
+<pre><code lang="ts">metro: string</code></pre>

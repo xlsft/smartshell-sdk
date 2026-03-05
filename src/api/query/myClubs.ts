@@ -107,9 +107,31 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "online_booking_discount",
             "goods_display_enabled",
             "online_payment_min_limit",
+            "host_map",
         ]),
         "deposit_transfer_enabled",
         key("goods", ["id", "title", "cost", "comment", "image", key("category", ["id", "title"])]),
+        key("current_session", [
+            "time_left",
+            key("host", ["id", "title", "host_group_title"]),
+            key("tariff", ["id", "title", "per_minute", "pausable"]),
+            "postpaid",
+            "finished_at",
+        ]),
+        key("owner", [
+            "uuid",
+            "inn",
+            "type",
+            "name",
+            "ogrn",
+            "legal_address",
+            "kpp",
+            "policy_url",
+            "private_policy",
+            "email",
+        ]),
+        "key_hash",
+        "metro",
     ])
 }
 

@@ -23,6 +23,9 @@
 <h3 id="captcha_token">captcha_token</h3>
 <pre><code lang="ts">captcha_token?: string</code></pre>
 
+<h3 id="consents">consents</h3>
+<pre><code lang="ts">consents?: ||--['/docs/reference/types/UserConsentsInput','UserConsentsInput']--||</code></pre>
+
 <h3 id="type">type</h3>
 <pre><code lang="ts">type?: ||--['/docs/reference/types/RegisterType','RegisterType']--||</code></pre>
 

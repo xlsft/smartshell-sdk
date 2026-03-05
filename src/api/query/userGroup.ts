@@ -10,7 +10,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
     ctx: ShellSdkContext,
     props: Input,
 ): Promise<Response> => {
-    return await ctx.request("query", "userGroup", ["uuid", "title", "user_count", "discount", "created_at"], {
+    return await ctx.request("query", "userGroup", ["id", "uuid", "title", "user_count", "discount", "created_at"], {
         ...(props as any),
     })
 }

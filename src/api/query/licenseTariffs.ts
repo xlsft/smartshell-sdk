@@ -17,6 +17,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("modules", ["id", "name", "description", "cost", "category_id", "alias"]),
             "tariff_id",
         ]),
+        key("currency", ["id", "title", "alias", "letter"]),
     ])
 }
 

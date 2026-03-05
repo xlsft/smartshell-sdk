@@ -26,8 +26,11 @@
 <h3 id="client_session">client_session</h3>
 <pre><code lang="ts">client_session?: ||--['/docs/reference/types/EventListItemClientSession','EventListItemClientSession']--||</code></pre>
 
-<h3 id="promocode">promocode</h3>
-<pre><code lang="ts">promocode?: ||--['/docs/reference/types/EventListItemIdTitleValueF','EventListItemIdTitleValueF']--||</code></pre>
+<h3 id="promo_code_item">promo_code_item</h3>
+<pre><code lang="ts">promo_code_item?: ||--['/docs/reference/types/EventListItemPromoCodeEntity','EventListItemPromoCodeEntity']--||</code></pre>
+
+<h3 id="promo_campaign">promo_campaign</h3>
+<pre><code lang="ts">promo_campaign?: ||--['/docs/reference/types/EventListItemPromoCampaignEntity','EventListItemPromoCampaignEntity']--||</code></pre>
 
 <h3 id="discount">discount</h3>
 <pre><code lang="ts">discount?: ||--['/docs/reference/types/EventListItemIdTitleValueF','EventListItemIdTitleValueF']--||</code></pre>
@@ -88,6 +91,9 @@
 
 <h3 id="payment_items">payment_items</h3>
 <pre><code lang="ts">payment_items: ||--['/docs/reference/types/EventListItemPaymentItem','EventListItemPaymentItem']--||[]</code></pre>
+
+<h3 id="payment_transaction">payment_transaction</h3>
+<pre><code lang="ts">payment_transaction?: ||--['/docs/reference/types/EventListItemPaymentTransaction','EventListItemPaymentTransaction']--||</code></pre>
 
 <h3 id="warehouse_item">warehouse_item</h3>
 <pre><code lang="ts">warehouse_item?: ||--['/docs/reference/types/EventListItemWarehouseItem','EventListItemWarehouseItem']--||</code></pre>

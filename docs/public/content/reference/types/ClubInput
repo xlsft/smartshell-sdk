@@ -79,3 +79,6 @@
 
 <h3 id="lng">lng</h3>
 <pre><code lang="ts">lng?: number</code></pre>
+
+<h3 id="metro">metro</h3>
+<pre><code lang="ts">metro?: string</code></pre>

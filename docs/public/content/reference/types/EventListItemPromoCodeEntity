@@ -1,0 +1,41 @@
+<h1 id="type_eventlistitempromocodeentity">
+    type EventListItemPromoCodeEntity
+</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="id">id</h3>
+<pre><code lang="ts">id?: number</code></pre>
+
+<h3 id="title">title</h3>
+<pre><code lang="ts">title?: string</code></pre>
+
+<h3 id="description">description</h3>
+<pre><code lang="ts">description?: string</code></pre>
+
+<h3 id="value">value</h3>
+<pre><code lang="ts">value?: string</code></pre>
+
+<h3 id="applicable_params">applicable_params</h3>
+<pre><code lang="ts">applicable_params?: string</code></pre>
+
+<h3 id="client_scope">client_scope</h3>
+<pre><code lang="ts">client_scope?: string</code></pre>
+
+<h3 id="scopes">scopes</h3>
+<pre><code lang="ts">scopes?: string</code></pre>
+
+<h3 id="active">active</h3>
+<pre><code lang="ts">active: boolean</code></pre>
+
+<h3 id="active_from">active_from</h3>
+<pre><code lang="ts">active_from?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="active_to">active_to</h3>
+<pre><code lang="ts">active_to?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="is_tracked">is_tracked</h3>
+<pre><code lang="ts">is_tracked: boolean</code></pre>
+
+<h3 id="created_at">created_at</h3>
+<pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

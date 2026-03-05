@@ -14,7 +14,23 @@ const module = async <Input extends InputType["input"], Response extends Respons
     return await ctx.request(
         "query",
         "getActiveClientList",
-        ["client_uuid", "nickname", "avatar_url", "payments", "total_seconds", "last_client_activity"],
+        [
+            "client_uuid",
+            "nickname",
+            "avatar_url",
+            "payments",
+            "total_seconds",
+            "last_client_activity",
+            key("roles", [
+                "id",
+                "alias",
+                "title",
+                "description",
+                "is_service",
+                "priority",
+                key("permissions", ["id", "alias", "title", "description"]),
+            ]),
+        ],
         { input: props },
         paginator || { page: 1 },
     )

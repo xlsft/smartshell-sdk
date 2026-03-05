@@ -28,3 +28,6 @@
 
 <h3 id="online_payment_min_limit">online_payment_min_limit</h3>
 <pre><code lang="ts">online_payment_min_limit: number</code></pre>
+
+<h3 id="host_map">host_map</h3>
+<pre><code lang="ts">host_map: string</code></pre>

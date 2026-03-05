@@ -38,6 +38,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
                 "only_for_registered",
                 "age_rating",
                 "free_run",
+                "high_access_only",
             ]),
         ]),
         "run_as_admin",
@@ -45,6 +46,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         "only_for_registered",
         "age_rating",
         "free_run",
+        "high_access_only",
     ])
 }
 

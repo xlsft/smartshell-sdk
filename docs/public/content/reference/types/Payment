@@ -58,3 +58,6 @@
 
 <h3 id="external_data">external_data</h3>
 <pre><code lang="ts">external_data?: ||--['/docs/reference/types/ExternalPaymentData','ExternalPaymentData']--||</code></pre>
+
+<h3 id="sums">sums</h3>
+<pre><code lang="ts">sums?: ||--['/docs/reference/types/PaymentSums','PaymentSums']--||</code></pre>

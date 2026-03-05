@@ -20,5 +20,17 @@
 <h3 id="deposit_transfer_enabled">deposit_transfer_enabled</h3>
 <pre><code lang="ts">deposit_transfer_enabled: boolean</code></pre>
 
+<h3 id="shortcuts_sync_enabled">shortcuts_sync_enabled</h3>
+<pre><code lang="ts">shortcuts_sync_enabled: boolean</code></pre>
+
 <h3 id="it_adviser_support">it_adviser_support</h3>
 <pre><code lang="ts">it_adviser_support: boolean</code></pre>
+
+<h3 id="flocktory_url">flocktory_url</h3>
+<pre><code lang="ts">flocktory_url: string</code></pre>
+
+<h3 id="company_owner">company_owner</h3>
+<pre><code lang="ts">company_owner?: ||--['/docs/reference/types/LiteOwner','LiteOwner']--||</code></pre>
+
+<h3 id="company_key_hash">company_key_hash</h3>
+<pre><code lang="ts">company_key_hash: string</code></pre>

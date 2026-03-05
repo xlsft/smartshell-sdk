@@ -87,10 +87,10 @@
                             ]
                         },
                         {
-                            "type": "scalar",
-                            "key": "type_id",
+                            "type": "enum",
+                            "key": "type",
                             "value": [
-                                "number"
+                                "HostTypeValue"
                             ]
                         },
                         {
@@ -268,10 +268,10 @@
             ]
         },
         {
-            "type": "scalar",
-            "key": "type_id",
+            "type": "enum",
+            "key": "type",
             "value": [
-                "number"
+                "HostTypeValue"
             ]
         },
         {
@@ -740,6 +740,13 @@
                 {
                     "type": "scalar",
                     "key": "finished_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "qr",
                     "value": [
                         "string"
                     ]

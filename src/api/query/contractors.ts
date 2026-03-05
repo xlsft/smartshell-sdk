@@ -6,7 +6,7 @@ import { key } from "../../utils/key.ts"
 export type ResponseType = Contractor[]
 
 const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Promise<Response> => {
-    return await ctx.request("query", "contractors", ["id", "name", "inn", "kpp", "address", "phone", "email"])
+    return await ctx.request("query", "contractors", ["id", "name", "inn", "ogrn", "kpp", "address", "phone", "email"])
 }
 
 export default module<ResponseType>

@@ -13,7 +13,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
     return await ctx.request(
         "mutation",
         "changeUsersGroup",
-        ["uuid", "title", "user_count", "discount", "created_at"],
+        ["id", "uuid", "title", "user_count", "discount", "created_at"],
         { ...(props as any) },
     )
 }

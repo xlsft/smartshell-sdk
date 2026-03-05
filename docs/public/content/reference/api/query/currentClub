@@ -105,17 +105,33 @@
                     ]
                 },
                 {
-                    "type": "scalar",
-                    "key": "max_discount_enabled",
+                    "type": "object",
+                    "key": "settings",
                     "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "deposit_transfer_enabled",
-                    "value": [
-                        "boolean"
+                        "NetworkCompanySettings"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "max_discount_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "deposit_transfer_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "shortcut_sync_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        }
                     ]
                 }
             ]
@@ -213,6 +229,13 @@
         },
         {
             "type": "scalar",
+            "key": "key_hash",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "info",
             "value": [
                 "string"
@@ -247,89 +270,8 @@
                     ]
                 },
                 {
-                    "type": "object",
-                    "key": "payment",
-                    "value": [
-                        "LicensePaymentData"
-                    ],
-                    "child": [
-                        {
-                            "type": "scalar",
-                            "key": "id",
-                            "value": [
-                                "number"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "created_at",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "host_count",
-                            "value": [
-                                "number"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "payment_method",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "bill_url",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "enum",
-                            "key": "status",
-                            "value": [
-                                "LicensePaymentStatus"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "months",
-                            "value": [
-                                "number"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "cost",
-                            "value": [
-                                "Decimal"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "object",
-            "key": "licenses",
-            "value": [
-                "License"
-            ],
-            "child": [
-                {
                     "type": "scalar",
-                    "key": "id",
-                    "value": [
-                        "number"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "expires_at",
+                    "key": "starts_at",
                     "value": [
                         "string"
                     ]
@@ -395,6 +337,157 @@
                             "key": "cost",
                             "value": [
                                 "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "base_payment",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "with_debt",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "promo_code",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "currency",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "licenses",
+            "value": [
+                "License"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "expires_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "starts_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "payment",
+                    "value": [
+                        "LicensePaymentData"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "payment_method",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "bill_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "status",
+                            "value": [
+                                "LicensePaymentStatus"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "months",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "cost",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "base_payment",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "with_debt",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "promo_code",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "currency",
+                            "value": [
+                                "string"
                             ]
                         }
                     ]
@@ -582,6 +675,13 @@
                         },
                         {
                             "type": "scalar",
+                            "key": "ogrn",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
                             "key": "kpp",
                             "value": [
                                 "string"
@@ -608,6 +708,374 @@
                                 "string"
                             ]
                         }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "license",
+                    "value": [
+                        "License"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "expires_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "starts_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "base_payment",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "with_debt",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "club",
+                    "value": [
+                        "Club"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "pc_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "console_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "distribution_type",
+                            "value": [
+                                "DistributionType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "contact_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "contact_type",
+                            "value": [
+                                "OrganizationUserType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "address",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "city",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "street",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "house_number",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "telegram",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "key",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "key_hash",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "info",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "contact_phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "timezone",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "country_code",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_count",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "locked",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "auto_payment_enabled",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "verification_status",
+                            "value": [
+                                "ClubVerificationStatus"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "verification_status_updated_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "debt",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "used_trial",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "club_phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "vk_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "telegram_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "whats_up_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "region",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "comment",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "country",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "lat",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "lng",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "work_schedule_247",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "logo_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "header_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "pricelist_urls",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "interior_urls",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "it_adviser_support",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "metro",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "promo_code",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "currency",
+                    "value": [
+                        "string"
                     ]
                 }
             ]
@@ -1171,6 +1639,13 @@
             "key": "it_adviser_support",
             "value": [
                 "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "metro",
+            "value": [
+                "string"
             ]
         }
     ],

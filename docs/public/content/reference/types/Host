@@ -11,8 +11,8 @@
 <h3 id="group">group</h3>
 <pre><code lang="ts">group: ||--['/docs/reference/types/HostGroup','HostGroup']--||</code></pre>
 
-<h3 id="type_id">type_id</h3>
-<pre><code lang="ts">type_id?: number</code></pre>
+<h3 id="type">type</h3>
+<pre><code lang="ts">type: ||--['/docs/reference/types/HostTypeValue','HostTypeValue']--||</code></pre>
 
 <h3 id="position">position</h3>
 <pre><code lang="ts">position?: number</code></pre>

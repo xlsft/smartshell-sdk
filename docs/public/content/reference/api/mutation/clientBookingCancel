@@ -757,6 +757,13 @@
                             "value": [
                                 "number"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "host_map",
+                            "value": [
+                                "string"
+                            ]
                         }
                     ]
                 },
@@ -810,6 +817,129 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "object",
+                    "key": "current_session",
+                    "value": [
+                        "ClientClubSession"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "time_left",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "postpaid",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "finished_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "owner",
+                    "value": [
+                        "LiteOwner"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "uuid",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "inn",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "type",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "ogrn",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "legal_address",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "kpp",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "policy_url",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "private_policy",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "key_hash",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "metro",
+                    "value": [
+                        "string"
+                    ]
                 }
             ]
         },
@@ -842,10 +972,10 @@
                     ]
                 },
                 {
-                    "type": "scalar",
-                    "key": "type_id",
+                    "type": "enum",
+                    "key": "type",
                     "value": [
-                        "number"
+                        "HostTypeValue"
                     ]
                 },
                 {

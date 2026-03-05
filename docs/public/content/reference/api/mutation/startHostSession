@@ -77,6 +77,13 @@
                     "child": [
                         {
                             "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
                             "key": "uuid",
                             "value": [
                                 "string"
@@ -695,36 +702,6 @@
                     ]
                 },
                 {
-                    "type": "object",
-                    "key": "news_consent",
-                    "value": [
-                        "NewsConsent"
-                    ],
-                    "child": [
-                        {
-                            "type": "scalar",
-                            "key": "isGiven",
-                            "value": [
-                                "boolean"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "givenAt",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "revokedAt",
-                            "value": [
-                                "string"
-                            ]
-                        }
-                    ]
-                },
-                {
                     "type": "scalar",
                     "key": "telegram_link",
                     "value": [
@@ -822,6 +799,13 @@
         {
             "type": "scalar",
             "key": "finished_at",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "qr",
             "value": [
                 "string"
             ]

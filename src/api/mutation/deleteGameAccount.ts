@@ -37,13 +37,13 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     "only_for_registered",
                     "age_rating",
                     "free_run",
+                    "high_access_only",
                 ]),
             ]),
             key("host", [
                 "id",
                 "group_id",
                 key("group", ["id", "title", "created_at", "updated_at", "priority"]),
-                "type_id",
                 "position",
                 "alias",
                 "comment",
@@ -57,7 +57,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "created_at",
                 key("info", ["processor", "ram", "video", "disc", "shell_version"]),
                 key("counters", ["cpu_temp", "disk_temp", "active_window"]),
-                key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at"]),
+                key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at", "qr"]),
                 key("client_sessions", [
                     "id",
                     "duration",
@@ -84,7 +84,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("host", [
                     "id",
                     "group_id",
-                    "type_id",
                     "position",
                     "alias",
                     "comment",

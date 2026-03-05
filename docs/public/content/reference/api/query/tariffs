@@ -1,14 +1,15 @@
 <h1 id="api_query_tariffs">query tariffs</h1>
 <code>Paginated</code>
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--|| }</code></pre>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, filter?: ||--['/docs/reference/types/TariffsFilterInput','TariffsFilterInput'--|| }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/TariffPaginated','TariffPaginated'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {
         "gql": [
-            "TariffPaginated"
+            "TariffPaginated",
+            "TariffsFilterInput"
         ],
         "sdk": [
             "ShellSdkContext",
@@ -298,6 +299,14 @@
             "required": false,
             "array": false,
             "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
+        },
+        {
+            "key": "filter",
+            "required": false,
+            "array": false,
+            "value": "TariffsFilterInput",
+            "type": "object",
+            "docs": "/docs/reference/types/TariffsFilterInput"
         }
     ],
     "response": {

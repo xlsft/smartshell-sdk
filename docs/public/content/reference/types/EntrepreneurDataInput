@@ -1,0 +1,27 @@
+<h1 id="type_entrepreneurdatainput">type EntrepreneurDataInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="first_name">first_name</h3>
+<pre><code lang="ts">first_name: string</code></pre>
+
+<h3 id="middle_name">middle_name</h3>
+<pre><code lang="ts">middle_name?: string</code></pre>
+
+<h3 id="last_name">last_name</h3>
+<pre><code lang="ts">last_name: string</code></pre>
+
+<h3 id="passport">passport</h3>
+<pre><code lang="ts">passport: ||--['/docs/reference/types/PassportInput','PassportInput']--||</code></pre>
+
+<h3 id="registration_address">registration_address</h3>
+<pre><code lang="ts">registration_address: string</code></pre>
+
+<h3 id="residence_address">residence_address</h3>
+<pre><code lang="ts">residence_address?: string</code></pre>
+
+<h3 id="birth_date">birth_date</h3>
+<pre><code lang="ts">birth_date: ||--['/docs/reference/types/Date','Date']--||</code></pre>
+
+<h3 id="birth_place">birth_place</h3>
+<pre><code lang="ts">birth_place?: string</code></pre>

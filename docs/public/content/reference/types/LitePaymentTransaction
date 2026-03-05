@@ -8,11 +8,14 @@
 <h3 id="company">company</h3>
 <pre><code lang="ts">company: ||--['/docs/reference/types/LiteCompany','LiteCompany']--||</code></pre>
 
-<h3 id="amount">amount</h3>
-<pre><code lang="ts">amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+<h3 id="client">client</h3>
+<pre><code lang="ts">client: ||--['/docs/reference/types/LiteClient','LiteClient']--||</code></pre>
 
 <h3 id="sum">sum</h3>
 <pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="commission_details">commission_details</h3>
+<pre><code lang="ts">commission_details?: ||--['/docs/reference/types/CommissionDetails','CommissionDetails']--||</code></pre>
 
 <h3 id="service">service</h3>
 <pre><code lang="ts">service: ||--['/docs/reference/types/ServiceEnum','ServiceEnum']--||</code></pre>
@@ -22,3 +25,6 @@
 
 <h3 id="created_at">created_at</h3>
 <pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="receipt">receipt</h3>
+<pre><code lang="ts">receipt?: string</code></pre>

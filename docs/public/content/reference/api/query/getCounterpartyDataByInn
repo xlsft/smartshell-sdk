@@ -1,0 +1,89 @@
+<h1 id="api_query_getCounterpartyDataByInn">query getCounterpartyDataByInn</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { inn: string }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/CounterpartyData','CounterpartyData'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "CounterpartyData"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "query",
+    "paginated": false,
+    "name": "getCounterpartyDataByInn",
+    "schema": [
+        {
+            "type": "enum",
+            "key": "type",
+            "value": [
+                "BeneficiaryType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "full_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "inn",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "ogrn",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "status",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "legal_address",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "registration_date",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "inn",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        }
+    ],
+    "response": {
+        "required": false,
+        "array": false,
+        "value": [
+            "CounterpartyData"
+        ],
+        "type": "object"
+    }
+}</code></pre>

@@ -1,0 +1,18 @@
+<h1 id="type_clientclubsession">type ClientClubSession</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="time_left">time_left</h3>
+<pre><code lang="ts">time_left?: number</code></pre>
+
+<h3 id="host">host</h3>
+<pre><code lang="ts">host: ||--['/docs/reference/types/ClientClubSessionHost','ClientClubSessionHost']--||</code></pre>
+
+<h3 id="tariff">tariff</h3>
+<pre><code lang="ts">tariff: ||--['/docs/reference/types/ClientClubSessionTariff','ClientClubSessionTariff']--||</code></pre>
+
+<h3 id="postpaid">postpaid</h3>
+<pre><code lang="ts">postpaid: boolean</code></pre>
+
+<h3 id="finished_at">finished_at</h3>
+<pre><code lang="ts">finished_at?: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

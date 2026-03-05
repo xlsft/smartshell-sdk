@@ -1,9 +1,9 @@
 // deno-lint-ignore-file no-unused-vars ban-unused-ignore no-explicit-any
 import type { ShellSdkContext, ShellSdkPaginatorInput } from "../../types/sdk.ts"
-import type { TariffPaginated } from "../../types/types.ts"
+import type { TariffPaginated, TariffsFilterInput } from "../../types/types.ts"
 import { key } from "../../utils/key.ts"
 
-export type InputType = { paginator?: ShellSdkPaginatorInput }
+export type InputType = { paginator?: ShellSdkPaginatorInput; filter?: TariffsFilterInput }
 export type ResponseType = TariffPaginated
 
 const module = async <Input extends InputType["input"], Response extends ResponseType>(

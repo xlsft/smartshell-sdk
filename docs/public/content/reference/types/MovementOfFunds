@@ -11,8 +11,14 @@
 <h3 id="deal">deal</h3>
 <pre><code lang="ts">deal?: ||--['/docs/reference/types/BeneficiaryDeal','BeneficiaryDeal']--||</code></pre>
 
+<h3 id="confirmed">confirmed</h3>
+<pre><code lang="ts">confirmed: boolean</code></pre>
+
 <h3 id="sum">sum</h3>
 <pre><code lang="ts">sum: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
 <h3 id="created_at">created_at</h3>
 <pre><code lang="ts">created_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>
+
+<h3 id="updated_at">updated_at</h3>
+<pre><code lang="ts">updated_at: ||--['/docs/reference/types/DateTime','DateTime']--||</code></pre>

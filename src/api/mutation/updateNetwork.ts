@@ -33,7 +33,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "deleted_at",
                 "news_consent",
             ]),
-            key("companies", [key("data", ["is_main", "max_discount_enabled", "deposit_transfer_enabled"]), "total"]),
+            key("companies", [key("data", ["is_main"]), "total"]),
         ],
         { ...(props as any) },
     )

@@ -1,0 +1,9 @@
+<h1 id="type_userconsentsinput">type UserConsentsInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="privacy_policy">privacy_policy</h3>
+<pre><code lang="ts">privacy_policy?: boolean</code></pre>
+
+<h3 id="marketing">marketing</h3>
+<pre><code lang="ts">marketing?: boolean</code></pre>

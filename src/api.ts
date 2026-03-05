@@ -110,6 +110,12 @@ import type { Shell } from "../mod.ts";
             */
         clientEmailExists: async (input: Parameters<typeof q.clientEmailExists>[1],) => await q.clientEmailExists(ctx, input,),
         /**
+            * # query `clientHost`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clientHost
+            * `@xlsft/smartshell-sdk`
+            */
+        clientHost: async (input: Parameters<typeof q.clientHost>[1],) => await q.clientHost(ctx, input,),
+        /**
             * # query `clientHostGroups`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clientHostGroups
             * `@xlsft/smartshell-sdk`
@@ -176,6 +182,12 @@ import type { Shell } from "../mod.ts";
             */
         clubComments: async (input: Parameters<typeof q.clubComments>[1],paginator?: ShellSdkPaginatorInput) => await q.clubComments(ctx, input, paginator),
         /**
+            * # query `clubLoadByDayOfWeekReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clubLoadByDayOfWeekReport
+            * `@xlsft/smartshell-sdk`
+            */
+        clubLoadByDayOfWeekReport: async (input: Parameters<typeof q.clubLoadByDayOfWeekReport>[1],) => await q.clubLoadByDayOfWeekReport(ctx, input,),
+        /**
             * # query `clubOrganization`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clubOrganization
             * `@xlsft/smartshell-sdk`
@@ -187,6 +199,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         clubs: async () => await q.clubs(ctx),
+        /**
+            * # query `clubsOnMap`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clubsOnMap
+            * `@xlsft/smartshell-sdk`
+            */
+        clubsOnMap: async (input: Parameters<typeof q.clubsOnMap>[1],) => await q.clubsOnMap(ctx, input,),
         /**
             * # query `combo`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/combo
@@ -211,6 +229,18 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         comments: async (input: Parameters<typeof q.comments>[1],paginator?: ShellSdkPaginatorInput) => await q.comments(ctx, input, paginator),
+        /**
+            * # query `companyNewsArticle`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/companyNewsArticle
+            * `@xlsft/smartshell-sdk`
+            */
+        companyNewsArticle: async (input: Parameters<typeof q.companyNewsArticle>[1],) => await q.companyNewsArticle(ctx, input,),
+        /**
+            * # query `companyNewsList`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/companyNewsList
+            * `@xlsft/smartshell-sdk`
+            */
+        companyNewsList: async (input: Parameters<typeof q.companyNewsList>[1],paginator?: ShellSdkPaginatorInput) => await q.companyNewsList(ctx, input, paginator),
         /**
             * # query `companyPermissions`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/companyPermissions
@@ -260,6 +290,18 @@ import type { Shell } from "../mod.ts";
             */
         depositCashbacks: async () => await q.depositCashbacks(ctx),
         /**
+            * # query `depositTransferReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/depositTransferReport
+            * `@xlsft/smartshell-sdk`
+            */
+        depositTransferReport: async (input: Parameters<typeof q.depositTransferReport>[1],paginator?: ShellSdkPaginatorInput) => await q.depositTransferReport(ctx, input, paginator),
+        /**
+            * # query `depositTransferSummaryReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/depositTransferSummaryReport
+            * `@xlsft/smartshell-sdk`
+            */
+        depositTransferSummaryReport: async (input: Parameters<typeof q.depositTransferSummaryReport>[1],) => await q.depositTransferSummaryReport(ctx, input,),
+        /**
             * # query `discount`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/discount
             * `@xlsft/smartshell-sdk`
@@ -295,6 +337,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         exportGoods: async (input: Parameters<typeof q.exportGoods>[1],) => await q.exportGoods(ctx, input,),
+        /**
+            * # query `exportSales`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/exportSales
+            * `@xlsft/smartshell-sdk`
+            */
+        exportSales: async (input: Parameters<typeof q.exportSales>[1],) => await q.exportSales(ctx, input,),
         /**
             * # query `exportUsers`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/exportUsers
@@ -414,7 +462,7 @@ import type { Shell } from "../mod.ts";
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getCurrentBeneficiary
             * `@xlsft/smartshell-sdk`
             */
-        getCurrentBeneficiary: async () => await q.getCurrentBeneficiary(ctx),
+        getCurrentBeneficiary: async (input: Parameters<typeof q.getCurrentBeneficiary>[1],) => await q.getCurrentBeneficiary(ctx, input,),
         /**
             * # query `getCurrentTariff`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getCurrentTariff
@@ -433,6 +481,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         getDetailedWorkShiftMoneyData: async (input: Parameters<typeof q.getDetailedWorkShiftMoneyData>[1],) => await q.getDetailedWorkShiftMoneyData(ctx, input,),
+        /**
+            * # query `getNewsFeed`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getNewsFeed
+            * `@xlsft/smartshell-sdk`
+            */
+        getNewsFeed: async (input: Parameters<typeof q.getNewsFeed>[1],paginator?: ShellSdkPaginatorInput) => await q.getNewsFeed(ctx, input, paginator),
         /**
             * # query `getOrganizationPaymentCard`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getOrganizationPaymentCard
@@ -457,6 +511,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         getSumForWithdrawToCheckingAccount: async (input: Parameters<typeof q.getSumForWithdrawToCheckingAccount>[1],) => await q.getSumForWithdrawToCheckingAccount(ctx, input,),
+        /**
+            * # query `getTelegramChannels`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getTelegramChannels
+            * `@xlsft/smartshell-sdk`
+            */
+        getTelegramChannels: async (input: Parameters<typeof q.getTelegramChannels>[1],) => await q.getTelegramChannels(ctx, input,),
         /**
             * # query `getUpcomingAutoPaymentData`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getUpcomingAutoPaymentData
@@ -494,6 +554,12 @@ import type { Shell } from "../mod.ts";
             */
         hostAccessToken: async (input: Parameters<typeof q.hostAccessToken>[1],) => await q.hostAccessToken(ctx, input,),
         /**
+            * # query `hostCommandTemplates`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostCommandTemplates
+            * `@xlsft/smartshell-sdk`
+            */
+        hostCommandTemplates: async () => await q.hostCommandTemplates(ctx),
+        /**
             * # query `hostGroup`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostGroup
             * `@xlsft/smartshell-sdk`
@@ -517,6 +583,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         hostGroupsOverview: async () => await q.hostGroupsOverview(ctx),
+        /**
+            * # query `hostTokenByPIN`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostTokenByPIN
+            * `@xlsft/smartshell-sdk`
+            */
+        hostTokenByPIN: async (input: Parameters<typeof q.hostTokenByPIN>[1],) => await q.hostTokenByPIN(ctx, input,),
         /**
             * # query `hostType`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostType
@@ -578,11 +650,17 @@ import type { Shell } from "../mod.ts";
             */
         licenseModuleCategory: async (input: Parameters<typeof q.licenseModuleCategory>[1],) => await q.licenseModuleCategory(ctx, input,),
         /**
+            * # query `licensePayment`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/licensePayment
+            * `@xlsft/smartshell-sdk`
+            */
+        licensePayment: async (input: Parameters<typeof q.licensePayment>[1],) => await q.licensePayment(ctx, input,),
+        /**
             * # query `licensePayments`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/licensePayments
             * `@xlsft/smartshell-sdk`
             */
-        licensePayments: async (input: Parameters<typeof q.licensePayments>[1],paginator?: ShellSdkPaginatorInput) => await q.licensePayments(ctx, input, paginator),
+        licensePayments: async (input: Parameters<typeof q.licensePayments>[1],) => await q.licensePayments(ctx, input,),
         /**
             * # query `licensePrice`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/licensePrice
@@ -632,6 +710,12 @@ import type { Shell } from "../mod.ts";
             */
         me: async () => await q.me(ctx),
         /**
+            * # query `mobileEvents`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/mobileEvents
+            * `@xlsft/smartshell-sdk`
+            */
+        mobileEvents: async (input: Parameters<typeof q.mobileEvents>[1],paginator?: ShellSdkPaginatorInput) => await q.mobileEvents(ctx, input, paginator),
+        /**
             * # query `myClub`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/myClub
             * `@xlsft/smartshell-sdk`
@@ -649,6 +733,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         myLastVisitedClub: async () => await q.myLastVisitedClub(ctx),
+        /**
+            * # query `network`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/network
+            * `@xlsft/smartshell-sdk`
+            */
+        network: async () => await q.network(ctx),
         /**
             * # query `news`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/news
@@ -679,6 +769,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         organizationMe: async () => await q.organizationMe(ctx),
+        /**
+            * # query `overviewReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/overviewReport
+            * `@xlsft/smartshell-sdk`
+            */
+        overviewReport: async (input: Parameters<typeof q.overviewReport>[1],) => await q.overviewReport(ctx, input,),
         /**
             * # query `pausableClientSessions`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/pausableClientSessions
@@ -848,6 +944,12 @@ import type { Shell } from "../mod.ts";
             */
         tasks: async (input: Parameters<typeof q.tasks>[1],paginator?: ShellSdkPaginatorInput) => await q.tasks(ctx, input, paginator),
         /**
+            * # query `topSoldOverviewItemsReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/topSoldOverviewItemsReport
+            * `@xlsft/smartshell-sdk`
+            */
+        topSoldOverviewItemsReport: async (input: Parameters<typeof q.topSoldOverviewItemsReport>[1],) => await q.topSoldOverviewItemsReport(ctx, input,),
+        /**
             * # query `uniqueUsersReport`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/uniqueUsersReport
             * `@xlsft/smartshell-sdk`
@@ -944,107 +1046,71 @@ import type { Shell } from "../mod.ts";
             */
         workers: async (input: Parameters<typeof q.workers>[1],paginator?: ShellSdkPaginatorInput) => await q.workers(ctx, input, paginator),
         /**
-            * # query `clubsOnMap`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clubsOnMap
+            * # query `goodHistory`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/goodHistory
             * `@xlsft/smartshell-sdk`
             */
-        clubsOnMap: async (input: Parameters<typeof q.clubsOnMap>[1],) => await q.clubsOnMap(ctx, input,),
+        goodHistory: async (input: Parameters<typeof q.goodHistory>[1],) => await q.goodHistory(ctx, input,),
         /**
-            * # query `exportSales`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/exportSales
+            * # query `getCounterpartyDataByInn`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getCounterpartyDataByInn
             * `@xlsft/smartshell-sdk`
             */
-        exportSales: async (input: Parameters<typeof q.exportSales>[1],) => await q.exportSales(ctx, input,),
+        getCounterpartyDataByInn: async (input: Parameters<typeof q.getCounterpartyDataByInn>[1],) => await q.getCounterpartyDataByInn(ctx, input,),
         /**
-            * # query `clientHost`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clientHost
+            * # query `getBeneficiaryBankDetails`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getBeneficiaryBankDetails
             * `@xlsft/smartshell-sdk`
             */
-        clientHost: async (input: Parameters<typeof q.clientHost>[1],) => await q.clientHost(ctx, input,),
+        getBeneficiaryBankDetails: async (input: Parameters<typeof q.getBeneficiaryBankDetails>[1],) => await q.getBeneficiaryBankDetails(ctx, input,),
         /**
-            * # query `hostTokenByPIN`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostTokenByPIN
+            * # query `getBeneficiaryDeal`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getBeneficiaryDeal
             * `@xlsft/smartshell-sdk`
             */
-        hostTokenByPIN: async (input: Parameters<typeof q.hostTokenByPIN>[1],) => await q.hostTokenByPIN(ctx, input,),
+        getBeneficiaryDeal: async (input: Parameters<typeof q.getBeneficiaryDeal>[1],) => await q.getBeneficiaryDeal(ctx, input,),
         /**
-            * # query `network`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/network
+            * # query `listBeneficiaryMovementsOfFunds`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/listBeneficiaryMovementsOfFunds
             * `@xlsft/smartshell-sdk`
             */
-        network: async () => await q.network(ctx),
+        listBeneficiaryMovementsOfFunds: async (input: Parameters<typeof q.listBeneficiaryMovementsOfFunds>[1],paginator?: ShellSdkPaginatorInput) => await q.listBeneficiaryMovementsOfFunds(ctx, input, paginator),
         /**
-            * # query `licensePayment`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/licensePayment
+            * # query `getOrganizationOwners`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getOrganizationOwners
             * `@xlsft/smartshell-sdk`
             */
-        licensePayment: async (input: Parameters<typeof q.licensePayment>[1],) => await q.licensePayment(ctx, input,),
+        getOrganizationOwners: async () => await q.getOrganizationOwners(ctx),
         /**
-            * # query `depositTransferReport`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/depositTransferReport
+            * # query `getCompanyOwner`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getCompanyOwner
             * `@xlsft/smartshell-sdk`
             */
-        depositTransferReport: async (input: Parameters<typeof q.depositTransferReport>[1],paginator?: ShellSdkPaginatorInput) => await q.depositTransferReport(ctx, input, paginator),
+        getCompanyOwner: async (input: Parameters<typeof q.getCompanyOwner>[1],) => await q.getCompanyOwner(ctx, input,),
         /**
-            * # query `depositTransferSummaryReport`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/depositTransferSummaryReport
+            * # query `usersBonusReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/usersBonusReport
             * `@xlsft/smartshell-sdk`
             */
-        depositTransferSummaryReport: async (input: Parameters<typeof q.depositTransferSummaryReport>[1],) => await q.depositTransferSummaryReport(ctx, input,),
+        usersBonusReport: async (input: Parameters<typeof q.usersBonusReport>[1],) => await q.usersBonusReport(ctx, input,),
         /**
-            * # query `overviewReport`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/overviewReport
+            * # query `bonusDetailedSummaryReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/bonusDetailedSummaryReport
             * `@xlsft/smartshell-sdk`
             */
-        overviewReport: async (input: Parameters<typeof q.overviewReport>[1],) => await q.overviewReport(ctx, input,),
+        bonusDetailedSummaryReport: async (input: Parameters<typeof q.bonusDetailedSummaryReport>[1],) => await q.bonusDetailedSummaryReport(ctx, input,),
         /**
-            * # query `topSoldOverviewItemsReport`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/topSoldOverviewItemsReport
+            * # query `bonusDetailedTimeSeriesReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/bonusDetailedTimeSeriesReport
             * `@xlsft/smartshell-sdk`
             */
-        topSoldOverviewItemsReport: async (input: Parameters<typeof q.topSoldOverviewItemsReport>[1],) => await q.topSoldOverviewItemsReport(ctx, input,),
+        bonusDetailedTimeSeriesReport: async (input: Parameters<typeof q.bonusDetailedTimeSeriesReport>[1],) => await q.bonusDetailedTimeSeriesReport(ctx, input,),
         /**
-            * # query `clubLoadByDayOfWeekReport`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/clubLoadByDayOfWeekReport
+            * # query `exportOverviewReport`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/exportOverviewReport
             * `@xlsft/smartshell-sdk`
             */
-        clubLoadByDayOfWeekReport: async (input: Parameters<typeof q.clubLoadByDayOfWeekReport>[1],) => await q.clubLoadByDayOfWeekReport(ctx, input,),
-        /**
-            * # query `getTelegramChannels`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getTelegramChannels
-            * `@xlsft/smartshell-sdk`
-            */
-        getTelegramChannels: async (input: Parameters<typeof q.getTelegramChannels>[1],) => await q.getTelegramChannels(ctx, input,),
-        /**
-            * # query `mobileEvents`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/mobileEvents
-            * `@xlsft/smartshell-sdk`
-            */
-        mobileEvents: async (input: Parameters<typeof q.mobileEvents>[1],paginator?: ShellSdkPaginatorInput) => await q.mobileEvents(ctx, input, paginator),
-        /**
-            * # query `hostCommandTemplates`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/hostCommandTemplates
-            * `@xlsft/smartshell-sdk`
-            */
-        hostCommandTemplates: async () => await q.hostCommandTemplates(ctx),
-        /**
-            * # query `getNewsFeed`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/getNewsFeed
-            * `@xlsft/smartshell-sdk`
-            */
-        getNewsFeed: async (input: Parameters<typeof q.getNewsFeed>[1],paginator?: ShellSdkPaginatorInput) => await q.getNewsFeed(ctx, input, paginator),
-        /**
-            * # query `companyNewsList`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/companyNewsList
-            * `@xlsft/smartshell-sdk`
-            */
-        companyNewsList: async (input: Parameters<typeof q.companyNewsList>[1],paginator?: ShellSdkPaginatorInput) => await q.companyNewsList(ctx, input, paginator),
-        /**
-            * # query `companyNewsArticle`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/query/companyNewsArticle
-            * `@xlsft/smartshell-sdk`
-            */
-        companyNewsArticle: async (input: Parameters<typeof q.companyNewsArticle>[1],) => await q.companyNewsArticle(ctx, input,),
+        exportOverviewReport: async (input: Parameters<typeof q.exportOverviewReport>[1],) => await q.exportOverviewReport(ctx, input,),
 
         // mutation
 
@@ -1054,6 +1120,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         activateTrial: async (input: Parameters<typeof m.activateTrial>[1],) => await m.activateTrial(ctx, input,),
+        /**
+            * # mutation `addCompaniesToNetwork`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/addCompaniesToNetwork
+            * `@xlsft/smartshell-sdk`
+            */
+        addCompaniesToNetwork: async (input: Parameters<typeof m.addCompaniesToNetwork>[1],) => await m.addCompaniesToNetwork(ctx, input,),
         /**
             * # mutation `adminCallDone`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/adminCallDone
@@ -1217,11 +1289,23 @@ import type { Shell } from "../mod.ts";
             */
         createCommand: async (input: Parameters<typeof m.createCommand>[1],) => await m.createCommand(ctx, input,),
         /**
+            * # mutation `createCommands`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createCommands
+            * `@xlsft/smartshell-sdk`
+            */
+        createCommands: async (input: Parameters<typeof m.createCommands>[1],) => await m.createCommands(ctx, input,),
+        /**
             * # mutation `createComment`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createComment
             * `@xlsft/smartshell-sdk`
             */
         createComment: async (input: Parameters<typeof m.createComment>[1],) => await m.createComment(ctx, input,),
+        /**
+            * # mutation `createCompanyNews`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createCompanyNews
+            * `@xlsft/smartshell-sdk`
+            */
+        createCompanyNews: async (input: Parameters<typeof m.createCompanyNews>[1],) => await m.createCompanyNews(ctx, input,),
         /**
             * # mutation `createContractor`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createContractor
@@ -1265,11 +1349,23 @@ import type { Shell } from "../mod.ts";
             */
         createHost: async (input: Parameters<typeof m.createHost>[1],) => await m.createHost(ctx, input,),
         /**
+            * # mutation `createHostCommandTemplate`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostCommandTemplate
+            * `@xlsft/smartshell-sdk`
+            */
+        createHostCommandTemplate: async (input: Parameters<typeof m.createHostCommandTemplate>[1],) => await m.createHostCommandTemplate(ctx, input,),
+        /**
             * # mutation `createHostGroup`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostGroup
             * `@xlsft/smartshell-sdk`
             */
         createHostGroup: async (input: Parameters<typeof m.createHostGroup>[1],) => await m.createHostGroup(ctx, input,),
+        /**
+            * # mutation `createHostPIN`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostPIN
+            * `@xlsft/smartshell-sdk`
+            */
+        createHostPIN: async (input: Parameters<typeof m.createHostPIN>[1],) => await m.createHostPIN(ctx, input,),
         /**
             * # mutation `createHostType`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostType
@@ -1300,6 +1396,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         createLicenseTariff: async (input: Parameters<typeof m.createLicenseTariff>[1],) => await m.createLicenseTariff(ctx, input,),
+        /**
+            * # mutation `createNetwork`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createNetwork
+            * `@xlsft/smartshell-sdk`
+            */
+        createNetwork: async (input: Parameters<typeof m.createNetwork>[1],) => await m.createNetwork(ctx, input,),
         /**
             * # mutation `createPayment`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createPayment
@@ -1397,6 +1499,12 @@ import type { Shell } from "../mod.ts";
             */
         deleteComment: async (input: Parameters<typeof m.deleteComment>[1],) => await m.deleteComment(ctx, input,),
         /**
+            * # mutation `deleteCompanyNews`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteCompanyNews
+            * `@xlsft/smartshell-sdk`
+            */
+        deleteCompanyNews: async (input: Parameters<typeof m.deleteCompanyNews>[1],) => await m.deleteCompanyNews(ctx, input,),
+        /**
             * # mutation `deleteContractor`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteContractor
             * `@xlsft/smartshell-sdk`
@@ -1445,6 +1553,12 @@ import type { Shell } from "../mod.ts";
             */
         deleteHost: async (input: Parameters<typeof m.deleteHost>[1],) => await m.deleteHost(ctx, input,),
         /**
+            * # mutation `deleteHostCommandTemplate`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteHostCommandTemplate
+            * `@xlsft/smartshell-sdk`
+            */
+        deleteHostCommandTemplate: async (input: Parameters<typeof m.deleteHostCommandTemplate>[1],) => await m.deleteHostCommandTemplate(ctx, input,),
+        /**
             * # mutation `deleteHostGroup`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteHostGroup
             * `@xlsft/smartshell-sdk`
@@ -1474,6 +1588,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         deleteLicenseTariff: async (input: Parameters<typeof m.deleteLicenseTariff>[1],) => await m.deleteLicenseTariff(ctx, input,),
+        /**
+            * # mutation `deleteNetworkCompany`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteNetworkCompany
+            * `@xlsft/smartshell-sdk`
+            */
+        deleteNetworkCompany: async (input: Parameters<typeof m.deleteNetworkCompany>[1],) => await m.deleteNetworkCompany(ctx, input,),
         /**
             * # mutation `deleteOrganizationPaymentCard`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteOrganizationPaymentCard
@@ -1727,6 +1847,12 @@ import type { Shell } from "../mod.ts";
             */
         processStats: async (input: Parameters<typeof m.processStats>[1],) => await m.processStats(ctx, input,),
         /**
+            * # mutation `purchaseTariffByQR`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/purchaseTariffByQR
+            * `@xlsft/smartshell-sdk`
+            */
+        purchaseTariffByQR: async (input: Parameters<typeof m.purchaseTariffByQR>[1],) => await m.purchaseTariffByQR(ctx, input,),
+        /**
             * # mutation `readAllClubComments`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/readAllClubComments
             * `@xlsft/smartshell-sdk`
@@ -1822,6 +1948,12 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         sendWakePacket: async (input: Parameters<typeof m.sendWakePacket>[1],) => await m.sendWakePacket(ctx, input,),
+        /**
+            * # mutation `sendWakePackets`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/sendWakePackets
+            * `@xlsft/smartshell-sdk`
+            */
+        sendWakePackets: async (input: Parameters<typeof m.sendWakePackets>[1],) => await m.sendWakePackets(ctx, input,),
         /**
             * # mutation `setBonus`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/setBonus
@@ -1985,6 +2117,18 @@ import type { Shell } from "../mod.ts";
             */
         updateCombo: async (input: Parameters<typeof m.updateCombo>[1],) => await m.updateCombo(ctx, input,),
         /**
+            * # mutation `updateComment`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateComment
+            * `@xlsft/smartshell-sdk`
+            */
+        updateComment: async (input: Parameters<typeof m.updateComment>[1],) => await m.updateComment(ctx, input,),
+        /**
+            * # mutation `updateCompanyNews`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateCompanyNews
+            * `@xlsft/smartshell-sdk`
+            */
+        updateCompanyNews: async (input: Parameters<typeof m.updateCompanyNews>[1],) => await m.updateCompanyNews(ctx, input,),
+        /**
             * # mutation `updateCompanyPermissions`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateCompanyPermissions
             * `@xlsft/smartshell-sdk`
@@ -2045,6 +2189,12 @@ import type { Shell } from "../mod.ts";
             */
         updateHostCommandStatus: async (input: Parameters<typeof m.updateHostCommandStatus>[1],) => await m.updateHostCommandStatus(ctx, input,),
         /**
+            * # mutation `updateHostCommandTemplate`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateHostCommandTemplate
+            * `@xlsft/smartshell-sdk`
+            */
+        updateHostCommandTemplate: async (input: Parameters<typeof m.updateHostCommandTemplate>[1],) => await m.updateHostCommandTemplate(ctx, input,),
+        /**
             * # mutation `updateHostGroup`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateHostGroup
             * `@xlsft/smartshell-sdk`
@@ -2092,6 +2242,18 @@ import type { Shell } from "../mod.ts";
             * `@xlsft/smartshell-sdk`
             */
         updateMe: async (input: Parameters<typeof m.updateMe>[1],) => await m.updateMe(ctx, input,),
+        /**
+            * # mutation `updateNetwork`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateNetwork
+            * `@xlsft/smartshell-sdk`
+            */
+        updateNetwork: async (input: Parameters<typeof m.updateNetwork>[1],) => await m.updateNetwork(ctx, input,),
+        /**
+            * # mutation `updateNetworkCompany`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateNetworkCompany
+            * `@xlsft/smartshell-sdk`
+            */
+        updateNetworkCompany: async (input: Parameters<typeof m.updateNetworkCompany>[1],) => await m.updateNetworkCompany(ctx, input,),
         /**
             * # mutation `updateNewsConsent`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateNewsConsent
@@ -2153,6 +2315,12 @@ import type { Shell } from "../mod.ts";
             */
         updateTariffSort: async (input: Parameters<typeof m.updateTariffSort>[1],) => await m.updateTariffSort(ctx, input,),
         /**
+            * # mutation `updateTelegramSettings`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateTelegramSettings
+            * `@xlsft/smartshell-sdk`
+            */
+        updateTelegramSettings: async (input: Parameters<typeof m.updateTelegramSettings>[1],) => await m.updateTelegramSettings(ctx, input,),
+        /**
             * # mutation `updateUserGroup`
             * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateUserGroup
             * `@xlsft/smartshell-sdk`
@@ -2213,106 +2381,46 @@ import type { Shell } from "../mod.ts";
             */
         verifyUser: async (input: Parameters<typeof m.verifyUser>[1],) => await m.verifyUser(ctx, input,),
         /**
-            * # mutation `updateComment`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateComment
+            * # mutation `createBeneficiaryByInn`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createBeneficiaryByInn
             * `@xlsft/smartshell-sdk`
             */
-        updateComment: async (input: Parameters<typeof m.updateComment>[1],) => await m.updateComment(ctx, input,),
+        createBeneficiaryByInn: async (input: Parameters<typeof m.createBeneficiaryByInn>[1],) => await m.createBeneficiaryByInn(ctx, input,),
         /**
-            * # mutation `createHostPIN`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostPIN
+            * # mutation `setBeneficiaryToCompany`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/setBeneficiaryToCompany
             * `@xlsft/smartshell-sdk`
             */
-        createHostPIN: async (input: Parameters<typeof m.createHostPIN>[1],) => await m.createHostPIN(ctx, input,),
+        setBeneficiaryToCompany: async (input: Parameters<typeof m.setBeneficiaryToCompany>[1],) => await m.setBeneficiaryToCompany(ctx, input,),
         /**
-            * # mutation `createNetwork`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createNetwork
+            * # mutation `updateBeneficiaryBankDetails`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateBeneficiaryBankDetails
             * `@xlsft/smartshell-sdk`
             */
-        createNetwork: async (input: Parameters<typeof m.createNetwork>[1],) => await m.createNetwork(ctx, input,),
+        updateBeneficiaryBankDetails: async (input: Parameters<typeof m.updateBeneficiaryBankDetails>[1],) => await m.updateBeneficiaryBankDetails(ctx, input,),
         /**
-            * # mutation `updateNetwork`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateNetwork
+            * # mutation `createOwner`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createOwner
             * `@xlsft/smartshell-sdk`
             */
-        updateNetwork: async (input: Parameters<typeof m.updateNetwork>[1],) => await m.updateNetwork(ctx, input,),
+        createOwner: async (input: Parameters<typeof m.createOwner>[1],) => await m.createOwner(ctx, input,),
         /**
-            * # mutation `addCompaniesToNetwork`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/addCompaniesToNetwork
+            * # mutation `updateOwner`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateOwner
             * `@xlsft/smartshell-sdk`
             */
-        addCompaniesToNetwork: async (input: Parameters<typeof m.addCompaniesToNetwork>[1],) => await m.addCompaniesToNetwork(ctx, input,),
+        updateOwner: async (input: Parameters<typeof m.updateOwner>[1],) => await m.updateOwner(ctx, input,),
         /**
-            * # mutation `updateNetworkCompany`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateNetworkCompany
+            * # mutation `setCompanyOwner`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/setCompanyOwner
             * `@xlsft/smartshell-sdk`
             */
-        updateNetworkCompany: async (input: Parameters<typeof m.updateNetworkCompany>[1],) => await m.updateNetworkCompany(ctx, input,),
+        setCompanyOwner: async (input: Parameters<typeof m.setCompanyOwner>[1],) => await m.setCompanyOwner(ctx, input,),
         /**
-            * # mutation `deleteNetworkCompany`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteNetworkCompany
+            * # mutation `copySettings`
+            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/copySettings
             * `@xlsft/smartshell-sdk`
             */
-        deleteNetworkCompany: async (input: Parameters<typeof m.deleteNetworkCompany>[1],) => await m.deleteNetworkCompany(ctx, input,),
-        /**
-            * # mutation `updateTelegramSettings`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateTelegramSettings
-            * `@xlsft/smartshell-sdk`
-            */
-        updateTelegramSettings: async (input: Parameters<typeof m.updateTelegramSettings>[1],) => await m.updateTelegramSettings(ctx, input,),
-        /**
-            * # mutation `purchaseTariffByQR`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/purchaseTariffByQR
-            * `@xlsft/smartshell-sdk`
-            */
-        purchaseTariffByQR: async (input: Parameters<typeof m.purchaseTariffByQR>[1],) => await m.purchaseTariffByQR(ctx, input,),
-        /**
-            * # mutation `createCommands`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createCommands
-            * `@xlsft/smartshell-sdk`
-            */
-        createCommands: async (input: Parameters<typeof m.createCommands>[1],) => await m.createCommands(ctx, input,),
-        /**
-            * # mutation `sendWakePackets`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/sendWakePackets
-            * `@xlsft/smartshell-sdk`
-            */
-        sendWakePackets: async (input: Parameters<typeof m.sendWakePackets>[1],) => await m.sendWakePackets(ctx, input,),
-        /**
-            * # mutation `createHostCommandTemplate`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createHostCommandTemplate
-            * `@xlsft/smartshell-sdk`
-            */
-        createHostCommandTemplate: async (input: Parameters<typeof m.createHostCommandTemplate>[1],) => await m.createHostCommandTemplate(ctx, input,),
-        /**
-            * # mutation `updateHostCommandTemplate`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateHostCommandTemplate
-            * `@xlsft/smartshell-sdk`
-            */
-        updateHostCommandTemplate: async (input: Parameters<typeof m.updateHostCommandTemplate>[1],) => await m.updateHostCommandTemplate(ctx, input,),
-        /**
-            * # mutation `deleteHostCommandTemplate`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteHostCommandTemplate
-            * `@xlsft/smartshell-sdk`
-            */
-        deleteHostCommandTemplate: async (input: Parameters<typeof m.deleteHostCommandTemplate>[1],) => await m.deleteHostCommandTemplate(ctx, input,),
-        /**
-            * # mutation `createCompanyNews`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/createCompanyNews
-            * `@xlsft/smartshell-sdk`
-            */
-        createCompanyNews: async (input: Parameters<typeof m.createCompanyNews>[1],) => await m.createCompanyNews(ctx, input,),
-        /**
-            * # mutation `updateCompanyNews`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/updateCompanyNews
-            * `@xlsft/smartshell-sdk`
-            */
-        updateCompanyNews: async (input: Parameters<typeof m.updateCompanyNews>[1],) => await m.updateCompanyNews(ctx, input,),
-        /**
-            * # mutation `deleteCompanyNews`
-            * 🔗 https://smartshell.xlsft.ru/docs/reference/api/mutation/deleteCompanyNews
-            * `@xlsft/smartshell-sdk`
-            */
-        deleteCompanyNews: async (input: Parameters<typeof m.deleteCompanyNews>[1],) => await m.deleteCompanyNews(ctx, input,),
+        copySettings: async (input: Parameters<typeof m.copySettings>[1],) => await m.copySettings(ctx, input,),
     }
     }

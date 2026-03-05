@@ -1,9 +1,9 @@
 // deno-lint-ignore-file no-unused-vars ban-unused-ignore no-explicit-any
 import type { ShellSdkContext } from "../../types/sdk.ts"
-import type { ShortcutGroup, ShortcutGroupInput } from "../../types/types.ts"
+import type { ShortcutGroup, ShortcutGroupInput, SyncScope } from "../../types/types.ts"
 import { key } from "../../utils/key.ts"
 
-export type InputType = { id: number; input: ShortcutGroupInput }
+export type InputType = { id: number; input: ShortcutGroupInput; sync?: SyncScope }
 export type ResponseType = ShortcutGroup
 
 const module = async <Input extends InputType, Response extends ResponseType>(

@@ -1,0 +1,15 @@
+<h1 id="type_ownerinput">type OwnerInput</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="inn">inn</h3>
+<pre><code lang="ts">inn: string</code></pre>
+
+<h3 id="company_id">company_id</h3>
+<pre><code lang="ts">company_id: number</code></pre>
+
+<h3 id="email">email</h3>
+<pre><code lang="ts">email: ||--['/docs/reference/types/Email','Email']--||</code></pre>
+
+<h3 id="private_policy">private_policy</h3>
+<pre><code lang="ts">private_policy: string</code></pre>

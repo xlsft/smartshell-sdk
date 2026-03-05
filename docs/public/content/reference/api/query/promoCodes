@@ -63,6 +63,13 @@
                             "child": [
                                 {
                                     "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
                                     "key": "uuid",
                                     "value": [
                                         "string"
@@ -678,36 +685,6 @@
                             "key": "avatar_url",
                             "value": [
                                 "string"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "news_consent",
-                            "value": [
-                                "NewsConsent"
-                            ],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "isGiven",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "givenAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "revokedAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
                             ]
                         },
                         {
@@ -828,6 +805,13 @@
                             "child": [
                                 {
                                     "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
                                     "key": "uuid",
                                     "value": [
                                         "string"
@@ -1446,36 +1430,6 @@
                             ]
                         },
                         {
-                            "type": "object",
-                            "key": "news_consent",
-                            "value": [
-                                "NewsConsent"
-                            ],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "isGiven",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "givenAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "revokedAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
                             "type": "scalar",
                             "key": "telegram_link",
                             "value": [
@@ -1575,6 +1529,66 @@
                     "key": "value",
                     "value": [
                         "Decimal"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "promo_value",
+                    "value": [
+                        "PromoValue"
+                    ],
+                    "child": [
+                        {
+                            "type": "enum",
+                            "key": "type",
+                            "value": [
+                                "PromoValueType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "value",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "currency",
+                            "value": [
+                                "Currency"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "title",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "alias",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "letter",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 },
                 {

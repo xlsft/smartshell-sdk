@@ -329,6 +329,13 @@
                             "value": [
                                 "boolean"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "high_access_only",
+                            "value": [
+                                "boolean"
+                            ]
                         }
                     ]
                 }
@@ -365,6 +372,13 @@
         {
             "type": "scalar",
             "key": "free_run",
+            "value": [
+                "boolean"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "high_access_only",
             "value": [
                 "boolean"
             ]

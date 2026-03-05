@@ -1,7 +1,7 @@
 <h1 id="api_mutation_updateShortcut">mutation updateShortcut</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/ShortcutInput','ShortcutInput'--|| }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/ShortcutInput','ShortcutInput'--||, sync?: ||--['/docs/reference/types/SyncScope','SyncScope'--|| }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Shortcut','Shortcut'--||</code></pre>
 <h3>Codegen method map</h3>
@@ -9,7 +9,8 @@
     "imports": {
         "gql": [
             "Shortcut",
-            "ShortcutInput"
+            "ShortcutInput",
+            "SyncScope"
         ],
         "sdk": [
             "ShellSdkContext"
@@ -330,6 +331,13 @@
                             "value": [
                                 "boolean"
                             ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "high_access_only",
+                            "value": [
+                                "boolean"
+                            ]
                         }
                     ]
                 }
@@ -369,6 +377,13 @@
             "value": [
                 "boolean"
             ]
+        },
+        {
+            "type": "scalar",
+            "key": "high_access_only",
+            "value": [
+                "boolean"
+            ]
         }
     ],
     "props": [
@@ -387,6 +402,14 @@
             "value": "ShortcutInput",
             "type": "object",
             "docs": "/docs/reference/types/ShortcutInput"
+        },
+        {
+            "key": "sync",
+            "required": false,
+            "array": false,
+            "value": "SyncScope",
+            "type": "enum",
+            "docs": "/docs/reference/types/SyncScope"
         }
     ],
     "response": {

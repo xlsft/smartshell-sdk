@@ -1,0 +1,156 @@
+<h1 id="api_mutation_updateOwner">mutation updateOwner</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: number, input: ||--['/docs/reference/types/UpdateOwnerInput','UpdateOwnerInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Owner','Owner'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "Owner",
+            "UpdateOwnerInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateOwner",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "type",
+            "value": [
+                "OwnerType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "inn",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "email",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "private_policy",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "private_policy_url",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "counterparty_data",
+            "value": [
+                "CounterpartyData"
+            ],
+            "child": [
+                {
+                    "type": "enum",
+                    "key": "type",
+                    "value": [
+                        "BeneficiaryType"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "full_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "inn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "ogrn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "status",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "legal_address",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "registration_date",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateOwnerInput",
+            "type": "object",
+            "docs": "/docs/reference/types/UpdateOwnerInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Owner"
+        ],
+        "type": "object"
+    }
+}</code></pre>

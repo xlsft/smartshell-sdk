@@ -291,10 +291,10 @@
                             ]
                         },
                         {
-                            "type": "scalar",
-                            "key": "type_id",
+                            "type": "enum",
+                            "key": "type",
                             "value": [
-                                "number"
+                                "HostTypeValue"
                             ]
                         },
                         {

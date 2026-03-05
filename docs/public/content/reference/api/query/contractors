@@ -39,6 +39,13 @@
         },
         {
             "type": "scalar",
+            "key": "ogrn",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "kpp",
             "value": [
                 "string"

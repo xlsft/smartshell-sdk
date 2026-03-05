@@ -23,6 +23,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "promocode_discount",
             "month_discount",
             "debt",
+            key("currency", ["id", "title", "alias", "letter"]),
         ],
         { ...(props as any) },
     )

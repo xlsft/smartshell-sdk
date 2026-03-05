@@ -1,0 +1,5 @@
+<h1 id="enum_hosttypevalue">enum HostTypeValue</h1>
+<br />
+<h2 id="possible_values">Possible values</h2>
+
+<pre><code lang="ts">"PC" | "CONSOLE" | "VR" | "BILLIARD" | "BOARD_GAME" | "RACING_SIM"</code></pre>

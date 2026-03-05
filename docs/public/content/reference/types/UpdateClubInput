@@ -94,3 +94,6 @@
 
 <h3 id="services">services</h3>
 <pre><code lang="ts">services?: ||--['/docs/reference/types/ClubServicesInput','ClubServicesInput']--||</code></pre>
+
+<h3 id="metro">metro</h3>
+<pre><code lang="ts">metro?: string</code></pre>

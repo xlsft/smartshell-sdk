@@ -1,0 +1,440 @@
+<h1 id="api_query_listBeneficiaryMovementsOfFunds">
+    query listBeneficiaryMovementsOfFunds
+</h1>
+<code>Paginated</code>
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { paginator?: ||--['/docs/reference/sdk/ShellSdkPaginatorInput','ShellSdkPaginatorInput'--||, input: ||--['/docs/reference/types/ListBeneficiaryMovementsOfFunds','ListBeneficiaryMovementsOfFunds'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ListMovementOfFundsPaginated','ListMovementOfFundsPaginated'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "ListMovementOfFundsPaginated",
+            "ListBeneficiaryMovementsOfFunds"
+        ],
+        "sdk": [
+            "ShellSdkContext",
+            "ShellSdkPaginatorInput"
+        ]
+    },
+    "type": "query",
+    "paginated": true,
+    "name": "listBeneficiaryMovementsOfFunds",
+    "schema": [
+        {
+            "type": "object",
+            "key": "summary",
+            "value": [
+                "MovementOfFundsSummary"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "values",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "labels",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "data",
+            "value": [
+                "MovementOfFunds"
+            ],
+            "child": [
+                {
+                    "type": "enum",
+                    "key": "operation",
+                    "value": [
+                        "OperationType"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "transaction",
+                    "value": [
+                        "LitePaymentTransaction"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "company",
+                            "value": [
+                                "LiteCompany"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "address",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "client",
+                            "value": [
+                                "LiteClient"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "nickname",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "commission_details",
+                            "value": [
+                                "CommissionDetails"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "total",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "service",
+                            "value": [
+                                "ServiceEnum"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "status",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "receipt",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "deal",
+                    "value": [
+                        "BeneficiaryDeal"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "sum",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "total_sum",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "beneficiary",
+                            "value": [
+                                "Beneficiary"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "organization_id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "enum",
+                                    "key": "type",
+                                    "value": [
+                                        "BeneficiaryType"
+                                    ]
+                                },
+                                {
+                                    "type": "enum",
+                                    "key": "opf",
+                                    "value": [
+                                        "OpfType"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "full_name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "phone",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "email",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "inn",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "status",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "balance",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                },
+                                {
+                                    "type": "enum",
+                                    "key": "tax",
+                                    "value": [
+                                        "Tax"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "service_name",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "bank_details",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "error",
+                                    "value": [
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "created_at",
+                                    "value": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "commission",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "commission_details",
+                            "value": [
+                                "CommissionDetails"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "total",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "status",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "error",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "auto_withdraw",
+                            "value": [
+                                "boolean"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "updated_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "confirmed",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "sum",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "updated_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "paginator",
+            "value": "ShellSdkPaginatorInput",
+            "required": false,
+            "array": false,
+            "docs": "/docs/reference/sdk/ShellSdkPaginatorInput"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "ListBeneficiaryMovementsOfFunds",
+            "type": "object",
+            "docs": "/docs/reference/types/ListBeneficiaryMovementsOfFunds"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "ListMovementOfFundsPaginated"
+        ],
+        "type": "object"
+    }
+}</code></pre>

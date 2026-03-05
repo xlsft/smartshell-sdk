@@ -1,14 +1,15 @@
 <h1 id="api_mutation_deleteShortcutGroup">mutation deleteShortcutGroup</h1>
 
 <h3>Input</h3>
-<pre><code lang="ts">type InputType = { id: number }</code></pre>
+<pre><code lang="ts">type InputType = { id: number, sync?: ||--['/docs/reference/types/SyncScope','SyncScope'--|| }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/ShortcutGroup','ShortcutGroup'--||</code></pre>
 <h3>Codegen method map</h3>
 <pre><code lang="json">{
     "imports": {
         "gql": [
-            "ShortcutGroup"
+            "ShortcutGroup",
+            "SyncScope"
         ],
         "sdk": [
             "ShellSdkContext"
@@ -55,6 +56,14 @@
             "value": "number",
             "type": "scalar",
             "docs": "/docs/reference/types/number"
+        },
+        {
+            "key": "sync",
+            "required": false,
+            "array": false,
+            "value": "SyncScope",
+            "type": "enum",
+            "docs": "/docs/reference/types/SyncScope"
         }
     ],
     "response": {

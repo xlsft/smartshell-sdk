@@ -1,9 +1,9 @@
 // deno-lint-ignore-file no-unused-vars ban-unused-ignore no-explicit-any
 import type { ShellSdkContext } from "../../types/sdk.ts"
-import type { Shortcut, ShortcutInput } from "../../types/types.ts"
+import type { Shortcut, ShortcutInput, SyncScope } from "../../types/types.ts"
 import { key } from "../../utils/key.ts"
 
-export type InputType = { id: number; input: ShortcutInput }
+export type InputType = { id: number; input: ShortcutInput; sync?: SyncScope }
 export type ResponseType = Shortcut
 
 const module = async <Input extends InputType, Response extends ResponseType>(
@@ -45,6 +45,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     "only_for_registered",
                     "age_rating",
                     "free_run",
+                    "high_access_only",
                 ]),
             ]),
             "run_as_admin",
@@ -52,6 +53,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "only_for_registered",
             "age_rating",
             "free_run",
+            "high_access_only",
         ],
         { ...(props as any) },
     )

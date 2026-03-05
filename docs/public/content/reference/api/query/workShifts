@@ -71,6 +71,13 @@
                             "child": [
                                 {
                                     "type": "scalar",
+                                    "key": "id",
+                                    "value": [
+                                        "number"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
                                     "key": "uuid",
                                     "value": [
                                         "string"
@@ -686,36 +693,6 @@
                             "key": "avatar_url",
                             "value": [
                                 "string"
-                            ]
-                        },
-                        {
-                            "type": "object",
-                            "key": "news_consent",
-                            "value": [
-                                "NewsConsent"
-                            ],
-                            "child": [
-                                {
-                                    "type": "scalar",
-                                    "key": "isGiven",
-                                    "value": [
-                                        "boolean"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "givenAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                },
-                                {
-                                    "type": "scalar",
-                                    "key": "revokedAt",
-                                    "value": [
-                                        "string"
-                                    ]
-                                }
                             ]
                         },
                         {
@@ -1557,6 +1534,43 @@
                                     "key": "external_method",
                                     "value": [
                                         "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "key": "sums",
+                            "value": [
+                                "PaymentSums"
+                            ],
+                            "child": [
+                                {
+                                    "type": "scalar",
+                                    "key": "deposit",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "bonus",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "promo_code",
+                                    "value": [
+                                        "Decimal"
+                                    ]
+                                },
+                                {
+                                    "type": "scalar",
+                                    "key": "cashback",
+                                    "value": [
+                                        "Decimal"
                                     ]
                                 }
                             ]

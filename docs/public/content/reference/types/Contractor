@@ -11,6 +11,9 @@
 <h3 id="inn">inn</h3>
 <pre><code lang="ts">inn: string</code></pre>
 
+<h3 id="ogrn">ogrn</h3>
+<pre><code lang="ts">ogrn: string</code></pre>
+
 <h3 id="kpp">kpp</h3>
 <pre><code lang="ts">kpp: string</code></pre>
 

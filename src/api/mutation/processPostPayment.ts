@@ -18,7 +18,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             key("client", [
                 "id",
                 "uuid",
-                key("group", ["uuid", "title", "user_count", "discount", "created_at"]),
+                key("group", ["id", "uuid", "title", "user_count", "discount", "created_at"]),
                 key("creator", [
                     "id",
                     "uuid",
@@ -89,7 +89,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("pausable_sessions", ["id", "duration", "elapsed", "available", "created_at", "expires_at"]),
                 "city",
                 "avatar_url",
-                key("news_consent", ["isGiven", "givenAt", "revokedAt"]),
                 "telegram_link",
                 "discord_link",
                 "steam_link",
@@ -300,6 +299,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 ]),
                 "code",
                 "value",
+                key("promo_value", ["value"]),
                 "amount",
                 "entity_id",
                 "created_at",
@@ -394,6 +394,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "comment",
             "cashback",
             key("external_data", ["external_id", "external_method"]),
+            key("sums", ["deposit", "bonus", "promo_code", "cashback"]),
         ],
         { ...(props as any) },
     )

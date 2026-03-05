@@ -1,5 +1,7 @@
 <h1 id="api_query_getCurrentBeneficiary">query getCurrentBeneficiary</h1>
 
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { club_id?: number }</code></pre>
 <h3>Response</h3>
 <pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Beneficiary','Beneficiary'--||</code></pre>
 <h3>Codegen method map</h3>
@@ -31,10 +33,10 @@
             ]
         },
         {
-            "type": "scalar",
+            "type": "enum",
             "key": "type",
             "value": [
-                "string"
+                "BeneficiaryType"
             ]
         },
         {
@@ -101,6 +103,57 @@
             ]
         },
         {
+            "type": "scalar",
+            "key": "bank_details",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "bank_details_data",
+            "value": [
+                "BeneficiaryBankDetails"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "bank_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "bik",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "account",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "correspondent_account",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "kpp",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
             "type": "object",
             "key": "companies",
             "value": [
@@ -132,6 +185,64 @@
         },
         {
             "type": "object",
+            "key": "counterparty_data",
+            "value": [
+                "CounterpartyData"
+            ],
+            "child": [
+                {
+                    "type": "enum",
+                    "key": "type",
+                    "value": [
+                        "BeneficiaryType"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "full_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "inn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "ogrn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "status",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "legal_address",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "registration_date",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
             "key": "locked_by",
             "value": [
                 "BeneficiaryDeal"
@@ -147,6 +258,13 @@
                 {
                     "type": "scalar",
                     "key": "sum",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "total_sum",
                     "value": [
                         "Decimal"
                     ]
@@ -173,10 +291,10 @@
                             ]
                         },
                         {
-                            "type": "scalar",
+                            "type": "enum",
                             "key": "type",
                             "value": [
-                                "string"
+                                "BeneficiaryType"
                             ]
                         },
                         {
@@ -244,6 +362,13 @@
                         },
                         {
                             "type": "scalar",
+                            "key": "bank_details",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
                             "key": "error",
                             "value": [
                                 "string"
@@ -266,6 +391,22 @@
                     ]
                 },
                 {
+                    "type": "object",
+                    "key": "commission_details",
+                    "value": [
+                        "CommissionDetails"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "total",
+                            "value": [
+                                "Decimal"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "type": "scalar",
                     "key": "status",
                     "value": [
@@ -274,7 +415,28 @@
                 },
                 {
                     "type": "scalar",
+                    "key": "error",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "auto_withdraw",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
                     "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "updated_at",
                     "value": [
                         "string"
                     ]
@@ -296,7 +458,16 @@
             ]
         }
     ],
-    "props": [],
+    "props": [
+        {
+            "key": "club_id",
+            "required": false,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
     "response": {
         "required": false,
         "array": false,

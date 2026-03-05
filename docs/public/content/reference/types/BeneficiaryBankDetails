@@ -1,0 +1,18 @@
+<h1 id="type_beneficiarybankdetails">type BeneficiaryBankDetails</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="bank_name">bank_name</h3>
+<pre><code lang="ts">bank_name: string</code></pre>
+
+<h3 id="bik">bik</h3>
+<pre><code lang="ts">bik: string</code></pre>
+
+<h3 id="account">account</h3>
+<pre><code lang="ts">account: string</code></pre>
+
+<h3 id="correspondent_account">correspondent_account</h3>
+<pre><code lang="ts">correspondent_account: string</code></pre>
+
+<h3 id="kpp">kpp</h3>
+<pre><code lang="ts">kpp?: string</code></pre>

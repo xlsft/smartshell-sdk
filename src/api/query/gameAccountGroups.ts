@@ -17,7 +17,6 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("host", [
                 "id",
                 "group_id",
-                "type_id",
                 "position",
                 "alias",
                 "comment",
@@ -58,6 +57,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "only_for_registered",
             "age_rating",
             "free_run",
+            "high_access_only",
         ]),
     ])
 }

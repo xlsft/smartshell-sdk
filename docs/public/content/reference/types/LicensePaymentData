@@ -34,3 +34,21 @@
 
 <h3 id="contractor">contractor</h3>
 <pre><code lang="ts">contractor?: ||--['/docs/reference/types/Contractor','Contractor']--||</code></pre>
+
+<h3 id="license">license</h3>
+<pre><code lang="ts">license?: ||--['/docs/reference/types/License','License']--||</code></pre>
+
+<h3 id="base_payment">base_payment</h3>
+<pre><code lang="ts">base_payment?: number</code></pre>
+
+<h3 id="with_debt">with_debt</h3>
+<pre><code lang="ts">with_debt: boolean</code></pre>
+
+<h3 id="club">club</h3>
+<pre><code lang="ts">club: ||--['/docs/reference/types/Club','Club']--||</code></pre>
+
+<h3 id="promo_code">promo_code</h3>
+<pre><code lang="ts">promo_code?: string</code></pre>
+
+<h3 id="currency">currency</h3>
+<pre><code lang="ts">currency: string</code></pre>

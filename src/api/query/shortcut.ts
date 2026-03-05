@@ -45,6 +45,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                     "only_for_registered",
                     "age_rating",
                     "free_run",
+                    "high_access_only",
                 ]),
             ]),
             "run_as_admin",
@@ -52,6 +53,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "only_for_registered",
             "age_rating",
             "free_run",
+            "high_access_only",
         ],
         { ...(props as any) },
     )

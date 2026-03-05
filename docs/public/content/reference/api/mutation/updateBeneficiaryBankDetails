@@ -1,0 +1,86 @@
+<h1 id="api_mutation_updateBeneficiaryBankDetails">
+    mutation updateBeneficiaryBankDetails
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: string, input: ||--['/docs/reference/types/UpdateBankAccountInput','UpdateBankAccountInput'--|| }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/BeneficiaryBankDetails','BeneficiaryBankDetails'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "BeneficiaryBankDetails",
+            "UpdateBankAccountInput"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "updateBeneficiaryBankDetails",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "bank_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "bik",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "account",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "correspondent_account",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "kpp",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        },
+        {
+            "key": "input",
+            "required": true,
+            "array": false,
+            "value": "UpdateBankAccountInput",
+            "type": "object",
+            "docs": "/docs/reference/types/UpdateBankAccountInput"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "BeneficiaryBankDetails"
+        ],
+        "type": "object"
+    }
+}</code></pre>

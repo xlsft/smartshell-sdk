@@ -1,0 +1,489 @@
+<h1 id="api_mutation_setBeneficiaryToCompany">
+    mutation setBeneficiaryToCompany
+</h1>
+
+<h3>Input</h3>
+<pre><code lang="ts">type InputType = { id: string, company_id: number }</code></pre>
+<h3>Response</h3>
+<pre><code lang="ts">type ResponseType = ||--['/docs/reference/types/Beneficiary','Beneficiary'--||</code></pre>
+<h3>Codegen method map</h3>
+<pre><code lang="json">{
+    "imports": {
+        "gql": [
+            "Beneficiary"
+        ],
+        "sdk": [
+            "ShellSdkContext"
+        ]
+    },
+    "type": "mutation",
+    "paginated": false,
+    "name": "setBeneficiaryToCompany",
+    "schema": [
+        {
+            "type": "scalar",
+            "key": "id",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "organization_id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "type",
+            "value": [
+                "BeneficiaryType"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "opf",
+            "value": [
+                "OpfType"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "full_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "phone",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "email",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "inn",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "status",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "balance",
+            "value": [
+                "Decimal"
+            ]
+        },
+        {
+            "type": "enum",
+            "key": "tax",
+            "value": [
+                "Tax"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "service_name",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "bank_details",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "object",
+            "key": "bank_details_data",
+            "value": [
+                "BeneficiaryBankDetails"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "bank_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "bik",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "account",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "correspondent_account",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "kpp",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "companies",
+            "value": [
+                "LiteCompany"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "address",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "counterparty_data",
+            "value": [
+                "CounterpartyData"
+            ],
+            "child": [
+                {
+                    "type": "enum",
+                    "key": "type",
+                    "value": [
+                        "BeneficiaryType"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "full_name",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "inn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "ogrn",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "status",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "legal_address",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "registration_date",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "key": "locked_by",
+            "value": [
+                "BeneficiaryDeal"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "sum",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "total_sum",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "beneficiary",
+                    "value": [
+                        "Beneficiary"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "organization_id",
+                            "value": [
+                                "number"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "type",
+                            "value": [
+                                "BeneficiaryType"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "opf",
+                            "value": [
+                                "OpfType"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "full_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "phone",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "email",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "inn",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "status",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "balance",
+                            "value": [
+                                "Decimal"
+                            ]
+                        },
+                        {
+                            "type": "enum",
+                            "key": "tax",
+                            "value": [
+                                "Tax"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "service_name",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "bank_details",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "error",
+                            "value": [
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "scalar",
+                            "key": "created_at",
+                            "value": [
+                                "string"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "commission",
+                    "value": [
+                        "Decimal"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "key": "commission_details",
+                    "value": [
+                        "CommissionDetails"
+                    ],
+                    "child": [
+                        {
+                            "type": "scalar",
+                            "key": "total",
+                            "value": [
+                                "Decimal"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "status",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "error",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "auto_withdraw",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "created_at",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "updated_at",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "error",
+            "value": [
+                "string"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "created_at",
+            "value": [
+                "string"
+            ]
+        }
+    ],
+    "props": [
+        {
+            "key": "id",
+            "required": true,
+            "array": false,
+            "value": "string",
+            "type": "scalar",
+            "docs": "/docs/reference/types/string"
+        },
+        {
+            "key": "company_id",
+            "required": true,
+            "array": false,
+            "value": "number",
+            "type": "scalar",
+            "docs": "/docs/reference/types/number"
+        }
+    ],
+    "response": {
+        "required": true,
+        "array": false,
+        "value": [
+            "Beneficiary"
+        ],
+        "type": "object"
+    }
+}</code></pre>

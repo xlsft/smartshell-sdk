@@ -126,6 +126,43 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "object",
+            "key": "currency",
+            "value": [
+                "Currency"
+            ],
+            "child": [
+                {
+                    "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "title",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "alias",
+                    "value": [
+                        "string"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "letter",
+                    "value": [
+                        "string"
+                    ]
+                }
+            ]
         }
     ],
     "props": [

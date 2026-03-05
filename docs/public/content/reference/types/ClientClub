@@ -124,3 +124,15 @@
 
 <h3 id="goods">goods</h3>
 <pre><code lang="ts">goods: ||--['/docs/reference/types/ClientClubGood','ClientClubGood']--||[]</code></pre>
+
+<h3 id="current_session">current_session</h3>
+<pre><code lang="ts">current_session?: ||--['/docs/reference/types/ClientClubSession','ClientClubSession']--||</code></pre>
+
+<h3 id="owner">owner</h3>
+<pre><code lang="ts">owner?: ||--['/docs/reference/types/LiteOwner','LiteOwner']--||</code></pre>
+
+<h3 id="key_hash">key_hash</h3>
+<pre><code lang="ts">key_hash: string</code></pre>
+
+<h3 id="metro">metro</h3>
+<pre><code lang="ts">metro: string</code></pre>

@@ -1,0 +1,12 @@
+<h1 id="type_commissiondetails">type CommissionDetails</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="incoming">incoming</h3>
+<pre><code lang="ts">incoming?: ||--['/docs/reference/types/CommissionInfo','CommissionInfo']--||</code></pre>
+
+<h3 id="bank">bank</h3>
+<pre><code lang="ts">bank?: ||--['/docs/reference/types/CommissionInfo','CommissionInfo']--||</code></pre>
+
+<h3 id="total">total</h3>
+<pre><code lang="ts">total: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

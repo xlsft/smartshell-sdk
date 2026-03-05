@@ -24,7 +24,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("hosts", [
                     "id",
                     "group_id",
-                    "type_id",
                     "position",
                     "alias",
                     "comment",
@@ -47,7 +46,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("customization", ["color", "background", "screensaver"]),
                 "priority",
             ]),
-            "type_id",
             "position",
             "alias",
             "comment",
@@ -108,6 +106,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 ]),
                 "started_at",
                 "finished_at",
+                "qr",
             ]),
             key("client_sessions", [
                 "id",

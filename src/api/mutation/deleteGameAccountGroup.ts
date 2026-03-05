@@ -24,7 +24,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("host", [
                     "id",
                     "group_id",
-                    "type_id",
                     "position",
                     "alias",
                     "comment",
@@ -65,6 +64,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 "only_for_registered",
                 "age_rating",
                 "free_run",
+                "high_access_only",
             ]),
         ],
         { ...(props as any) },

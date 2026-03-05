@@ -18,6 +18,13 @@
     "schema": [
         {
             "type": "scalar",
+            "key": "id",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
             "key": "uuid",
             "value": [
                 "string"

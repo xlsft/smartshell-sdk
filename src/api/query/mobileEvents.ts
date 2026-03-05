@@ -79,7 +79,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                 key("initiator", [
                     "id",
                     "uuid",
-                    key("group", ["uuid", "title", "user_count", "discount", "created_at"]),
+                    key("group", ["id", "uuid", "title", "user_count", "discount", "created_at"]),
                     key("creator", [
                         "id",
                         "uuid",
@@ -150,7 +150,6 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     key("pausable_sessions", ["id", "duration", "elapsed", "available", "created_at", "expires_at"]),
                     "city",
                     "avatar_url",
-                    key("news_consent", ["isGiven", "givenAt", "revokedAt"]),
                     "telegram_link",
                     "discord_link",
                     "steam_link",
@@ -166,7 +165,6 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     "id",
                     "group_id",
                     key("group", ["id", "title", "created_at", "updated_at", "priority"]),
-                    "type_id",
                     "position",
                     "alias",
                     "comment",
@@ -180,7 +178,7 @@ const module = async <Input extends InputType["input"], Response extends Respons
                     "created_at",
                     key("info", ["processor", "ram", "video", "disc", "shell_version"]),
                     key("counters", ["cpu_temp", "disk_temp", "active_window"]),
-                    key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at"]),
+                    key("sessions", ["id", "host_id", "company_id", "alias", "started_at", "finished_at", "qr"]),
                     key("client_sessions", [
                         "id",
                         "duration",

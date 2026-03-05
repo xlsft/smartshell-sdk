@@ -1,6 +1,6 @@
 {
     "name": "@xlsft/smartshell-sdk",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "exports": {
         ".": "./mod.ts",
         "./utils": "./utils.ts",

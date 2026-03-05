@@ -17,7 +17,6 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "id",
             "group_id",
             "group_title",
-            "type_id",
             "position",
             "alias",
             "coord_x",

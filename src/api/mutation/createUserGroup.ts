@@ -10,9 +10,12 @@ const module = async <Input extends InputType, Response extends ResponseType>(
     ctx: ShellSdkContext,
     props: Input,
 ): Promise<Response> => {
-    return await ctx.request("mutation", "createUserGroup", ["uuid", "title", "user_count", "discount", "created_at"], {
-        ...(props as any),
-    })
+    return await ctx.request(
+        "mutation",
+        "createUserGroup",
+        ["id", "uuid", "title", "user_count", "discount", "created_at"],
+        { ...(props as any) },
+    )
 }
 
 export default module<InputType, ResponseType>

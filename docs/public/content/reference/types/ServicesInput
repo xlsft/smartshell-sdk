@@ -4,3 +4,6 @@
 
 <h3 id="client_uuid">client_uuid</h3>
 <pre><code lang="ts">client_uuid?: string</code></pre>
+
+<h3 id="use_global_discounts">use_global_discounts</h3>
+<pre><code lang="ts">use_global_discounts?: boolean</code></pre>

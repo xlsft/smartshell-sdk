@@ -1,0 +1,12 @@
+<h1 id="type_promovalue">type PromoValue</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="type">type</h3>
+<pre><code lang="ts">type: ||--['/docs/reference/types/PromoValueType','PromoValueType']--||</code></pre>
+
+<h3 id="value">value</h3>
+<pre><code lang="ts">value: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="currency">currency</h3>
+<pre><code lang="ts">currency?: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>

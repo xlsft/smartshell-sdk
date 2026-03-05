@@ -1,0 +1,15 @@
+<h1 id="type_paymentsums">type PaymentSums</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="deposit">deposit</h3>
+<pre><code lang="ts">deposit?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="bonus">bonus</h3>
+<pre><code lang="ts">bonus?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="promo_code">promo_code</h3>
+<pre><code lang="ts">promo_code?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="cashback">cashback</h3>
+<pre><code lang="ts">cashback?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

@@ -31,3 +31,9 @@
 
 <h3 id="created_at">created_at</h3>
 <pre><code lang="ts">created_at: ||--['/docs/reference/types/Date','Date']--||</code></pre>
+
+<h3 id="place">place</h3>
+<pre><code lang="ts">place: number</code></pre>
+
+<h3 id="current_user">current_user</h3>
+<pre><code lang="ts">current_user: boolean</code></pre>

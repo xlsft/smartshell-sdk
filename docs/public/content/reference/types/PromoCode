@@ -17,6 +17,9 @@
 <h3 id="value">value</h3>
 <pre><code lang="ts">value: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
 
+<h3 id="promo_value">promo_value</h3>
+<pre><code lang="ts">promo_value?: ||--['/docs/reference/types/PromoValue','PromoValue']--||</code></pre>
+
 <h3 id="amount">amount</h3>
 <pre><code lang="ts">amount?: number</code></pre>
 

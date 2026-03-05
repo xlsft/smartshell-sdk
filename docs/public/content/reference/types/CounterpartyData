@@ -1,0 +1,24 @@
+<h1 id="type_counterpartydata">type CounterpartyData</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="type">type</h3>
+<pre><code lang="ts">type: ||--['/docs/reference/types/BeneficiaryType','BeneficiaryType']--||</code></pre>
+
+<h3 id="full_name">full_name</h3>
+<pre><code lang="ts">full_name: string</code></pre>
+
+<h3 id="inn">inn</h3>
+<pre><code lang="ts">inn: string</code></pre>
+
+<h3 id="ogrn">ogrn</h3>
+<pre><code lang="ts">ogrn?: string</code></pre>
+
+<h3 id="status">status</h3>
+<pre><code lang="ts">status: string</code></pre>
+
+<h3 id="legal_address">legal_address</h3>
+<pre><code lang="ts">legal_address?: string</code></pre>
+
+<h3 id="registration_date">registration_date</h3>
+<pre><code lang="ts">registration_date: ||--['/docs/reference/types/Date','Date']--||</code></pre>

@@ -119,10 +119,10 @@
                             ]
                         },
                         {
-                            "type": "scalar",
-                            "key": "type_id",
+                            "type": "enum",
+                            "key": "type",
                             "value": [
-                                "number"
+                                "HostTypeValue"
                             ]
                         },
                         {
@@ -472,6 +472,13 @@
                 {
                     "type": "scalar",
                     "key": "free_run",
+                    "value": [
+                        "boolean"
+                    ]
+                },
+                {
+                    "type": "scalar",
+                    "key": "high_access_only",
                     "value": [
                         "boolean"
                     ]

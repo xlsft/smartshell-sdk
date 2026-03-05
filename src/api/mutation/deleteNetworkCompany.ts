@@ -37,8 +37,7 @@ const module = async <Input extends InputType, Response extends ResponseType>(
                 key("companies", ["total"]),
             ]),
             "is_main",
-            "max_discount_enabled",
-            "deposit_transfer_enabled",
+            key("settings", ["max_discount_enabled", "deposit_transfer_enabled", "shortcut_sync_enabled"]),
         ],
         { ...(props as any) },
     )

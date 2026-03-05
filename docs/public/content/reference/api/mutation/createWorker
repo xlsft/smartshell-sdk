@@ -42,6 +42,13 @@
             "child": [
                 {
                     "type": "scalar",
+                    "key": "id",
+                    "value": [
+                        "number"
+                    ]
+                },
+                {
+                    "type": "scalar",
                     "key": "uuid",
                     "value": [
                         "string"
@@ -105,6 +112,13 @@
                         "UserGroup"
                     ],
                     "child": [
+                        {
+                            "type": "scalar",
+                            "key": "id",
+                            "value": [
+                                "number"
+                            ]
+                        },
                         {
                             "type": "scalar",
                             "key": "uuid",
@@ -482,36 +496,6 @@
                     "key": "avatar_url",
                     "value": [
                         "string"
-                    ]
-                },
-                {
-                    "type": "object",
-                    "key": "news_consent",
-                    "value": [
-                        "NewsConsent"
-                    ],
-                    "child": [
-                        {
-                            "type": "scalar",
-                            "key": "isGiven",
-                            "value": [
-                                "boolean"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "givenAt",
-                            "value": [
-                                "string"
-                            ]
-                        },
-                        {
-                            "type": "scalar",
-                            "key": "revokedAt",
-                            "value": [
-                                "string"
-                            ]
-                        }
                     ]
                 },
                 {
@@ -1412,36 +1396,6 @@
             "key": "avatar_url",
             "value": [
                 "string"
-            ]
-        },
-        {
-            "type": "object",
-            "key": "news_consent",
-            "value": [
-                "NewsConsent"
-            ],
-            "child": [
-                {
-                    "type": "scalar",
-                    "key": "isGiven",
-                    "value": [
-                        "boolean"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "givenAt",
-                    "value": [
-                        "string"
-                    ]
-                },
-                {
-                    "type": "scalar",
-                    "key": "revokedAt",
-                    "value": [
-                        "string"
-                    ]
-                }
             ]
         },
         {

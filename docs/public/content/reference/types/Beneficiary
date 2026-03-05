@@ -9,7 +9,7 @@
 <pre><code lang="ts">organization_id: number</code></pre>
 
 <h3 id="type">type</h3>
-<pre><code lang="ts">type: string</code></pre>
+<pre><code lang="ts">type: ||--['/docs/reference/types/BeneficiaryType','BeneficiaryType']--||</code></pre>
 
 <h3 id="opf">opf</h3>
 <pre><code lang="ts">opf?: ||--['/docs/reference/types/OpfType','OpfType']--||</code></pre>
@@ -38,8 +38,17 @@
 <h3 id="service_name">service_name</h3>
 <pre><code lang="ts">service_name?: string</code></pre>
 
+<h3 id="bank_details">bank_details</h3>
+<pre><code lang="ts">bank_details?: string</code></pre>
+
+<h3 id="bank_details_data">bank_details_data</h3>
+<pre><code lang="ts">bank_details_data?: ||--['/docs/reference/types/BeneficiaryBankDetails','BeneficiaryBankDetails']--||</code></pre>
+
 <h3 id="companies">companies</h3>
 <pre><code lang="ts">companies: ||--['/docs/reference/types/LiteCompany','LiteCompany']--||[]</code></pre>
+
+<h3 id="counterparty_data">counterparty_data</h3>
+<pre><code lang="ts">counterparty_data?: ||--['/docs/reference/types/CounterpartyData','CounterpartyData']--||</code></pre>
 
 <h3 id="locked_by">locked_by</h3>
 <pre><code lang="ts">locked_by?: ||--['/docs/reference/types/BeneficiaryDeal','BeneficiaryDeal']--||</code></pre>

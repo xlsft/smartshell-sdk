@@ -24,6 +24,8 @@ const module = async <Input extends InputType, Response extends ResponseType>(
             "steam_link",
             "vk_link",
             "created_at",
+            "place",
+            "current_user",
         ],
         { ...(props as any) },
     )

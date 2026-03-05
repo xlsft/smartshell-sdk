@@ -1,0 +1,15 @@
+<h1 id="type_financialinfo">type FinancialInfo</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="gross_amount">gross_amount</h3>
+<pre><code lang="ts">gross_amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="net_amount">net_amount</h3>
+<pre><code lang="ts">net_amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="commission_amount">commission_amount</h3>
+<pre><code lang="ts">commission_amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="commission_rate">commission_rate</h3>
+<pre><code lang="ts">commission_rate: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

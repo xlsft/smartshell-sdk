@@ -28,3 +28,6 @@
 
 <h3 id="debt">debt</h3>
 <pre><code lang="ts">debt?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="currency">currency</h3>
+<pre><code lang="ts">currency: ||--['/docs/reference/types/Currency','Currency']--||</code></pre>

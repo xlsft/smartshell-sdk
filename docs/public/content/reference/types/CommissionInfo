@@ -1,0 +1,12 @@
+<h1 id="type_commissioninfo">type CommissionInfo</h1>
+<br />
+<h2 id="type_properties">Type properties</h2>
+
+<h3 id="amount">amount</h3>
+<pre><code lang="ts">amount: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="rate">rate</h3>
+<pre><code lang="ts">rate: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>
+
+<h3 id="min">min</h3>
+<pre><code lang="ts">min?: ||--['/docs/reference/types/Decimal','Decimal']--||</code></pre>

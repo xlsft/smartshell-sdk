@@ -87,6 +87,20 @@
             "value": [
                 "string"
             ]
+        },
+        {
+            "type": "scalar",
+            "key": "place",
+            "value": [
+                "number"
+            ]
+        },
+        {
+            "type": "scalar",
+            "key": "current_user",
+            "value": [
+                "boolean"
+            ]
         }
     ],
     "props": [

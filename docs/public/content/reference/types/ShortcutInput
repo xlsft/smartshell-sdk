@@ -52,3 +52,6 @@
 
 <h3 id="free_run">free_run</h3>
 <pre><code lang="ts">free_run?: boolean</code></pre>
+
+<h3 id="high_access_only">high_access_only</h3>
+<pre><code lang="ts">high_access_only?: boolean</code></pre>

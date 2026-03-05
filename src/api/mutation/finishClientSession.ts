@@ -11,7 +11,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
         key("client", [
             "id",
             "uuid",
-            key("group", ["uuid", "title", "user_count", "discount", "created_at"]),
+            key("group", ["id", "uuid", "title", "user_count", "discount", "created_at"]),
             key("creator", [
                 "id",
                 "uuid",
@@ -82,7 +82,6 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("pausable_sessions", ["id", "duration", "elapsed", "available", "created_at", "expires_at"]),
             "city",
             "avatar_url",
-            key("news_consent", ["isGiven", "givenAt", "revokedAt"]),
             "telegram_link",
             "discord_link",
             "steam_link",
@@ -99,7 +98,6 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             key("host", [
                 "id",
                 "group_id",
-                "type_id",
                 "position",
                 "alias",
                 "comment",
@@ -187,6 +185,7 @@ const module = async <Response extends ResponseType>(ctx: ShellSdkContext): Prom
             "comment",
             "cashback",
             key("external_data", ["external_id", "external_method"]),
+            key("sums", ["deposit", "bonus", "promo_code", "cashback"]),
         ]),
         "postpaid",
         "total_cost",
